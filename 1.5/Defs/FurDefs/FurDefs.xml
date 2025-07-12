@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<Defs>
+
+  <FurDef>
+    <defName>SeldoreBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/SeldoreBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+
+
+</Defs>

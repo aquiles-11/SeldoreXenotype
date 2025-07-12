@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_GovernorRaiment</defName>
+    <label>Governor's Raiment</label>
+    <description>A regal attire crafted for a leader, this garment embodies Seldore's resilience and wisdom. It offers robust protection, its presence inspiring allies and subtly dampening psychic intrusions.</description>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <displayPriority>245</displayPriority>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Armor/SeldoreArmor/SeldoreApparel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <equippedStatOffsets>
+      <PsychicSensitivity>-0.50</PsychicSensitivity>
+      <SocialImpact>0.1</SocialImpact>
+    </equippedStatOffsets>
+    <costList>
+      <Hyperweave>50</Hyperweave>
+      <Gold>2</Gold>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToMake>30000</WorkToMake>
+      <MarketValue>1800</MarketValue>
+      <Mass>4.0</Mass>
+      <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      <Insulation_Cold>30</Insulation_Cold>
+      <Insulation_Heat>15</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelNoble</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>RegalPresence</hediff>
+        <part>Body</part>
+      </li>
+    </comps>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Legs</li>
+        <li>Shoulders</li>
+        <li>Neck</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/SeldoreArmor/SeldoreApparel</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+
+
+</Defs>

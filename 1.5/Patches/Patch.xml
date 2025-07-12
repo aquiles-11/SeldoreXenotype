@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Patch>
+
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Anomaly</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[@Name="BaseFleshbeast"]/statBases</xpath>
+                    <value>
+                        <Stat_LightWeakness>0.5</Stat_LightWeakness>
+                    </value>
+                </li>
+            </operations>
+        </match>
+
+    </Operation>
+
+</Patch>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<Defs>
+
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>SeldoreHead</defName>
+        <graphicPath>Humanlike/Heads/SeldoreHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_SeldoreHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+    
+</Defs>

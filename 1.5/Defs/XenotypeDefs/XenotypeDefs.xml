@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<Defs>
+
+    <XenotypeDef>
+        <defName>SeldoreXenotype</defName>
+        <label>Seldore Xenotype</label>
+        <description>Seldore's Xenotype</description>
+        <iconPath>Humanlike/Heads/SeldoreHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_SeldoreBody</li>
+            <li>Gene_SeldoreHead</li>
+        </genes>
+    </XenotypeDef>
+
+    
+</Defs>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Weapon_BlackDragonBow</defName>
+    <label>Black Dragon Bow</label>
+    <description>An ancient energy bow, it channels Seldore's formidable power to fire precise, destructive bolts. Its dark aura resonates with allies, providing subtle support in combat.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/SeldoreBow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>BlackDragonBow</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Projectile_BlackDragonArrow</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>38</range>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+      <WorkToMake>70000</WorkToMake>
+      <Mass>2.5</Mass>
+      <EquipDelay>1.5</EquipDelay>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>130</equippedAngleOffset>
+    <costList>
+      <Plasteel>100</Plasteel>
+      <ComponentSpacer>8</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_EquippableAbilityReloadable">
+        <abilityDef>AuraEmpoweringDarkness</abilityDef>
+      </li>
+    </comps>
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Projectile_BlackDragonArrow</defName>
+    <label>Black Dragon Bow Arrow</label>
+    <graphicData>
+      <texPath>Projectiles/SeldoreProjectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+    <projectile Inherit="false">
+      <damageDef>EnergyBoltDamage</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <armorPenetrationBase>0.60</armorPenetrationBase>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+  <AbilityDef>
+    <defName>AuraEmpoweringDarkness</defName>
+    <label>aura of empowering darkness</label>
+    <description>Conjure the sheer aura emanating from the black dragon bow to buff your allies' shooting accuracy.</description>
+    <iconPath>Weapons/SeldoreBow</iconPath>
+    <cooldownTicksRange>3000</cooldownTicksRange>
+    <hostile>false</hostile>
+    <groupAbility>true</groupAbility>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>false</targetRequired>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_Duration>300</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <requireLineOfSight>false</requireLineOfSight>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+      <targetable>false</targetable>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>EmpoweringDarkness</hediffDef>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>

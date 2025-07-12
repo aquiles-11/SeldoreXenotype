@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<!-- Gene Category -->
+
+    <GeneCategoryDef>
+        <defName>SeldoreGenes</defName>
+        <label>seldore genes</label>
+        <displayPriorityInXenotype>604</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+<!-- Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_SeldoreBody</defName>
+    <label>Seldore body</label>
+    <description>Carriers of this gene will have a muscular body.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <displayCategory>SeldoreGenes</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <hairColorOverride>(255, 255, 255, 255)</hairColorOverride>
+    <iconPath>Humanlike/Bodies/SeldoreBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>SeldoreBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+	<GeneDef>
+		<defName>Gene_SeldoreHead</defName>
+		<label>Seldore head</label>
+		<description>Carriers of this gene will have a the face of Seldore.</description>
+		<iconPath>Humanlike/Heads/SeldoreHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>SeldoreGenes</displayCategory>
+		<forcedHeadTypes>
+			<li>SeldoreHead</li>
+		</forcedHeadTypes>
+                <beardTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>NoBeard</li>
+            </tags>
+        </beardTagFilter>
+        <hairTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>Bald</li>
+            </tags>
+        </hairTagFilter>
+		<displayOrderInCategory>6662</displayOrderInCategory>
+	<renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>Humanlike/Heads/SeldoreHead</li>
+        </texPaths>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+          <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+	</GeneDef>
+
+
+</Defs>
