@@ -5,8 +5,8 @@
 <!-- Gene Category -->
 
     <GeneCategoryDef>
-        <defName>SeldoreGenes</defName>
-        <label>seldore genes</label>
+        <defName>CraveSaga</defName>
+        <label>Crave Saga</label>
         <displayPriorityInXenotype>604</displayPriorityInXenotype>
     </GeneCategoryDef>
 
@@ -18,7 +18,7 @@
     <description>Carriers of this gene will have a muscular body.</description>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
-    <displayCategory>SeldoreGenes</displayCategory>
+    <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <hairColorOverride>(255, 255, 255, 255)</hairColorOverride>
     <iconPath>Humanlike/Bodies/SeldoreBody_south</iconPath>
@@ -47,7 +47,7 @@
 		<description>Carriers of this gene will have a the face of Seldore.</description>
 		<iconPath>Humanlike/Heads/SeldoreHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
-    <displayCategory>SeldoreGenes</displayCategory>
+    <displayCategory>CraveSaga</displayCategory>
 		<forcedHeadTypes>
 			<li>SeldoreHead</li>
 		</forcedHeadTypes>
