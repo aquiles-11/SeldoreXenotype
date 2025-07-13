@@ -35,6 +35,7 @@
     <statBases>
       <MarketValue>3500</MarketValue>
       <WorkToMake>70000</WorkToMake>
+      <MeditationFocusStrength>0.05</MeditationFocusStrength>
       <Mass>2.5</Mass>
       <EquipDelay>1.5</EquipDelay>
       <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
