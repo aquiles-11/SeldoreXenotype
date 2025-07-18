@@ -6,7 +6,7 @@
         <defName>SeldoreXenotype</defName>
         <label>Seldore Xenotype</label>
         <description>Seldore's Xenotype</description>
-        <iconPath>Humanlike/Heads/SeldoreHead_south</iconPath>
+        <iconPath>Humanlike/Heads/SeldoreHead/SeldoreHead_south</iconPath>
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
@@ -16,5 +16,32 @@
         </genes>
     </XenotypeDef>
 
+    <XenotypeDef>
+        <defName>GabuXenotype</defName>
+        <label>Gabu Xenotype</label>
+        <description>Seldore's Xenotype</description>
+        <iconPath>Humanlike/Heads/BearHead/BearHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_BearBody</li>
+            <li>Gene_BearHead</li>
+        </genes>
+    </XenotypeDef>
     
+    <XenotypeDef>
+        <defName>NocheXenotype</defName>
+        <label>Noche Xenotype</label>
+        <description>Seldore's Xenotype</description>
+        <iconPath>Humanlike/Heads/NocheHead/NocheHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_NocheBody</li>
+            <li>Gene_NocheHead</li>
+        </genes>
+    </XenotypeDef>
+
 </Defs>

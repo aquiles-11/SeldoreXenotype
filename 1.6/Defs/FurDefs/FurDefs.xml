@@ -6,10 +6,29 @@
     <defName>SeldoreBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/SeldoreBody</Hulk>
+      <Hulk>Humanlike/Bodies/SeldoreBody/SeldoreBody</Hulk>
     </bodyTypeGraphicPaths>
   </FurDef>
 
+  <FurDef>
+    <defName>BearBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Male>Humanlike/Bodies/BearBody/BearBody</Male>
+      <Hulk>Humanlike/Bodies/BearBody/BearBody</Hulk>
+      <Female>Humanlike/Bodies/Transparency/BodyTransparent</Female>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+  <FurDef>
+    <defName>NocheBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Male>Humanlike/Bodies/NocheBody/NocheBody</Male>
+      <Hulk>Humanlike/Bodies/NocheBody/NocheBody</Hulk>
+      <Female>Humanlike/Bodies/Transparency/BodyTransparent</Female>
+    </bodyTypeGraphicPaths>
+  </FurDef>
 
 
 </Defs>

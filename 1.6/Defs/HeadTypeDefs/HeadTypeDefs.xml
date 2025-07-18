@@ -4,7 +4,7 @@
 
     <HeadTypeDef ParentName="AverageBase">
         <defName>SeldoreHead</defName>
-        <graphicPath>Humanlike/Heads/SeldoreHead</graphicPath>
+        <graphicPath>Humanlike/Heads/SeldoreHead/SeldoreHead</graphicPath>
         <randomChosen>false</randomChosen>
         <gender>None</gender>
         <requiredGenes>
@@ -13,5 +13,27 @@
         <selectionWeight>1000</selectionWeight>
     </HeadTypeDef>
 
-    
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>BearHead</defName>
+        <graphicPath>Humanlike/Heads/BearHead/BearHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_BearHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>NocheHead</defName>
+        <graphicPath>Humanlike/Heads/NocheHead/NocheHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_NocheHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+
 </Defs>

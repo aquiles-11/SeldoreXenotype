@@ -2,6 +2,8 @@
 
 <Defs>
 
+<!-- Black Dragon Bow -->
+
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Weapon_BlackDragonBow</defName>
     <label>Black Dragon Bow</label>
@@ -13,7 +15,7 @@
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
     </graphicData>
-    <techLevel>Medieval</techLevel>
+    <techLevel>Spacer</techLevel>
     <weaponTags>
       <li>BlackDragonBow</li>
     </weaponTags>
@@ -114,5 +116,237 @@
       </li>
     </comps>
   </AbilityDef>
+
+<!-- Holy Prayer -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Weapon_HolyPrayer</defName>
+    <label>Holy Prayer</label>
+    <description>An ancient energy bow, it channels Seldore's formidable power to fire precise, destructive bolts. Its dark aura resonates with allies, providing subtle support in combat.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/HolyPrayer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>HolyPrayer</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Projectile_HolyPrayerProjectile</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>28</range>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <WorkToMake>35000</WorkToMake>
+      <Mass>1.5</Mass>
+      <EquipDelay>1</EquipDelay>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>-50</equippedAngleOffset>
+    <costList>
+      <Hyperweave>20</Hyperweave>
+      <Plasteel>20</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_EquippableAbilityReloadable">
+        <abilityDef>RestorativePulse</abilityDef>
+      </li>
+    </comps>
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Projectile_HolyPrayerProjectile</defName>
+    <label>Holy Prayer Projectile</label>
+    <graphicData>
+      <texPath>Projectiles/SeldoreProjectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+    <projectile Inherit="false">
+      <damageDef>Stab</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <armorPenetrationBase>0.40</armorPenetrationBase>
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+
+
+  <AbilityDef>
+    <defName>RestorativePulse</defName>
+    <label>restorative pulse</label>
+    <description>PLACEHOLDER</description>
+    <iconPath>Weapons/HolyPrayer</iconPath>
+    <cooldownTicksRange>3000</cooldownTicksRange>
+    <hostile>false</hostile>
+    <groupAbility>true</groupAbility>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>false</targetRequired>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_EffectRadius>3</Ability_EffectRadius>
+      <Ability_Duration>1</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <requireLineOfSight>false</requireLineOfSight>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+      <targetable>false</targetable>
+      <range>3</range>
+      <warmupTime>1.5</warmupTime>
+      <targetParams>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>false</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityCoagulate">
+        <tendQualityRange>0.6</tendQualityRange>
+      </li>
+    </comps>
+  </AbilityDef>
+
+ <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Weapon_HolyKnightSpear</defName>
+    <label>Holy Knight Commander Spear</label>
+    <description>PLACEHOLDER</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/HolySpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>HolyKnightSpear</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+        <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <armorPenetration>0.10</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>22</power>
+        <armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>22</power>
+        <armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <WorkToMake>30000</WorkToMake>
+      <Mass>1.5</Mass>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>145</equippedAngleOffset>
+    <costList>
+      <Gold>1</Gold>
+      <Plasteel>80</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_EquippableAbilityReloadable">
+        <abilityDef>HolySpearslash</abilityDef>
+      </li>
+    </comps>
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  <AbilityDef>
+    <defName>HolySpearslash</defName>
+    <label>holy knight's column strike</label>
+    <description>PLACEHOLDER</description>
+    <iconPath>Weapons/HolyPrayer</iconPath>
+    <cooldownTicksRange>3000</cooldownTicksRange>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>true</targetRequired>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+      <targetable>true</targetable>
+      <range>20</range>
+      <warmupTime>1.5</warmupTime>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>true</canTargetMechs>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+
+  </AbilityDef>
+
 
 </Defs>
