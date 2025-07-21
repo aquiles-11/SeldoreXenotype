@@ -99,7 +99,7 @@
     <displayOrderInCategory>401</displayOrderInCategory>
     <hairColorOverride>(255, 255, 255, 255)</hairColorOverride>
     <iconPath>Humanlike/Bodies/BearBody/BearBody_south</iconPath>
-    <bodyType>Hulk</bodyType>
+    <bodyType>Standard</bodyType>
     <exclusionTags>
       <li>Fur</li>
     </exclusionTags>
