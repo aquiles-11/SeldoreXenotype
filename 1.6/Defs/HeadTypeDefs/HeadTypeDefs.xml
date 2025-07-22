@@ -35,5 +35,15 @@
         <selectionWeight>1000</selectionWeight>
     </HeadTypeDef>
 
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>SigHead</defName>
+        <graphicPath>Humanlike/Heads/SigHead/SigHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_SigHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
 
 </Defs>

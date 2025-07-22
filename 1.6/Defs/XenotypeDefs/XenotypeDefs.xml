@@ -44,4 +44,18 @@
         </genes>
     </XenotypeDef>
 
+    <XenotypeDef>
+        <defName>SigXenotype</defName>
+        <label>Sig Xenotype</label>
+        <description>Seldore's Xenotype</description>
+        <iconPath>Humanlike/Heads/SigHead/SigHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_SigBody</li>
+            <li>Gene_SigHead</li>
+        </genes>
+    </XenotypeDef>
+
 </Defs>

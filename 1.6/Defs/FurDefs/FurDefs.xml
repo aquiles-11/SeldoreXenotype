@@ -30,5 +30,12 @@
     </bodyTypeGraphicPaths>
   </FurDef>
 
+  <FurDef>
+    <defName>SigBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/SigBody/SigBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
 
 </Defs>

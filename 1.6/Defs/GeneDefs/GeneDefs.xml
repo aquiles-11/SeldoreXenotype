@@ -166,7 +166,7 @@
 
   <GeneDef>
     <defName>Gene_NocheBody</defName>
-    <label>Gabu body</label>
+    <label>Noche body</label>
     <description>Carriers of this gene will have Noche's body.</description>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
@@ -198,7 +198,7 @@
 
 	<GeneDef>
 		<defName>Gene_NocheHead</defName>
-		<label>Gabu head</label>
+		<label>Noche head</label>
 		<description>Carriers of this gene will have a the face of Noche.</description>
 		<iconPath>Humanlike/Heads/NocheHead/NocheHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
@@ -238,6 +238,80 @@
     </renderNodeProperties>
 	</GeneDef>
 
+<!-- Sig Body Gene -->
 
+  <GeneDef>
+    <defName>Gene_SigBody</defName>
+    <label>Sig body</label>
+    <description>Carriers of this gene will have Sig's body.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>CraveSaga</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <hairColorOverride>(255, 255, 255, 255)</hairColorOverride>
+    <iconPath>Humanlike/Bodies/SigBody/SigBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>SigBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+<!-- Sig Head Gene -->
+
+	<GeneDef>
+		<defName>Gene_SigHead</defName>
+		<label>Sig head</label>
+		<description>Carriers of this gene will have a the face of Noche.</description>
+		<iconPath>Humanlike/Heads/SigHead/SigHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>CraveSaga</displayCategory>
+		<forcedHeadTypes>
+			<li>SigHead</li>
+		</forcedHeadTypes>
+                <beardTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>NoBeard</li>
+            </tags>
+        </beardTagFilter>
+        <hairTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>Bald</li>
+            </tags>
+        </hairTagFilter>
+		<displayOrderInCategory>6662</displayOrderInCategory>
+	<renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>Humanlike/Heads/SigHead/SigHead</li>
+        </texPaths>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+          <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+	</GeneDef>
 
 </Defs>
