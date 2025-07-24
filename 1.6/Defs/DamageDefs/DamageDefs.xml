@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<DamageDef>
+		<defName>EnergyBoltDamage</defName>
+		<label>fleshbeasts bane</label>
+		<workerClass>LightDamage.DamageWorker_AddInjuryLight</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been sliced to death.</deathMessage>
+		<hediff>Stab</hediff>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+	</DamageDef>
+
+	<StatCategoryDef>
+		<defName>FleshbeastDamage</defName>
+		<label>Fleshbeast</label>
+		<displayOrder>13</displayOrder>
+		<displayAllByDefault>true</displayAllByDefault>
+	</StatCategoryDef>
+
+	<StatDef>
+		<defName>Stat_LightWeakness</defName>
+		<label>fleshbeast damage</label>
+		<description>How much more extra damage creatures of the dark take.</description>
+		<toStringStyle>PercentZero</toStringStyle>
+		<maxValue>1</maxValue>
+		<category>FleshbeastDamage</category>
+		<showIfHediffsPresent Inherit="False" />
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+		<defaultBaseValue>0</defaultBaseValue>
+		<minValue>0</minValue>
+		<hideAtValue>0</hideAtValue>
+		<showOnAnimals>false</showOnAnimals>
+		<showOnMechanoids>false</showOnMechanoids>
+		<showOnEntities>false</showOnEntities>
+	</StatDef>
+
+	<!-- <DamageDef>
+		<defName>Seldore_Stab</defName>
+		<label>stab</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<isExplosive>true</isExplosive>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been stabbed to death.</deathMessage>
+		<hediff>Stab</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<defaultDamage>30</defaultDamage>
+		<defaultArmorPenetration>0.10</defaultArmorPenetration>
+		<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+		
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<explosionColorCenter>(0, 0, 0)</explosionColorCenter>
+		<explosionColorEdge>(0, 0, 0)</explosionColorEdge>
+		<soundExplosion>Slice</soundExplosion>
+	</DamageDef> -->
+
+</Defs>

@@ -2,15 +2,18 @@
 
 <Defs>
 
-<!-- Black Dragon Bow -->
+  <!-- Black Dragon Bow -->
 
-  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Weapon_BlackDragonBow</defName>
     <label>Black Dragon Bow</label>
     <description>An ancient energy bow, it channels Seldore's formidable power to fire precise, destructive bolts. Its dark aura resonates with allies, providing subtle support in combat.</description>
+    <descriptionHyperlinks>
+      <AbilityDef>AuraEmpoweringDarkness</AbilityDef>
+    </descriptionHyperlinks>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Weapons/SeldoreBow</texPath>
+      <texPath>Weapons/BlackDragonBow</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -40,6 +43,10 @@
       <MeditationFocusStrength>0.05</MeditationFocusStrength>
       <Mass>2.5</Mass>
       <EquipDelay>1.5</EquipDelay>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
       <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
     </statBases>
     <relicChance>2</relicChance>
@@ -48,9 +55,20 @@
       <Plasteel>100</Plasteel>
       <ComponentSpacer>8</ComponentSpacer>
     </costList>
-    <comps>
+    <comps Inherit="False">
       <li Class="CompProperties_EquippableAbilityReloadable">
         <abilityDef>AuraEmpoweringDarkness</abilityDef>
+      </li>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Styleable" />
+      <li Class="CompProperties_Biocodable" />
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
     </comps>
     <recipeMaker>
@@ -69,7 +87,7 @@
     <defName>Projectile_BlackDragonArrow</defName>
     <label>Black Dragon Bow Arrow</label>
     <graphicData>
-      <texPath>Projectiles/SeldoreProjectile</texPath>
+      <texPath>Projectiles/DarkArrowProjectile</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>2.5</drawSize>
     </graphicData>
@@ -85,7 +103,10 @@
     <defName>AuraEmpoweringDarkness</defName>
     <label>aura of empowering darkness</label>
     <description>Conjure the sheer aura emanating from the black dragon bow to buff your allies' shooting accuracy.</description>
-    <iconPath>Weapons/SeldoreBow</iconPath>
+    <descriptionHyperlinks>
+      <ThingDef>Weapon_BlackDragonBow</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Weapons/BlackDragonBow</iconPath>
     <cooldownTicksRange>3000</cooldownTicksRange>
     <hostile>false</hostile>
     <groupAbility>true</groupAbility>
@@ -117,12 +138,15 @@
     </comps>
   </AbilityDef>
 
-<!-- Holy Prayer -->
+  <!-- Holy Prayer -->
 
-  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Weapon_HolyPrayer</defName>
     <label>Holy Prayer</label>
-    <description>An ancient energy bow, it channels Seldore's formidable power to fire precise, destructive bolts. Its dark aura resonates with allies, providing subtle support in combat.</description>
+    <description>A mystical tome, Gabu's Holy Prayer embodies his love for books and knowledge. It projects focused energy bolts in combat and can emit a pulse to instantly tend the wounds of nearby allies.</description>
+    <descriptionHyperlinks>
+      <AbilityDef>RestorativePulse</AbilityDef>
+    </descriptionHyperlinks>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Weapons/HolyPrayer</texPath>
@@ -154,6 +178,10 @@
       <WorkToMake>35000</WorkToMake>
       <Mass>1.5</Mass>
       <EquipDelay>1</EquipDelay>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.78</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
       <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
     </statBases>
     <relicChance>2</relicChance>
@@ -163,9 +191,20 @@
       <Plasteel>20</Plasteel>
       <ComponentSpacer>5</ComponentSpacer>
     </costList>
-    <comps>
-      <li Class="CompProperties_EquippableAbilityReloadable">
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbility">
         <abilityDef>RestorativePulse</abilityDef>
+      </li>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Styleable" />
+      <li Class="CompProperties_Biocodable" />
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
     </comps>
     <recipeMaker>
@@ -184,7 +223,7 @@
     <defName>Projectile_HolyPrayerProjectile</defName>
     <label>Holy Prayer Projectile</label>
     <graphicData>
-      <texPath>Projectiles/SeldoreProjectile</texPath>
+      <texPath>Projectiles/GreenFireProjectile</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>2.5</drawSize>
     </graphicData>
@@ -196,11 +235,13 @@
     </projectile>
   </ThingDef>
 
-
   <AbilityDef>
     <defName>RestorativePulse</defName>
     <label>restorative pulse</label>
-    <description>PLACEHOLDER</description>
+    <description>Conjure the sheer aura emanating from the holy prayer to restore your allies' health.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Weapon_HolyPrayer</ThingDef>
+    </descriptionHyperlinks>
     <iconPath>Weapons/HolyPrayer</iconPath>
     <cooldownTicksRange>3000</cooldownTicksRange>
     <hostile>false</hostile>
@@ -240,10 +281,13 @@
     </comps>
   </AbilityDef>
 
- <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Weapon_HolyKnightSpear</defName>
     <label>Holy Knight Commander Spear</label>
-    <description>PLACEHOLDER</description>
+    <description>A formidable spear befitting Noche, a Holy Knight Commander who once lost his place in the Order. It channels focused energy for powerful melee strikes and can unleash a sweeping attack to strike multiple foes in a line.</description>
+    <descriptionHyperlinks>
+      <AbilityDef>HolySpearSlash</AbilityDef>
+    </descriptionHyperlinks>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Weapons/HolySpear</texPath>
@@ -258,7 +302,7 @@
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
-        <tools>
+    <tools>
       <li>
         <label>handle</label>
         <capacities>
@@ -301,8 +345,8 @@
       <ComponentSpacer>3</ComponentSpacer>
     </costList>
     <comps>
-      <li Class="CompProperties_EquippableAbilityReloadable">
-        <abilityDef>HolySpearslash</abilityDef>
+      <li Class="CompProperties_EquippableAbility">
+        <abilityDef>HolySpearSlash</abilityDef>
       </li>
     </comps>
     <recipeMaker>
@@ -318,13 +362,16 @@
   </ThingDef>
 
   <AbilityDef>
-    <defName>HolySpearslash</defName>
+    <defName>HolySpearSlash</defName>
     <label>holy knight's column strike</label>
-    <description>PLACEHOLDER</description>
-    <iconPath>Weapons/HolyPrayer</iconPath>
+    <description>Perform a powerful sweep from holy knight commander spear, hitting multiple enemies in an arc or line.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Weapon_HolyKnightSpear</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Weapons/HolySpear</iconPath>
     <cooldownTicksRange>3000</cooldownTicksRange>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
     <aiCanUse>true</aiCanUse>
     <ai_IsOffensive>true</ai_IsOffensive>
     <targetRequired>true</targetRequired>
@@ -332,21 +379,27 @@
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <drawAimPie>true</drawAimPie>
-      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
-      <targetable>true</targetable>
-      <range>20</range>
-      <warmupTime>1.5</warmupTime>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>2.9</range>
+      <warmupTime>0.5</warmupTime>
       <targetParams>
-        <canTargetSelf>false</canTargetSelf>
-        <canTargetAnimals>true</canTargetAnimals>
-        <canTargetHumans>true</canTargetHumans>
-        <canTargetBuildings>false</canTargetBuildings>
-        <canTargetMechs>true</canTargetMechs>
         <canTargetLocations>true</canTargetLocations>
       </targetParams>
     </verbProperties>
-
+    <comps>
+      <li Class="SeldoreXeno.CompProperties_AbilityAngleBlast">
+        <range>2.9</range>
+        <lineWidthEnd>10</lineWidthEnd>
+        <damageDef>Stab</damageDef>
+        <effect>HolySpearSweep_Effect</effect>
+        <screenShake>0</screenShake>
+        <damageAmount>32</damageAmount>
+        <armorPen>0.6</armorPen>
+        <addedAngle>60</addedAngle>
+        <effectTickAwayFromCast>1</effectTickAwayFromCast>
+        <explosionSpeed>1.0</explosionSpeed>
+      </li>
+    </comps>
   </AbilityDef>
-
 
 </Defs>

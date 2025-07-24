@@ -8,15 +8,21 @@
 		<li>1.5</li>
 	</supportedVersions>
 	<description>PLACEHOLDER</description>
-    <loadAfter>
-        <li>Ludeon.RimWorld</li>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Biotech</li>
-    </loadAfter>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+	</loadAfter>
 	<modDependencies>
 		<li>
 			<packageId>Ludeon.RimWorld.Biotech</packageId>
 			<displayName>Biotech</displayName>
-		</li>    			
-  </modDependencies>
+		</li>
+	    <li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
+		</li> 
+	</modDependencies>
 
 </ModMetaData>

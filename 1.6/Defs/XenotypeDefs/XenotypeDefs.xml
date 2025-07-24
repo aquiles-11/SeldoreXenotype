@@ -20,13 +20,13 @@
         <defName>GabuXenotype</defName>
         <label>Gabu Xenotype</label>
         <description>Seldore's Xenotype</description>
-        <iconPath>Humanlike/Heads/BearHead/BearHead_south</iconPath>
+        <iconPath>Humanlike/Heads/GabuHead/GabuHead_south</iconPath>
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
         <genes>
-            <li>Gene_BearBody</li>
-            <li>Gene_BearHead</li>
+            <li>Gene_GabuBody</li>
+            <li>Gene_GabuHead</li>
         </genes>
     </XenotypeDef>
     
@@ -47,7 +47,7 @@
     <XenotypeDef>
         <defName>SigXenotype</defName>
         <label>Sig Xenotype</label>
-        <description>Seldore's Xenotype</description>
+        <description>Sig's Xenotype</description>
         <iconPath>Humanlike/Heads/SigHead/SigHead_south</iconPath>
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>

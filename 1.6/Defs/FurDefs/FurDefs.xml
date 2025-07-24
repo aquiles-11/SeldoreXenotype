@@ -11,12 +11,10 @@
   </FurDef>
 
   <FurDef>
-    <defName>BearBody</defName>
+    <defName>GabuBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Male>Humanlike/Bodies/BearBody/BearBody</Male>
-      <Hulk>Humanlike/Bodies/BearBody/BearBody</Hulk>
-      <Female>Humanlike/Bodies/Transparency/BodyTransparent</Female>
+      <Hulk>Humanlike/Bodies/GabuBody/GabuBody</Hulk>
     </bodyTypeGraphicPaths>
   </FurDef>
 
@@ -24,9 +22,7 @@
     <defName>NocheBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Male>Humanlike/Bodies/NocheBody/NocheBody</Male>
       <Hulk>Humanlike/Bodies/NocheBody/NocheBody</Hulk>
-      <Female>Humanlike/Bodies/Transparency/BodyTransparent</Female>
     </bodyTypeGraphicPaths>
   </FurDef>
 

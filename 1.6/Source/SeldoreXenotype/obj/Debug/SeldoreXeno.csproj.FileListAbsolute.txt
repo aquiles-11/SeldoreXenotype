@@ -1,0 +1,5 @@
+C:\Penyimpanan\RimWorld Mod Development\Commissions\WIP\Tobyguilmon Seldore Xenotype\SeldoreXenotype\1.6\Assemblies\SeldoreXeno.dll
+C:\Penyimpanan\RimWorld Mod Development\Commissions\WIP\Tobyguilmon Seldore Xenotype\SeldoreXenotype\1.6\Source\SeldoreXenotype\obj\Debug\SeldoreXeno.csproj.AssemblyReference.cache
+C:\Penyimpanan\RimWorld Mod Development\Commissions\WIP\Tobyguilmon Seldore Xenotype\SeldoreXenotype\1.6\Source\SeldoreXenotype\obj\Debug\SeldoreXeno.GeneratedMSBuildEditorConfig.editorconfig
+C:\Penyimpanan\RimWorld Mod Development\Commissions\WIP\Tobyguilmon Seldore Xenotype\SeldoreXenotype\1.6\Source\SeldoreXenotype\obj\Debug\SeldoreXeno.csproj.CoreCompileInputs.cache
+C:\Penyimpanan\RimWorld Mod Development\Commissions\WIP\Tobyguilmon Seldore Xenotype\SeldoreXenotype\1.6\Source\SeldoreXenotype\obj\Debug\SeldoreXeno.dll

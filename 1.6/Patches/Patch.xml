@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-
 <Patch>
-
 
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -18,7 +15,6 @@
                 </li>
             </operations>
         </match>
-
     </Operation>
 
 </Patch>

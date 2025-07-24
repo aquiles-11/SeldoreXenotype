@@ -61,7 +61,7 @@
         <li>Neck</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>Armor/SeldoreArmor/SeldoreApparel</wornGraphicPath>
+      <wornGraphicPath>Armor/SeldoreArmor/SeldoreArmor</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -74,9 +74,9 @@
   </ThingDef>
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_GabuHolyVestments</defName>
-    <label>Gabu's Holy Vestments</label>
-    <description>PLACEHOLDER</description>
+    <defName>Apparel_HolyVestments</defName>
+    <label>Holy Vestments</label>
+    <description>A set of sturdy vestments worn by Gabu, a monk in training from Lapimania's Izario sect. They provide resilient defense, reflecting his calm wisdom gained from extensive reading.</description>
     <recipeMaker>
       <skillRequirements>
         <Crafting>6</Crafting>
@@ -91,7 +91,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Armor/BearArmor/BearArmor_Hulk_south</texPath>
+      <texPath>Armor/GabuArmor/GabuApparel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -124,7 +124,7 @@
         <li>Neck</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>Armor/BearArmor/BearArmor</wornGraphicPath>
+      <wornGraphicPath>Armor/GabuArmor/GabuArmor</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -138,8 +138,8 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_ArchbishopVestments</defName>
-    <label>Noche's Archbishop's Vestments</label>
-    <description>PLACEHOLDER</description>
+    <label>Archbishop's Vestments</label>
+    <description>Elegant vestments befitting an Archbishop from the Great Church, worn by Noche. A former Holy Kingdom Knight now aiming for the papacy, his armor offers balanced protection, particularly against psychic intrusions.</description>
     <recipeMaker>
       <skillRequirements>
         <Crafting>6</Crafting>
@@ -154,7 +154,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Armor/NocheArmor/NocheArmor_Hulk_south</texPath>
+      <texPath>Armor/NocheArmor/NocheApparel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -188,6 +188,68 @@
         <li>Arms</li>
       </bodyPartGroups>
       <wornGraphicPath>Armor/NocheArmor/NocheArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_ForgeGuardHarness</defName>
+    <label>Forge-Guard Harness</label>
+    <description>A heavy harness expertly forged by Sig, a fabulous artisan known for channeling flux into his creations. It offers robust protection, embodying the skill that shines in his 'Yellow Eyes'.</description>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <displayPriority>245</displayPriority>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Armor/SigArmor/SigApparel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>60</Cloth>
+      <Steel>20</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>220</MaxHitPoints>
+      <WorkToMake>40000</WorkToMake>
+      <MarketValue>1500</MarketValue>
+      <Mass>7</Mass>
+      <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.50</ArmorRating_Heat>
+      <Insulation_Cold>20</Insulation_Cold>
+      <Insulation_Heat>15</Insulation_Heat>
+      <EquipDelay>1.8</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelNoble</li>
+    </thingCategories>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/SigArmor/SigArmor</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>

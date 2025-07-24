@@ -2,15 +2,15 @@
 
 <Defs>
 
-<!-- Gene Category -->
+  <!-- Gene Category -->
 
-    <GeneCategoryDef>
-        <defName>CraveSaga</defName>
-        <label>Crave Saga</label>
-        <displayPriorityInXenotype>604</displayPriorityInXenotype>
-    </GeneCategoryDef>
+  <GeneCategoryDef>
+    <defName>CraveSaga</defName>
+    <label>Crave Saga</label>
+    <displayPriorityInXenotype>604</displayPriorityInXenotype>
+  </GeneCategoryDef>
 
-<!-- Seldore Body Gene -->
+  <!-- Seldore Body Gene -->
 
   <GeneDef>
     <defName>Gene_SeldoreBody</defName>
@@ -40,34 +40,39 @@
         <parentTagDef>Body</parentTagDef>
       </li>
     </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension">
+        <furHidesBody>true</furHidesBody>
+      </li>
+    </modExtensions>
   </GeneDef>
 
-<!-- Seldore Head Gene -->
+  <!-- Seldore Head Gene -->
 
-	<GeneDef>
-		<defName>Gene_SeldoreHead</defName>
-		<label>Seldore head</label>
-		<description>Carriers of this gene will have a the face of Seldore.</description>
-		<iconPath>Humanlike/Heads/SeldoreHead/SeldoreHead_south</iconPath>
+  <GeneDef>
+    <defName>Gene_SeldoreHead</defName>
+    <label>Seldore head</label>
+    <description>Carriers of this gene will have a the face of Seldore.</description>
+    <iconPath>Humanlike/Heads/SeldoreHead/SeldoreHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
     <displayCategory>CraveSaga</displayCategory>
-		<forcedHeadTypes>
-			<li>SeldoreHead</li>
-		</forcedHeadTypes>
-                <beardTagFilter>
-            <whitelist>true</whitelist>
-            <tags>
-                <li>NoBeard</li>
-            </tags>
-        </beardTagFilter>
-        <hairTagFilter>
-            <whitelist>true</whitelist>
-            <tags>
-                <li>Bald</li>
-            </tags>
-        </hairTagFilter>
-		<displayOrderInCategory>6662</displayOrderInCategory>
-	<renderNodeProperties Inherit="False">
+    <forcedHeadTypes>
+      <li>SeldoreHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+    <renderNodeProperties Inherit="False">
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
@@ -78,18 +83,18 @@
         <colorType>Skin</colorType>
         <drawData>
           <defaultData>
-          <layer>52</layer>
+            <layer>52</layer>
           </defaultData>
         </drawData>
         <parentTagDef>Head</parentTagDef>
       </li>
     </renderNodeProperties>
-	</GeneDef>
+  </GeneDef>
 
-<!-- Bear Body Gene -->
+  <!-- Gabu Body Gene -->
 
   <GeneDef>
-    <defName>Gene_BearBody</defName>
+    <defName>Gene_GabuBody</defName>
     <label>Gabu body</label>
     <description>Carriers of this gene will have a furry bear body.</description>
     <biostatCpx>1</biostatCpx>
@@ -98,12 +103,12 @@
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <hairColorOverride>(255, 255, 255, 255)</hairColorOverride>
-    <iconPath>Humanlike/Bodies/BearBody/BearBody_south</iconPath>
-    <bodyType>Standard</bodyType>
+    <iconPath>Humanlike/Bodies/GabuBody/GabuBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
     <exclusionTags>
       <li>Fur</li>
     </exclusionTags>
-    <fur>BearBody</fur>
+    <fur>GabuBody</fur>
     <renderNodeProperties>
       <li>
         <debugLabel>Fur</debugLabel>
@@ -116,57 +121,62 @@
         <parentTagDef>Body</parentTagDef>
       </li>
     </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+      </li>
+    </modExtensions>
   </GeneDef>
 
-<!-- Bear Head Gene -->
+  <!-- Gabu Head Gene -->
 
-	<GeneDef>
-		<defName>Gene_BearHead</defName>
-		<label>Gabu head</label>
-		<description>Carriers of this gene will have a the face of Gabu.</description>
-		<iconPath>Humanlike/Heads/BearHead/BearHead_south</iconPath>
+  <GeneDef>
+    <defName>Gene_GabuHead</defName>
+    <label>Gabu head</label>
+    <description>Carriers of this gene will have a the face of Gabu.</description>
+    <iconPath>Humanlike/Heads/GabuHead/GabuHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
     <displayCategory>CraveSaga</displayCategory>
-		<forcedHeadTypes>
-			<li>BearHead</li>
-		</forcedHeadTypes>
-                <beardTagFilter>
-            <whitelist>true</whitelist>
-            <tags>
-                <li>NoBeard</li>
-            </tags>
-        </beardTagFilter>
-        <hairTagFilter>
-            <whitelist>true</whitelist>
-            <tags>
-                <li>Bald</li>
-            </tags>
-        </hairTagFilter>
-		<displayOrderInCategory>6662</displayOrderInCategory>
-	<renderNodeProperties Inherit="False">
+    <forcedHeadTypes>
+      <li>GabuHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+    <renderNodeProperties Inherit="False">
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
         <texPaths>
-          <li>Humanlike/Heads/BearHead/BearHead</li>
+          <li>Humanlike/Heads/GabuHead/GabuHead</li>
         </texPaths>
         <useSkinShader>false</useSkinShader>
         <colorType>Skin</colorType>
         <drawData>
           <defaultData>
-          <layer>52</layer>
+            <layer>52</layer>
           </defaultData>
         </drawData>
         <parentTagDef>Head</parentTagDef>
       </li>
     </renderNodeProperties>
-	</GeneDef>
+  </GeneDef>
 
-<!-- Noche Body Gene -->
+  <!-- Noche Body Gene -->
 
   <GeneDef>
     <defName>Gene_NocheBody</defName>
-    <label>Noche body</label>
+    <label>Gabu body</label>
     <description>Carriers of this gene will have Noche's body.</description>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
@@ -192,34 +202,39 @@
         <parentTagDef>Body</parentTagDef>
       </li>
     </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+      </li>
+    </modExtensions>
   </GeneDef>
 
-<!-- Noche Head Gene -->
+  <!-- Noche Head Gene -->
 
-	<GeneDef>
-		<defName>Gene_NocheHead</defName>
-		<label>Noche head</label>
-		<description>Carriers of this gene will have a the face of Noche.</description>
-		<iconPath>Humanlike/Heads/NocheHead/NocheHead_south</iconPath>
+  <GeneDef>
+    <defName>Gene_NocheHead</defName>
+    <label>Gabu head</label>
+    <description>Carriers of this gene will have a the face of Noche.</description>
+    <iconPath>Humanlike/Heads/NocheHead/NocheHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
     <displayCategory>CraveSaga</displayCategory>
-		<forcedHeadTypes>
-			<li>NocheHead</li>
-		</forcedHeadTypes>
-                <beardTagFilter>
-            <whitelist>true</whitelist>
-            <tags>
-                <li>NoBeard</li>
-            </tags>
-        </beardTagFilter>
-        <hairTagFilter>
-            <whitelist>true</whitelist>
-            <tags>
-                <li>Bald</li>
-            </tags>
-        </hairTagFilter>
-		<displayOrderInCategory>6662</displayOrderInCategory>
-	<renderNodeProperties Inherit="False">
+    <forcedHeadTypes>
+      <li>NocheHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+    <renderNodeProperties Inherit="False">
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
@@ -230,20 +245,20 @@
         <colorType>Skin</colorType>
         <drawData>
           <defaultData>
-          <layer>52</layer>
+            <layer>52</layer>
           </defaultData>
         </drawData>
         <parentTagDef>Head</parentTagDef>
       </li>
     </renderNodeProperties>
-	</GeneDef>
+  </GeneDef>
 
-<!-- Sig Body Gene -->
+  <!-- Sig Body Gene -->
 
   <GeneDef>
     <defName>Gene_SigBody</defName>
     <label>Sig body</label>
-    <description>Carriers of this gene will have Sig's body.</description>
+    <description>Carriers of this gene will have a muscular body.</description>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
@@ -268,34 +283,39 @@
         <parentTagDef>Body</parentTagDef>
       </li>
     </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+      </li>
+    </modExtensions>
   </GeneDef>
 
-<!-- Sig Head Gene -->
+  <!-- Sig Head Gene -->
 
-	<GeneDef>
-		<defName>Gene_SigHead</defName>
-		<label>Sig head</label>
-		<description>Carriers of this gene will have a the face of Noche.</description>
-		<iconPath>Humanlike/Heads/SigHead/SigHead_south</iconPath>
+  <GeneDef>
+    <defName>Gene_SigHead</defName>
+    <label>Sig head</label>
+    <description>Carriers of this gene will have a the face of Sig.</description>
+    <iconPath>Humanlike/Heads/SigHead/SigHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
     <displayCategory>CraveSaga</displayCategory>
-		<forcedHeadTypes>
-			<li>SigHead</li>
-		</forcedHeadTypes>
-                <beardTagFilter>
-            <whitelist>true</whitelist>
-            <tags>
-                <li>NoBeard</li>
-            </tags>
-        </beardTagFilter>
-        <hairTagFilter>
-            <whitelist>true</whitelist>
-            <tags>
-                <li>Bald</li>
-            </tags>
-        </hairTagFilter>
-		<displayOrderInCategory>6662</displayOrderInCategory>
-	<renderNodeProperties Inherit="False">
+    <forcedHeadTypes>
+      <li>SigHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+    <renderNodeProperties Inherit="False">
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
@@ -306,12 +326,12 @@
         <colorType>Skin</colorType>
         <drawData>
           <defaultData>
-          <layer>52</layer>
+            <layer>52</layer>
           </defaultData>
         </drawData>
         <parentTagDef>Head</parentTagDef>
       </li>
     </renderNodeProperties>
-	</GeneDef>
+  </GeneDef>
 
 </Defs>
