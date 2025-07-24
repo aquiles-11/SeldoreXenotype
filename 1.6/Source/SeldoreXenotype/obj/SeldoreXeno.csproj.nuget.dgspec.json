@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aquil\\OneDrive\\Desktop\\SeldoreXenotype\\SeldoreXenotype\\1.6\\Source\\SeldoreXenotype\\SeldoreXeno.csproj": {}
+    "D:\\Games\\steamapps\\common\\RimWorld\\Mods\\SeldoreXenotype\\1.6\\Source\\SeldoreXenotype\\SeldoreXeno.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aquil\\OneDrive\\Desktop\\SeldoreXenotype\\SeldoreXenotype\\1.6\\Source\\SeldoreXenotype\\SeldoreXeno.csproj": {
+    "D:\\Games\\steamapps\\common\\RimWorld\\Mods\\SeldoreXenotype\\1.6\\Source\\SeldoreXenotype\\SeldoreXeno.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aquil\\OneDrive\\Desktop\\SeldoreXenotype\\SeldoreXenotype\\1.6\\Source\\SeldoreXenotype\\SeldoreXeno.csproj",
+        "projectUniqueName": "D:\\Games\\steamapps\\common\\RimWorld\\Mods\\SeldoreXenotype\\1.6\\Source\\SeldoreXenotype\\SeldoreXeno.csproj",
         "projectName": "SeldoreXeno",
-        "projectPath": "C:\\Users\\aquil\\OneDrive\\Desktop\\SeldoreXenotype\\SeldoreXenotype\\1.6\\Source\\SeldoreXenotype\\SeldoreXeno.csproj",
+        "projectPath": "D:\\Games\\steamapps\\common\\RimWorld\\Mods\\SeldoreXenotype\\1.6\\Source\\SeldoreXenotype\\SeldoreXeno.csproj",
         "packagesPath": "C:\\Users\\aquil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aquil\\OneDrive\\Desktop\\SeldoreXenotype\\SeldoreXenotype\\1.6\\Source\\SeldoreXenotype\\obj\\",
+        "outputPath": "D:\\Games\\steamapps\\common\\RimWorld\\Mods\\SeldoreXenotype\\1.6\\Source\\SeldoreXenotype\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
