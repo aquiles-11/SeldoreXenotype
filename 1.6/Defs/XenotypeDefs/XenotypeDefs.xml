@@ -58,4 +58,47 @@
         </genes>
     </XenotypeDef>
 
+    <XenotypeDef>
+        <defName>GaiXenotype</defName>
+        <label>Gai Xenotype</label>
+        <description>Gai's Xenotype</description>
+        <iconPath>Humanlike/Heads/GaiHead/GaiHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_GaiBody</li>
+            <li>Gene_GaiHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>KaguraXenotype</defName>
+        <label>Kagura Xenotype</label>
+        <description>Kagura's Xenotype</description>
+        <iconPath>Humanlike/Heads/KaguraHead/KaguraHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_KaguraBody</li>
+            <li>Gene_KaguraHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>EpauloXenotype</defName>
+        <label>Epaulo Xenotype</label>
+        <description>Epaulo's Xenotype</description>
+        <iconPath>Humanlike/Heads/EpauloHead/EpauloHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_EpauloBody</li>
+            <li>Gene_EpauloHead</li>
+        </genes>
+    </XenotypeDef>
+
+
 </Defs>

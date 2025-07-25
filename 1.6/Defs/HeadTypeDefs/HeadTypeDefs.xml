@@ -46,4 +46,37 @@
         <selectionWeight>1000</selectionWeight>
     </HeadTypeDef>
 
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>GaiHead</defName>
+        <graphicPath>Humanlike/Heads/GaiHead/GaiHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_GaiHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>KaguraHead</defName>
+        <graphicPath>Humanlike/Heads/KaguraHead/KaguraHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_KaguraHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>EpauloHead</defName>
+        <graphicPath>Humanlike/Heads/EpauloHead/EpauloHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_EpauloHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
 </Defs>

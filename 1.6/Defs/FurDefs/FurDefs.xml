@@ -34,4 +34,28 @@
     </bodyTypeGraphicPaths>
   </FurDef>
 
+  <FurDef>
+    <defName>GaiBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/GaiBody/GaiBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+  <FurDef>
+    <defName>KaguraBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/KaguraBody/KaguraBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+  <FurDef>
+    <defName>EpauloBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/EpauloBody/EpauloBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
 </Defs>

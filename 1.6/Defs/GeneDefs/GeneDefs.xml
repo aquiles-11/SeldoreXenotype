@@ -334,4 +334,247 @@
     </renderNodeProperties>
   </GeneDef>
 
+  <!-- Gai Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_GaiBody</defName>
+    <label>Gai body</label>
+    <description>Carriers of this gene will have a muscular body.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>CraveSaga</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <hairColorOverride>(255, 255, 255, 255)</hairColorOverride>
+    <iconPath>Humanlike/Bodies/GaiBody/GaiBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>GaiBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Gai Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_GaiHead</defName>
+    <label>Gai head</label>
+    <description>Carriers of this gene will have a the face of Gai.</description>
+    <iconPath>Humanlike/Heads/GaiHead/GaiHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>CraveSaga</displayCategory>
+    <forcedHeadTypes>
+      <li>GaiHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>Humanlike/Heads/GaiHead/GaiHead</li>
+        </texPaths>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+ <!-- Kagura Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_KaguraBody</defName>
+    <label>Kagura body</label>
+    <description>Carriers of this gene will have a muscular body.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>CraveSaga</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <hairColorOverride>(255, 255, 255, 255)</hairColorOverride>
+    <iconPath>Humanlike/Bodies/KaguraBody/KaguraBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>KaguraBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Kagura Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_KaguraHead</defName>
+    <label>Kagura head</label>
+    <description>Carriers of this gene will have a the face of Kagura.</description>
+    <iconPath>Humanlike/Heads/KaguraHead/KaguraHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>CraveSaga</displayCategory>
+    <forcedHeadTypes>
+      <li>KaguraHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>Humanlike/Heads/KaguraHead/KaguraHead</li>
+        </texPaths>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+ <!-- Epaulo Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_EpauloBody</defName>
+    <label>Epaulo body</label>
+    <description>Carriers of this gene will have a muscular body.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>CraveSaga</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <hairColorOverride>(255, 255, 255, 255)</hairColorOverride>
+    <iconPath>Humanlike/Bodies/EpauloBody/EpauloBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>EpauloBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Epaulo Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_EpauloHead</defName>
+    <label>Epaulo head</label>
+    <description>Carriers of this gene will have a the face of Epaulo.</description>
+    <iconPath>Humanlike/Heads/EpauloHead/EpauloHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>CraveSaga</displayCategory>
+    <forcedHeadTypes>
+      <li>EpauloHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>Humanlike/Heads/EpauloHead/EpauloHead</li>
+        </texPaths>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
 </Defs>

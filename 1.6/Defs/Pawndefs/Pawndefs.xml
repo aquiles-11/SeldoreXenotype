@@ -160,5 +160,118 @@
     </requiredWorkTags>
   </PawnKindDef>
 
+  <PawnKindDef>
+    <defName>Gai</defName>
+    <label>Gai</label>
+    <combatPower>80</combatPower>
+    <apparelRequired>
+      <li>Apparel_GaiArmor</li>
+    </apparelRequired>
+    <weaponTags />
+    <race>Human</race>
+    <initialWillRange>2~4</initialWillRange>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelMoney>350~3500</apparelMoney>
+    <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
+    <apparelIgnorePollution>True</apparelIgnorePollution>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <useFactionXenotypes>true</useFactionXenotypes>
+    <weaponMoney>9500</weaponMoney>
+    <initialResistanceRange>13~21</initialResistanceRange>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+        <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+        <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+        <GaiXenotype MayRequire="Ludeon.RimWorld.Biotech">999</GaiXenotype>
+      </xenotypeChances>
+    </xenotypeSet>
+    <requiredWorkTags>
+      <li>Violent</li>
+      <li>Social</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+  <PawnKindDef>
+    <defName>Kagura</defName>
+    <label>Kagura</label>
+    <combatPower>80</combatPower>
+    <apparelRequired>
+      <li>Apparel_KaguraApparel</li>
+    </apparelRequired>
+    <weaponTags />
+    <race>Human</race>
+    <initialWillRange>2~4</initialWillRange>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelMoney>350~3500</apparelMoney>
+    <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
+    <apparelIgnorePollution>True</apparelIgnorePollution>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <useFactionXenotypes>true</useFactionXenotypes>
+    <weaponMoney>9500</weaponMoney>
+    <initialResistanceRange>13~21</initialResistanceRange>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+        <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+        <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+        <KaguraXenotype MayRequire="Ludeon.RimWorld.Biotech">999</KaguraXenotype>
+      </xenotypeChances>
+    </xenotypeSet>
+    <requiredWorkTags>
+      <li>Violent</li>
+      <li>Social</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+  <PawnKindDef>
+    <defName>Epaulo</defName>
+    <label>Epaulo</label>
+    <combatPower>80</combatPower>
+    <apparelRequired>
+      <li>Apparel_EpauloApparel</li>
+    </apparelRequired>
+    <weaponTags />
+    <race>Human</race>
+    <initialWillRange>2~4</initialWillRange>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelMoney>350~3500</apparelMoney>
+    <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
+    <apparelIgnorePollution>True</apparelIgnorePollution>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <useFactionXenotypes>true</useFactionXenotypes>
+    <weaponMoney>9500</weaponMoney>
+    <initialResistanceRange>13~21</initialResistanceRange>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+        <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+        <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+        <KaguraXenotype MayRequire="Ludeon.RimWorld.Biotech">999</KaguraXenotype>
+      </xenotypeChances>
+    </xenotypeSet>
+    <requiredWorkTags>
+      <li>Violent</li>
+      <li>Social</li>
+    </requiredWorkTags>
+  </PawnKindDef>
 
 </Defs>
