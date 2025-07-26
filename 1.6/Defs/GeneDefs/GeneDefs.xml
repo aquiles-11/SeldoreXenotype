@@ -21,7 +21,6 @@
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
-    <hairColorOverride>(255, 255, 255, 255)</hairColorOverride>
     <iconPath>Humanlike/Bodies/SeldoreBody/SeldoreBody_south</iconPath>
     <bodyType>Hulk</bodyType>
     <exclusionTags>
@@ -43,6 +42,7 @@
     <modExtensions>
       <li Class="VEF.Genes.GeneExtension">
         <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
       </li>
     </modExtensions>
   </GeneDef>
@@ -54,7 +54,6 @@
     <label>Seldore head</label>
     <description>Carriers of this gene will have a the face of Seldore.</description>
     <iconPath>Humanlike/Heads/SeldoreHead/SeldoreHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>SeldoreHead</li>
@@ -80,7 +79,7 @@
           <li>Humanlike/Heads/SeldoreHead/SeldoreHead</li>
         </texPaths>
         <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
+        <colorType>Custom</colorType>
         <drawData>
           <defaultData>
             <layer>52</layer>
@@ -102,7 +101,6 @@
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
-    <hairColorOverride>(255, 255, 255, 255)</hairColorOverride>
     <iconPath>Humanlike/Bodies/GabuBody/GabuBody_south</iconPath>
     <bodyType>Hulk</bodyType>
     <exclusionTags>
@@ -124,6 +122,7 @@
     <modExtensions>
       <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
         <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
       </li>
     </modExtensions>
   </GeneDef>
@@ -161,7 +160,7 @@
           <li>Humanlike/Heads/GabuHead/GabuHead</li>
         </texPaths>
         <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
+        <colorType>Custom</colorType>
         <drawData>
           <defaultData>
             <layer>52</layer>
@@ -183,7 +182,6 @@
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
-    <hairColorOverride>(255, 255, 255, 255)</hairColorOverride>
     <iconPath>Humanlike/Bodies/NocheBody/NocheBody_south</iconPath>
     <bodyType>Hulk</bodyType>
     <exclusionTags>
@@ -205,6 +203,7 @@
     <modExtensions>
       <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
         <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
       </li>
     </modExtensions>
   </GeneDef>
@@ -216,7 +215,6 @@
     <label>Gabu head</label>
     <description>Carriers of this gene will have a the face of Noche.</description>
     <iconPath>Humanlike/Heads/NocheHead/NocheHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>NocheHead</li>
@@ -242,7 +240,7 @@
           <li>Humanlike/Heads/NocheHead/NocheHead</li>
         </texPaths>
         <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
+        <colorType>Custom</colorType>
         <drawData>
           <defaultData>
             <layer>52</layer>
@@ -264,7 +262,6 @@
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
-    <hairColorOverride>(255, 255, 255, 255)</hairColorOverride>
     <iconPath>Humanlike/Bodies/SigBody/SigBody_south</iconPath>
     <bodyType>Hulk</bodyType>
     <exclusionTags>
@@ -286,6 +283,7 @@
     <modExtensions>
       <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
         <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
       </li>
     </modExtensions>
   </GeneDef>
@@ -323,7 +321,7 @@
           <li>Humanlike/Heads/SigHead/SigHead</li>
         </texPaths>
         <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
+        <colorType>Custom</colorType>
         <drawData>
           <defaultData>
             <layer>52</layer>
@@ -345,7 +343,6 @@
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
-    <hairColorOverride>(255, 255, 255, 255)</hairColorOverride>
     <iconPath>Humanlike/Bodies/GaiBody/GaiBody_south</iconPath>
     <bodyType>Hulk</bodyType>
     <exclusionTags>
@@ -367,6 +364,7 @@
     <modExtensions>
       <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
         <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
       </li>
     </modExtensions>
   </GeneDef>
@@ -404,7 +402,7 @@
           <li>Humanlike/Heads/GaiHead/GaiHead</li>
         </texPaths>
         <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
+        <colorType>Custom</colorType>
         <drawData>
           <defaultData>
             <layer>52</layer>
@@ -426,7 +424,6 @@
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
-    <hairColorOverride>(255, 255, 255, 255)</hairColorOverride>
     <iconPath>Humanlike/Bodies/KaguraBody/KaguraBody_south</iconPath>
     <bodyType>Hulk</bodyType>
     <exclusionTags>
@@ -448,6 +445,7 @@
     <modExtensions>
       <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
         <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
       </li>
     </modExtensions>
   </GeneDef>
@@ -485,7 +483,7 @@
           <li>Humanlike/Heads/KaguraHead/KaguraHead</li>
         </texPaths>
         <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
+        <colorType>Custom</colorType>
         <drawData>
           <defaultData>
             <layer>52</layer>
@@ -507,7 +505,6 @@
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
-    <hairColorOverride>(255, 255, 255, 255)</hairColorOverride>
     <iconPath>Humanlike/Bodies/EpauloBody/EpauloBody_south</iconPath>
     <bodyType>Hulk</bodyType>
     <exclusionTags>
@@ -529,6 +526,7 @@
     <modExtensions>
       <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
         <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
       </li>
     </modExtensions>
   </GeneDef>
@@ -566,7 +564,7 @@
           <li>Humanlike/Heads/EpauloHead/EpauloHead</li>
         </texPaths>
         <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
+        <colorType>Custom</colorType>
         <drawData>
           <defaultData>
             <layer>52</layer>
