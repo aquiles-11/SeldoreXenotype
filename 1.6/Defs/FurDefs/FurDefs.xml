@@ -30,7 +30,7 @@
     <defName>SigBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/SigBody/SigBody</Hulk>
+      <Sig>Humanlike/Bodies/SigBody/SigBody</Sig>
     </bodyTypeGraphicPaths>
   </FurDef>
 
