@@ -263,7 +263,7 @@
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/SigBody/SigBody_south</iconPath>
-    <bodyType>Hulk</bodyType>
+    <bodyType>Sig</bodyType>
     <exclusionTags>
       <li>Fur</li>
     </exclusionTags>

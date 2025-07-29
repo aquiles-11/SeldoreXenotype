@@ -273,11 +273,11 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_GaiArmor</defName>
-    <label>gai armor</label>
+    <label>Gai's Bristo Brawler's Apron</label>
     <description>PLACEHOLDER</description>
     <recipeMaker>
       <skillRequirements>
-        <Crafting>6</Crafting>
+        <Crafting>7</Crafting>
       </skillRequirements>
       <researchPrerequisite>Smithing</researchPrerequisite>
       <displayPriority>245</displayPriority>
@@ -295,21 +295,25 @@
       <drawSize>1.5</drawSize>
     </graphicData>
     <costList>
-      <Cloth>60</Cloth>
-      <Steel>20</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
+      <Hyperweave>50</Hyperweave>
+      <Gold>2</Gold>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
+        <equippedStatOffsets>
+      <CookSpeed>1</CookSpeed>
+      <SocialImpact>0.1</SocialImpact>
+    </equippedStatOffsets>
     <statBases>
-      <MaxHitPoints>220</MaxHitPoints>
-      <WorkToMake>40000</WorkToMake>
-      <MarketValue>1500</MarketValue>
-      <Mass>7</Mass>
-      <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.50</ArmorRating_Heat>
-      <Insulation_Cold>20</Insulation_Cold>
-      <Insulation_Heat>15</Insulation_Heat>
-      <EquipDelay>1.8</EquipDelay>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>30000</WorkToMake>
+      <MarketValue>1200</MarketValue>
+      <Mass>5</Mass>
+      <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.60</ArmorRating_Heat>
+      <Insulation_Cold>25</Insulation_Cold>
+      <Insulation_Heat>20</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
     </statBases>
     <thingCategories>
       <li>ApparelNoble</li>
