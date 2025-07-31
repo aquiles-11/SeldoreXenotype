@@ -15,4 +15,18 @@
         </graphicData>
     </ThingDef>
 
+    <ThingDef ParentName="MoteBase">
+        <defName>Mote_HealCircle</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <mote>
+            <fadeInTime>0.1</fadeInTime>
+            <solidTime>0.5</solidTime>
+            <fadeOutTime>0.1</fadeOutTime>
+            <collide>false</collide>
+        </mote>
+        <graphicData>
+            <texPath>Things/Mote/HealCircle</texPath>
+        </graphicData>
+    </ThingDef>
+
 </Defs>

@@ -263,11 +263,9 @@
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/SigBody/SigBody_south</iconPath>
-    <bodyType>Sig</bodyType>
     <exclusionTags>
       <li>Fur</li>
     </exclusionTags>
-    <fur>SigBody</fur>
     <renderNodeProperties>
       <li>
         <debugLabel>Fur</debugLabel>
@@ -282,8 +280,7 @@
     </renderNodeProperties>
     <modExtensions>
       <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
-        <furHidesBody>true</furHidesBody>
-        <dontColourFur>true</dontColourFur>
+        <forcedBodyType>Sig</forcedBodyType>
       </li>
     </modExtensions>
   </GeneDef>

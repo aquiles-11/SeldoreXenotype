@@ -278,6 +278,10 @@
       <li Class="CompProperties_AbilityCoagulate">
         <tendQualityRange>0.6</tendQualityRange>
       </li>
+      <li Class="CompProperties_AbilityEffecterOnCaster">
+        <effecterDef>HealCircle_Effect</effecterDef>
+        <maintainTicks>40</maintainTicks>
+      </li>
     </comps>
   </AbilityDef>
 
@@ -408,8 +412,8 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Weapon_GaiWeapon</defName>
-    <label>gai weapon</label>
-    <description>PLACEHOLDER</description>
+    <label>Gai's Poire</label>
+    <description>A formidable blunt weapon, Gai's Poire is a heavy frying pan serving as both a chef's tool and a brawler's might. It channels his powerful strikes with absolute culinary confidence.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Weapons/GaiWeapon</texPath>
@@ -430,42 +434,49 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
-        <armorPenetration>0.10</armorPenetration>
-        <cooldownTime>2.6</cooldownTime>
+        <power>10</power>
+        <armorPenetration>0.15</armorPenetration>
+        <cooldownTime>3.2</cooldownTime>
       </li>
       <li>
-        <label>point</label>
+        <label>head</label>
         <capacities>
-          <li>Stab</li>
+          <li>Blunt</li>
         </capacities>
-        <power>22</power>
-        <armorPenetration>0.45</armorPenetration>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-      <li>
-        <label>edge</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>22</power>
-        <armorPenetration>0.45</armorPenetration>
-        <cooldownTime>2.6</cooldownTime>
+        <power>35</power>
+        <armorPenetration>0.35</armorPenetration>
+        <cooldownTime>3.2</cooldownTime>
       </li>
     </tools>
     <statBases>
-      <MarketValue>1200</MarketValue>
-      <WorkToMake>30000</WorkToMake>
-      <Mass>1.5</Mass>
-      <EquipDelay>1.5</EquipDelay>
+      <MarketValue>2800</MarketValue>
+      <WorkToMake>55000</WorkToMake>
+      <Mass>8</Mass>
+      <EquipDelay>2</EquipDelay>
     </statBases>
     <relicChance>2</relicChance>
     <equippedAngleOffset>145</equippedAngleOffset>
     <costList>
-      <Gold>1</Gold>
-      <Plasteel>80</Plasteel>
-      <ComponentSpacer>3</ComponentSpacer>
+      <Gold>3</Gold>
+      <Plasteel>30</Plasteel>
+      <ComponentSpacer>8</ComponentSpacer>
     </costList>
+        <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable">
+        <abilityDef>GaiAbility</abilityDef>
+      </li>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Styleable" />
+      <li Class="CompProperties_Biocodable" />
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
     <recipeMaker>
       <recipeUsers>
         <li>TableMachining</li>
@@ -478,12 +489,50 @@
     </recipeMaker>
   </ThingDef>
 
+  <AbilityDef>
+    <defName>GaiAbility</defName>
+    <label>hearty meal</label>
+    <description>Cook a hearty meal for pawns around you, so they can be satiated and happy.</description>
+    <iconPath>Weapons/GaiWeapon</iconPath>
+    <cooldownTicksRange>259200</cooldownTicksRange>
+    <hostile>false</hostile>
+    <groupAbility>true</groupAbility>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>false</targetRequired>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_Duration>1</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>2</warmupTime>
+      <drawAimPie>false</drawAimPie>
+      <requireLineOfSight>false</requireLineOfSight>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+      <targetable>false</targetable>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>GaiHediff</hediffDef>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+      </li>
+    </comps>
+  </AbilityDef>
+
+
   <!-- Kagura Staff -->
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Weapon_KaguraStaff</defName>
-    <label>Kagura staff</label>
-    <description>PLACEHOLDER</description>
+    <label>Judgement Staff</label>
+    <description>A robust staff, Kagura's Judgement Staff is a conduit for his rapid healing abilities. It delivers very fast strikes, while channeling restorative energy to allies in his immediate vicinity.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Weapons/KaguraStaff</texPath>
@@ -504,41 +553,48 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
-        <armorPenetration>0.10</armorPenetration>
-        <cooldownTime>2.6</cooldownTime>
+        <power>10</power>
+        <armorPenetration>0.15</armorPenetration>
+        <cooldownTime>1</cooldownTime>
       </li>
       <li>
-        <label>point</label>
+        <label>head</label>
         <capacities>
-          <li>Stab</li>
+          <li>Blunt</li>
         </capacities>
-        <power>22</power>
-        <armorPenetration>0.45</armorPenetration>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-      <li>
-        <label>edge</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>22</power>
-        <armorPenetration>0.45</armorPenetration>
-        <cooldownTime>2.6</cooldownTime>
+        <power>15</power>
+        <armorPenetration>0.15</armorPenetration>
+        <cooldownTime>1</cooldownTime>
       </li>
     </tools>
+            <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable">
+        <abilityDef>AllyRecoveryPulse</abilityDef>
+      </li>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Styleable" />
+      <li Class="CompProperties_Biocodable" />
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
     <statBases>
-      <MarketValue>1200</MarketValue>
-      <WorkToMake>30000</WorkToMake>
-      <Mass>1.5</Mass>
-      <EquipDelay>1.5</EquipDelay>
+      <MarketValue>1600</MarketValue>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>2</Mass>
+      <EquipDelay>1</EquipDelay>
     </statBases>
     <relicChance>2</relicChance>
     <equippedAngleOffset>145</equippedAngleOffset>
     <costList>
-      <Gold>1</Gold>
-      <Plasteel>80</Plasteel>
-      <ComponentSpacer>3</ComponentSpacer>
+      <Silver>80</Silver>
+      <Plasteel>30</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <recipeMaker>
       <recipeUsers>
@@ -551,6 +607,56 @@
       <displayPriority>420</displayPriority>
     </recipeMaker>
   </ThingDef>
+
+  <AbilityDef>
+    <defName>AllyRecoveryPulse</defName>
+    <label>ally recovery pulse</label>
+    <description>PLACEHOLDER</description>
+    <descriptionHyperlinks>
+      <ThingDef>Weapon_HolyPrayer</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Weapons/HolyPrayer</iconPath>
+    <cooldownTicksRange>1000</cooldownTicksRange>
+    <hostile>false</hostile>
+    <groupAbility>true</groupAbility>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>false</targetRequired>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_EffectRadius>3</Ability_EffectRadius>
+      <Ability_Duration>1</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <requireLineOfSight>false</requireLineOfSight>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+      <targetable>false</targetable>
+      <range>3</range>
+      <warmupTime>0.8</warmupTime>
+      <targetParams>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>false</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityCoagulate">
+        <tendQualityRange>0.6</tendQualityRange>
+      </li>
+            <li Class="CompProperties_AbilityEffecterOnCaster">
+        <effecterDef>HealCircle_Effect</effecterDef>
+        <maintainTicks>40</maintainTicks>
+      </li>
+    </comps>
+  </AbilityDef>
 
   <!-- Epaulo Sword -->
 

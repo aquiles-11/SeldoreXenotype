@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<Defs>
+
+  <ThoughtDef>
+    <defName>GaiThought</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>hearty meal</label>
+        <description>hmmm nice.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

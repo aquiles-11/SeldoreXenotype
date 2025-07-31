@@ -115,5 +115,56 @@
         </graphicData>
     </ThingDef>
 
+    <HediffDef>
+        <defName>GaiHediff</defName>
+        <label>placeholder</label>
+        <description>placeholder.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+            <li Class="HediffCompProperties_GiveHediffsInRange">
+                <range>3.9</range>
+                <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+                <targetingParameters>
+                    <canTargetBuildings>false</canTargetBuildings>
+                    <canTargetAnimals>false</canTargetAnimals>
+                    <canTargetMechs>false</canTargetMechs>
+                    <onlyTargetColonists>true</onlyTargetColonists>
+                </targetingParameters>
+                <hediff>GaiBuff</hediff>
+            </li>
+        </comps>
+        <isBad>false</isBad>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>GaiBuff</defName>
+        <label>regal presence buff</label>
+        <description>PLACEHOLDER.</description>
+        <debugLabelExtra>other</debugLabelExtra>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>False</showRemainingTime>
+                <disappearsAfterTicks>50</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+            <li Class="HediffCompProperties_ThoughtSetter">
+                <thought>GaiThought</thought>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <Nutrition>0.3</Nutrition>
+                </statOffsets>
+            </li>
+        </stages>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
 
 </Defs>

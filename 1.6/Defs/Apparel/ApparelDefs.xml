@@ -2,7 +2,7 @@
 
 <Defs>
 
-<!-- Seldore Armor -->
+  <!-- Seldore Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_GovernorRaiment</defName>
@@ -75,7 +75,7 @@
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
-<!-- Gabu Armor -->
+  <!-- Gabu Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_HolyVestments</defName>
@@ -140,7 +140,7 @@
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
-<!-- Noche Armor -->
+  <!-- Noche Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_ArchbishopVestments</defName>
@@ -205,7 +205,7 @@
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
-<!-- Sig Armor -->
+  <!-- Sig Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_ForgeGuardHarness</defName>
@@ -269,12 +269,12 @@
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
-<!-- Gai Armor -->
+  <!-- Gai Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_GaiArmor</defName>
     <label>Gai's Bristo Brawler's Apron</label>
-    <description>PLACEHOLDER</description>
+    <description>A durable apron, this garment embodies Gai's formidable strength and confidence in his culinary skills. It offers robust protection, ready for any kitchen or combat.</description>
     <recipeMaker>
       <skillRequirements>
         <Crafting>7</Crafting>
@@ -299,9 +299,9 @@
       <Gold>2</Gold>
       <ComponentSpacer>1</ComponentSpacer>
     </costList>
-        <equippedStatOffsets>
-      <CookSpeed>1</CookSpeed>
-      <SocialImpact>0.1</SocialImpact>
+    <equippedStatOffsets>
+      <CookSpeed>3</CookSpeed>
+      <GlobalLearningFactor>0.05</GlobalLearningFactor>
     </equippedStatOffsets>
     <statBases>
       <MaxHitPoints>150</MaxHitPoints>
@@ -337,15 +337,15 @@
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
-<!-- Kagura Armor -->
+  <!-- Kagura Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_KaguraApparel</defName>
-    <label>kagura armor</label>
-    <description>PLACEHOLDER</description>
+    <label>Kagura's Constable</label>
+    <description>A durable ceremonial garb worn by Kagura, a Constable known for his steadfast healing and vanguard support. It offers excellent physical protection in his duties.</description>
     <recipeMaker>
       <skillRequirements>
-        <Crafting>6</Crafting>
+        <Crafting>7</Crafting>
       </skillRequirements>
       <researchPrerequisite>Smithing</researchPrerequisite>
       <displayPriority>245</displayPriority>
@@ -363,27 +363,27 @@
       <drawSize>1.5</drawSize>
     </graphicData>
     <costList>
-      <Cloth>60</Cloth>
-      <Steel>20</Steel>
+      <Hyperweave>30</Hyperweave>
+      <Plasteel>10</Plasteel>
       <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <statBases>
       <MaxHitPoints>220</MaxHitPoints>
-      <WorkToMake>40000</WorkToMake>
-      <MarketValue>1500</MarketValue>
-      <Mass>7</Mass>
-      <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.50</ArmorRating_Heat>
+      <WorkToMake>45000</WorkToMake>
+      <MarketValue>1800</MarketValue>
+      <Mass>6</Mass>
+      <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.20</ArmorRating_Heat>
       <Insulation_Cold>20</Insulation_Cold>
-      <Insulation_Heat>15</Insulation_Heat>
-      <EquipDelay>1.8</EquipDelay>
+      <Insulation_Heat>10</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
     </statBases>
     <thingCategories>
       <li>ApparelNoble</li>
     </thingCategories>
     <apparel>
-        <drawData>
+      <drawData>
         <dataNorth>
           <layer>30</layer>
         </dataNorth>
@@ -406,15 +406,15 @@
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
-<!-- Epaulo Armor -->
+  <!-- Epaulo Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_EpauloApparel</defName>
-    <label>Epaulo armor</label>
+    <label>Epaulo's Oathkeeper's</label>
     <description>PLACEHOLDER</description>
     <recipeMaker>
       <skillRequirements>
-        <Crafting>6</Crafting>
+        <Crafting>8</Crafting>
       </skillRequirements>
       <researchPrerequisite>Smithing</researchPrerequisite>
       <displayPriority>245</displayPriority>
@@ -432,21 +432,24 @@
       <drawSize>1.5</drawSize>
     </graphicData>
     <costList>
-      <Cloth>60</Cloth>
-      <Steel>20</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
+      <Plasteel>140</Plasteel>
+      <Gold>10</Gold>
+      <ComponentSpacer>7</ComponentSpacer>
     </costList>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.15</MoveSpeed>
+    </equippedStatOffsets>
     <statBases>
-      <MaxHitPoints>220</MaxHitPoints>
-      <WorkToMake>40000</WorkToMake>
-      <MarketValue>1500</MarketValue>
-      <Mass>7</Mass>
-      <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.50</ArmorRating_Heat>
-      <Insulation_Cold>20</Insulation_Cold>
-      <Insulation_Heat>15</Insulation_Heat>
-      <EquipDelay>1.8</EquipDelay>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToMake>70000</WorkToMake>
+      <MarketValue>3200</MarketValue>
+      <Mass>14.5</Mass>
+      <ArmorRating_Sharp>1.30</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.85</ArmorRating_Heat>
+      <Insulation_Cold>35</Insulation_Cold>
+      <Insulation_Heat>20</Insulation_Heat>
+      <EquipDelay>2.4</EquipDelay>
     </statBases>
     <thingCategories>
       <li>ApparelNoble</li>
