@@ -266,27 +266,9 @@
     <exclusionTags>
       <li>Fur</li>
     </exclusionTags>
-    <renderNodeProperties>
-      <li>
-        <debugLabel>Fur</debugLabel>
-        <nodeClass>PawnRenderNode_Body</nodeClass>
-        <workerClass>PawnRenderNodeWorker_Body</workerClass>
-        <useSkinShader>true</useSkinShader>
-        <shaderTypeDef>Cutout</shaderTypeDef>
-        <baseLayer>5</baseLayer>
-        <rotDrawMode>Fresh, Rotting</rotDrawMode>
-        <colorType>Skin</colorType>
-        <parentTagDef>Body</parentTagDef>
-        <bodyTypeGraphicPaths>
-          <Sig>Things/Pawn/Humanlike/Bodies/Naked_Sig</Sig>
-        </bodyTypeGraphicPaths>
-      </li>
-    </renderNodeProperties>
     <modExtensions>
       <li Class="VEF.Genes.GeneExtension">
         <forcedBodyType>Sig</forcedBodyType>
-        <!-- <bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/SigBody</bodyNakedGraphicPath>
-        <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath> -->
       </li>
     </modExtensions>
   </GeneDef>
@@ -298,7 +280,7 @@
     <label>Sig head</label>
     <description>Carriers of this gene will have a the face of Sig.</description>
     <iconPath>Humanlike/Heads/SigHead/SigHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <!-- <skinColorOverride>(255, 255, 255, 255)</skinColorOverride> -->
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>SigHead</li>
