@@ -298,23 +298,6 @@
       </tags>
     </hairTagFilter>
     <displayOrderInCategory>6662</displayOrderInCategory>
-    <renderNodeProperties Inherit="False">
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Humanlike/Heads/SigHead/SigHead</li>
-        </texPaths>
-        <useSkinShader>false</useSkinShader>
-        <colorType>Custom</colorType>
-        <drawData>
-          <defaultData>
-            <layer>52</layer>
-          </defaultData>
-        </drawData>
-        <parentTagDef>Head</parentTagDef>
-      </li>
-    </renderNodeProperties>
   </GeneDef>
 
   <!-- Gai Body Gene -->
