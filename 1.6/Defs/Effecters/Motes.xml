@@ -30,16 +30,30 @@
     </ThingDef>
 
     <ThingDef ParentName="MoteBase">
-        <defName>Mote_SolarBlade</defName>
+        <defName>Mote_MagicCircle</defName>
         <altitudeLayer>MoteOverhead</altitudeLayer>
         <mote>
             <fadeInTime>0.1</fadeInTime>
             <solidTime>0.5</solidTime>
             <fadeOutTime>0.1</fadeOutTime>
+            <collide>false</collide>
+        </mote>
+        <graphicData>
+            <texPath>Things/Mote/MagicCircle</texPath>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="MoteBase">
+        <defName>Mote_SolarSword</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <mote>
+            <fadeInTime>0.1</fadeInTime>
+            <solidTime>0.3</solidTime>
+            <fadeOutTime>0.1</fadeOutTime>
             <collide>true</collide>
         </mote>
         <graphicData>
-            <texPath>Things/Mote/SolarBlade</texPath>
+            <texPath>Things/Mote/SolarSword</texPath>
         </graphicData>
     </ThingDef>
 
