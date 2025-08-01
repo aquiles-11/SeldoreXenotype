@@ -269,18 +269,24 @@
     <renderNodeProperties>
       <li>
         <debugLabel>Fur</debugLabel>
-        <nodeClass>PawnRenderNode_Fur</nodeClass>
-        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
-        <useSkinShader>false</useSkinShader>
+        <nodeClass>PawnRenderNode_Body</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Body</workerClass>
+        <useSkinShader>true</useSkinShader>
+        <shaderTypeDef>Cutout</shaderTypeDef>
         <baseLayer>5</baseLayer>
         <rotDrawMode>Fresh, Rotting</rotDrawMode>
-        <colorType>Hair</colorType>
+        <colorType>Skin</colorType>
         <parentTagDef>Body</parentTagDef>
+        <bodyTypeGraphicPaths>
+          <Sig>Things/Pawn/Humanlike/Bodies/Naked_Sig</Sig>
+        </bodyTypeGraphicPaths>
       </li>
     </renderNodeProperties>
     <modExtensions>
-      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+      <li Class="VEF.Genes.GeneExtension">
         <forcedBodyType>Sig</forcedBodyType>
+        <!-- <bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/SigBody</bodyNakedGraphicPath>
+        <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath> -->
       </li>
     </modExtensions>
   </GeneDef>
