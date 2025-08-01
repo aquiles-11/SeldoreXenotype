@@ -300,7 +300,6 @@
       <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <equippedStatOffsets>
-      <CookSpeed>3</CookSpeed>
       <GlobalLearningFactor>0.05</GlobalLearningFactor>
     </equippedStatOffsets>
     <statBases>
@@ -335,7 +334,27 @@
       <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <modExtensions>
+      <li Class="VEF.Apparels.ApparelExtension">
+        <traitsOnEquip>
+          <li>Gai_Cooker</li>
+        </traitsOnEquip>
+      </li>
+    </modExtensions>
   </ThingDef>
+
+  <TraitDef>
+    <defName>Gai_Cooker</defName>
+    <degreeDatas>
+      <li>
+        <label>Chef</label>
+        <description>{PAWN_nameDef} likes to cook a lot. {PAWN_possessive} ability to cook is seen increased due to their practice in the craft.</description>
+        <skillGains>
+          <Cooking>3</Cooking>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
 
   <!-- Kagura Armor -->
 

@@ -461,7 +461,7 @@
       <Plasteel>30</Plasteel>
       <ComponentSpacer>8</ComponentSpacer>
     </costList>
-        <comps Inherit="False">
+    <comps Inherit="False">
       <li Class="CompProperties_EquippableAbilityReloadable">
         <abilityDef>GaiAbility</abilityDef>
       </li>
@@ -567,7 +567,7 @@
         <cooldownTime>1</cooldownTime>
       </li>
     </tools>
-            <comps Inherit="False">
+    <comps Inherit="False">
       <li Class="CompProperties_EquippableAbilityReloadable">
         <abilityDef>AllyRecoveryPulse</abilityDef>
       </li>
@@ -611,7 +611,7 @@
   <AbilityDef>
     <defName>AllyRecoveryPulse</defName>
     <label>ally recovery pulse</label>
-    <description>PLACEHOLDER</description>
+    <description>Perform a recovery puls to heal a pawn's wounds in an area around yourself</description>
     <descriptionHyperlinks>
       <ThingDef>Weapon_HolyPrayer</ThingDef>
     </descriptionHyperlinks>
@@ -651,7 +651,7 @@
       <li Class="CompProperties_AbilityCoagulate">
         <tendQualityRange>0.6</tendQualityRange>
       </li>
-            <li Class="CompProperties_AbilityEffecterOnCaster">
+      <li Class="CompProperties_AbilityEffecterOnCaster">
         <effecterDef>HealCircle_Effect</effecterDef>
         <maintainTicks>40</maintainTicks>
       </li>
@@ -660,7 +660,7 @@
 
   <!-- Epaulo Sword -->
 
- <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Weapon_EpauloSword</defName>
     <label>Epedo Soleil</label>
     <description>A legendary gladius, its blade infused with radiant energy. Strikes with precision and subtly inspires its wielder, much like a hero's unwavering resolve in the face of danger.</description>
