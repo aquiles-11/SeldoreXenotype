@@ -664,6 +664,9 @@
     <defName>Weapon_EpauloSword</defName>
     <label>Epedo Soleil</label>
     <description>A legendary gladius, its blade infused with radiant energy. Strikes with precision and subtly inspires its wielder, much like a hero's unwavering resolve in the face of danger.</description>
+    <descriptionHyperlinks>
+      <ThingDef>SolarBladeDrop</ThingDef>
+    </descriptionHyperlinks>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Weapons/EpauloSword</texPath>
@@ -690,6 +693,11 @@
       <Plasteel>15</Plasteel>
       <ComponentSpacer>1</ComponentSpacer>
     </costList>
+    <comps>
+      <li Class="CompProperties_EquippableAbility">
+        <abilityDef>SolarBladeDrop</abilityDef>
+      </li>
+    </comps>
     <tools>
       <li>
         <label>handle</label>
@@ -728,5 +736,45 @@
       <displayPriority>420</displayPriority>
     </recipeMaker>
   </ThingDef>
+
+  <AbilityDef>
+    <defName>SolarBladeDrop</defName>
+    <label>solar blade drop</label>
+    <description>Calling down a precise energy blade that strikes the target cell and a 2-tile radius, dealing damage.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Weapon_EpauloSword</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Weapons/HolySpear</iconPath>
+    <cooldownTicksRange>6000</cooldownTicksRange>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>true</targetRequired>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>16</range>
+      <warmupTime>2.0</warmupTime>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityExplosion">
+        <damageDef>Stab</damageDef>
+        <damageAmount>40</damageAmount>
+        <armorPenetration>0.8</armorPenetration>
+        <screenShakeFactor>0</screenShakeFactor>
+        <explosionRadius>3</explosionRadius>
+      </li>
+      <!-- <li Class="CompProperties_AbilityEffecterOnTarget">
+        <effecterDef>SolarBladeDrop_Effect</effecterDef>
+        <maintainForTicks>250</maintainForTicks>
+      </li> -->
+    </comps>
+  </AbilityDef>
 
 </Defs>
