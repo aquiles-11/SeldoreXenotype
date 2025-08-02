@@ -533,6 +533,9 @@
     <defName>Weapon_KaguraStaff</defName>
     <label>Judgement Staff</label>
     <description>A robust staff, Kagura's Judgement Staff is a conduit for his rapid healing abilities. It delivers very fast strikes, while channeling restorative energy to allies in his immediate vicinity.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AllyRecoveryPulse</ThingDef>
+    </descriptionHyperlinks>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Weapons/KaguraStaff</texPath>
@@ -613,7 +616,7 @@
     <label>ally recovery pulse</label>
     <description>Perform a recovery puls to heal a pawn's wounds in an area around yourself</description>
     <descriptionHyperlinks>
-      <ThingDef>Weapon_HolyPrayer</ThingDef>
+      <ThingDef>Weapon_KaguraStaff</ThingDef>
     </descriptionHyperlinks>
     <iconPath>Weapons/HolyPrayer</iconPath>
     <cooldownTicksRange>1000</cooldownTicksRange>
