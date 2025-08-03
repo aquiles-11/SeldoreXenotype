@@ -72,6 +72,7 @@
       </li>
     </comps>
     <recipeMaker>
+      <researchPrerequisite>SeldoreResearch</researchPrerequisite>
       <recipeUsers>
         <li>TableMachining</li>
         <li>FabricationBench</li>
@@ -208,6 +209,7 @@
       </li>
     </comps>
     <recipeMaker>
+      <researchPrerequisite>GabuResearch</researchPrerequisite>
       <recipeUsers>
         <li>TableMachining</li>
         <li>FabricationBench</li>
@@ -356,6 +358,7 @@
       </li>
     </comps>
     <recipeMaker>
+      <researchPrerequisite>NocheResearch</researchPrerequisite>
       <recipeUsers>
         <li>TableMachining</li>
         <li>FabricationBench</li>
@@ -478,6 +481,7 @@
       </li>
     </comps>
     <recipeMaker>
+      <researchPrerequisite>GaiResearch</researchPrerequisite>
       <recipeUsers>
         <li>TableMachining</li>
         <li>FabricationBench</li>
@@ -491,7 +495,7 @@
 
   <AbilityDef>
     <defName>GaiAbility</defName>
-    <label>hearty meal</label>
+    <label>Chef's Grand Feast</label>
     <description>Cook a hearty meal for pawns around you, so they can be satiated and happy.</description>
     <iconPath>Weapons/GaiWeapon</iconPath>
     <cooldownTicksRange>259200</cooldownTicksRange>
@@ -503,8 +507,8 @@
     <ai_IsOffensive>true</ai_IsOffensive>
     <targetRequired>false</targetRequired>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-    <statBases>
-      <Ability_Duration>1</Ability_Duration>
+        <statBases>
+      <Ability_EffectRadius>3.9</Ability_EffectRadius>
     </statBases>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
@@ -520,8 +524,9 @@
     <comps>
       <li Class="CompProperties_AbilityGiveHediff">
         <compClass>CompAbilityEffect_GiveHediff</compClass>
-        <hediffDef>GaiHediff</hediffDef>
-        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <hediffDef>GaiBuff</hediffDef>
+        <durationSecondsOverride>500</durationSecondsOverride>
+        <replaceExisting>true</replaceExisting>
       </li>
     </comps>
   </AbilityDef>
@@ -597,6 +602,7 @@
       <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <recipeMaker>
+      <researchPrerequisite>KaguraResearch</researchPrerequisite>
       <recipeUsers>
         <li>TableMachining</li>
         <li>FabricationBench</li>
@@ -717,6 +723,7 @@
       </li>
     </tools>
     <recipeMaker>
+      <researchPrerequisite>EpauloResearch</researchPrerequisite>
       <recipeUsers>
         <li>TableMachining</li>
         <li>FabricationBench</li>

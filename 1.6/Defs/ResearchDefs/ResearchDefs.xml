@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+
+<Defs>
+
+<!-- Research Tabs -->
+
+    <ResearchTabDef>
+        <defName>CraveSagaResearch</defName>
+        <label>Crave Saga Research</label>
+        <generalTitle>Crave Saga Research</generalTitle>
+        <generalDescription>All the stuff from Crave Saga can be found here</generalDescription>
+    </ResearchTabDef>
+
+    <ResearchTabDef>
+        <defName>AnotherEdiosResearch</defName>
+        <label>Another Edios Research</label>
+        <generalTitle>Another Edios Research</generalTitle>
+        <generalDescription>All the stuff from Another Edios can be found here</generalDescription>
+    </ResearchTabDef>
+
+    <ResearchTabDef>
+        <defName>GyeeResearch</defName>
+        <label>Gyee Research</label>
+        <generalTitle>Crave Saga Research</generalTitle>
+        <generalDescription>All the stuff from Gyee can be found here</generalDescription>
+    </ResearchTabDef>
+
+<!--____Crave Saga Research____-->
+
+<!--__Epaulo Research__-->
+
+    <ResearchProjectDef>
+        <defName>EpauloResearch</defName>
+        <label>Epaulo Gear</label>
+        <description>Armor and weapon wielded by Epaulo.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>1.00</researchViewY>
+    </ResearchProjectDef>
+
+<!--__Gai Research__-->
+
+    <ResearchProjectDef>
+        <defName>GaiResearch</defName>
+        <label>Gai Gear</label>
+        <description>Armor and weapon wielded by Gai.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+<!--__Noche Research__-->
+
+    <ResearchProjectDef>
+        <defName>NocheResearch</defName>
+        <label>Noche Gear</label>
+        <description>Armor and weapon wielded by Noche.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+<!--__Seldore Research__-->
+
+    <ResearchProjectDef>
+        <defName>SeldoreResearch</defName>
+        <label>Seldore Gear</label>
+        <description>Armor and weapon wielded by Seldore.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+<!--__Gabu Research__-->
+
+    <ResearchProjectDef>
+        <defName>GabuResearch</defName>
+        <label>Gabu Gear</label>
+        <description>Armor and weapon wielded by Gabu.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+<!--____Gyee Research____-->
+
+<!--__Sig Research-->
+
+    <ResearchProjectDef>
+        <defName>SigResearch</defName>
+        <label>Sig Gear</label>
+        <description>Armor and weapon wielded by Sig.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+<!--____Another Edios Research____-->
+
+<!--__Kagura Research__-->
+
+    <ResearchProjectDef>
+        <defName>KaguraResearch</defName>
+        <label>Kagura Gear</label>
+        <description>Armor and weapon wielded by Kagura.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+
+</Defs>

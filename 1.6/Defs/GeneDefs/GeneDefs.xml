@@ -7,7 +7,19 @@
   <GeneCategoryDef>
     <defName>CraveSaga</defName>
     <label>Crave Saga</label>
-    <displayPriorityInXenotype>604</displayPriorityInXenotype>
+    <displayPriorityInXenotype>603</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>AnotherEdios</defName>
+    <label>Another Edios</label>
+    <displayPriorityInXenotype>602</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>Gyee</defName>
+    <label>Gyee</label>
+    <displayPriorityInXenotype>601</displayPriorityInXenotype>
   </GeneCategoryDef>
 
   <!-- Seldore Body Gene -->
@@ -260,7 +272,7 @@
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
-    <displayCategory>CraveSaga</displayCategory>
+    <displayCategory>Gyee</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/SigBody/SigBody_south</iconPath>
     <exclusionTags>
@@ -269,6 +281,8 @@
     <modExtensions>
       <li Class="VEF.Genes.GeneExtension">
         <forcedBodyType>Sig</forcedBodyType>
+            <bodyNakedGraphicPath>Humanlike/Bodies/SigBody</bodyNakedGraphicPath>
+    <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath>
       </li>
     </modExtensions>
   </GeneDef>
@@ -281,7 +295,7 @@
     <description>Carriers of this gene will have a the face of Sig.</description>
     <iconPath>Humanlike/Heads/SigHead/SigHead_south</iconPath>
     <!-- <skinColorOverride>(255, 255, 255, 255)</skinColorOverride> -->
-    <displayCategory>CraveSaga</displayCategory>
+    <displayCategory>Gyee</displayCategory>
     <forcedHeadTypes>
       <li>SigHead</li>
     </forcedHeadTypes>
@@ -390,7 +404,7 @@
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
-    <displayCategory>CraveSaga</displayCategory>
+    <displayCategory>AnotherEdios</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/KaguraBody/KaguraBody_south</iconPath>
     <bodyType>Hulk</bodyType>
@@ -426,7 +440,7 @@
     <description>Carriers of this gene will have a the face of Kagura.</description>
     <iconPath>Humanlike/Heads/KaguraHead/KaguraHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
-    <displayCategory>CraveSaga</displayCategory>
+    <displayCategory>AnotherEdios</displayCategory>
     <forcedHeadTypes>
       <li>KaguraHead</li>
     </forcedHeadTypes>

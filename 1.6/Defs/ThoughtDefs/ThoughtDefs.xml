@@ -5,13 +5,12 @@
   <ThoughtDef>
     <defName>GaiThought</defName>
     <thoughtClass>Thought_Memory</thoughtClass>
-    <durationDays>1</durationDays>
-    <stackLimit>1</stackLimit>
+    <stackLimit>5</stackLimit>
     <stages>
       <li>
         <label>hearty meal</label>
         <description>hmmm nice.</description>
-        <baseMoodEffect>3</baseMoodEffect>
+        <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

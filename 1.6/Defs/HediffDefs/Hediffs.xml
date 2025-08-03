@@ -123,8 +123,7 @@
         <comps>
             <li Class="HediffCompProperties_DisappearsOnDeath"/>
             <li Class="HediffCompProperties_GiveHediffsInRange">
-                <range>3.9</range>
-                <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+                <range>30.9</range>
                 <targetingParameters>
                     <canTargetBuildings>false</canTargetBuildings>
                     <canTargetAnimals>false</canTargetAnimals>
@@ -139,14 +138,14 @@
 
     <HediffDef>
         <defName>GaiBuff</defName>
-        <label>regal presence buff</label>
+        <label>gai buff</label>
         <description>PLACEHOLDER.</description>
         <debugLabelExtra>other</debugLabelExtra>
         <hediffClass>HediffWithComps</hediffClass>
         <comps>
             <li Class="HediffCompProperties_Disappears">
                 <showRemainingTime>False</showRemainingTime>
-                <disappearsAfterTicks>50</disappearsAfterTicks>
+                <disappearsAfterTicks>800000</disappearsAfterTicks>
             </li>
             <li Class="HediffCompProperties_DisappearsOnDeath"/>
             <li Class="HediffCompProperties_ThoughtSetter">
@@ -156,7 +155,7 @@
         <stages>
             <li>
                 <statOffsets>
-                    <Nutrition>0.3</Nutrition>
+                    <Nutrition>3</Nutrition>
                 </statOffsets>
             </li>
         </stages>

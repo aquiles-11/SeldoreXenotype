@@ -9,7 +9,7 @@
     <label>Governor's Raiment</label>
     <description>A regal attire crafted for a leader, this garment embodies Seldore's resilience and wisdom. It offers robust protection, its presence inspiring allies and subtly dampening psychic intrusions.</description>
     <recipeMaker>
-      <researchPrerequisite>Smithing</researchPrerequisite>
+      <researchPrerequisite>SeldoreResearch</researchPrerequisite>
       <displayPriority>245</displayPriority>
       <recipeUsers>
         <li>ElectricSmithy</li>
@@ -85,7 +85,7 @@
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
-      <researchPrerequisite>Smithing</researchPrerequisite>
+      <researchPrerequisite>GabuResearch</researchPrerequisite>
       <displayPriority>245</displayPriority>
       <recipeUsers>
         <li>ElectricSmithy</li>
@@ -150,7 +150,7 @@
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
-      <researchPrerequisite>Smithing</researchPrerequisite>
+      <researchPrerequisite>NocheResearch</researchPrerequisite>
       <displayPriority>245</displayPriority>
       <recipeUsers>
         <li>ElectricSmithy</li>
@@ -215,7 +215,7 @@
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
-      <researchPrerequisite>Smithing</researchPrerequisite>
+      <researchPrerequisite>SigResearch</researchPrerequisite>
       <displayPriority>245</displayPriority>
       <recipeUsers>
         <li>ElectricSmithy</li>
@@ -279,7 +279,7 @@
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
-      <researchPrerequisite>Smithing</researchPrerequisite>
+      <researchPrerequisite>GaiResearch</researchPrerequisite>
       <displayPriority>245</displayPriority>
       <recipeUsers>
         <li>ElectricSmithy</li>
@@ -366,7 +366,7 @@
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
-      <researchPrerequisite>Smithing</researchPrerequisite>
+      <researchPrerequisite>KaguraResearch</researchPrerequisite>
       <displayPriority>245</displayPriority>
       <recipeUsers>
         <li>ElectricSmithy</li>
@@ -435,7 +435,7 @@
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
-      <researchPrerequisite>Smithing</researchPrerequisite>
+      <researchPrerequisite>EpauloResearch</researchPrerequisite>
       <displayPriority>245</displayPriority>
       <recipeUsers>
         <li>ElectricSmithy</li>
