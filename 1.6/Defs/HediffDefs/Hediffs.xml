@@ -154,13 +154,6 @@
         </comps>
         <stages>
             <li>
-                <statOffsets>
-                    <Nutrition>3</Nutrition>
-                </statOffsets>
-            </li>
-        </stages>
-        <stages>
-            <li>
                 <becomeVisible>false</becomeVisible>
             </li>
         </stages>

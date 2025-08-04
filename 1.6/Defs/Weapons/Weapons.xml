@@ -498,7 +498,7 @@
     <label>Chef's Grand Feast</label>
     <description>Cook a hearty meal for pawns around you, so they can be satiated and happy.</description>
     <iconPath>Weapons/GaiWeapon</iconPath>
-    <cooldownTicksRange>259200</cooldownTicksRange>
+    <cooldownTicksRange>180000</cooldownTicksRange>
     <hostile>false</hostile>
     <groupAbility>true</groupAbility>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
@@ -507,7 +507,7 @@
     <ai_IsOffensive>true</ai_IsOffensive>
     <targetRequired>false</targetRequired>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-        <statBases>
+    <statBases>
       <Ability_EffectRadius>3.9</Ability_EffectRadius>
     </statBases>
     <verbProperties>
@@ -525,8 +525,11 @@
       <li Class="CompProperties_AbilityGiveHediff">
         <compClass>CompAbilityEffect_GiveHediff</compClass>
         <hediffDef>GaiBuff</hediffDef>
-        <durationSecondsOverride>500</durationSecondsOverride>
+        <durationSecondsOverride>600</durationSecondsOverride>
         <replaceExisting>true</replaceExisting>
+      </li>
+            <li Class="FoodAbility.CompProperties_AbilityFoodLevel">
+        <offset>0.3</offset>
       </li>
     </comps>
   </AbilityDef>
@@ -780,10 +783,10 @@
         <screenShakeFactor>0</screenShakeFactor>
         <explosionRadius>3</explosionRadius>
       </li>
-      <!-- <li Class="CompProperties_AbilityEffecterOnTarget">
+       <li Class="CompProperties_AbilityEffecterOnTarget">
         <effecterDef>SolarBladeDrop_Effect</effecterDef>
         <maintainForTicks>250</maintainForTicks>
-      </li> -->
+      </li> 
     </comps>
   </AbilityDef>
 
