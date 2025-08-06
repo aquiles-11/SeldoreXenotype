@@ -528,7 +528,7 @@
         <durationSecondsOverride>600</durationSecondsOverride>
         <replaceExisting>true</replaceExisting>
       </li>
-            <li Class="FoodAbility.CompProperties_AbilityFoodLevel">
+      <li Class="SeldoreXeno.CompProperties_AbilityFoodLevel">
         <offset>0.3</offset>
       </li>
     </comps>

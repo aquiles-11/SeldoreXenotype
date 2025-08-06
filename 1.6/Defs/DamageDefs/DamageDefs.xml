@@ -4,7 +4,7 @@
 	<DamageDef>
 		<defName>EnergyBoltDamage</defName>
 		<label>fleshbeasts bane</label>
-		<workerClass>LightDamage.DamageWorker_AddInjuryLight</workerClass>
+		<workerClass>SeldoreXeno.DamageWorker_AddInjuryLight</workerClass>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has been sliced to death.</deathMessage>
 		<hediff>Stab</hediff>

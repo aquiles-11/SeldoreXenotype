@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CmdM5PBkHLk=",
+  "dgSpecHash": "wN8LnkbHJhI=",
   "success": true,
-  "projectFilePath": "D:\\Games\\steamapps\\common\\RimWorld\\Mods\\SeldoreXenotype\\1.6\\Source\\SeldoreXenotype\\SeldoreXeno.csproj",
+  "projectFilePath": "C:\\Penyimpanan\\RimWorld Mod Development\\Co-development\\Tobyguilmon Seldore Xenotype\\SeldoreXenotype\\1.6\\Source\\SeldoreXenotype\\SeldoreXeno.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\aquil\\.nuget\\packages\\krafs.rimworld.ref\\1.6.4528\\krafs.rimworld.ref.1.6.4528.nupkg.sha512"
+    "C:\\Users\\Rayyan\\.nuget\\packages\\krafs.rimworld.ref\\1.6.4543\\krafs.rimworld.ref.1.6.4543.nupkg.sha512"
   ],
   "logs": []
 }
