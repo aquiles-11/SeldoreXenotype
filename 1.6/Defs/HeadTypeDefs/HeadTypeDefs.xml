@@ -4,7 +4,7 @@
 
     <HeadTypeDef ParentName="AverageBase">
         <defName>SeldoreHead</defName>
-        <graphicPath>Humanlike/Heads/SeldoreHead/SeldoreHead</graphicPath>
+        <graphicPath>Humanlike/Heads/Seldore/SeldoreHead</graphicPath>
         <randomChosen>false</randomChosen>
         <gender>None</gender>
         <requiredGenes>
@@ -15,7 +15,7 @@
 
     <HeadTypeDef ParentName="AverageBase">
         <defName>GabuHead</defName>
-        <graphicPath>Humanlike/Heads/GabuHead/GabuHead</graphicPath>
+        <graphicPath>Humanlike/Heads/Gabu/GabuHead</graphicPath>
         <randomChosen>false</randomChosen>
         <gender>None</gender>
         <requiredGenes>
@@ -26,7 +26,7 @@
 
     <HeadTypeDef ParentName="AverageBase">
         <defName>NocheHead</defName>
-        <graphicPath>Humanlike/Heads/NocheHead/NocheHead</graphicPath>
+        <graphicPath>Humanlike/Heads/Noche/NocheHead</graphicPath>
         <randomChosen>false</randomChosen>
         <gender>None</gender>
         <requiredGenes>
@@ -37,7 +37,7 @@
 
     <HeadTypeDef ParentName="AverageBase">
         <defName>SigHead</defName>
-        <graphicPath>Humanlike/Heads/SigHead/SigHead</graphicPath>
+        <graphicPath>Humanlike/Heads/Sig/SigHead</graphicPath>
         <randomChosen>false</randomChosen>
         <gender>None</gender>
         <requiredGenes>
@@ -53,7 +53,7 @@
 
     <HeadTypeDef ParentName="AverageBase">
         <defName>GaiHead</defName>
-        <graphicPath>Humanlike/Heads/GaiHead/GaiHead</graphicPath>
+        <graphicPath>Humanlike/Heads/Gai/GaiHead</graphicPath>
         <randomChosen>false</randomChosen>
         <gender>None</gender>
         <requiredGenes>
@@ -64,7 +64,7 @@
 
     <HeadTypeDef ParentName="AverageBase">
         <defName>KaguraHead</defName>
-        <graphicPath>Humanlike/Heads/KaguraHead/KaguraHead</graphicPath>
+        <graphicPath>Humanlike/Heads/Kagura/KaguraHead</graphicPath>
         <randomChosen>false</randomChosen>
         <gender>None</gender>
         <requiredGenes>
@@ -75,7 +75,7 @@
 
     <HeadTypeDef ParentName="AverageBase">
         <defName>EpauloHead</defName>
-        <graphicPath>Humanlike/Heads/EpauloHead/EpauloHead</graphicPath>
+        <graphicPath>Humanlike/Heads/Epaulo/EpauloHead</graphicPath>
         <randomChosen>false</randomChosen>
         <gender>None</gender>
         <requiredGenes>

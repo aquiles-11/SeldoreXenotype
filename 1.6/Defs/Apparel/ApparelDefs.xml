@@ -19,7 +19,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Armor/SeldoreArmor/SeldoreApparel</texPath>
+      <texPath>Armor/Seldore/SeldoreApparel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -63,7 +63,7 @@
         <li>Neck</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>Armor/SeldoreArmor/SeldoreArmor</wornGraphicPath>
+      <wornGraphicPath>Armor/Seldore/SeldoreArmor</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -95,7 +95,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Armor/GabuArmor/GabuArmor</texPath>
+      <texPath>Armor/Gabu/GabuArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -128,7 +128,7 @@
         <li>Neck</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>Armor/GabuArmor/GabuArmor</wornGraphicPath>
+      <wornGraphicPath>Armor/Gabu/GabuArmor</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -160,7 +160,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Armor/NocheArmor/NocheApparel</texPath>
+      <texPath>Armor/Noche/NocheApparel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -193,7 +193,7 @@
         <li>Neck</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>Armor/NocheArmor/NocheArmor</wornGraphicPath>
+      <wornGraphicPath>Armor/Noche/NocheArmor</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -225,7 +225,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Armor/SigArmor/SigApparel</texPath>
+      <texPath>Armor/Sig/SigApparel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -257,7 +257,7 @@
         <li>Shoulders</li>
         <li>Neck</li>
       </bodyPartGroups>
-      <wornGraphicPath>Armor/SigArmor/SigArmor</wornGraphicPath>
+      <wornGraphicPath>Armor/Sig/SigArmor</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -289,7 +289,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Armor/GaiArmor/GaiArmor</texPath>
+      <texPath>Armor/Gai/GaiApparel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -324,7 +324,7 @@
         <li>Shoulders</li>
         <li>Neck</li>
       </bodyPartGroups>
-      <wornGraphicPath>Armor/GaiArmor/GaiArmor</wornGraphicPath>
+      <wornGraphicPath>Armor/Gai/GaiArmor</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -376,7 +376,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Armor/KaguraApparel/KaguraApparel_Hulk_south</texPath>
+      <texPath>Armor/Kagura/KaguraApparel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -413,7 +413,7 @@
         <li>Shoulders</li>
         <li>Neck</li>
       </bodyPartGroups>
-      <wornGraphicPath>Armor/KaguraApparel/KaguraApparel</wornGraphicPath>
+      <wornGraphicPath>Armor/Kagura/KaguraArmor</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -445,7 +445,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Armor/EpauloApparel/EpauloApparel_Hulk_south</texPath>
+      <texPath>Armor/Epaulo/EpauloArmorh</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -480,7 +480,7 @@
         <li>Shoulders</li>
         <li>Neck</li>
       </bodyPartGroups>
-      <wornGraphicPath>Armor/EpauloApparel/EpauloApparel</wornGraphicPath>
+      <wornGraphicPath>Armor/Epaulo/EpauloArmor</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>

@@ -33,7 +33,7 @@
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
-    <iconPath>Humanlike/Bodies/SeldoreBody/SeldoreBody_south</iconPath>
+    <iconPath>Humanlike/Bodies/Seldore/SeldoreBody_south</iconPath>
     <bodyType>Hulk</bodyType>
     <exclusionTags>
       <li>Fur</li>
@@ -65,7 +65,7 @@
     <defName>Gene_SeldoreHead</defName>
     <label>Seldore head</label>
     <description>Carriers of this gene will have a the face of Seldore.</description>
-    <iconPath>Humanlike/Heads/SeldoreHead/SeldoreHead_south</iconPath>
+    <iconPath>Humanlike/Heads/Seldore/SeldoreHead_south</iconPath>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>SeldoreHead</li>
@@ -88,7 +88,7 @@
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
         <texPaths>
-          <li>Humanlike/Heads/SeldoreHead/SeldoreHead</li>
+          <li>Humanlike/Heads/Seldore/SeldoreHead</li>
         </texPaths>
         <useSkinShader>false</useSkinShader>
         <colorType>Custom</colorType>
@@ -145,7 +145,7 @@
     <defName>Gene_GabuHead</defName>
     <label>Gabu head</label>
     <description>Carriers of this gene will have a the face of Gabu.</description>
-    <iconPath>Humanlike/Heads/GabuHead/GabuHead_south</iconPath>
+    <iconPath>Humanlike/Heads/Gabu/GabuHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
@@ -169,7 +169,7 @@
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
         <texPaths>
-          <li>Humanlike/Heads/GabuHead/GabuHead</li>
+          <li>Humanlike/Heads/Gabu/GabuHead</li>
         </texPaths>
         <useSkinShader>false</useSkinShader>
         <colorType>Custom</colorType>
@@ -194,7 +194,7 @@
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
-    <iconPath>Humanlike/Bodies/NocheBody/NocheBody_south</iconPath>
+    <iconPath>Humanlike/Bodies/Noche/NocheBody_south</iconPath>
     <bodyType>Hulk</bodyType>
     <exclusionTags>
       <li>Fur</li>
@@ -226,7 +226,7 @@
     <defName>Gene_NocheHead</defName>
     <label>Gabu head</label>
     <description>Carriers of this gene will have a the face of Noche.</description>
-    <iconPath>Humanlike/Heads/NocheHead/NocheHead_south</iconPath>
+    <iconPath>Humanlike/Heads/Noche/NocheHead_south</iconPath>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>NocheHead</li>
@@ -274,15 +274,15 @@
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Gyee</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
-    <iconPath>Humanlike/Bodies/SigBody/SigBody_south</iconPath>
+    <iconPath>Humanlike/Bodies/Sig/SigBody_south</iconPath>
     <exclusionTags>
       <li>Fur</li>
     </exclusionTags>
     <modExtensions>
       <li Class="VEF.Genes.GeneExtension">
         <forcedBodyType>Sig</forcedBodyType>
-            <bodyNakedGraphicPath>Humanlike/Bodies/SigBody</bodyNakedGraphicPath>
-    <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath>
+          <bodyNakedGraphicPath>Humanlike/Bodies/SigBody</bodyNakedGraphicPath>
+          <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath>
       </li>
     </modExtensions>
   </GeneDef>
@@ -325,7 +325,7 @@
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
-    <iconPath>Humanlike/Bodies/GaiBody/GaiBody_south</iconPath>
+    <iconPath>Humanlike/Bodies/Gai/GaiBody_south</iconPath>
     <bodyType>Hulk</bodyType>
     <exclusionTags>
       <li>Fur</li>
@@ -357,7 +357,7 @@
     <defName>Gene_GaiHead</defName>
     <label>Gai head</label>
     <description>Carriers of this gene will have a the face of Gai.</description>
-    <iconPath>Humanlike/Heads/GaiHead/GaiHead_south</iconPath>
+    <iconPath>Humanlike/Heads/Gai/GaiHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
@@ -381,7 +381,7 @@
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
         <texPaths>
-          <li>Humanlike/Heads/GaiHead/GaiHead</li>
+          <li>Humanlike/Heads/Gai/GaiHead</li>
         </texPaths>
         <useSkinShader>false</useSkinShader>
         <colorType>Custom</colorType>
@@ -406,7 +406,7 @@
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>AnotherEdios</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
-    <iconPath>Humanlike/Bodies/KaguraBody/KaguraBody_south</iconPath>
+    <iconPath>Humanlike/Bodies/Kagura/KaguraBody_south</iconPath>
     <bodyType>Hulk</bodyType>
     <exclusionTags>
       <li>Fur</li>
@@ -438,7 +438,7 @@
     <defName>Gene_KaguraHead</defName>
     <label>Kagura head</label>
     <description>Carriers of this gene will have a the face of Kagura.</description>
-    <iconPath>Humanlike/Heads/KaguraHead/KaguraHead_south</iconPath>
+    <iconPath>Humanlike/Heads/Kagura/KaguraHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
     <displayCategory>AnotherEdios</displayCategory>
     <forcedHeadTypes>
@@ -462,7 +462,7 @@
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
         <texPaths>
-          <li>Humanlike/Heads/KaguraHead/KaguraHead</li>
+          <li>Humanlike/Heads/Kagura/KaguraHead</li>
         </texPaths>
         <useSkinShader>false</useSkinShader>
         <colorType>Custom</colorType>
@@ -487,7 +487,7 @@
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
-    <iconPath>Humanlike/Bodies/EpauloBody/EpauloBody_south</iconPath>
+    <iconPath>Humanlike/Bodies/Epaulo/EpauloBody_south</iconPath>
     <bodyType>Hulk</bodyType>
     <exclusionTags>
       <li>Fur</li>
@@ -519,7 +519,7 @@
     <defName>Gene_EpauloHead</defName>
     <label>Epaulo head</label>
     <description>Carriers of this gene will have a the face of Epaulo.</description>
-    <iconPath>Humanlike/Heads/EpauloHead/EpauloHead_south</iconPath>
+    <iconPath>Humanlike/Heads/Epaulo/EpauloHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
@@ -543,7 +543,7 @@
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
         <texPaths>
-          <li>Humanlike/Heads/EpauloHead/EpauloHead</li>
+          <li>Humanlike/Heads/Epaulo/EpauloHead</li>
         </texPaths>
         <useSkinShader>false</useSkinShader>
         <colorType>Custom</colorType>

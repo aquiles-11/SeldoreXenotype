@@ -6,7 +6,7 @@
         <defName>SeldoreXenotype</defName>
         <label>Seldore Xenotype</label>
         <description>Seldore's Xenotype</description>
-        <iconPath>Humanlike/Heads/SeldoreHead/SeldoreHead_south</iconPath>
+        <iconPath>Humanlike/Heads/Seldore/SeldoreHead_south</iconPath>
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
@@ -20,7 +20,7 @@
         <defName>GabuXenotype</defName>
         <label>Gabu Xenotype</label>
         <description>Seldore's Xenotype</description>
-        <iconPath>Humanlike/Heads/GabuHead/GabuHead_south</iconPath>
+        <iconPath>Humanlike/Heads/Gabu/GabuHead_south</iconPath>
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
@@ -34,7 +34,7 @@
         <defName>NocheXenotype</defName>
         <label>Noche Xenotype</label>
         <description>Seldore's Xenotype</description>
-        <iconPath>Humanlike/Heads/NocheHead/NocheHead_south</iconPath>
+        <iconPath>Humanlike/Heads/Noche/NocheHead_south</iconPath>
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
@@ -48,7 +48,7 @@
         <defName>SigXenotype</defName>
         <label>Sig Xenotype</label>
         <description>Sig's Xenotype</description>
-        <iconPath>Humanlike/Heads/SigHead/SigHead_south</iconPath>
+        <iconPath>Humanlike/Heads/Sig/SigHead_south</iconPath>
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
@@ -62,7 +62,7 @@
         <defName>GaiXenotype</defName>
         <label>Gai Xenotype</label>
         <description>Gai's Xenotype</description>
-        <iconPath>Humanlike/Heads/GaiHead/GaiHead_south</iconPath>
+        <iconPath>Humanlike/Heads/Gai/GaiHead_south</iconPath>
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
@@ -76,7 +76,7 @@
         <defName>KaguraXenotype</defName>
         <label>Kagura Xenotype</label>
         <description>Kagura's Xenotype</description>
-        <iconPath>Humanlike/Heads/KaguraHead/KaguraHead_south</iconPath>
+        <iconPath>Humanlike/Heads/Kagura/KaguraHead_south</iconPath>
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
@@ -90,7 +90,7 @@
         <defName>EpauloXenotype</defName>
         <label>Epaulo Xenotype</label>
         <description>Epaulo's Xenotype</description>
-        <iconPath>Humanlike/Heads/EpauloHead/EpauloHead_south</iconPath>
+        <iconPath>Humanlike/Heads/Epaulo/EpauloHead_south</iconPath>
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
