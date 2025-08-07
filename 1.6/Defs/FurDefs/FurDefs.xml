@@ -6,7 +6,7 @@
     <defName>SeldoreBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/SeldoreBody/SeldoreBody</Hulk>
+      <Hulk>Humanlike/Bodies/Seldore/SeldoreBody</Hulk>
     </bodyTypeGraphicPaths>
   </FurDef>
 
@@ -14,7 +14,7 @@
     <defName>GabuBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/GabuBody/GabuBody</Hulk>
+      <Hulk>Humanlike/Bodies/Gabu/GabuBody</Hulk>
     </bodyTypeGraphicPaths>
   </FurDef>
 
@@ -22,7 +22,7 @@
     <defName>NocheBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/NocheBody/NocheBody</Hulk>
+      <Hulk>Humanlike/Bodies/Noche/NocheBody</Hulk>
     </bodyTypeGraphicPaths>
   </FurDef>
 
@@ -30,7 +30,7 @@
     <defName>SigBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Sig>Humanlike/Bodies/SigBody/SigBody</Sig>
+      <Sig>Humanlike/Bodies/Sig/SigBody</Sig>
     </bodyTypeGraphicPaths>
   </FurDef>
 
@@ -38,7 +38,7 @@
     <defName>GaiBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/GaiBody/GaiBody</Hulk>
+      <Hulk>Humanlike/Bodies/Gai/GaiBody</Hulk>
     </bodyTypeGraphicPaths>
   </FurDef>
 
@@ -46,7 +46,7 @@
     <defName>KaguraBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/KaguraBody/KaguraBody</Hulk>
+      <Hulk>Humanlike/Bodies/Kagura/KaguraBody</Hulk>
     </bodyTypeGraphicPaths>
   </FurDef>
 
@@ -54,7 +54,63 @@
     <defName>EpauloBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/EpauloBody/EpauloBody</Hulk>
+      <Hulk>Humanlike/Bodies/Epaulo/EpauloBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+  <FurDef>
+    <defName>CorcaBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/Corca/CorcaBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+  <FurDef>
+    <defName>FletBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/Flet/FletBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+  <FurDef>
+    <defName>HakumaBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/Hakuma/HakumaBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+  <FurDef>
+    <defName>SabertBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/Sabert/SabertBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+  <FurDef>
+    <defName>HorkeuKamuiBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/HorkeuKamui/HorkeuKamuiBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+  <FurDef>
+    <defName>SchmielBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/Schmiel/SchmielBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+  <FurDef>
+    <defName>ExcaliburBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/Excalibur/ExcaliburBody</Hulk>
     </bodyTypeGraphicPaths>
   </FurDef>
 

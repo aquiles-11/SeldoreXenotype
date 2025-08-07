@@ -28,7 +28,7 @@
 
 <!--____Crave Saga Research____-->
 
-<!--__Epaulo Research__-->
+    <!--__Epaulo Research__-->
 
     <ResearchProjectDef>
         <defName>EpauloResearch</defName>
@@ -40,11 +40,11 @@
         <prerequisites>
             <li>Smithing</li>
         </prerequisites>
-        <researchViewX>0.00</researchViewX>
+        <researchViewX>0.50</researchViewX>
         <researchViewY>1.00</researchViewY>
     </ResearchProjectDef>
 
-<!--__Gai Research__-->
+    <!--__Gai Research__-->
 
     <ResearchProjectDef>
         <defName>GaiResearch</defName>
@@ -56,11 +56,11 @@
         <prerequisites>
             <li>Smithing</li>
         </prerequisites>
-        <researchViewX>0.00</researchViewX>
+        <researchViewX>0.50</researchViewX>
         <researchViewY>2.00</researchViewY>
     </ResearchProjectDef>
 
-<!--__Noche Research__-->
+    <!--__Noche Research__-->
 
     <ResearchProjectDef>
         <defName>NocheResearch</defName>
@@ -72,11 +72,11 @@
         <prerequisites>
             <li>Smithing</li>
         </prerequisites>
-        <researchViewX>0.00</researchViewX>
-        <researchViewY>2.00</researchViewY>
+        <researchViewX>0.50</researchViewX>
+        <researchViewY>3.00</researchViewY>
     </ResearchProjectDef>
 
-<!--__Seldore Research__-->
+    <!--__Seldore Research__-->
 
     <ResearchProjectDef>
         <defName>SeldoreResearch</defName>
@@ -88,11 +88,11 @@
         <prerequisites>
             <li>Smithing</li>
         </prerequisites>
-        <researchViewX>0.00</researchViewX>
-        <researchViewY>2.00</researchViewY>
+        <researchViewX>0.50</researchViewX>
+        <researchViewY>4.00</researchViewY>
     </ResearchProjectDef>
 
-<!--__Gabu Research__-->
+    <!--__Gabu Research__-->
 
     <ResearchProjectDef>
         <defName>GabuResearch</defName>
@@ -104,13 +104,13 @@
         <prerequisites>
             <li>Smithing</li>
         </prerequisites>
-        <researchViewX>0.00</researchViewX>
-        <researchViewY>2.00</researchViewY>
+        <researchViewX>0.50</researchViewX>
+        <researchViewY>5.00</researchViewY>
     </ResearchProjectDef>
 
 <!--____Gyee Research____-->
 
-<!--__Sig Research-->
+    <!--__Sig Research-->
 
     <ResearchProjectDef>
         <defName>SigResearch</defName>
@@ -122,13 +122,13 @@
         <prerequisites>
             <li>Smithing</li>
         </prerequisites>
-        <researchViewX>0.00</researchViewX>
-        <researchViewY>2.00</researchViewY>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>1.00</researchViewY>
     </ResearchProjectDef>
 
 <!--____Another Edios Research____-->
 
-<!--__Kagura Research__-->
+    <!--__Kagura Research__-->
 
     <ResearchProjectDef>
         <defName>KaguraResearch</defName>
@@ -140,9 +140,120 @@
         <prerequisites>
             <li>Smithing</li>
         </prerequisites>
-        <researchViewX>0.00</researchViewX>
+        <researchViewX>1.00</researchViewX>
         <researchViewY>2.00</researchViewY>
     </ResearchProjectDef>
 
+    <!--__Corca Research__-->
+
+    <ResearchProjectDef>
+        <defName>CorcaResearch</defName>
+        <label>Corca Gear</label>
+        <description>Armor and weapon wielded by Corca.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>3.00</researchViewY>
+    </ResearchProjectDef>
+
+    <!--__Flet Research__-->
+
+    <ResearchProjectDef>
+        <defName>FletResearch</defName>
+        <label>Flet Gear</label>
+        <description>Armor and weapon wielded by Flet.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>4.00</researchViewY>
+    </ResearchProjectDef>
+
+    <!--__Hakuma Research__-->
+
+    <ResearchProjectDef>
+        <defName>HakumaResearch</defName>
+        <label>Hakuma Gear</label>
+        <description>Armor and weapon wielded by Hakuma.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>5.00</researchViewY>
+    </ResearchProjectDef>
+
+    <!--__Sabert Research__-->
+
+    <ResearchProjectDef>
+        <defName>SabertResearch</defName>
+        <label>Sabert Gear</label>
+        <description>Armor and weapon wielded by Sabert.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>1.00</researchViewY>
+    </ResearchProjectDef>
+
+    <!--__Horkeu Kamui Research__-->
+
+    <ResearchProjectDef>
+        <defName>HorkeuKamuiResearch</defName>
+        <label>Horkeu Kamui Gear</label>
+        <description>Armor and weapon wielded by Horkeu Kamui.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.50</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+    <!--__Schmiel Research__-->
+
+    <ResearchProjectDef>
+        <defName>SchmielResearch</defName>
+        <label>Schmiel Gear</label>
+        <description>Armor and weapon wielded by Schmiel.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.50</researchViewX>
+        <researchViewY>3.00</researchViewY>
+    </ResearchProjectDef>
+
+    <!--__Excalibur Research__-->
+
+    <ResearchProjectDef>
+        <defName>ExcaliburResearch</defName>
+        <label>Excalibur Gear</label>
+        <description>Armor and weapon wielded by Excalibur.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.50</researchViewX>
+        <researchViewY>4.00</researchViewY>
+    </ResearchProjectDef>
 
 </Defs>

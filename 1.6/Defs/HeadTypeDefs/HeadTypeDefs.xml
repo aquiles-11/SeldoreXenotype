@@ -84,4 +84,81 @@
         <selectionWeight>1000</selectionWeight>
     </HeadTypeDef>
 
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>CorcaHead</defName>
+        <graphicPath>Humanlike/Heads/Corca/CorcaHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_CorcaHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>FletHead</defName>
+        <graphicPath>Humanlike/Heads/Flet/FletHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_FletHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>HakumaHead</defName>
+        <graphicPath>Humanlike/Heads/Hakuma/HakumaHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_HakumaHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>SabertHead</defName>
+        <graphicPath>Humanlike/Heads/Sabert/SabertHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_SabertHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>HorkeuKamuiHead</defName>
+        <graphicPath>Humanlike/Heads/HorkeuKamui/HorkeuKamuiHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_HorkeuKamuiHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>SchmielHead</defName>
+        <graphicPath>Humanlike/Heads/Schmiel/SchmielHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_SchmielHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>ExcaliburHead</defName>
+        <graphicPath>Humanlike/Heads/Excalibur/ExcaliburHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_ExcaliburHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
 </Defs>

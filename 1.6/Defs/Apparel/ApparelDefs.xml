@@ -445,7 +445,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Armor/Epaulo/EpauloArmorh</texPath>
+      <texPath>Armor/Epaulo/EpauloApparel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -481,6 +481,475 @@
         <li>Neck</li>
       </bodyPartGroups>
       <wornGraphicPath>Armor/Epaulo/EpauloArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <!-- Corca Armor -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_CorcaArmor</defName>
+    <label>Corca's Armor</label>
+    <description>PLACEHOLDER</description>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>CorcaResearch</researchPrerequisite>
+      <displayPriority>245</displayPriority>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Armor/Corca/CorcaApparel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <Plasteel>140</Plasteel>
+      <Gold>10</Gold>
+      <ComponentSpacer>7</ComponentSpacer>
+    </costList>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.15</MoveSpeed>
+    </equippedStatOffsets>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToMake>70000</WorkToMake>
+      <MarketValue>3200</MarketValue>
+      <Mass>14.5</Mass>
+      <ArmorRating_Sharp>1.30</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.85</ArmorRating_Heat>
+      <Insulation_Cold>35</Insulation_Cold>
+      <Insulation_Heat>20</Insulation_Heat>
+      <EquipDelay>2.4</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelNoble</li>
+    </thingCategories>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/Corca/CorcaArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <!-- Flet Armor -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_FletArmor</defName>
+    <label>Flet's Armor</label>
+    <description>PLACEHOLDER</description>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>FletResearch</researchPrerequisite>
+      <displayPriority>245</displayPriority>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Armor/Flet/FletApparel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <Plasteel>140</Plasteel>
+      <Gold>10</Gold>
+      <ComponentSpacer>7</ComponentSpacer>
+    </costList>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.15</MoveSpeed>
+    </equippedStatOffsets>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToMake>70000</WorkToMake>
+      <MarketValue>3200</MarketValue>
+      <Mass>14.5</Mass>
+      <ArmorRating_Sharp>1.30</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.85</ArmorRating_Heat>
+      <Insulation_Cold>35</Insulation_Cold>
+      <Insulation_Heat>20</Insulation_Heat>
+      <EquipDelay>2.4</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelNoble</li>
+    </thingCategories>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/Flet/FletArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <!-- Hakuma Armor -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_HakumaArmor</defName>
+    <label>Hakuma's Armor</label>
+    <description>PLACEHOLDER</description>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>HakumaResearch</researchPrerequisite>
+      <displayPriority>245</displayPriority>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Armor/Hakuma/HakumaApparel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <Plasteel>140</Plasteel>
+      <Gold>10</Gold>
+      <ComponentSpacer>7</ComponentSpacer>
+    </costList>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.15</MoveSpeed>
+    </equippedStatOffsets>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToMake>70000</WorkToMake>
+      <MarketValue>3200</MarketValue>
+      <Mass>14.5</Mass>
+      <ArmorRating_Sharp>1.30</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.85</ArmorRating_Heat>
+      <Insulation_Cold>35</Insulation_Cold>
+      <Insulation_Heat>20</Insulation_Heat>
+      <EquipDelay>2.4</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelNoble</li>
+    </thingCategories>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/Hakuma/HakumaArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <!-- Sabert Armor -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_SabertArmor</defName>
+    <label>Sabert's Armor</label>
+    <description>PLACEHOLDER</description>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>SabertResearch</researchPrerequisite>
+      <displayPriority>245</displayPriority>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Armor/Sabert/SabertApparel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <Plasteel>140</Plasteel>
+      <Gold>10</Gold>
+      <ComponentSpacer>7</ComponentSpacer>
+    </costList>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.15</MoveSpeed>
+    </equippedStatOffsets>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToMake>70000</WorkToMake>
+      <MarketValue>3200</MarketValue>
+      <Mass>14.5</Mass>
+      <ArmorRating_Sharp>1.30</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.85</ArmorRating_Heat>
+      <Insulation_Cold>35</Insulation_Cold>
+      <Insulation_Heat>20</Insulation_Heat>
+      <EquipDelay>2.4</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelNoble</li>
+    </thingCategories>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/Sabert/SabertArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <!-- Horkeu Kamui Armor -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_HorkeuKamuiArmor</defName>
+    <label>Horkeu Kamui's Armor</label>
+    <description>PLACEHOLDER</description>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>HorkeuKamuiResearch</researchPrerequisite>
+      <displayPriority>245</displayPriority>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Armor/HorkeuKamui/HorkeuKamuiApparel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <Plasteel>140</Plasteel>
+      <Gold>10</Gold>
+      <ComponentSpacer>7</ComponentSpacer>
+    </costList>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.15</MoveSpeed>
+    </equippedStatOffsets>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToMake>70000</WorkToMake>
+      <MarketValue>3200</MarketValue>
+      <Mass>14.5</Mass>
+      <ArmorRating_Sharp>1.30</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.85</ArmorRating_Heat>
+      <Insulation_Cold>35</Insulation_Cold>
+      <Insulation_Heat>20</Insulation_Heat>
+      <EquipDelay>2.4</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelNoble</li>
+    </thingCategories>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/HorkeuKamui/HorkeuKamuiArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <!-- Schmiel Armor -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_SchmielArmor</defName>
+    <label>Schmiel's Armor</label>
+    <description>PLACEHOLDER</description>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>SchmielResearch</researchPrerequisite>
+      <displayPriority>245</displayPriority>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Armor/Schmiel/SchmielApparel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <Plasteel>140</Plasteel>
+      <Gold>10</Gold>
+      <ComponentSpacer>7</ComponentSpacer>
+    </costList>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.15</MoveSpeed>
+    </equippedStatOffsets>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToMake>70000</WorkToMake>
+      <MarketValue>3200</MarketValue>
+      <Mass>14.5</Mass>
+      <ArmorRating_Sharp>1.30</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.85</ArmorRating_Heat>
+      <Insulation_Cold>35</Insulation_Cold>
+      <Insulation_Heat>20</Insulation_Heat>
+      <EquipDelay>2.4</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelNoble</li>
+    </thingCategories>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/Schmiel/SchmielArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <!-- Excalibur Armor -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_ExcaliburArmor</defName>
+    <label>Excalibur's Armor</label>
+    <description>PLACEHOLDER</description>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>ExcaliburResearch</researchPrerequisite>
+      <displayPriority>245</displayPriority>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Armor/Excalibur/ExcaliburApparel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <Plasteel>140</Plasteel>
+      <Gold>10</Gold>
+      <ComponentSpacer>7</ComponentSpacer>
+    </costList>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.15</MoveSpeed>
+    </equippedStatOffsets>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToMake>70000</WorkToMake>
+      <MarketValue>3200</MarketValue>
+      <Mass>14.5</Mass>
+      <ArmorRating_Sharp>1.30</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.85</ArmorRating_Heat>
+      <Insulation_Cold>35</Insulation_Cold>
+      <Insulation_Heat>20</Insulation_Heat>
+      <EquipDelay>2.4</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelNoble</li>
+    </thingCategories>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/Excalibur/ExcaliburArmor</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>

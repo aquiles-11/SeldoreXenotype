@@ -57,4 +57,18 @@
         </graphicData>
     </ThingDef>
 
+    <ThingDef ParentName="MoteBase">
+        <defName>Mote_ExcaliburSwordCleave</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <mote>
+            <fadeInTime>0.1</fadeInTime>
+            <solidTime>0.3</solidTime>
+            <fadeOutTime>0.1</fadeOutTime>
+            <collide>true</collide>
+        </mote>
+        <graphicData>
+            <texPath>Things/Mote/SwordCleave</texPath>
+        </graphicData>
+    </ThingDef>
+
 </Defs>

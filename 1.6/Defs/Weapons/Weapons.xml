@@ -677,7 +677,7 @@
     <label>Epedo Soleil</label>
     <description>A legendary gladius, its blade infused with radiant energy. Strikes with precision and subtly inspires its wielder, much like a hero's unwavering resolve in the face of danger.</description>
     <descriptionHyperlinks>
-      <ThingDef>SolarBladeDrop</ThingDef>
+      <AbilityDef>SolarBladeDrop</AbilityDef>
     </descriptionHyperlinks>
     <possessionCount>1</possessionCount>
     <graphicData>
@@ -789,5 +789,360 @@
       </li> 
     </comps>
   </AbilityDef>
+
+  <!-- Corca Morning Star -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Weapon_CorcaWeapon</defName>
+    <label>Corca Morning Star</label>
+    <description>PLACEHOLDER.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/CorcaMorningStar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>CorcaMorningStar</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>-70</equippedAngleOffset>
+    <costList>
+      <Steel>80</Steel>
+      <Gold>2</Gold>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <armorPenetration>0.1</armorPenetration>
+        <cooldownTime>1.7</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Stab</li>
+        </capacities>
+        <power>30</power>
+        <armorPenetration>0.3</armorPenetration>
+        <cooldownTime>1.7</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>CorcaResearch</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>LongBlades</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  <!-- Hakuma Wolven Spear -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Weapon_HakumaWeapon</defName>
+    <label>Hakuma Wolven Spear</label>
+    <description>PLACEHOLDER.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/HakumaWolvenSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>HakumaWolvenSpear</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <armorPenetration>0.10</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>22</power>
+        <armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>22</power>
+        <armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <WorkToMake>30000</WorkToMake>
+      <Mass>1.5</Mass>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>145</equippedAngleOffset>
+    <costList>
+      <Gold>1</Gold>
+      <Plasteel>80</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>HakumaResearch</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  <!-- Excalibur Sword -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Weapon_ExcaliburSword</defName>
+    <label>Excalibur</label>
+    <description>PLACEHOLDER.</description>
+    <descriptionHyperlinks>
+      <AbilityDef>SwordCleave</AbilityDef>
+    </descriptionHyperlinks>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/ExcaliburSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>ExcaliburSword</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>-70</equippedAngleOffset>
+    <costList>
+      <Steel>80</Steel>
+      <Gold>2</Gold>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_EquippableAbility">
+        <abilityDef>SworldCleave</abilityDef>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.7</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>1.7</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>24</power>
+        <cooldownTime>1.7</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>ExcaliburResearch</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>LongBlades</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  <AbilityDef>
+    <defName>SwordCleave</defName>
+    <label>Excalibur Sword Cleave</label>
+    <description>PLACEHOLDER.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Weapon_ExcaliburSword</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Weapons/ExcaliburSword</iconPath>
+    <cooldownTicksRange>3000</cooldownTicksRange>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>true</targetRequired>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>2.9</range>
+      <warmupTime>0.5</warmupTime>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="SeldoreXeno.CompProperties_AbilityAngleBlast">
+        <range>2.9</range>
+        <lineWidthEnd>10</lineWidthEnd>
+        <damageDef>Stab</damageDef>
+        <effect>ExcaliburSwordCleave_Effect</effect>
+        <screenShake>0</screenShake>
+        <damageAmount>32</damageAmount>
+        <armorPen>0.6</armorPen>
+        <addedAngle>60</addedAngle>
+        <effectTickAwayFromCast>1</effectTickAwayFromCast>
+        <explosionSpeed>1.0</explosionSpeed>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!-- Golden Bow -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Weapon_GoldenBow</defName>
+    <label>Golden Bow</label>
+    <description>A bow with a gold color made of gold and used by those with a golden heart.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/GoldenBow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>GoldenBow</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Projectile_LightArrow</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>38</range>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+      <WorkToMake>70000</WorkToMake>
+      <MeditationFocusStrength>0.05</MeditationFocusStrength>
+      <Mass>2.5</Mass>
+      <EquipDelay>1.5</EquipDelay>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>130</equippedAngleOffset>
+    <costList>
+      <Plasteel>100</Plasteel>
+      <ComponentSpacer>8</ComponentSpacer>
+    </costList>
+    <comps Inherit="False">
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Styleable" />
+      <li Class="CompProperties_Biocodable" />
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <recipeMaker>
+      <!-- <researchPrerequisite>SeldoreResearch</researchPrerequisite> -->
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Projectile_LightArrow</defName>
+    <label>Golden Bow Arrow</label>
+    <graphicData>
+      <texPath>Projectiles/LightArrowProjectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+    <projectile Inherit="false">
+      <damageDef>EnergyBoltDamage</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <armorPenetrationBase>0.60</armorPenetrationBase>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
 
 </Defs>
