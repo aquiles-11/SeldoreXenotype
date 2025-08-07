@@ -90,6 +90,7 @@
     <graphicData>
       <texPath>Projectiles/DarkArrowProjectile</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
       <drawSize>2.5</drawSize>
     </graphicData>
     <projectile Inherit="false">
@@ -1135,6 +1136,7 @@
     <graphicData>
       <texPath>Projectiles/LightArrowProjectile</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
       <drawSize>2.5</drawSize>
     </graphicData>
     <projectile Inherit="false">
