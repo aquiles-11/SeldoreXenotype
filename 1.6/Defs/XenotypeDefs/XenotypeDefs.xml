@@ -101,6 +101,7 @@
     </XenotypeDef>
 
     <XenotypeDef>
+<<<<<<< Updated upstream
         <defName>CorcaXenotype</defName>
         <label>Corca Xenotype</label>
         <description>Corca's Xenotype</description>
@@ -119,6 +120,12 @@
         <label>Flet Xenotype</label>
         <description>Flet's Xenotype</description>
         <iconPath>Humanlike/Heads/Flet/FletHead_south</iconPath>
+=======
+        <defName>FletXenotype</defName>
+        <label>Flet Xenotype</label>
+        <description>Flet's Xenotype</description>
+        <iconPath>Humanlike/Heads/FletHead/FletHead_south</iconPath>
+>>>>>>> Stashed changes
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
@@ -129,10 +136,31 @@
     </XenotypeDef>
 
     <XenotypeDef>
+<<<<<<< Updated upstream
         <defName>HakumaXenotype</defName>
         <label>Hakuma Xenotype</label>
         <description>Hakuma's Xenotype</description>
         <iconPath>Humanlike/Heads/Hakuma/HakumaHead_south</iconPath>
+=======
+        <defName>CorcaXenotype</defName>
+        <label>Corca Xenotype</label>
+        <description>Corca's Xenotype</description>
+        <iconPath>Humanlike/Heads/CorcaHead/CorcaHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_CorcaBody</li>
+            <li>Gene_CorcaHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>HakumaXenotype</defName>
+        <label>Hakuma Xenotype</label>
+        <description>Hakuma's Xenotype</description>
+        <iconPath>Humanlike/Heads/HakumaHead/HakumaHead_south</iconPath>
+>>>>>>> Stashed changes
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
@@ -143,24 +171,41 @@
     </XenotypeDef>
 
     <XenotypeDef>
+<<<<<<< Updated upstream
         <defName>SabertXenotype</defName>
         <label>Sabert Xenotype</label>
         <description>Sabert's Xenotype</description>
         <iconPath>Humanlike/Heads/Sabert/SabertHead_south</iconPath>
+=======
+        <defName>SaberXenotype</defName>
+        <label>Saber Xenotype</label>
+        <description>Saber's Xenotype</description>
+        <iconPath>Humanlike/Heads/SaberHead/SaberHead_south</iconPath>
+>>>>>>> Stashed changes
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
         <genes>
+<<<<<<< Updated upstream
             <li>Gene_SabertBody</li>
             <li>Gene_SabertHead</li>
+=======
+            <li>Gene_SaberBody</li>
+            <li>Gene_SaberHead</li>
+>>>>>>> Stashed changes
         </genes>
     </XenotypeDef>
 
     <XenotypeDef>
         <defName>HorkeuKamuiXenotype</defName>
         <label>HorkeuKamui Xenotype</label>
+<<<<<<< Updated upstream
         <description>Horkeu Kamui's Xenotype</description>
         <iconPath>Humanlike/Heads/HorkeuKamui/HorkeuKamuiHead_south</iconPath>
+=======
+        <description>HorkeuKamui's Xenotype</description>
+        <iconPath>Humanlike/Heads/HorkeuKamuiHead/HorkeuKamuiHead_south</iconPath>
+>>>>>>> Stashed changes
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
@@ -169,6 +214,7 @@
             <li>Gene_HorkeuKamuiHead</li>
         </genes>
     </XenotypeDef>
+<<<<<<< Updated upstream
 
     <XenotypeDef>
         <defName>SchmielXenotype</defName>
@@ -197,5 +243,7 @@
             <li>Gene_ExcaliburHead</li>
         </genes>
     </XenotypeDef>
+=======
+>>>>>>> Stashed changes
 
 </Defs>

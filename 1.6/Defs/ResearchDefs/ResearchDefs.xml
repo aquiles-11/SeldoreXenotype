@@ -40,8 +40,13 @@
         <prerequisites>
             <li>Smithing</li>
         </prerequisites>
+<<<<<<< Updated upstream
         <researchViewX>0.50</researchViewX>
         <researchViewY>1.00</researchViewY>
+=======
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+>>>>>>> Stashed changes
     </ResearchProjectDef>
 
     <!--__Gai Research__-->
@@ -56,7 +61,11 @@
         <prerequisites>
             <li>Smithing</li>
         </prerequisites>
+<<<<<<< Updated upstream
         <researchViewX>0.50</researchViewX>
+=======
+        <researchViewX>1.50</researchViewX>
+>>>>>>> Stashed changes
         <researchViewY>2.00</researchViewY>
     </ResearchProjectDef>
 
@@ -72,8 +81,13 @@
         <prerequisites>
             <li>Smithing</li>
         </prerequisites>
+<<<<<<< Updated upstream
         <researchViewX>0.50</researchViewX>
         <researchViewY>3.00</researchViewY>
+=======
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+>>>>>>> Stashed changes
     </ResearchProjectDef>
 
     <!--__Seldore Research__-->
@@ -88,8 +102,13 @@
         <prerequisites>
             <li>Smithing</li>
         </prerequisites>
+<<<<<<< Updated upstream
         <researchViewX>0.50</researchViewX>
         <researchViewY>4.00</researchViewY>
+=======
+        <researchViewX>4.50</researchViewX>
+        <researchViewY>2.00</researchViewY>
+>>>>>>> Stashed changes
     </ResearchProjectDef>
 
     <!--__Gabu Research__-->
@@ -104,8 +123,13 @@
         <prerequisites>
             <li>Smithing</li>
         </prerequisites>
+<<<<<<< Updated upstream
         <researchViewX>0.50</researchViewX>
         <researchViewY>5.00</researchViewY>
+=======
+        <researchViewX>6.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+>>>>>>> Stashed changes
     </ResearchProjectDef>
 
 <!--____Gyee Research____-->
@@ -118,7 +142,7 @@
         <description>Armor and weapon wielded by Sig.</description>
         <baseCost>1000</baseCost>
         <techLevel>Spacer</techLevel>
-        <tab>CraveSagaResearch</tab>
+        <tab>GyeeResearch</tab>
         <prerequisites>
             <li>Smithing</li>
         </prerequisites>
@@ -136,7 +160,7 @@
         <description>Armor and weapon wielded by Kagura.</description>
         <baseCost>1000</baseCost>
         <techLevel>Spacer</techLevel>
-        <tab>CraveSagaResearch</tab>
+        <tab>AnotherEdiosResearch</tab>
         <prerequisites>
             <li>Smithing</li>
         </prerequisites>

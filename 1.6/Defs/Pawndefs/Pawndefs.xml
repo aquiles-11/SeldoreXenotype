@@ -275,6 +275,7 @@
   </PawnKindDef>
 
   <PawnKindDef>
+<<<<<<< Updated upstream
     <defName>Corca</defName>
     <label>Corca</label>
     <combatPower>80</combatPower>
@@ -315,11 +316,17 @@
   </PawnKindDef>
 
   <PawnKindDef>
+=======
+>>>>>>> Stashed changes
     <defName>Flet</defName>
     <label>Flet</label>
     <combatPower>80</combatPower>
     <apparelRequired>
+<<<<<<< Updated upstream
       <li>Apparel_FletArmor</li>
+=======
+      <li>Apparel_EpauloApparel</li>
+>>>>>>> Stashed changes
     </apparelRequired>
     <weaponTags />
     <race>Human</race>
@@ -343,6 +350,7 @@
         <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
         <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
         <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+<<<<<<< Updated upstream
         <FletXenotype MayRequire="Ludeon.RimWorld.Biotech">999</FletXenotype>
       </xenotypeChances>
     </xenotypeSet>
@@ -538,6 +546,9 @@
         <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
         <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
         <ExcaliburXenotype MayRequire="Ludeon.RimWorld.Biotech">999</ExcaliburXenotype>
+=======
+        <KaguraXenotype MayRequire="Ludeon.RimWorld.Biotech">999</KaguraXenotype>
+>>>>>>> Stashed changes
       </xenotypeChances>
     </xenotypeSet>
     <requiredWorkTags>
