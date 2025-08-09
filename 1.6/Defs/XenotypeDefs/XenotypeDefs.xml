@@ -104,7 +104,7 @@
         <defName>FletXenotype</defName>
         <label>Flet Xenotype</label>
         <description>Flet's Xenotype</description>
-        <iconPath>Humanlike/Heads/FletHead/FletHead_south</iconPath>
+        <iconPath>Humanlike/Heads/Flet/FletHead_south</iconPath>
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
@@ -118,7 +118,7 @@
         <defName>CorcaXenotype</defName>
         <label>Corca Xenotype</label>
         <description>Corca's Xenotype</description>
-        <iconPath>Humanlike/Heads/CorcaHead/CorcaHead_south</iconPath>
+        <iconPath>Humanlike/Heads/Corca/CorcaHead_south</iconPath>
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
@@ -132,7 +132,7 @@
         <defName>HakumaXenotype</defName>
         <label>Hakuma Xenotype</label>
         <description>Hakuma's Xenotype</description>
-        <iconPath>Humanlike/Heads/HakumaHead/HakumaHead_south</iconPath>
+        <iconPath>Humanlike/Heads/Hakuma/HakumaHead_south</iconPath>
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
@@ -146,7 +146,7 @@
         <defName>SaberXenotype</defName>
         <label>Saber Xenotype</label>
         <description>Saber's Xenotype</description>
-        <iconPath>Humanlike/Heads/SaberHead/SaberHead_south</iconPath>
+        <iconPath>Humanlike/Heads/Saber/SaberHead_south</iconPath>
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
@@ -160,13 +160,41 @@
         <defName>HorkeuKamuiXenotype</defName>
         <label>HorkeuKamui Xenotype</label>
         <description>HorkeuKamui's Xenotype</description>
-        <iconPath>Humanlike/Heads/HorkeuKamuiHead/HorkeuKamuiHead_south</iconPath>
+        <iconPath>Humanlike/Heads/HorkeuKamui/HorkeuKamuiHead_south</iconPath>
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
         <genes>
             <li>Gene_HorkeuKamuiBody</li>
             <li>Gene_HorkeuKamuiHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>SchmielXenotype</defName>
+        <label>Schmiel Xenotype</label>
+        <description>Schmiel's Xenotype</description>
+        <iconPath>Humanlike/Heads/Schmiel/SchmielHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_SchmielBody</li>
+            <li>Gene_SchmielHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>ExcaliburXenotype</defName>
+        <label>Excalibur Xenotype</label>
+        <description>Excalibur's Xenotype</description>
+        <iconPath>Humanlike/Heads/Excalibur/ExcaliburHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_ExcaliburBody</li>
+            <li>Gene_ExcaliburHead</li>
         </genes>
     </XenotypeDef>
 
