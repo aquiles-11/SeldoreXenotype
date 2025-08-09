@@ -114,4 +114,44 @@
     </bodyTypeGraphicPaths>
   </FurDef>
 
+  <FurDef>
+    <defName>FletBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/FletBody/FletBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+  <FurDef>
+    <defName>CorcaBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/CorcaBody/CorcaBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+  <FurDef>
+    <defName>HakumaBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/HakumaBody/HakumaBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+  <FurDef>
+    <defName>SaberBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/SabertBody/SabertBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+  <FurDef>
+    <defName>HorkeuKamuiBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/HorkeuKamuiBody/HorkeuKamuiBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
 </Defs>

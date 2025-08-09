@@ -118,6 +118,7 @@
       <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
+<bodyScaleFactor>0.5</bodyScaleFactor>
       </li>
     </modExtensions>
   </GeneDef>
@@ -901,6 +902,411 @@
       </tags>
     </hairTagFilter>
     <displayOrderInCategory>6662</displayOrderInCategory>
+  </GeneDef>
+
+ <!-- Flet Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_FletBody</defName>
+    <label>Flet body</label>
+    <description>Carriers of this gene will have a muscular body.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>CraveSaga</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/FletBody/FletBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>FletBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Flet Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_FletHead</defName>
+    <label>Flet head</label>
+    <description>Carriers of this gene will have a the face of Flet.</description>
+    <iconPath>Humanlike/Heads/FletHead/FletHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>CraveSaga</displayCategory>
+    <forcedHeadTypes>
+      <li>FletHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>Humanlike/Heads/FletHead/FletHead</li>
+        </texPaths>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Custom</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+ <!-- Corca Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_CorcaBody</defName>
+    <label>Corca body</label>
+    <description>Carriers of this gene will have a muscular body.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>CraveSaga</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/CorcaBody/CorcaBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>CorcaBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Corca Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_CorcaHead</defName>
+    <label>Corca head</label>
+    <description>Carriers of this gene will have a the face of Corca.</description>
+    <iconPath>Humanlike/Heads/CorcaHead/CorcaHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>CraveSaga</displayCategory>
+    <forcedHeadTypes>
+      <li>CorcaHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>Humanlike/Heads/CorcaHead/CorcaHead</li>
+        </texPaths>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Custom</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+ <!-- Hakuma Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_HakumaBody</defName>
+    <label>Hakuma body</label>
+    <description>Carriers of this gene will have a muscular body.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>CraveSaga</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/HakumaBody/HakumaBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>HakumaBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Hakuma Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_HakumaHead</defName>
+    <label>Hakuma head</label>
+    <description>Carriers of this gene will have a the face of Hakuma.</description>
+    <iconPath>Humanlike/Heads/HakumaHead/HakumaHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>CraveSaga</displayCategory>
+    <forcedHeadTypes>
+      <li>HakumaHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>Humanlike/Heads/HakumaHead/HakumaHead</li>
+        </texPaths>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Custom</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+ <!-- Saber Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_SaberBody</defName>
+    <label>Saber body</label>
+    <description>Carriers of this gene will have a muscular body.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>CraveSaga</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/SabertBody/SabertBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>SaberBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Saber Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_SaberHead</defName>
+    <label>Saber head</label>
+    <description>Carriers of this gene will have a the face of Saber.</description>
+    <iconPath>Humanlike/Heads/SaberHead/SaberHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>CraveSaga</displayCategory>
+    <forcedHeadTypes>
+      <li>SaberHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>Humanlike/Heads/SabertHead/SaberHead</li>
+        </texPaths>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Custom</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+ <!-- Horkeu Kamui Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_HorkeuKamuiBody</defName>
+    <label>HorkeuKamui body</label>
+    <description>Carriers of this gene will have a muscular body.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>CraveSaga</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/HorkeuKamuiBody/HorkeuKamuiBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>HorkeuKamuiBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- HorkeuKamui Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_HorkeuKamuiHead</defName>
+    <label>HorkeuKamui head</label>
+    <description>Carriers of this gene will have a the face of HorkeuKamui.</description>
+    <iconPath>Humanlike/Heads/HorkeuKamuiHead/HorkeuKamuiHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>CraveSaga</displayCategory>
+    <forcedHeadTypes>
+      <li>HorkeuKamuiHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>Humanlike/Heads/HorkeuKamuiHead/HorkeuKamuiHead</li>
+        </texPaths>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Custom</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
   </GeneDef>
 
 </Defs>
