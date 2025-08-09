@@ -85,24 +85,8 @@
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="AverageBase">
-<<<<<<< Updated upstream
-        <defName>CorcaHead</defName>
-        <graphicPath>Humanlike/Heads/Corca/CorcaHead</graphicPath>
-        <randomChosen>false</randomChosen>
-        <gender>None</gender>
-        <requiredGenes>
-            <li>Gene_CorcaHead</li>
-        </requiredGenes>
-        <selectionWeight>1000</selectionWeight>
-    </HeadTypeDef>
-
-    <HeadTypeDef ParentName="AverageBase">
-        <defName>FletHead</defName>
-        <graphicPath>Humanlike/Heads/Flet/FletHead</graphicPath>
-=======
         <defName>FletHead</defName>
         <graphicPath>Humanlike/Heads/FletHead/FletHead</graphicPath>
->>>>>>> Stashed changes
         <randomChosen>false</randomChosen>
         <gender>None</gender>
         <requiredGenes>
@@ -112,10 +96,6 @@
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="AverageBase">
-<<<<<<< Updated upstream
-        <defName>HakumaHead</defName>
-        <graphicPath>Humanlike/Heads/Hakuma/HakumaHead</graphicPath>
-=======
         <defName>CorcaHead</defName>
         <graphicPath>Humanlike/Heads/CorcaHead/CorcaHead</graphicPath>
         <randomChosen>false</randomChosen>
@@ -129,7 +109,6 @@
     <HeadTypeDef ParentName="AverageBase">
         <defName>HakumaHead</defName>
         <graphicPath>Humanlike/Heads/HakumaHead/HakumaHead</graphicPath>
->>>>>>> Stashed changes
         <randomChosen>false</randomChosen>
         <gender>None</gender>
         <requiredGenes>
@@ -139,32 +118,19 @@
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="AverageBase">
-<<<<<<< Updated upstream
-        <defName>SabertHead</defName>
-        <graphicPath>Humanlike/Heads/Sabert/SabertHead</graphicPath>
-        <randomChosen>false</randomChosen>
-        <gender>None</gender>
-        <requiredGenes>
-            <li>Gene_SabertHead</li>
-=======
         <defName>SaberHead</defName>
         <graphicPath>Humanlike/Heads/SabertHead/SaberHead</graphicPath>
         <randomChosen>false</randomChosen>
         <gender>None</gender>
         <requiredGenes>
             <li>Gene_SaberHead</li>
->>>>>>> Stashed changes
         </requiredGenes>
         <selectionWeight>1000</selectionWeight>
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="AverageBase">
         <defName>HorkeuKamuiHead</defName>
-<<<<<<< Updated upstream
-        <graphicPath>Humanlike/Heads/HorkeuKamui/HorkeuKamuiHead</graphicPath>
-=======
         <graphicPath>Humanlike/Heads/HorkeuKamuiHead/HorkeuKamuiHead</graphicPath>
->>>>>>> Stashed changes
         <randomChosen>false</randomChosen>
         <gender>None</gender>
         <requiredGenes>
@@ -173,29 +139,4 @@
         <selectionWeight>1000</selectionWeight>
     </HeadTypeDef>
 
-<<<<<<< Updated upstream
-    <HeadTypeDef ParentName="AverageBase">
-        <defName>SchmielHead</defName>
-        <graphicPath>Humanlike/Heads/Schmiel/SchmielHead</graphicPath>
-        <randomChosen>false</randomChosen>
-        <gender>None</gender>
-        <requiredGenes>
-            <li>Gene_SchmielHead</li>
-        </requiredGenes>
-        <selectionWeight>1000</selectionWeight>
-    </HeadTypeDef>
-
-    <HeadTypeDef ParentName="AverageBase">
-        <defName>ExcaliburHead</defName>
-        <graphicPath>Humanlike/Heads/Excalibur/ExcaliburHead</graphicPath>
-        <randomChosen>false</randomChosen>
-        <gender>None</gender>
-        <requiredGenes>
-            <li>Gene_ExcaliburHead</li>
-        </requiredGenes>
-        <selectionWeight>1000</selectionWeight>
-    </HeadTypeDef>
-
-=======
->>>>>>> Stashed changes
 </Defs>
