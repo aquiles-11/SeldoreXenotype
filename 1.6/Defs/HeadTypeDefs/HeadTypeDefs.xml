@@ -118,12 +118,12 @@
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="AverageBase">
-        <defName>SaberHead</defName>
+        <defName>SabertHead</defName>
         <graphicPath>Humanlike/Heads/Sabert/SaberHead</graphicPath>
         <randomChosen>false</randomChosen>
         <gender>None</gender>
         <requiredGenes>
-            <li>Gene_SaberHead</li>
+            <li>Gene_SabertHead</li>
         </requiredGenes>
         <selectionWeight>1000</selectionWeight>
     </HeadTypeDef>

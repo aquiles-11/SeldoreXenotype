@@ -95,7 +95,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Armor/Gabu/GabuArmor</texPath>
+      <texPath>Armor/Gabu/GabuApparel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>

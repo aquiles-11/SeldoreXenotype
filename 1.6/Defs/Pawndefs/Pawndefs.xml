@@ -203,7 +203,7 @@
     <label>Kagura</label>
     <combatPower>80</combatPower>
     <apparelRequired>
-      <li>Apparel_KaguraArmor</li>
+      <li>Apparel_KaguraApparel</li>
     </apparelRequired>
     <weaponTags />
     <race>Human</race>
@@ -241,7 +241,7 @@
     <label>Epaulo</label>
     <combatPower>80</combatPower>
     <apparelRequired>
-      <li>Apparel_EpauloArmor</li>
+      <li>Apparel_EpauloApparel</li>
     </apparelRequired>
     <weaponTags />
     <race>Human</race>
@@ -279,7 +279,7 @@
     <label>Flet</label>
     <combatPower>80</combatPower>
     <apparelRequired>
-      <li>Apparel_EpauloApparel</li>
+      <li>Apparel_FletArmor</li>
     </apparelRequired>
     <weaponTags />
     <race>Human</race>

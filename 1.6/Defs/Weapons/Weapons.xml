@@ -866,7 +866,7 @@
     <description>PLACEHOLDER.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Weapons/HakumaWolvenSpear</texPath>
+      <texPath>Weapons/WolvenSpear</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -944,7 +944,7 @@
     </descriptionHyperlinks>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Weapons/ExcaliburSword</texPath>
+      <texPath>Weapons/Excalibur</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -970,7 +970,7 @@
     </costList>
     <comps>
       <li Class="CompProperties_EquippableAbility">
-        <abilityDef>SworldCleave</abilityDef>
+        <abilityDef>SwordCleave</abilityDef>
       </li>
     </comps>
     <tools>
@@ -1020,7 +1020,7 @@
     <descriptionHyperlinks>
       <ThingDef>Weapon_ExcaliburSword</ThingDef>
     </descriptionHyperlinks>
-    <iconPath>Weapons/ExcaliburSword</iconPath>
+    <iconPath>Weapons/Excalibur</iconPath>
     <cooldownTicksRange>3000</cooldownTicksRange>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
@@ -1062,7 +1062,7 @@
     <description>A bow with a gold color made of gold and used by those with a golden heart.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Weapons/GoldenBow</texPath>
+      <texPath>Weapons/Goldenbow</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -1104,7 +1104,7 @@
       <Plasteel>100</Plasteel>
       <ComponentSpacer>8</ComponentSpacer>
     </costList>
-    <comps Inherit="False">
+    <comps>
       <li Class="CompProperties_Forbiddable" />
       <li Class="CompProperties_Styleable" />
       <li Class="CompProperties_Biocodable" />

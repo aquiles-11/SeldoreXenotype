@@ -151,8 +151,8 @@
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
         <genes>
-            <li>Gene_SaberBody</li>
-            <li>Gene_SaberHead</li>
+            <li>Gene_SabertBody</li>
+            <li>Gene_SabertHead</li>
         </genes>
     </XenotypeDef>
 
