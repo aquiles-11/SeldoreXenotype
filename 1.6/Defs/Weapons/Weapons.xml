@@ -543,7 +543,7 @@
     <label>Judgement Staff</label>
     <description>A robust staff, Kagura's Judgement Staff is a conduit for his rapid healing abilities. It delivers very fast strikes, while channeling restorative energy to allies in his immediate vicinity.</description>
     <descriptionHyperlinks>
-      <ThingDef>AllyRecoveryPulse</ThingDef>
+      <AbilityDef>AllyRecoveryPulse</AbilityDef>
     </descriptionHyperlinks>
     <possessionCount>1</possessionCount>
     <graphicData>
@@ -758,7 +758,7 @@
     <descriptionHyperlinks>
       <ThingDef>Weapon_EpauloSword</ThingDef>
     </descriptionHyperlinks>
-    <iconPath>Weapons/HolySpear</iconPath>
+    <iconPath>Weapons/EpauloSword</iconPath>
     <cooldownTicksRange>6000</cooldownTicksRange>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
@@ -766,6 +766,7 @@
     <ai_IsOffensive>true</ai_IsOffensive>
     <targetRequired>true</targetRequired>
     <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <!-- <warmupMote>Mote_MagicCircleFollow</warmupMote> -->
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <drawAimPie>true</drawAimPie>
@@ -777,17 +778,19 @@
       </targetParams>
     </verbProperties>
     <comps>
-      <li Class="CompProperties_AbilityExplosion">
+      <li Class="SeldoreXeno.CompProperties_AbilityExploder">
+        <explosionOnCaster>false</explosionOnCaster>
         <damageDef>Stab</damageDef>
         <damageAmount>40</damageAmount>
-        <armorPenetration>0.8</armorPenetration>
+        <armorPenetration >0.8</armorPenetration>
+        <explosionRadius>1.8</explosionRadius>
         <screenShakeFactor>0</screenShakeFactor>
-        <explosionRadius>3</explosionRadius>
+        <soundExplode>PsychicInsanityLanceCast</soundExplode>
+        <doExplosionVFX>false</doExplosionVFX>
       </li>
-       <li Class="CompProperties_AbilityEffecterOnTarget">
+      <li Class="CompProperties_AbilityEffecterOnTarget">
         <effecterDef>SolarBladeDrop_Effect</effecterDef>
-        <maintainForTicks>250</maintainForTicks>
-      </li> 
+      </li>
     </comps>
   </AbilityDef>
 

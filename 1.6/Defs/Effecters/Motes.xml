@@ -30,30 +30,52 @@
     </ThingDef>
 
     <ThingDef ParentName="MoteBase">
-        <defName>Mote_MagicCircle</defName>
-        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <defName>Mote_MagicCircleFollow</defName>
+        <thingClass>MoteAttached</thingClass>
+        <altitudeLayer>ItemImportant</altitudeLayer>
         <mote>
             <fadeInTime>0.1</fadeInTime>
-            <solidTime>0.5</solidTime>
-            <fadeOutTime>0.1</fadeOutTime>
+            <solidTime>999999</solidTime>
+            <!-- <fadeOutTime>0.1</fadeOutTime> -->
+            <collide>false</collide>
+            <needsMaintenance>true</needsMaintenance>
+            <fadeOutUnmaintained>true</fadeOutUnmaintained>
+        </mote>
+        <graphicData>
+            <texPath>Things/Mote/MagicCircle</texPath>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>4</drawSize>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="MoteBase">
+        <defName>Mote_MagicCircle</defName>
+        <altitudeLayer>ItemImportant</altitudeLayer>
+        <mote>
+            <fadeInTime>0.1</fadeInTime>
+            <solidTime>0.7</solidTime>
+            <fadeOutTime>0.2</fadeOutTime>
             <collide>false</collide>
         </mote>
         <graphicData>
             <texPath>Things/Mote/MagicCircle</texPath>
+            <shaderType>MoteGlow</shaderType>
         </graphicData>
     </ThingDef>
 
     <ThingDef ParentName="MoteBase">
         <defName>Mote_SolarSword</defName>
+        <thingClass>MoteThrownAttached</thingClass>
         <altitudeLayer>MoteOverhead</altitudeLayer>
         <mote>
             <fadeInTime>0.1</fadeInTime>
-            <solidTime>0.3</solidTime>
-            <fadeOutTime>0.1</fadeOutTime>
-            <collide>true</collide>
+            <solidTime>0.7</solidTime>
+            <fadeOutTime>0.2</fadeOutTime>
+            <collide>false</collide>
         </mote>
         <graphicData>
             <texPath>Things/Mote/SolarSword</texPath>
+            <shaderType>MoteGlow</shaderType>
         </graphicData>
     </ThingDef>
 

@@ -39,18 +39,18 @@
                 <moteDef>Mote_MagicCircle</moteDef>
                 <burstCount>1</burstCount>
                 <spawnLocType>OnTarget</spawnLocType>
-                <scale>7.5</scale>
+                <scale>4</scale>
                 <angle>0</angle>
-                <rotation>0</rotation>
             </li>
             <li>
                 <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
                 <moteDef>Mote_SolarSword</moteDef>
                 <burstCount>1</burstCount>
                 <spawnLocType>OnTarget</spawnLocType>
-                <scale>4.5</scale>
+                <scale>4</scale>
                 <angle>0</angle>
                 <rotation>0</rotation>
+                <positionOffset>(0, 0, 1.25)</positionOffset>
             </li>
         </children>
     </EffecterDef>
