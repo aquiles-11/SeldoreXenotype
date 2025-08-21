@@ -798,7 +798,7 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Weapon_CorcaWeapon</defName>
-    <label>Corca Morning Star</label>
+    <label>Corca Vanguard Mace</label>
     <description>PLACEHOLDER.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
@@ -815,16 +815,16 @@
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
     <statBases>
-      <WorkToMake>18000</WorkToMake>
-      <Mass>2</Mass>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>7</Mass>
+      <MarketValue>2500</MarketValue>
+      <EquipDelay>1.8</EquipDelay>
     </statBases>
     <relicChance>2</relicChance>
     <equippedAngleOffset>-70</equippedAngleOffset>
     <costList>
-      <Steel>80</Steel>
-      <Gold>2</Gold>
-      <Plasteel>15</Plasteel>
-      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>70</Plasteel>
+      <Gold>5</Gold>
     </costList>
     <tools>
       <li>
@@ -833,8 +833,8 @@
           <li>Blunt</li>
         </capacities>
         <power>10</power>
-        <armorPenetration>0.1</armorPenetration>
-        <cooldownTime>1.7</cooldownTime>
+        <armorPenetration>0.15</armorPenetration>
+        <cooldownTime>2.8</cooldownTime>
       </li>
       <li>
         <label>head</label>
@@ -842,9 +842,9 @@
           <li>Blunt</li>
           <li>Stab</li>
         </capacities>
-        <power>30</power>
-        <armorPenetration>0.3</armorPenetration>
-        <cooldownTime>1.7</cooldownTime>
+        <power>28</power>
+        <armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2.8</cooldownTime>
       </li>
     </tools>
     <recipeMaker>
@@ -861,11 +861,49 @@
     </recipeMaker>
   </ThingDef>
 
+  <AbilityDef>
+    <defName>CorcaAbility</defName>
+    <label>Prism Strike</label>
+    <description>Use this ability to gain a damage buff, heal and also gain resistance to damage.</description>
+    <iconPath>Weapons/CorcaMorningStar</iconPath>
+    <cooldownTicksRange>6000</cooldownTicksRange>
+    <hostile>false</hostile>
+    <groupAbility>true</groupAbility>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>false</targetRequired>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>1</warmupTime>
+      <drawAimPie>false</drawAimPie>
+      <requireLineOfSight>false</requireLineOfSight>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+      <targetable>false</targetable>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>CorcaBuff</hediffDef>
+        <durationSecondsOverride>30</durationSecondsOverride>
+        <replaceExisting>true</replaceExisting>
+      </li>
+      <li Class="CompProperties_AbilityCoagulate">
+        <tendQualityRange>0.3</tendQualityRange>
+      </li>
+    </comps>
+  </AbilityDef>
+
   <!-- Hakuma Wolven Spear -->
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Weapon_HakumaWeapon</defName>
-    <label>Hakuma Wolven Spear</label>
+    <label>Hakuma Fenrir Lance</label>
     <description>PLACEHOLDER.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
@@ -887,41 +925,41 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
-        <armorPenetration>0.10</armorPenetration>
-        <cooldownTime>2.6</cooldownTime>
+        <power>20</power>
+        <armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2.8</cooldownTime>
       </li>
       <li>
         <label>point</label>
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>22</power>
-        <armorPenetration>0.45</armorPenetration>
-        <cooldownTime>2.6</cooldownTime>
+        <power>25</power>
+        <armorPenetration>0.4</armorPenetration>
+        <cooldownTime>2.8</cooldownTime>
       </li>
       <li>
         <label>edge</label>
         <capacities>
-          <li>Cut</li>
+          <li>HeatCapacity</li>
         </capacities>
-        <power>22</power>
-        <armorPenetration>0.45</armorPenetration>
-        <cooldownTime>2.6</cooldownTime>
+        <power>10</power>
+        <armorPenetration>0.3</armorPenetration>
+        <cooldownTime>2.8</cooldownTime>
       </li>
     </tools>
     <statBases>
-      <MarketValue>1200</MarketValue>
-      <WorkToMake>30000</WorkToMake>
-      <Mass>1.5</Mass>
+      <MarketValue>2000</MarketValue>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>3.5</Mass>
       <EquipDelay>1.5</EquipDelay>
     </statBases>
     <relicChance>2</relicChance>
     <equippedAngleOffset>145</equippedAngleOffset>
     <costList>
-      <Gold>1</Gold>
-      <Plasteel>80</Plasteel>
-      <ComponentSpacer>3</ComponentSpacer>
+      <Steel>60</Steel>
+      <Plasteel>20</Plasteel>
+      <ComponentIndustrial>43</ComponentIndustrial>
     </costList>
     <recipeMaker>
       <researchPrerequisite>HakumaResearch</researchPrerequisite>
@@ -1061,7 +1099,7 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Weapon_GoldenBow</defName>
-    <label>Golden Bow</label>
+    <label>Schmiel's Commander Greatbow</label>
     <description>A bow with a gold color made of gold and used by those with a golden heart.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
@@ -1083,29 +1121,30 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Projectile_LightArrow</defaultProjectile>
         <warmupTime>1</warmupTime>
-        <range>38</range>
+        <range>30</range>
         <burstShotCount>1</burstShotCount>
         <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
         <muzzleFlashScale>6</muzzleFlashScale>
       </li>
     </verbs>
     <statBases>
-      <MarketValue>3500</MarketValue>
-      <WorkToMake>70000</WorkToMake>
+      <MarketValue>1800</MarketValue>
+      <WorkToMake>35000</WorkToMake>
       <MeditationFocusStrength>0.05</MeditationFocusStrength>
       <Mass>2.5</Mass>
       <EquipDelay>1.5</EquipDelay>
       <AccuracyTouch>0.65</AccuracyTouch>
       <AccuracyShort>0.85</AccuracyShort>
       <AccuracyMedium>0.75</AccuracyMedium>
-      <AccuracyLong>0.50</AccuracyLong>
-      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
     </statBases>
     <relicChance>2</relicChance>
     <equippedAngleOffset>130</equippedAngleOffset>
     <costList>
-      <Plasteel>100</Plasteel>
-      <ComponentSpacer>8</ComponentSpacer>
+      <Plasteel>40</Plasteel>
+      <Steel>20</Steel>
+      <Gold>2</Gold>
     </costList>
     <comps>
       <li Class="CompProperties_Forbiddable" />
@@ -1144,8 +1183,8 @@
     </graphicData>
     <projectile Inherit="false">
       <damageDef>EnergyBoltDamage</damageDef>
-      <damageAmountBase>30</damageAmountBase>
-      <armorPenetrationBase>0.60</armorPenetrationBase>
+      <damageAmountBase>25</damageAmountBase>
+      <armorPenetrationBase>0.40</armorPenetrationBase>
       <speed>50</speed>
     </projectile>
   </ThingDef>

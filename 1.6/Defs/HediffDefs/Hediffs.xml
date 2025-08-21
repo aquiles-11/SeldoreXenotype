@@ -159,4 +159,29 @@
         </stages>
     </HediffDef>
 
+    <HediffDef>
+        <defName>CorcaBuff</defName>
+        <label>corca buff</label>
+        <description>PLACEHOLDER.</description>
+        <debugLabelExtra>other</debugLabelExtra>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>False</showRemainingTime>
+                <disappearsAfterTicks>800000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeleeDamageFactor>0.5</MeleeDamageFactor>
+                    <IncomingDamageFactor>-0.5</IncomingDamageFactor>
+                </statOffsets>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
+
 </Defs>

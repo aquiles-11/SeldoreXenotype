@@ -496,7 +496,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_CorcaArmor</defName>
-    <label>Corca's Armor</label>
+    <label>Corca's Vanguard Cuirass</label>
     <description>PLACEHOLDER</description>
     <recipeMaker>
       <skillRequirements>
@@ -518,24 +518,24 @@
       <drawSize>1.5</drawSize>
     </graphicData>
     <costList>
-      <Plasteel>140</Plasteel>
-      <Gold>10</Gold>
+      <Plasteel>80</Plasteel>
+      <Gold>5</Gold>
       <ComponentSpacer>7</ComponentSpacer>
     </costList>
     <equippedStatOffsets>
       <MoveSpeed>-0.15</MoveSpeed>
     </equippedStatOffsets>
     <statBases>
-      <MaxHitPoints>400</MaxHitPoints>
-      <WorkToMake>70000</WorkToMake>
-      <MarketValue>3200</MarketValue>
-      <Mass>14.5</Mass>
-      <ArmorRating_Sharp>1.30</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.85</ArmorRating_Heat>
-      <Insulation_Cold>35</Insulation_Cold>
-      <Insulation_Heat>20</Insulation_Heat>
-      <EquipDelay>2.4</EquipDelay>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToMake>55000</WorkToMake>
+      <MarketValue>2200</MarketValue>
+      <Mass>12.5</Mass>
+      <ArmorRating_Sharp>1.08</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.47</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.56</ArmorRating_Heat>
+      <Insulation_Cold>32</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+      <EquipDelay>2.1</EquipDelay>
     </statBases>
     <thingCategories>
       <li>ApparelNoble</li>
@@ -563,11 +563,11 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_FletArmor</defName>
-    <label>Flet's Armor</label>
+    <label>Flet's Chef Coat</label>
     <description>PLACEHOLDER</description>
     <recipeMaker>
       <skillRequirements>
-        <Crafting>8</Crafting>
+        <Crafting>4</Crafting>
       </skillRequirements>
       <researchPrerequisite>FletResearch</researchPrerequisite>
       <displayPriority>245</displayPriority>
@@ -585,24 +585,20 @@
       <drawSize>1.5</drawSize>
     </graphicData>
     <costList>
-      <Plasteel>140</Plasteel>
-      <Gold>10</Gold>
-      <ComponentSpacer>7</ComponentSpacer>
+      <Steel>20</Steel>
+      <Cloth>30</Cloth>
     </costList>
-    <equippedStatOffsets>
-      <MoveSpeed>-0.15</MoveSpeed>
-    </equippedStatOffsets>
     <statBases>
-      <MaxHitPoints>400</MaxHitPoints>
-      <WorkToMake>70000</WorkToMake>
-      <MarketValue>3200</MarketValue>
-      <Mass>14.5</Mass>
-      <ArmorRating_Sharp>1.30</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.85</ArmorRating_Heat>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToMake>10000</WorkToMake>
+      <MarketValue>400</MarketValue>
+      <Mass>2</Mass>
+      <ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
       <Insulation_Cold>35</Insulation_Cold>
       <Insulation_Heat>20</Insulation_Heat>
-      <EquipDelay>2.4</EquipDelay>
+      <EquipDelay>1</EquipDelay>
     </statBases>
     <thingCategories>
       <li>ApparelNoble</li>
@@ -630,11 +626,11 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_HakumaArmor</defName>
-    <label>Hakuma's Armor</label>
+    <label>Hakuma's Chieftain's Mantle</label>
     <description>PLACEHOLDER</description>
     <recipeMaker>
       <skillRequirements>
-        <Crafting>8</Crafting>
+        <Crafting>6</Crafting>
       </skillRequirements>
       <researchPrerequisite>HakumaResearch</researchPrerequisite>
       <displayPriority>245</displayPriority>
@@ -652,23 +648,23 @@
       <drawSize>1.5</drawSize>
     </graphicData>
     <costList>
-      <Plasteel>140</Plasteel>
-      <Gold>10</Gold>
-      <ComponentSpacer>7</ComponentSpacer>
+      <Steel>60</Steel>
+      <Leather_Plain>40</Leather_Plain>
+      <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <equippedStatOffsets>
       <MoveSpeed>-0.15</MoveSpeed>
     </equippedStatOffsets>
     <statBases>
-      <MaxHitPoints>400</MaxHitPoints>
-      <WorkToMake>70000</WorkToMake>
-      <MarketValue>3200</MarketValue>
-      <Mass>14.5</Mass>
-      <ArmorRating_Sharp>1.30</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.85</ArmorRating_Heat>
-      <Insulation_Cold>35</Insulation_Cold>
-      <Insulation_Heat>20</Insulation_Heat>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>30000</WorkToMake>
+      <MarketValue>1500</MarketValue>
+      <Mass>8</Mass>
+      <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.75</ArmorRating_Heat>
+      <Insulation_Cold>30</Insulation_Cold>
+      <Insulation_Heat>15</Insulation_Heat>
       <EquipDelay>2.4</EquipDelay>
     </statBases>
     <thingCategories>
@@ -831,7 +827,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_SchmielArmor</defName>
-    <label>Schmiel's Armor</label>
+    <label>Schmiel's Commander Garb</label>
     <description>PLACEHOLDER</description>
     <recipeMaker>
       <skillRequirements>
@@ -853,24 +849,20 @@
       <drawSize>1.5</drawSize>
     </graphicData>
     <costList>
-      <Plasteel>140</Plasteel>
-      <Gold>10</Gold>
-      <ComponentSpacer>7</ComponentSpacer>
+      <Cloth>50</Cloth>
+      <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
-    <equippedStatOffsets>
-      <MoveSpeed>-0.15</MoveSpeed>
-    </equippedStatOffsets>
     <statBases>
-      <MaxHitPoints>400</MaxHitPoints>
-      <WorkToMake>70000</WorkToMake>
-      <MarketValue>3200</MarketValue>
-      <Mass>14.5</Mass>
-      <ArmorRating_Sharp>1.30</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.85</ArmorRating_Heat>
-      <Insulation_Cold>35</Insulation_Cold>
-      <Insulation_Heat>20</Insulation_Heat>
-      <EquipDelay>2.4</EquipDelay>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>22000</WorkToMake>
+      <MarketValue>1000</MarketValue>
+      <Mass>3.5</Mass>
+      <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      <Insulation_Cold>20</Insulation_Cold>
+      <Insulation_Heat>15</Insulation_Heat>
+      <EquipDelay>1.2</EquipDelay>
     </statBases>
     <thingCategories>
       <li>ApparelNoble</li>
@@ -898,7 +890,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_ExcaliburArmor</defName>
-    <label>Excalibur's Armor</label>
+    <label>Excalibur's Radiant Cuirass</label>
     <description>PLACEHOLDER</description>
     <recipeMaker>
       <skillRequirements>
@@ -920,24 +912,21 @@
       <drawSize>1.5</drawSize>
     </graphicData>
     <costList>
-      <Plasteel>140</Plasteel>
-      <Gold>10</Gold>
-      <ComponentSpacer>7</ComponentSpacer>
+      <Plasteel>70</Plasteel>
+      <Gold>2</Gold>
+      <ComponentSpacer>57</ComponentSpacer>
     </costList>
-    <equippedStatOffsets>
-      <MoveSpeed>-0.15</MoveSpeed>
-    </equippedStatOffsets>
     <statBases>
-      <MaxHitPoints>400</MaxHitPoints>
-      <WorkToMake>70000</WorkToMake>
-      <MarketValue>3200</MarketValue>
-      <Mass>14.5</Mass>
-      <ArmorRating_Sharp>1.30</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.85</ArmorRating_Heat>
-      <Insulation_Cold>35</Insulation_Cold>
-      <Insulation_Heat>20</Insulation_Heat>
-      <EquipDelay>2.4</EquipDelay>
+      <MaxHitPoints>340</MaxHitPoints>
+      <WorkToMake>55000</WorkToMake>
+      <MarketValue>1900</MarketValue>
+      <Mass>10</Mass>
+      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <Insulation_Cold>32</Insulation_Cold>
+      <Insulation_Heat>9</Insulation_Heat>
+      <EquipDelay>1.8</EquipDelay>
     </statBases>
     <thingCategories>
       <li>ApparelNoble</li>

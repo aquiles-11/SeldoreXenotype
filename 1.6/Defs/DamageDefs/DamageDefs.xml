@@ -63,4 +63,23 @@
 		<soundExplosion>Slice</soundExplosion>
 	</DamageDef> -->
 
+	<ToolCapacityDef>
+		<defName>HeatCapacity</defName>
+		<label>heat</label>
+	</ToolCapacityDef>
+
+	<ManeuverDef>
+		<defName>HeatCapacity</defName>
+		<requiredCapacity>HeatCapacity</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>Burn</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
 </Defs>
