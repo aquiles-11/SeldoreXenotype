@@ -26,6 +26,14 @@
         <generalDescription>All the stuff from Gyee can be found here</generalDescription>
     </ResearchTabDef>
 
+    <ResearchTabDef>
+        <defName>HousamoResearch</defName>
+        <label>Housamo Research</label>
+        <generalTitle>Housamo Research</generalTitle>
+        <generalDescription>All the stuff from Housamo can be found here</generalDescription>
+    </ResearchTabDef>
+
+
 <!--____Crave Saga Research____-->
 
     <!--__Epaulo Research__-->
@@ -256,4 +264,21 @@
         <researchViewY>4.00</researchViewY>
     </ResearchProjectDef>
 
+    <!--__Izumi Research__-->
+
+    <ResearchProjectDef>
+        <defName>IzumiResearch</defName>
+        <label>Izumi Gear</label>
+        <description>Armor and weapon wielded by Izumi.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.50</researchViewX>
+        <researchViewY>4.00</researchViewY>
+    </ResearchProjectDef>
+
+    
 </Defs>

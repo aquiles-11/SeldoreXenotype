@@ -979,7 +979,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Weapon_ExcaliburSword</defName>
     <label>Excalibur</label>
-    <description>PLACEHOLDER.</description>
+    <description>A sacred, legendary blade, said to have awakened from ancient slumber in a sacred forest, now bound to a new path. Infused with radiant energy, it delivers devastating melee attacks and can fire arcing 'Light' projectiles that dazzle foes and are deadly to insects. Its loyalty to you is profound.</description>
     <descriptionHyperlinks>
       <AbilityDef>SwordCleave</AbilityDef>
     </descriptionHyperlinks>
@@ -1095,7 +1095,7 @@
     </comps>
   </AbilityDef>
 
-  <!-- Golden Bow -->
+  <!-- Schmiel Golden Bow -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Weapon_GoldenBow</defName>
@@ -1160,7 +1160,7 @@
       </li>
     </comps>
     <recipeMaker>
-      <!-- <researchPrerequisite>SeldoreResearch</researchPrerequisite> -->
+       <researchPrerequisite>SchmielResearch</researchPrerequisite> 
       <recipeUsers>
         <li>TableMachining</li>
         <li>FabricationBench</li>
@@ -1187,6 +1187,155 @@
       <armorPenetrationBase>0.40</armorPenetrationBase>
       <speed>50</speed>
     </projectile>
+  </ThingDef>
+
+  <!-- Sabert's C the ripper -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Weapon_TheRipper</defName>
+    <label>Sabert's C - The Ripper</label>
+    <description>A bow with a gold color made of gold and used by those with a golden heart.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/Goldenbow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>TheRipper</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+      <WorkToMake>70000</WorkToMake>
+      <Mass>8</Mass>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>130</equippedAngleOffset>
+        <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.8</cooldownTime>
+        <armorPenetration>0.15</armorPenetration>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>35</power>
+        <cooldownTime>2.8</cooldownTime>
+        <armorPenetration>0.70</armorPenetration>
+      </li>
+    </tools>
+    <costList>
+      <Plasteel>100</Plasteel>
+      <ComponentSpacer>8</ComponentSpacer>
+      <Uranium>3</Uranium>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Styleable" />
+      <li Class="CompProperties_Biocodable" />
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <recipeMaker>
+       <researchPrerequisite>SabertResearch</researchPrerequisite> 
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  <!-- Sabert's C the ripper -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Weapon_FountainClaw</defName>
+    <label>Izumi's Fountain Claw</label>
+    <description>PLACEHOLDER</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/Goldenbow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>GoldenBow</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>1800</MarketValue>
+      <WorkToMake>35000</WorkToMake>
+      <Mass>2</Mass>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>130</equippedAngleOffset>
+        <tools>
+      <li>
+        <label>claw</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>1.5</cooldownTime>
+        <armorPenetration>0.4</armorPenetration>
+      </li>
+    </tools>
+    <costList>
+      <Plasteel>60</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <Gold>2</Gold>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Styleable" />
+      <li Class="CompProperties_Biocodable" />
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <recipeMaker>
+       <researchPrerequisite>IzumiResearch</researchPrerequisite> 
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
   </ThingDef>
 
 </Defs>
