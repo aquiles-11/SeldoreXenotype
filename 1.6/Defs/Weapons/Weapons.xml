@@ -998,8 +998,9 @@
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
     <statBases>
-      <WorkToMake>18000</WorkToMake>
-      <Mass>2</Mass>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>3</Mass>
+      <EquipDelay>1.0</EquipDelay>
     </statBases>
     <relicChance>2</relicChance>
     <equippedAngleOffset>-70</equippedAngleOffset>
@@ -1020,24 +1021,27 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>10</power>
-        <cooldownTime>1.7</cooldownTime>
+        <power>12</power>
+        <armorPenetration>0.18</armorPenetration>
+        <cooldownTime>1.6</cooldownTime>
       </li>
       <li>
         <label>point</label>
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>25</power>
-        <cooldownTime>1.7</cooldownTime>
+        <power>27</power>
+        <armorPenetration>0.9</armorPenetration>
+        <cooldownTime>1.6</cooldownTime>
       </li>
       <li>
         <label>edge</label>
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>24</power>
-        <cooldownTime>1.7</cooldownTime>
+        <power>27</power>
+        <armorPenetration>0.9</armorPenetration>
+        <cooldownTime>1.6</cooldownTime>
       </li>
     </tools>
     <recipeMaker>
