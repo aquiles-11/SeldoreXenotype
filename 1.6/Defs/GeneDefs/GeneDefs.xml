@@ -904,5 +904,70 @@
     <displayOrderInCategory>6662</displayOrderInCategory>
   </GeneDef>
 
+  <!-- Izumi Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_IzumiBody</defName>
+    <label>Izumi body</label>
+    <description>PLACEHOLDER.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>CraveSaga</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/Izumi/IzumiBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>IzumiBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Izumi Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_IzumiHead</defName>
+    <label>Izumi head</label>
+    <description>Carriers of this gene will have a the face of Izumi.</description>
+    <iconPath>Humanlike/Heads/Izumi/IzumiHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>CraveSaga</displayCategory>
+    <forcedHeadTypes>
+      <li>IzumiHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+  </GeneDef>
+
+
 
 </Defs>

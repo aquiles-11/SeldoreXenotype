@@ -114,4 +114,12 @@
     </bodyTypeGraphicPaths>
   </FurDef>
 
+  <FurDef>
+    <defName>IzumiBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/Izumi/IzumiBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
 </Defs>

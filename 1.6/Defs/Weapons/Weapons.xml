@@ -416,7 +416,7 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Weapon_GaiWeapon</defName>
-    <label>Gai's Poire</label>
+    <label>Poire</label>
     <description>A formidable blunt weapon, Gai's Poire is a heavy frying pan serving as both a chef's tool and a brawler's might. It channels his powerful strikes with absolute culinary confidence.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
@@ -798,8 +798,8 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Weapon_CorcaWeapon</defName>
-    <label>Corca Vanguard Mace</label>
-    <description>PLACEHOLDER.</description>
+    <label>Vanguard Mace</label>
+    <description>A formidable, heavy one-handed mace that embodies Corca's role as a guard and his power. Its blunt force is capable of delivering immense damage with each swing.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Weapons/CorcaMorningStar</texPath>
@@ -903,8 +903,8 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Weapon_HakumaWeapon</defName>
-    <label>Hakuma Fenrir Lance</label>
-    <description>PLACEHOLDER.</description>
+    <label>Fenrir Lance</label>
+    <description>A formidable lance, this weapon embodies Hakuma's resolve. It channels his fiery spirit into powerful melee strikes, ready to lead his tribe in any battle..</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Weapons/WolvenSpear</texPath>
@@ -1103,7 +1103,7 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Weapon_GoldenBow</defName>
-    <label>Schmiel's Commander Greatbow</label>
+    <label>Commander Greatbow</label>
     <description>A bow with a gold color made of gold and used by those with a golden heart.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
@@ -1197,8 +1197,8 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Weapon_TheRipper</defName>
-    <label>Sabert's C - The Ripper</label>
-    <description>A bow with a gold color made of gold and used by those with a golden heart.</description>
+    <label>The Ripper</label>
+    <description>PLACEHOLDER.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Weapons/Goldenbow</texPath>
@@ -1272,74 +1272,6 @@
     </recipeMaker>
   </ThingDef>
 
-  <!-- Sabert's C the ripper -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Weapon_FountainClaw</defName>
-    <label>Izumi's Fountain Claw</label>
-    <description>PLACEHOLDER</description>
-    <possessionCount>1</possessionCount>
-    <graphicData>
-      <texPath>Weapons/Goldenbow</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <drawSize>1.5</drawSize>
-    </graphicData>
-    <techLevel>Spacer</techLevel>
-    <weaponTags>
-      <li>GoldenBow</li>
-    </weaponTags>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
-    <statBases>
-      <MarketValue>1800</MarketValue>
-      <WorkToMake>35000</WorkToMake>
-      <Mass>2</Mass>
-      <EquipDelay>1</EquipDelay>
-    </statBases>
-    <relicChance>2</relicChance>
-    <equippedAngleOffset>130</equippedAngleOffset>
-        <tools>
-      <li>
-        <label>claw</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>1.5</cooldownTime>
-        <armorPenetration>0.4</armorPenetration>
-      </li>
-    </tools>
-    <costList>
-      <Plasteel>60</Plasteel>
-      <ComponentIndustrial>5</ComponentIndustrial>
-      <Gold>2</Gold>
-    </costList>
-    <comps>
-      <li Class="CompProperties_Forbiddable" />
-      <li Class="CompProperties_Styleable" />
-      <li Class="CompProperties_Biocodable" />
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-      <li Class="CompProperties_Art">
-        <nameMaker>NamerArtWeaponGun</nameMaker>
-        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-        <minQualityForArtistic>Excellent</minQualityForArtistic>
-      </li>
-    </comps>
-    <recipeMaker>
-       <researchPrerequisite>IzumiResearch</researchPrerequisite> 
-      <recipeUsers>
-        <li>TableMachining</li>
-        <li>FabricationBench</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>8</Crafting>
-      </skillRequirements>
-      <displayPriority>420</displayPriority>
-    </recipeMaker>
-  </ThingDef>
 
 </Defs>
