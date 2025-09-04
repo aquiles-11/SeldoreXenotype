@@ -761,7 +761,7 @@
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_HorkeuKamuiArmor</defName>
     <label>Gauntlet-Greaves</label>
-    <description>A rugged battle-wrap, this outfit embodies Horkeu Kamui's warrior spirit. He is a divine wolf who teaches his warrior ways and seeks a human hero to be his master. On the battlefield, he is a stern teacher, but in his daily life, he is known to be affectionate and helpful with housework. </description>
+    <description>A rugged battle-wrap, this outfit embodies Horkeu Kamui's warrior spirit. He is a divine wolf who teaches his warrior ways and seeks a human hero to be his master. On the battlefield, he is a stern teacher, but in his daily life, he is known to be affectionate and helpful with housework.</description>
     <recipeMaker>
       <skillRequirements>
         <Crafting>8</Crafting>

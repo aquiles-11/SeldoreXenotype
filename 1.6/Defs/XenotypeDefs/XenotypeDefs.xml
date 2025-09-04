@@ -198,4 +198,18 @@
         </genes>
     </XenotypeDef>
 
+    <XenotypeDef>
+        <defName>IzumiXenotype</defName>
+        <label>Izumi Xenotype</label>
+        <description>Izumi's Xenotype</description>
+        <iconPath>Humanlike/Heads/Izumi/IzumiHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_IzumiBody</li>
+            <li>Gene_IzumiHead</li>
+        </genes>
+    </XenotypeDef>
+
 </Defs>
