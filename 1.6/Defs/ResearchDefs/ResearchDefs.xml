@@ -116,75 +116,7 @@
         <researchViewY>2.00</researchViewY>
     </ResearchProjectDef>
 
-<!--____Gyee Research____-->
-
-    <!--__Sig Research-->
-
-    <ResearchProjectDef>
-        <defName>SigResearch</defName>
-        <label>Sig Gear</label>
-        <description>Armor and weapon wielded by Sig.</description>
-        <baseCost>1000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <tab>GyeeResearch</tab>
-        <prerequisites>
-            <li>Smithing</li>
-        </prerequisites>
-        <researchViewX>1.00</researchViewX>
-        <researchViewY>1.00</researchViewY>
-    </ResearchProjectDef>
-
-<!--____Another Edios Research____-->
-
-    <!--__Kagura Research__-->
-
-    <ResearchProjectDef>
-        <defName>KaguraResearch</defName>
-        <label>Kagura Gear</label>
-        <description>Armor and weapon wielded by Kagura.</description>
-        <baseCost>1000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <tab>AnotherEdiosResearch</tab>
-        <prerequisites>
-            <li>Smithing</li>
-        </prerequisites>
-        <researchViewX>1.00</researchViewX>
-        <researchViewY>2.00</researchViewY>
-    </ResearchProjectDef>
-
-    <!--__Corca Research__-->
-
-    <ResearchProjectDef>
-        <defName>CorcaResearch</defName>
-        <label>Corca Gear</label>
-        <description>Armor and weapon wielded by Corca.</description>
-        <baseCost>1000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <tab>CraveSagaResearch</tab>
-        <prerequisites>
-            <li>Smithing</li>
-        </prerequisites>
-        <researchViewX>1.00</researchViewX>
-        <researchViewY>3.00</researchViewY>
-    </ResearchProjectDef>
-
-    <!--__Flet Research__-->
-
-    <ResearchProjectDef>
-        <defName>FletResearch</defName>
-        <label>Flet Gear</label>
-        <description>Armor and weapon wielded by Flet.</description>
-        <baseCost>1000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <tab>CraveSagaResearch</tab>
-        <prerequisites>
-            <li>Smithing</li>
-        </prerequisites>
-        <researchViewX>1.00</researchViewX>
-        <researchViewY>4.00</researchViewY>
-    </ResearchProjectDef>
-
-    <!--__Hakuma Research__-->
+        <!--__Hakuma Research__-->
 
     <ResearchProjectDef>
         <defName>HakumaResearch</defName>
@@ -214,22 +146,6 @@
         </prerequisites>
         <researchViewX>2.00</researchViewX>
         <researchViewY>1.00</researchViewY>
-    </ResearchProjectDef>
-
-    <!--__Horkeu Kamui Research__-->
-
-    <ResearchProjectDef>
-        <defName>HorkeuKamuiResearch</defName>
-        <label>Horkeu Kamui Gear</label>
-        <description>Armor and weapon wielded by Horkeu Kamui.</description>
-        <baseCost>1000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <tab>CraveSagaResearch</tab>
-        <prerequisites>
-            <li>Smithing</li>
-        </prerequisites>
-        <researchViewX>1.50</researchViewX>
-        <researchViewY>2.00</researchViewY>
     </ResearchProjectDef>
 
     <!--__Schmiel Research__-->
@@ -264,6 +180,25 @@
         <researchViewY>4.00</researchViewY>
     </ResearchProjectDef>
 
+
+<!--____Gyee Research____-->
+
+    <!--__Sig Research-->
+
+    <ResearchProjectDef>
+        <defName>SigResearch</defName>
+        <label>Sig Gear</label>
+        <description>Armor and weapon wielded by Sig.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>GyeeResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>1.00</researchViewY>
+    </ResearchProjectDef>
+
     <!--__Izumi Research__-->
 
     <ResearchProjectDef>
@@ -272,13 +207,84 @@
         <description>Armor and weapon wielded by Izumi.</description>
         <baseCost>1000</baseCost>
         <techLevel>Spacer</techLevel>
-        <tab>CraveSagaResearch</tab>
+        <tab>GyeeResearch</tab>
         <prerequisites>
             <li>Smithing</li>
         </prerequisites>
         <researchViewX>1.50</researchViewX>
         <researchViewY>4.00</researchViewY>
     </ResearchProjectDef>
+
+
+<!--____Another Edios Research____-->
+
+    <!--__Kagura Research__-->
+
+    <ResearchProjectDef>
+        <defName>KaguraResearch</defName>
+        <label>Kagura Gear</label>
+        <description>Armor and weapon wielded by Kagura.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>AnotherEdiosResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+    <!--__Corca Research__-->
+
+    <ResearchProjectDef>
+        <defName>CorcaResearch</defName>
+        <label>Corca Gear</label>
+        <description>Armor and weapon wielded by Corca.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>AnotherEdiosResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>3.00</researchViewY>
+    </ResearchProjectDef>
+
+    <!--__Flet Research__-->
+
+    <ResearchProjectDef>
+        <defName>FletResearch</defName>
+        <label>Flet Gear</label>
+        <description>Armor and weapon wielded by Flet.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>AnotherEdiosResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>4.00</researchViewY>
+    </ResearchProjectDef>
+
+<!--____Housamo Research____-->
+
+    <!--__Horkeu Kamui Research__-->
+
+    <ResearchProjectDef>
+        <defName>HorkeuKamuiResearch</defName>
+        <label>Horkeu Kamui Gear</label>
+        <description>Armor and weapon wielded by Horkeu Kamui.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>HousamoResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.50</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+
 
     
 </Defs>

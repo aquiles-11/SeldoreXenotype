@@ -820,6 +820,11 @@
       <MarketValue>2500</MarketValue>
       <EquipDelay>1.8</EquipDelay>
     </statBases>
+    <comps>
+      <li Class="CompProperties_EquippableAbility">
+        <abilityDef>CorcaAbility</abilityDef>
+      </li>
+    </comps>
     <relicChance>2</relicChance>
     <equippedAngleOffset>-70</equippedAngleOffset>
     <costList>
@@ -948,6 +953,11 @@
         <cooldownTime>2.8</cooldownTime>
       </li>
     </tools>
+        <comps>
+      <li Class="CompProperties_EquippableAbility">
+        <abilityDef>BlazeThrust</abilityDef>
+      </li>
+    </comps>
     <statBases>
       <MarketValue>2000</MarketValue>
       <WorkToMake>45000</WorkToMake>
@@ -973,6 +983,47 @@
       <displayPriority>420</displayPriority>
     </recipeMaker>
   </ThingDef>
+
+  <AbilityDef>
+    <defName>BlazeThrust</defName>
+    <label>blaze thrust ability</label>
+    <description>Perform a powerful sweep from holy knight commander spear, hitting multiple enemies in an arc or line.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Weapon_HakumaWeapon</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Weapons/WolvenSpear</iconPath>
+    <cooldownTicksRange>3600</cooldownTicksRange>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>true</targetRequired>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>1.9</range>
+      <warmupTime>1.5</warmupTime>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="SeldoreXeno.CompProperties_AbilityAngleBlast">
+        <range>0.9</range>
+        <lineWidthEnd>10</lineWidthEnd>
+        <damageDef>Stab</damageDef>
+        <effect>HolySpearSweep_Effect</effect>
+        <screenShake>0</screenShake>
+        <damageAmount>125</damageAmount>
+        <armorPen>0.6</armorPen>
+        <addedAngle>60</addedAngle>
+        <effectTickAwayFromCast>1</effectTickAwayFromCast>
+        <explosionSpeed>1.0</explosionSpeed>
+      </li>
+    </comps>
+  </AbilityDef>
 
   <!-- Excalibur Sword -->
 
@@ -1162,6 +1213,9 @@
         <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
         <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
+            <li Class="CompProperties_EquippableAbility">
+        <abilityDef>SchmielAbility</abilityDef>
+      </li>
     </comps>
     <recipeMaker>
        <researchPrerequisite>SchmielResearch</researchPrerequisite> 
@@ -1192,6 +1246,45 @@
       <speed>50</speed>
     </projectile>
   </ThingDef>
+
+  <AbilityDef>
+    <defName>SchmielAbility</defName>
+    <label>Heaven rain</label>
+    <description>Use this ability to shoot 5 projectiles at an enemy.</description>
+    <iconPath>Weapons/Goldenbow</iconPath>
+    <cooldownTicksRange>3600</cooldownTicksRange>
+    <hostile>false</hostile>
+    <groupAbility>true</groupAbility>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>false</targetRequired>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>1.5</warmupTime>
+      <drawAimPie>false</drawAimPie>
+      <requireLineOfSight>false</requireLineOfSight>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+      <targetable>false</targetable>
+      <range>24.9</range>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>CorcaBuff</hediffDef>
+        <durationSecondsOverride>30</durationSecondsOverride>
+        <replaceExisting>true</replaceExisting>
+      </li>
+      <li Class="CompProperties_AbilityCoagulate">
+        <tendQualityRange>0.3</tendQualityRange>
+      </li>
+    </comps>
+  </AbilityDef>
 
   <!-- Sabert's C the ripper -->
 
