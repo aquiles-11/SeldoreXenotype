@@ -1240,7 +1240,7 @@
       <drawSize>2.5</drawSize>
     </graphicData>
     <projectile Inherit="false">
-      <damageDef>EnergyBoltDamage</damageDef>
+      <damageDef>RangedStab</damageDef>
       <damageAmountBase>25</damageAmountBase>
       <armorPenetrationBase>0.40</armorPenetrationBase>
       <speed>50</speed>
@@ -1397,7 +1397,7 @@
     <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_AbilityShoot</verbClass>
-      <range>5.9</range>
+      <range>25.9</range>
       <defaultProjectile>Projectile_SabertProjectile</defaultProjectile>
       <requireLineOfSight>true</requireLineOfSight>
       <range>24.9</range>
@@ -1415,7 +1415,7 @@
       <drawSize>2.5</drawSize>
     </graphicData>
     <projectile Inherit="false">
-      <damageDef>Stab</damageDef>
+      <damageDef>RangedStab</damageDef>
       <damageAmountBase>35</damageAmountBase>
       <armorPenetrationBase>0.60</armorPenetrationBase>
       <speed>50</speed>
