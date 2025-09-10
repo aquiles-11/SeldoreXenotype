@@ -56,6 +56,9 @@
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
       </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
     </modExtensions>
   </GeneDef>
 
@@ -118,8 +121,10 @@
       <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
-<bodyScaleFactor>0.5</bodyScaleFactor>
       </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
     </modExtensions>
   </GeneDef>
 
@@ -184,6 +189,9 @@
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
       </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
     </modExtensions>
   </GeneDef>
 
@@ -231,9 +239,12 @@
     <modExtensions>
       <li Class="VEF.Genes.GeneExtension">
         <forcedBodyType>Sig</forcedBodyType>
-          <bodyNakedGraphicPath>Humanlike/Bodies/SigBody</bodyNakedGraphicPath>
+          <bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_Sig</bodyNakedGraphicPath>
           <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath>
       </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
     </modExtensions>
   </GeneDef>
 
@@ -298,6 +309,9 @@
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
       </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
     </modExtensions>
   </GeneDef>
 
@@ -362,6 +376,9 @@
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
       </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
     </modExtensions>
   </GeneDef>
 
@@ -426,6 +443,9 @@
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
       </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
     </modExtensions>
   </GeneDef>
 
@@ -490,6 +510,9 @@
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
       </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
     </modExtensions>
   </GeneDef>
 
@@ -554,6 +577,9 @@
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
       </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
     </modExtensions>
   </GeneDef>
 
@@ -618,6 +644,9 @@
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
       </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
     </modExtensions>
   </GeneDef>
 
@@ -631,7 +660,7 @@
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
-      <li>CorcaHead</li>
+      <li>HakumaHead</li>
     </forcedHeadTypes>
     <beardTagFilter>
       <whitelist>true</whitelist>
@@ -682,6 +711,9 @@
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
       </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
     </modExtensions>
   </GeneDef>
 
@@ -746,6 +778,9 @@
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
       </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
     </modExtensions>
   </GeneDef>
 
@@ -810,6 +845,9 @@
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
       </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
     </modExtensions>
   </GeneDef>
 
@@ -874,6 +912,9 @@
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
       </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
     </modExtensions>
   </GeneDef>
 
@@ -938,6 +979,9 @@
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
       </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
     </modExtensions>
   </GeneDef>
 
