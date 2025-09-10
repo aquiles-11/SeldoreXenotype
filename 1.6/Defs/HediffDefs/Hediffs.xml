@@ -183,5 +183,24 @@
         </stages>
     </HediffDef>
 
+    <HediffDef>
+        <defName>HorkeuAbility</defName>
+        <label>horkeu ability</label>
+        <description>PLACEHOLDER.</description>
+        <debugLabelExtra>other</debugLabelExtra>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+        <abilities>
+            <li>HorkeuAbilityDef</li>
+        </abilities>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
 
 </Defs>

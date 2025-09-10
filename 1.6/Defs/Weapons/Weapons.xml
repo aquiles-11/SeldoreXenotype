@@ -1365,6 +1365,74 @@
     </recipeMaker>
   </ThingDef>
 
+  <!-- Izumi's Fountain Claw -->
 
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Weapon_FountainClaw</defName>
+    <label>fountain claw</label>
+    <description>PLACEHOLDER.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/IzumiWeapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>FountainClaw</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>1800</MarketValue>
+      <WorkToMake>35000</WorkToMake>
+      <Mass>2</Mass>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>130</equippedAngleOffset>
+        <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>1.5</cooldownTime>
+        <armorPenetration>0.40</armorPenetration>
+      </li>
+    </tools>
+    <costList>
+      <Plasteel>60</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <Gold>2</Gold>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Styleable" />
+      <li Class="CompProperties_Biocodable" />
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <recipeMaker>
+       <researchPrerequisite>SabertResearch</researchPrerequisite> 
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
 
 </Defs>
