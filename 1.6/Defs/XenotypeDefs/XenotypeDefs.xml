@@ -144,8 +144,8 @@
 
     <XenotypeDef>
         <defName>SaberXenotype</defName>
-        <label>Saber Xenotype</label>
-        <description>Saber's Xenotype</description>
+        <label>Sabert Xenotype</label>
+        <description>Sabert's Xenotype</description>
         <iconPath>Humanlike/Heads/Saber/SaberHead_south</iconPath>
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
