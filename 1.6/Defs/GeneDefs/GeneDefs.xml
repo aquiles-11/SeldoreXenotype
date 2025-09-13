@@ -246,7 +246,7 @@
     <modExtensions>
       <li Class="VEF.Genes.GeneExtension">
         <forcedBodyType>Muscular</forcedBodyType>
-          <bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_Sig</bodyNakedGraphicPath>
+          <bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_Muscular</bodyNakedGraphicPath>
           <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath>
       </li>
       <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
@@ -264,14 +264,14 @@
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Cosmetic_Body</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
-    <iconPath>Humanlike/Bodies/Sig/SigBody_south</iconPath>
+    <iconPath>Things/Pawn/Humanlike/Bodies/Naked_Muscular_south</iconPath>
     <exclusionTags>
       <li>Fur</li>
     </exclusionTags>
     <modExtensions>
       <li Class="VEF.Genes.GeneExtension">
         <forcedBodyType>Muscular</forcedBodyType>
-          <bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_Sig</bodyNakedGraphicPath>
+          <bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_Muscular</bodyNakedGraphicPath>
           <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath>
       </li>
       <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">

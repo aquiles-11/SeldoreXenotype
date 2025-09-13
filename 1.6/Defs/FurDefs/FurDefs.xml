@@ -30,7 +30,7 @@
     <defName>SigBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Sig>Humanlike/Bodies/Sig/SigBody</Sig>
+      <Muscular>Humanlike/Bodies/Sig/SigBody</Muscular>
     </bodyTypeGraphicPaths>
   </FurDef>
 
