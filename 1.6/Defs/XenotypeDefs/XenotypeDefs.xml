@@ -53,7 +53,7 @@
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
         <genes>
-            <li>Gene_SigBody</li>
+            <li>Gene_MuscularBody</li>
             <li>Gene_SigHead</li>
         </genes>
     </XenotypeDef>

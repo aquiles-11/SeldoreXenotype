@@ -4,7 +4,7 @@
 <Defs>
 
   <BodyTypeDef>
-    <defName>Sig</defName>
+    <defName>Muscular</defName>
     <headOffset>(0.04, 0.34)</headOffset>
     <bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_Sig</bodyNakedGraphicPath>
     <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath>

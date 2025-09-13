@@ -92,23 +92,6 @@
       </tags>
     </hairTagFilter>
     <displayOrderInCategory>6662</displayOrderInCategory>
-    	<renderNodeProperties Inherit="False">
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Humanlike/Heads/Seldore/SeldoreHead</li>
-        </texPaths>
-        <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
-        <drawData>
-          <defaultData>
-          <layer>52</layer>
-          </defaultData>
-        </drawData>
-        <parentTagDef>Head</parentTagDef>
-      </li>
-    </renderNodeProperties>
   </GeneDef>
 
   <!-- Gabu Body Gene -->
@@ -176,23 +159,6 @@
       </tags>
     </hairTagFilter>
     <displayOrderInCategory>6662</displayOrderInCategory>
-        	<renderNodeProperties Inherit="False">
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Humanlike/Heads/Gabu/GabuHead</li>
-        </texPaths>
-        <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
-        <drawData>
-          <defaultData>
-          <layer>52</layer>
-          </defaultData>
-        </drawData>
-        <parentTagDef>Head</parentTagDef>
-      </li>
-    </renderNodeProperties>
   </GeneDef>
 
   <!-- Noche Body Gene -->
@@ -242,6 +208,7 @@
     <label>Noche head</label>
     <description>Carriers of this gene will have a the face of Noche.</description>
     <iconPath>Humanlike/Heads/Noche/NocheHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>NocheHead</li>
@@ -259,23 +226,6 @@
       </tags>
     </hairTagFilter>
     <displayOrderInCategory>6662</displayOrderInCategory>
-        	<renderNodeProperties Inherit="False">
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Humanlike/Heads/Noche/NocheHead</li>
-        </texPaths>
-        <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
-        <drawData>
-          <defaultData>
-          <layer>52</layer>
-          </defaultData>
-        </drawData>
-        <parentTagDef>Head</parentTagDef>
-      </li>
-    </renderNodeProperties>
   </GeneDef>
 
   <!-- Sig Body Gene -->
@@ -295,7 +245,7 @@
     </exclusionTags>
     <modExtensions>
       <li Class="VEF.Genes.GeneExtension">
-        <forcedBodyType>Sig</forcedBodyType>
+        <forcedBodyType>Muscular</forcedBodyType>
           <bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_Sig</bodyNakedGraphicPath>
           <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath>
       </li>
@@ -304,6 +254,32 @@
 		 </li>
     </modExtensions>
   </GeneDef>
+
+  <GeneDef>
+    <defName>Gene_MuscularBody</defName>
+    <label>Muscular body</label>
+    <description>Carriers of this gene will have a muscular body.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>Cosmetic_Body</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/Sig/SigBody_south</iconPath>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension">
+        <forcedBodyType>Muscular</forcedBodyType>
+          <bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_Sig</bodyNakedGraphicPath>
+          <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath>
+      </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
+    </modExtensions>
+  </GeneDef>
+
 
   <!-- Sig Head Gene -->
 
@@ -330,23 +306,6 @@
       </tags>
     </hairTagFilter>
     <displayOrderInCategory>6662</displayOrderInCategory>
-        	<renderNodeProperties Inherit="False">
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Humanlike/Heads/Sig/SigHead</li>
-        </texPaths>
-        <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
-        <drawData>
-          <defaultData>
-          <layer>52</layer>
-          </defaultData>
-        </drawData>
-        <parentTagDef>Head</parentTagDef>
-      </li>
-    </renderNodeProperties>
   </GeneDef>
 
   <!-- Gai Body Gene -->
@@ -354,7 +313,7 @@
   <GeneDef>
     <defName>Gene_GaiBody</defName>
     <label>Gai body</label>
-    <description>Carriers of this gene will have a muscular body.</description>
+    <description>Carriers of this gene will have the muscular body of Gai.</description>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
@@ -414,23 +373,6 @@
       </tags>
     </hairTagFilter>
     <displayOrderInCategory>6662</displayOrderInCategory>
-        	<renderNodeProperties Inherit="False">
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Humanlike/Heads/Gai/GaiHead</li>
-        </texPaths>
-        <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
-        <drawData>
-          <defaultData>
-          <layer>52</layer>
-          </defaultData>
-        </drawData>
-        <parentTagDef>Head</parentTagDef>
-      </li>
-    </renderNodeProperties>
   </GeneDef>
 
  <!-- Kagura Body Gene -->
@@ -498,23 +440,6 @@
       </tags>
     </hairTagFilter>
     <displayOrderInCategory>6662</displayOrderInCategory>
-        	<renderNodeProperties Inherit="False">
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Humanlike/Heads/Kagura/KaguraHead</li>
-        </texPaths>
-        <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
-        <drawData>
-          <defaultData>
-          <layer>52</layer>
-          </defaultData>
-        </drawData>
-        <parentTagDef>Head</parentTagDef>
-      </li>
-    </renderNodeProperties>
   </GeneDef>
 
  <!-- Epaulo Body Gene -->
@@ -582,23 +507,6 @@
       </tags>
     </hairTagFilter>
     <displayOrderInCategory>6662</displayOrderInCategory>
-        	<renderNodeProperties Inherit="False">
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Humanlike/Heads/Epaulo/EpauloHead</li>
-        </texPaths>
-        <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
-        <drawData>
-          <defaultData>
-          <layer>52</layer>
-          </defaultData>
-        </drawData>
-        <parentTagDef>Head</parentTagDef>
-      </li>
-    </renderNodeProperties>
   </GeneDef>
 
   <!-- Corca Body Gene -->
@@ -666,23 +574,6 @@
       </tags>
     </hairTagFilter>
     <displayOrderInCategory>6662</displayOrderInCategory>
-        	<renderNodeProperties Inherit="False">
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Humanlike/Heads/Corca/CorcaHead</li>
-        </texPaths>
-        <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
-        <drawData>
-          <defaultData>
-          <layer>52</layer>
-          </defaultData>
-        </drawData>
-        <parentTagDef>Head</parentTagDef>
-      </li>
-    </renderNodeProperties>
   </GeneDef>
 
   <!-- Flet Body Gene -->
@@ -750,23 +641,6 @@
       </tags>
     </hairTagFilter>
     <displayOrderInCategory>6662</displayOrderInCategory>
-        	<renderNodeProperties Inherit="False">
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Humanlike/Heads/Flet/FletHead</li>
-        </texPaths>
-        <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
-        <drawData>
-          <defaultData>
-          <layer>52</layer>
-          </defaultData>
-        </drawData>
-        <parentTagDef>Head</parentTagDef>
-      </li>
-    </renderNodeProperties>
   </GeneDef>
 
   <!-- Hakuma Body Gene -->
@@ -834,23 +708,6 @@
       </tags>
     </hairTagFilter>
     <displayOrderInCategory>6662</displayOrderInCategory>
-        	<renderNodeProperties Inherit="False">
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Humanlike/Heads/Hakuma/HakumaHead</li>
-        </texPaths>
-        <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
-        <drawData>
-          <defaultData>
-          <layer>52</layer>
-          </defaultData>
-        </drawData>
-        <parentTagDef>Head</parentTagDef>
-      </li>
-    </renderNodeProperties>
   </GeneDef>
 
   <!-- Sabert Body Gene -->
@@ -918,23 +775,6 @@
       </tags>
     </hairTagFilter>
     <displayOrderInCategory>6662</displayOrderInCategory>
-        	<renderNodeProperties Inherit="False">
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Humanlike/Heads/Sabert/SaberHead</li>
-        </texPaths>
-        <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
-        <drawData>
-          <defaultData>
-          <layer>52</layer>
-          </defaultData>
-        </drawData>
-        <parentTagDef>Head</parentTagDef>
-      </li>
-    </renderNodeProperties>
   </GeneDef>
 
   <!-- Horkeu Kamui Body Gene -->
@@ -1002,23 +842,6 @@
       </tags>
     </hairTagFilter>
     <displayOrderInCategory>6662</displayOrderInCategory>
-        	<renderNodeProperties Inherit="False">
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Humanlike/Heads/HorkeuKamui/HorkeuKamuiHead</li>
-        </texPaths>
-        <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
-        <drawData>
-          <defaultData>
-          <layer>52</layer>
-          </defaultData>
-        </drawData>
-        <parentTagDef>Head</parentTagDef>
-      </li>
-    </renderNodeProperties>
   </GeneDef>
 
   <!-- Schmiel Body Gene -->
@@ -1086,23 +909,6 @@
       </tags>
     </hairTagFilter>
     <displayOrderInCategory>6662</displayOrderInCategory>
-        	<renderNodeProperties Inherit="False">
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Humanlike/Heads/Schmiel/SchmielHead</li>
-        </texPaths>
-        <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
-        <drawData>
-          <defaultData>
-          <layer>52</layer>
-          </defaultData>
-        </drawData>
-        <parentTagDef>Head</parentTagDef>
-      </li>
-    </renderNodeProperties>
   </GeneDef>
 
   <!-- Excalibur Body Gene -->
@@ -1170,23 +976,6 @@
       </tags>
     </hairTagFilter>
     <displayOrderInCategory>6662</displayOrderInCategory>
-        	<renderNodeProperties Inherit="False">
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Humanlike/Heads/Excalibur/ExcaliburHead</li>
-        </texPaths>
-        <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
-        <drawData>
-          <defaultData>
-          <layer>52</layer>
-          </defaultData>
-        </drawData>
-        <parentTagDef>Head</parentTagDef>
-      </li>
-    </renderNodeProperties>
   </GeneDef>
 
   <!-- Izumi Body Gene -->
@@ -1254,23 +1043,6 @@
       </tags>
     </hairTagFilter>
     <displayOrderInCategory>6662</displayOrderInCategory>
-        	<renderNodeProperties Inherit="False">
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPaths>
-          <li>Humanlike/Heads/Izumi/IzumiHead</li>
-        </texPaths>
-        <useSkinShader>false</useSkinShader>
-        <colorType>Skin</colorType>
-        <drawData>
-          <defaultData>
-          <layer>52</layer>
-          </defaultData>
-        </drawData>
-        <parentTagDef>Head</parentTagDef>
-      </li>
-    </renderNodeProperties>
   </GeneDef>
 
 
