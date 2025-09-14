@@ -565,6 +565,9 @@
     <defName>Apparel_FletArmor</defName>
     <label>Chef Coat</label>
     <description>A durable apron, this garment embodies Flet's formidable strength and confidence in his culinary skills. It offers robust protection, ready for any kitchen or combat.</description>
+    <descriptionHyperlinks>
+      <AbilityDef>ChefRecommendation</AbilityDef>
+    </descriptionHyperlinks>
     <recipeMaker>
       <skillRequirements>
         <Crafting>4</Crafting>
@@ -603,6 +606,11 @@
     <thingCategories>
       <li>ApparelNoble</li>
     </thingCategories>
+    <comps>
+      <li Class="CompProperties_EquippableAbility">
+        <abilityDef>ChefRecommendation</abilityDef>
+      </li>
+    </comps>
     <apparel>
       <useWornGraphicMask>true</useWornGraphicMask>
       <bodyPartGroups>
@@ -621,6 +629,47 @@
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
+
+  <AbilityDef>
+    <defName>ChefRecommendation</defName>
+    <label>Chef Coat Chef Recommendation</label>
+    <description>PLACEHOLDER.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Apparel_FletArmor</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Armor/Flet/FletApparel</iconPath>
+    <cooldownTicksRange>3000</cooldownTicksRange>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>true</targetRequired>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>2.9</range>
+      <warmupTime>0.5</warmupTime>
+      <targetParams>
+        <canTargetLocations>false</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <!-- <li Class="SeldoreXeno.CompProperties_AbilityAngleBlast">
+        <range>2.9</range>
+        <lineWidthEnd>10</lineWidthEnd>
+        <damageDef>Stab</damageDef>
+        <effect>ExcaliburSwordCleave_Effect</effect>
+        <screenShake>0</screenShake>
+        <damageAmount>32</damageAmount>
+        <armorPen>0.6</armorPen>
+        <addedAngle>60</addedAngle>
+        <effectTickAwayFromCast>1</effectTickAwayFromCast>
+        <explosionSpeed>1.0</explosionSpeed>
+      </li> -->
+    </comps>
+  </AbilityDef>
 
   <!-- Hakuma Armor -->
 

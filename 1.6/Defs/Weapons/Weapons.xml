@@ -782,7 +782,7 @@
         <explosionOnCaster>false</explosionOnCaster>
         <damageDef>Stab</damageDef>
         <damageAmount>40</damageAmount>
-        <armorPenetration >0.8</armorPenetration>
+        <armorPenetration>0.8</armorPenetration>
         <explosionRadius>1.8</explosionRadius>
         <screenShakeFactor>0</screenShakeFactor>
         <soundExplode>PsychicInsanityLanceCast</soundExplode>
@@ -953,7 +953,7 @@
         <cooldownTime>2.8</cooldownTime>
       </li>
     </tools>
-        <comps>
+    <comps>
       <li Class="CompProperties_EquippableAbility">
         <abilityDef>BlazeThrust</abilityDef>
       </li>
@@ -1010,7 +1010,17 @@
       </targetParams>
     </verbProperties>
     <comps>
-      <li Class="SeldoreXeno.CompProperties_AbilityAngleBlast">
+      <li Class="SeldoreXeno.CompProperties_AbilityExploder">
+        <explosionOnCaster>false</explosionOnCaster>
+        <damageDef>Stab</damageDef>
+        <damageAmount>125</damageAmount>
+        <armorPenetration>0.6</armorPenetration>
+        <explosionRadius>0.5</explosionRadius>
+        <screenShakeFactor>0</screenShakeFactor>
+        <soundExplode>PsychicInsanityLanceCast</soundExplode>
+        <doExplosionVFX>false</doExplosionVFX>
+      </li>
+      <!-- <li Class="SeldoreXeno.CompProperties_AbilityAngleBlast">
         <range>1.9</range>
         <lineWidthEnd>10</lineWidthEnd>
         <damageDef>Stab</damageDef>
@@ -1021,7 +1031,7 @@
         <addedAngle>60</addedAngle>
         <effectTickAwayFromCast>1</effectTickAwayFromCast>
         <explosionSpeed>1.0</explosionSpeed>
-      </li>
+      </li> -->
     </comps>
   </AbilityDef>
 
@@ -1218,7 +1228,7 @@
       </li>
     </comps>
     <recipeMaker>
-       <researchPrerequisite>SchmielResearch</researchPrerequisite> 
+       <researchPrerequisite>SchmielResearch</researchPrerequisite>
       <recipeUsers>
         <li>TableMachining</li>
         <li>FabricationBench</li>
@@ -1368,7 +1378,7 @@
       </li>
     </comps>
     <recipeMaker>
-       <researchPrerequisite>SabertResearch</researchPrerequisite> 
+       <researchPrerequisite>SabertResearch</researchPrerequisite>
       <recipeUsers>
         <li>TableMachining</li>
         <li>FabricationBench</li>
@@ -1428,6 +1438,9 @@
     <defName>Weapon_FountainClaw</defName>
     <label>fountain claw</label>
     <description>PLACEHOLDER.</description>
+    <descriptionHyperlinks>
+      <AbilityDef>BearPunch</AbilityDef>
+    </descriptionHyperlinks>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Weapons/IzumiWeapon</texPath>
@@ -1478,9 +1491,12 @@
         <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
         <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
+      <li Class="CompProperties_EquippableAbility">
+        <abilityDef>BearPunch</abilityDef>
+      </li>
     </comps>
     <recipeMaker>
-       <researchPrerequisite>SabertResearch</researchPrerequisite> 
+       <researchPrerequisite>SabertResearch</researchPrerequisite>
       <recipeUsers>
         <li>TableMachining</li>
         <li>FabricationBench</li>
@@ -1491,5 +1507,46 @@
       <displayPriority>420</displayPriority>
     </recipeMaker>
   </ThingDef>
+
+  <AbilityDef>
+    <defName>BearPunch</defName>
+    <label>Fountain Claw Bear Punch</label>
+    <description>PLACEHOLDER.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Weapon_FountainClaw</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Weapons/IzumiWeapon</iconPath>
+    <cooldownTicksRange>3000</cooldownTicksRange>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>true</targetRequired>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>2.9</range>
+      <warmupTime>0.5</warmupTime>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="SeldoreXeno.CompProperties_AbilityAngleBlast">
+        <range>2.9</range>
+        <lineWidthEnd>10</lineWidthEnd>
+        <damageDef>Stab</damageDef>
+        <effect>ExcaliburSwordCleave_Effect</effect>
+        <screenShake>0</screenShake>
+        <damageAmount>32</damageAmount>
+        <armorPen>0.6</armorPen>
+        <addedAngle>60</addedAngle>
+        <effectTickAwayFromCast>1</effectTickAwayFromCast>
+        <explosionSpeed>1.0</explosionSpeed>
+      </li>
+    </comps>
+  </AbilityDef>
 
 </Defs>
