@@ -254,9 +254,8 @@
     </renderNodeProperties>
     <modExtensions>
       <li Class="VEF.Genes.GeneExtension">
-        <forcedBodyType>Muscular</forcedBodyType>
-          <bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_Muscular</bodyNakedGraphicPath>
-          <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath>
+        <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
       </li>
       <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
 		 <disableFacialAnimations>true</disableFacialAnimations>
