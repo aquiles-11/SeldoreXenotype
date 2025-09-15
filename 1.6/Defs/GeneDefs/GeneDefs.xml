@@ -256,6 +256,7 @@
       <li Class="VEF.Genes.GeneExtension">
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
+         <forcedBodyType>Muscular</forcedBodyType>
       </li>
       <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
 		 <disableFacialAnimations>true</disableFacialAnimations>
@@ -677,6 +678,7 @@
       <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
+         <forcedBodyType>Muscular</forcedBodyType>
       </li>
       <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
 		 <disableFacialAnimations>true</disableFacialAnimations>
@@ -875,6 +877,7 @@
       <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
+         <forcedBodyType>Muscular</forcedBodyType>
       </li>
       <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
 		 <disableFacialAnimations>true</disableFacialAnimations>
@@ -1007,6 +1010,7 @@
       <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
         <furHidesBody>true</furHidesBody>
         <dontColourFur>true</dontColourFur>
+         <forcedBodyType>Muscular</forcedBodyType>
       </li>
       <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
 		 <disableFacialAnimations>true</disableFacialAnimations>

@@ -53,7 +53,6 @@
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
         <genes>
-            <li>Gene_MuscularBody</li>
             <li>Gene_SigHead</li>
             <li>Gene_SigBody</li>
         </genes>
@@ -139,7 +138,6 @@
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
         <genes>
             <li>Gene_HakumaBody</li>
-            <li>Gene_MuscularBody</li>
             <li>Gene_HakumaHead</li>
         </genes>
     </XenotypeDef>
@@ -182,7 +180,6 @@
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
         <genes>
             <li>Gene_SchmielBody</li>
-            <li>Gene_SchmielHead</li>
             <li>Gene_MuscularBody</li>
         </genes>
     </XenotypeDef>
@@ -211,7 +208,6 @@
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
         <genes>
             <li>Gene_IzumiBody</li>
-            <li>Gene_MuscularBody</li>
             <li>Gene_IzumiHead</li>
         </genes>
     </XenotypeDef>
