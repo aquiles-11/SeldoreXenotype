@@ -139,6 +139,7 @@
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
         <genes>
             <li>Gene_HakumaBody</li>
+            <li>Gene_MuscularBody</li>
             <li>Gene_HakumaHead</li>
         </genes>
     </XenotypeDef>

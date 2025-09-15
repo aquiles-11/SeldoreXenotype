@@ -78,7 +78,7 @@
     <defName>HakumaBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/Hakuma/HakumaBody</Hulk>
+      <Muscular>Humanlike/Bodies/Hakuma/HakumaBody</Muscular>
     </bodyTypeGraphicPaths>
   </FurDef>
 

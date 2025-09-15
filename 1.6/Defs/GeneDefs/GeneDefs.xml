@@ -296,7 +296,7 @@
     <label>Sig head</label>
     <description>Carriers of this gene will have a the face of Sig.</description>
     <iconPath>Humanlike/Heads/Sig/SigHead_south</iconPath>
-    <!-- <skinColorOverride>(255, 255, 255, 255)</skinColorOverride> -->
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
     <displayCategory>Gyee</displayCategory>
     <forcedHeadTypes>
       <li>SigHead</li>
