@@ -35,7 +35,6 @@
     <label>Seldore body</label>
     <description>Carriers of this gene will have a muscular body.</description>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
@@ -101,7 +100,6 @@
     <label>Gabu body</label>
     <description>Carriers of this gene will have a furry bear body.</description>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
@@ -168,7 +166,6 @@
     <label>Noche body</label>
     <description>Carriers of this gene will have Noche's body.</description>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
@@ -235,7 +232,6 @@
     <label>Sig body</label>
     <description>Carriers of this gene will have a muscular body.</description>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Gyee</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
@@ -243,6 +239,19 @@
     <exclusionTags>
       <li>Fur</li>
     </exclusionTags>
+       <fur>SigBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
     <modExtensions>
       <li Class="VEF.Genes.GeneExtension">
         <forcedBodyType>Muscular</forcedBodyType>
@@ -260,7 +269,6 @@
     <label>Muscular body</label>
     <description>Carriers of this gene will have a muscular body.</description>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Cosmetic_Body</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
@@ -315,7 +323,6 @@
     <label>Gai body</label>
     <description>Carriers of this gene will have the muscular body of Gai.</description>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
@@ -382,7 +389,6 @@
     <label>Kagura body</label>
     <description>Carriers of this gene will have a muscular body.</description>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>AnotherEdios</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
@@ -449,7 +455,6 @@
     <label>Epaulo body</label>
     <description>Carriers of this gene will have a muscular body.</description>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
@@ -516,7 +521,6 @@
     <label>Corca body</label>
     <description>PLACEHOLDER.</description>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>AnotherEdios</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
@@ -583,7 +587,6 @@
     <label>Flet body</label>
     <description>PLACEHOLDER.</description>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>AnotherEdios</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
@@ -650,7 +653,6 @@
     <label>Hakuma body</label>
     <description>PLACEHOLDER.</description>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
@@ -717,7 +719,6 @@
     <label>Sabert body</label>
     <description>PLACEHOLDER.</description>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
@@ -784,7 +785,6 @@
     <label>HorkeuKamui body</label>
     <description>PLACEHOLDER.</description>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Housamo</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
@@ -851,7 +851,6 @@
     <label>Schmiel body</label>
     <description>PLACEHOLDER.</description>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
@@ -918,7 +917,6 @@
     <label>Excalibur body</label>
     <description>Carriers of this gene will have the muscular body of Excalibur.</description>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
@@ -985,7 +983,6 @@
     <label>Izumi body</label>
     <description>Carriers of this gene will have the muscular body of Izumi.</description>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Gyee</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>

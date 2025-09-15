@@ -11,6 +11,11 @@
             <li>Gene_SeldoreHead</li>
         </requiredGenes>
         <selectionWeight>1000</selectionWeight>
+        <modExtensions>
+            <li Class="VEF.Graphics.HeadExtension">
+                <forcedHeadShader>CutoutComplex</forcedHeadShader>
+            </li>
+        </modExtensions>
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="AverageBase">
@@ -22,6 +27,11 @@
             <li>Gene_GabuHead</li>
         </requiredGenes>
         <selectionWeight>1000</selectionWeight>
+        <modExtensions>
+            <li Class="VEF.Graphics.HeadExtension">
+                <forcedHeadShader>CutoutComplex</forcedHeadShader>
+            </li>
+        </modExtensions>
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="AverageBase">
@@ -33,6 +43,11 @@
             <li>Gene_NocheHead</li>
         </requiredGenes>
         <selectionWeight>1000</selectionWeight>
+        <modExtensions>
+            <li Class="VEF.Graphics.HeadExtension">
+                <forcedHeadShader>CutoutComplex</forcedHeadShader>
+            </li>
+        </modExtensions>
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="AverageBase">
@@ -60,6 +75,11 @@
             <li>Gene_GaiHead</li>
         </requiredGenes>
         <selectionWeight>1000</selectionWeight>
+        <modExtensions>
+            <li Class="VEF.Graphics.HeadExtension">
+                <forcedHeadShader>CutoutComplex</forcedHeadShader>
+            </li>
+        </modExtensions>
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="AverageBase">
@@ -71,6 +91,11 @@
             <li>Gene_KaguraHead</li>
         </requiredGenes>
         <selectionWeight>1000</selectionWeight>
+        <modExtensions>
+            <li Class="VEF.Graphics.HeadExtension">
+                <forcedHeadShader>CutoutComplex</forcedHeadShader>
+            </li>
+        </modExtensions>
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="AverageBase">
@@ -82,6 +107,11 @@
             <li>Gene_EpauloHead</li>
         </requiredGenes>
         <selectionWeight>1000</selectionWeight>
+        <modExtensions>
+            <li Class="VEF.Graphics.HeadExtension">
+                <forcedHeadShader>CutoutComplex</forcedHeadShader>
+            </li>
+        </modExtensions>
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="AverageBase">
@@ -93,6 +123,11 @@
             <li>Gene_FletHead</li>
         </requiredGenes>
         <selectionWeight>1000</selectionWeight>
+        <modExtensions>
+            <li Class="VEF.Graphics.HeadExtension">
+                <forcedHeadShader>CutoutComplex</forcedHeadShader>
+            </li>
+        </modExtensions>
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="AverageBase">
@@ -104,6 +139,11 @@
             <li>Gene_CorcaHead</li>
         </requiredGenes>
         <selectionWeight>1000</selectionWeight>
+        <modExtensions>
+            <li Class="VEF.Graphics.HeadExtension">
+                <forcedHeadShader>CutoutComplex</forcedHeadShader>
+            </li>
+        </modExtensions>
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="AverageBase">
@@ -115,6 +155,11 @@
             <li>Gene_HakumaHead</li>
         </requiredGenes>
         <selectionWeight>1000</selectionWeight>
+        <modExtensions>
+            <li Class="VEF.Graphics.HeadExtension">
+                <forcedHeadShader>CutoutComplex</forcedHeadShader>
+            </li>
+        </modExtensions>
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="AverageBase">
@@ -126,6 +171,11 @@
             <li>Gene_SabertHead</li>
         </requiredGenes>
         <selectionWeight>1000</selectionWeight>
+        <modExtensions>
+            <li Class="VEF.Graphics.HeadExtension">
+                <forcedHeadShader>CutoutComplex</forcedHeadShader>
+            </li>
+        </modExtensions>
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="AverageBase">
@@ -137,6 +187,11 @@
             <li>Gene_HorkeuKamuiHead</li>
         </requiredGenes>
         <selectionWeight>1000</selectionWeight>
+        <modExtensions>
+            <li Class="VEF.Graphics.HeadExtension">
+                <forcedHeadShader>CutoutComplex</forcedHeadShader>
+            </li>
+        </modExtensions>
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="AverageBase">

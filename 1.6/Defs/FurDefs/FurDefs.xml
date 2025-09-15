@@ -102,7 +102,7 @@
     <defName>SchmielBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/Schmiel/SchmielBody</Hulk>
+      <Muscular>Humanlike/Bodies/Schmiel/SchmielBody</Muscular>
     </bodyTypeGraphicPaths>
   </FurDef>
 

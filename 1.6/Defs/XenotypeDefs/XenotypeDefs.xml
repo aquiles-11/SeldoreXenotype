@@ -55,6 +55,7 @@
         <genes>
             <li>Gene_MuscularBody</li>
             <li>Gene_SigHead</li>
+            <li>Gene_SigBody</li>
         </genes>
     </XenotypeDef>
 
@@ -181,6 +182,7 @@
         <genes>
             <li>Gene_SchmielBody</li>
             <li>Gene_SchmielHead</li>
+            <li>Gene_MuscularBody</li>
         </genes>
     </XenotypeDef>
 
