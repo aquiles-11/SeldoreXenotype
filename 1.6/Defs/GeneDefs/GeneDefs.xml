@@ -453,7 +453,7 @@
   <GeneDef>
     <defName>Gene_EpauloBody</defName>
     <label>Epaulo body</label>
-    <description>Carriers of this gene will have a muscular body.</description>
+    <description>Carriers of this gene will have the muscular body Epaulo.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
@@ -519,7 +519,7 @@
   <GeneDef>
     <defName>Gene_CorcaBody</defName>
     <label>Corca body</label>
-    <description>PLACEHOLDER.</description>
+    <description>Carriers of this gene will have the furry muscular body of Corca.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>AnotherEdios</displayCategory>
@@ -585,7 +585,7 @@
   <GeneDef>
     <defName>Gene_FletBody</defName>
     <label>Flet body</label>
-    <description>PLACEHOLDER.</description>
+    <description>Carriers of this gene will have the green muscular body of Flet.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>AnotherEdios</displayCategory>
@@ -651,7 +651,7 @@
   <GeneDef>
     <defName>Gene_HakumaBody</defName>
     <label>Hakuma body</label>
-    <description>PLACEHOLDER.</description>
+    <description>Carriers of this gene will have the furry muscular body of Hakuma.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
@@ -717,7 +717,7 @@
   <GeneDef>
     <defName>Gene_SabertBody</defName>
     <label>Sabert body</label>
-    <description>PLACEHOLDER.</description>
+    <description>Carriers of this gene will have the muscular body of Sabert.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
@@ -783,7 +783,7 @@
   <GeneDef>
     <defName>Gene_HorkeuKamuiBody</defName>
     <label>HorkeuKamui body</label>
-    <description>PLACEHOLDER.</description>
+    <description>Carriers of this gene will have the furry muscular body of Horkeu Kamui.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Housamo</displayCategory>
@@ -849,7 +849,7 @@
   <GeneDef>
     <defName>Gene_SchmielBody</defName>
     <label>Schmiel body</label>
-    <description>PLACEHOLDER.</description>
+    <description>Carriers of this gene will have the body of Schmiel.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
