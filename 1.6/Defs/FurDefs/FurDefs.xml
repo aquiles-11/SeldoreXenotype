@@ -118,7 +118,7 @@
     <defName>IzumiBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/Izumi/IzumiBody</Hulk>
+      <Muscular>Humanlike/Bodies/Izumi/IzumiBody</Muscular>
     </bodyTypeGraphicPaths>
   </FurDef>
 

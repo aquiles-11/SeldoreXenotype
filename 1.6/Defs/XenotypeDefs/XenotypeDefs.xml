@@ -144,7 +144,7 @@
     </XenotypeDef>
 
     <XenotypeDef>
-        <defName>SaberXenotype</defName>
+        <defName>SabertXenotype</defName>
         <label>Sabert Xenotype</label>
         <description>Sabert's Xenotype</description>
         <iconPath>Humanlike/Heads/Saber/SaberHead_south</iconPath>
@@ -210,6 +210,7 @@
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
         <genes>
             <li>Gene_IzumiBody</li>
+            <li>Gene_MuscularBody</li>
             <li>Gene_IzumiHead</li>
         </genes>
     </XenotypeDef>

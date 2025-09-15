@@ -33,7 +33,7 @@
   <GeneDef>
     <defName>Gene_SeldoreBody</defName>
     <label>Seldore body</label>
-    <description>Carriers of this gene will have a muscular body.</description>
+    <description>Carriers of this gene will have a muscular body of Seldore.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
@@ -98,7 +98,7 @@
   <GeneDef>
     <defName>Gene_GabuBody</defName>
     <label>Gabu body</label>
-    <description>Carriers of this gene will have a furry bear body.</description>
+    <description>Carriers of this gene will have a furry bear body of Gabu.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
@@ -230,7 +230,7 @@
   <GeneDef>
     <defName>Gene_SigBody</defName>
     <label>Sig body</label>
-    <description>Carriers of this gene will have a muscular body.</description>
+    <description>Carriers of this gene will have the muscular body of Sig.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Gyee</displayCategory>
@@ -387,7 +387,7 @@
   <GeneDef>
     <defName>Gene_KaguraBody</defName>
     <label>Kagura body</label>
-    <description>Carriers of this gene will have a muscular body.</description>
+    <description>Carriers of this gene will have the muscular body Kagura.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>AnotherEdios</displayCategory>
