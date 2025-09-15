@@ -1065,7 +1065,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Armor/Izumi/IzumiArmor_Hulk_south</texPath>
+      <texPath>Armor/Izumi/IzumiArmor_Muscular_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
