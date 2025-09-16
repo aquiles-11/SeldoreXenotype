@@ -180,7 +180,7 @@
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
         <genes>
             <li>Gene_SchmielBody</li>
-            <li>Gene_MuscularBody</li>
+            <li>Gene_SchmielHead</li>
         </genes>
     </XenotypeDef>
 
