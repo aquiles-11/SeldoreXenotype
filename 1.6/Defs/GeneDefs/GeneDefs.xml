@@ -104,7 +104,7 @@
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Gabu/GabuBody_south</iconPath>
-    <bodyType>Hulk</bodyType>
+    <bodyType>Fat</bodyType>
     <exclusionTags>
       <li>Fur</li>
     </exclusionTags>

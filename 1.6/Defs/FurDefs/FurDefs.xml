@@ -14,7 +14,7 @@
     <defName>GabuBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/Gabu/GabuBody</Hulk>
+      <Fat>Humanlike/Bodies/Gabu/GabuBody</Fat>
     </bodyTypeGraphicPaths>
   </FurDef>
 
