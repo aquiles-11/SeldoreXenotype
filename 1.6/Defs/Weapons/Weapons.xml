@@ -743,7 +743,6 @@
         <li>TableMachining</li>
         <li>FabricationBench</li>
       </recipeUsers>
-      <researchPrerequisite>LongBlades</researchPrerequisite>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
@@ -858,7 +857,6 @@
         <li>TableMachining</li>
         <li>FabricationBench</li>
       </recipeUsers>
-      <researchPrerequisite>LongBlades</researchPrerequisite>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
@@ -1111,7 +1109,6 @@
         <li>TableMachining</li>
         <li>FabricationBench</li>
       </recipeUsers>
-      <researchPrerequisite>LongBlades</researchPrerequisite>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
