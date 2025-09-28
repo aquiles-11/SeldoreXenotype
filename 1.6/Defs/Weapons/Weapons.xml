@@ -1310,7 +1310,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Weapon_TheRipper</defName>
     <label>The Ripper</label>
-    <description>PLACEHOLDER.</description>
+    <description>A heavy Scythe, this weapon embodies Sabert's physical prowess and discipline. It is a formidable tool in combat, capable of delivering immense damage with each swing.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Weapons/SabertWeapon</texPath>
@@ -1434,7 +1434,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Weapon_FountainClaw</defName>
     <label>fountain claw</label>
-    <description>PLACEHOLDER.</description>
+    <description>A formidable weapon, this gauntlet is a testament to Izumi's physical prowess. It is a formidable tool in combat, capable of delivering immense damage with each strike..</description>
     <descriptionHyperlinks>
       <AbilityDef>BearPunch</AbilityDef>
     </descriptionHyperlinks>
