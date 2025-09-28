@@ -633,7 +633,7 @@
   <AbilityDef>
     <defName>ChefRecommendation</defName>
     <label>Chef Coat Chef Recommendation</label>
-    <description>PLACEHOLDER.</description>
+    <description>Make the next meal you cook an excellent one!</description>
     <descriptionHyperlinks>
       <ThingDef>Apparel_FletArmor</ThingDef>
     </descriptionHyperlinks>

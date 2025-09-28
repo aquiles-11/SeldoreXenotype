@@ -1119,7 +1119,7 @@
   <AbilityDef>
     <defName>SwordCleave</defName>
     <label>Excalibur Sword Cleave</label>
-    <description>PLACEHOLDER.</description>
+    <description>Shoot a projectile from the sky dealing damage.</description>
     <descriptionHyperlinks>
       <ThingDef>Weapon_ExcaliburSword</ThingDef>
     </descriptionHyperlinks>
@@ -1313,7 +1313,7 @@
     <description>PLACEHOLDER.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Weapons/Goldenbow</texPath>
+      <texPath>Weapons/SabertWeapon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -1390,7 +1390,7 @@
   <AbilityDef>
     <defName>TheGatekeeper</defName>
     <label>The Gatekeeper</label>
-    <description>PLACEHOLDER.</description>
+    <description>Shoot a magic projectile using Sabert's weapon.</description>
     <descriptionHyperlinks>
       <ThingDef>Weapon_TheRipper</ThingDef>
     </descriptionHyperlinks>
