@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Crave Saga Xenotype</name>
+	<name>Bara Characters Xenotypes</name>
 	<packageId>Toby.SeldoreXenotype</packageId>
 	<author>Tobyguilmon</author>
 	<supportedVersions>
 		<li>1.6</li>
 		<li>1.5</li>
 	</supportedVersions>
-	<description>Adding the characters from the gacha game Crave Saga!</description>
+	<description>Adding the characters from the gacha games to Rimworld! Some Outfits/Weapons have unique skills</description>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Biotech</li>
