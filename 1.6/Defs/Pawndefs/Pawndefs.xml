@@ -2,7 +2,7 @@
 
 <Defs>
 
-  <PawnKindDef>
+<!--  <PawnKindDef>
     <defName>Seldore</defName>
     <label>Seldore</label>
     <combatPower>80</combatPower>
@@ -310,6 +310,6 @@
       <li>Violent</li>
       <li>Social</li>
     </requiredWorkTags>
-  </PawnKindDef>
+  </PawnKindDef>-->
 
 </Defs>

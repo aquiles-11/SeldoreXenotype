@@ -5,7 +5,7 @@
   <!-- Seldore Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_GovernorRaiment</defName>
+    <defName>Bara_Apparel_GovernorRaiment</defName>
     <label>Governor's Raiment</label>
     <description>A regal attire crafted for a leader, this garment embodies Seldore's resilience and wisdom. It offers robust protection, its presence inspiring allies and subtly dampening psychic intrusions.</description>
     <recipeMaker>
@@ -78,7 +78,7 @@
   <!-- Gabu Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_HolyVestments</defName>
+    <defName>Bara_Apparel_HolyVestments</defName>
     <label>Holy Vestments</label>
     <description>A set of sturdy vestments worn by Gabu, a monk in training from Lapimania's Izario sect. They provide resilient defense, reflecting his calm wisdom gained from extensive reading.</description>
     <recipeMaker>
@@ -143,7 +143,7 @@
   <!-- Noche Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_ArchbishopVestments</defName>
+    <defName>Bara_Apparel_ArchbishopVestments</defName>
     <label>Archbishop's Vestments</label>
     <description>Elegant vestments befitting an Archbishop from the Great Church, worn by Noche. A former Holy Kingdom Knight now aiming for the papacy, his armor offers balanced protection, particularly against psychic intrusions.</description>
     <recipeMaker>
@@ -208,7 +208,7 @@
   <!-- Sig Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_ForgeGuardHarness</defName>
+    <defName>Bara_Apparel_ForgeGuardHarness</defName>
     <label>Forge-Guard Harness</label>
     <description>A heavy harness expertly forged by Sig, a fabulous artisan known for channeling flux into his creations. It offers robust protection, embodying the skill that shines in his 'Yellow Eyes'.</description>
     <recipeMaker>
@@ -272,7 +272,7 @@
   <!-- Gai Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_GaiArmor</defName>
+    <defName>Bara_Apparel_BristoBrawlersApron</defName>
     <label>Bristo Brawler's Apron</label>
     <description>A durable apron, this garment embodies Gai's formidable strength and confidence in his culinary skills. It offers robust protection, ready for any kitchen or combat.</description>
     <recipeMaker>
@@ -359,7 +359,7 @@
   <!-- Kagura Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_KaguraApparel</defName>
+    <defName>Bara_Apparel_Constable</defName>
     <label>Constable</label>
     <description>A durable ceremonial garb worn by Kagura, a Constable known for his steadfast healing and vanguard support. It offers excellent physical protection in his duties.</description>
     <recipeMaker>
@@ -428,7 +428,7 @@
   <!-- Epaulo Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_EpauloApparel</defName>
+    <defName>Bara_Apparel_Oathkeepers</defName>
     <label>Oathkeeper's</label>
     <description>A powerful cuirass worn by Epualo, the overzealous hero who reveres you as his 'big brother.' It offers extreme protection, reflecting his bold and trusted nature.</description>
     <recipeMaker>
@@ -495,7 +495,7 @@
   <!-- Corca Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_CorcaArmor</defName>
+    <defName>Bara_Apparel_VanguardCuirass</defName>
     <label>Vanguard Cuirass</label>
     <description>A heavy, robust cuirass designed for a frontline protector. It embodies Corca's physical prowess and protective nature, reflecting his resolve and commitment to his allies.</description>
     <recipeMaker>
@@ -562,7 +562,7 @@
   <!-- Flet Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_FletArmor</defName>
+    <defName>Bara_Apparel_ChefCoat</defName>
     <label>Chef Coat</label>
     <description>A durable apron, this garment embodies Flet's formidable strength and confidence in his culinary skills. It offers robust protection, ready for any kitchen or combat.</description>
     <descriptionHyperlinks>
@@ -635,7 +635,7 @@
     <label>Chef Coat Chef Recommendation</label>
     <description>Make the next meal you cook an excellent one!</description>
     <descriptionHyperlinks>
-      <ThingDef>Apparel_FletArmor</ThingDef>
+      <ThingDef>Bara_Apparel_ChefCoat</ThingDef>
     </descriptionHyperlinks>
     <iconPath>Armor/Flet/FletApparel</iconPath>
     <cooldownTicksRange>3000</cooldownTicksRange>
@@ -674,7 +674,7 @@
   <!-- Hakuma Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_HakumaArmor</defName>
+    <defName>Bara_Apparel_ChieftainsMantle</defName>
     <label>Chieftain's Mantle</label>
     <description>A durable mantle befitting Hakuma, the next chieftain of the Twin Fang Wolves Village. It offers solid protection, reflecting his serious and responsible nature as a leader.</description>
     <recipeMaker>
@@ -741,7 +741,7 @@
   <!-- Sabert Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_SabertArmor</defName>
+    <defName>Bara_Apparel_GatekeeperArmor</defName>
     <label>Gatekeeper Armor</label>
     <description>A heavy, robust armor designed for a Gatekeeper. It offers substantial protection for its wearer, reflecting his strong will and defensive nature.</description>
     <recipeMaker>
@@ -808,7 +808,7 @@
   <!-- Horkeu Kamui Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_HorkeuKamuiArmor</defName>
+    <defName>Bara_Apparel_Gauntlet-Greaves</defName>
     <label>Gauntlet-Greaves</label>
     <description>A rugged battle-wrap, this outfit embodies Horkeu Kamui's warrior spirit. He is a divine wolf who teaches his warrior ways and seeks a human hero to be his master. On the battlefield, he is a stern teacher, but in his daily life, he is known to be affectionate and helpful with housework.</description>
     <recipeMaker>
@@ -848,13 +848,13 @@
       <EquipDelay>1.2</EquipDelay>
     </statBases>
     <tickerType>Normal</tickerType>
-		<comps>
+<!--		<comps>
 			<li Class="VEF.Apparels.CompProperties_ApparelHediffs">
 				<hediffDefnames>
 					<li>HorkeuAbility</li>
 				</hediffDefnames>
 			</li>
-		</comps>
+		</comps>-->
     <thingCategories>
       <li>ApparelNoble</li>
     </thingCategories>
@@ -877,7 +877,7 @@
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
-  <AbilityDef>
+<!--  <AbilityDef>
     <defName>HorkeuAbilityDef</defName>
     <label>holy knight's column strike</label>
     <description>Perform a powerful sweep from holy knight commander spear, hitting multiple enemies in an arc or line.</description>
@@ -916,12 +916,12 @@
         <explosionSpeed>1.0</explosionSpeed>
       </li>
     </comps>
-  </AbilityDef>
+  </AbilityDef>-->
 
   <!-- Schmiel Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_SchmielArmor</defName>
+    <defName>Bara_Apparel_CommanderGarb</defName>
     <label>Commander Garb</label>
     <description>A heavy, robust armor designed for a Commander. It offers substantial protection for its wearer, reflecting his strong will and defensive nature.</description>
     <recipeMaker>
@@ -984,7 +984,7 @@
   <!-- Excalibur Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_ExcaliburArmor</defName>
+    <defName>Bara_Apparel_RadiantCuirass</defName>
     <label>Radiant Cuirass</label>
     <description>A power armor providing robust protection. Its radiant weave subtly reduces all incoming damage and provides superior insulation against the elements.</description>
     <recipeMaker>
@@ -1048,7 +1048,7 @@
   <!-- Izumi Armor -->
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Apparel_IzumiArmor</defName>
+    <defName>Bara_Apparel_War-BearHarness</defName>
     <label>War-Bear Harness</label>
     <description>A heavy harness expertly crafted for battle, offering robust protection without impeding the wearer's agility.</description>
     <recipeMaker>

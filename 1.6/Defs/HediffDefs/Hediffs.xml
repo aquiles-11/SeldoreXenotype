@@ -183,7 +183,7 @@
         </stages>
     </HediffDef>
 
-    <HediffDef>
+<!--    <HediffDef>
         <defName>HorkeuAbility</defName>
         <label>horkeu ability</label>
         <description>PLACEHOLDER.</description>
@@ -200,7 +200,7 @@
                 <becomeVisible>false</becomeVisible>
             </li>
         </stages>
-    </HediffDef>
+    </HediffDef>-->
 
 
 </Defs>
