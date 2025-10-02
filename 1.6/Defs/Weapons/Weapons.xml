@@ -12,6 +12,7 @@
       <AbilityDef>AuraEmpoweringDarkness</AbilityDef>
     </descriptionHyperlinks>
     <possessionCount>1</possessionCount>
+    <uiIconScale>0.8</uiIconScale>
     <graphicData>
       <texPath>Weapons/BlackDragonBow</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -150,6 +151,7 @@
       <AbilityDef>RestorativePulse</AbilityDef>
     </descriptionHyperlinks>
     <possessionCount>1</possessionCount>
+    <uiIconScale>0.8</uiIconScale>
     <graphicData>
       <texPath>Weapons/HolyPrayer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -298,6 +300,7 @@
       <AbilityDef>HolySpearSlash</AbilityDef>
     </descriptionHyperlinks>
     <possessionCount>1</possessionCount>
+    <uiIconScale>0.8</uiIconScale>
     <graphicData>
       <texPath>Weapons/HolySpear</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -425,6 +428,7 @@
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
     </graphicData>
+    <uiIconScale>0.8</uiIconScale>
     <techLevel>Spacer</techLevel>
     <weaponTags>
       <li>GaiWeapon</li>
@@ -546,6 +550,7 @@
       <AbilityDef>AllyRecoveryPulse</AbilityDef>
     </descriptionHyperlinks>
     <possessionCount>1</possessionCount>
+    <uiIconScale>0.8</uiIconScale>
     <graphicData>
       <texPath>Weapons/KaguraStaff</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -681,6 +686,7 @@
       <AbilityDef>SolarBladeDrop</AbilityDef>
     </descriptionHyperlinks>
     <possessionCount>1</possessionCount>
+    <uiIconScale>0.8</uiIconScale>
     <graphicData>
       <texPath>Weapons/EpauloSword</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -800,6 +806,7 @@
     <label>Vanguard Mace</label>
     <description>A formidable, heavy one-handed mace that embodies Corca's role as a guard and his power. Its blunt force is capable of delivering immense damage with each swing.</description>
     <possessionCount>1</possessionCount>
+    <uiIconScale>0.8</uiIconScale>
     <graphicData>
       <texPath>Weapons/CorcaMorningStar</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -909,6 +916,7 @@
     <label>Fenrir Lance</label>
     <description>A formidable lance, this weapon embodies Hakuma's resolve. It channels his fiery spirit into powerful melee strikes, ready to lead his tribe in any battle..</description>
     <possessionCount>1</possessionCount>
+    <uiIconScale>0.8</uiIconScale>
     <graphicData>
       <texPath>Weapons/WolvenSpear</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1042,6 +1050,7 @@
     <descriptionHyperlinks>
       <AbilityDef>SwordCleave</AbilityDef>
     </descriptionHyperlinks>
+    <uiIconScale>0.8</uiIconScale>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Weapons/Excalibur</texPath>
@@ -1164,6 +1173,7 @@
     <label>Commander Greatbow</label>
     <description>A bow with a gold color made of gold and used by those with a golden heart.</description>
     <possessionCount>1</possessionCount>
+    <uiIconScale>0.8</uiIconScale>
     <graphicData>
       <texPath>Weapons/Goldenbow</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1261,31 +1271,28 @@
     <iconPath>Weapons/Goldenbow</iconPath>
     <cooldownTicksRange>3600</cooldownTicksRange>
     <hostile>false</hostile>
-    <groupAbility>true</groupAbility>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
     <aiCanUse>true</aiCanUse>
+    <writeCombatLog>True</writeCombatLog>
     <ai_IsOffensive>true</ai_IsOffensive>
-    <targetRequired>false</targetRequired>
+    <targetRequired>true</targetRequired>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
-      <verbClass>Verb_AbilityShoot</verbClass>
-      <burstShotCount>5</burstShotCount>
-      <warmupTime>1.5</warmupTime>
+       <verbClass>Verb_AbilityShoot</verbClass>
       <defaultProjectile>Projectile_LightArrowAbility</defaultProjectile>
-      <drawAimPie>true</drawAimPie>
-      <requireLineOfSight>false</requireLineOfSight>
-      <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+      <range>24.9</range>
+      <soundCast>Heatspikes_Shot</soundCast>
+      <soundCastTail>Heatspikes_Tail</soundCastTail>
+      <muzzleFlashScale>9</muzzleFlashScale>
+      <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+      <warmupTime>1.5</warmupTime>
+      <burstShotCount>5</burstShotCount>
       <accuracyTouch>0.9</accuracyTouch>
       <accuracyShort>0.8</accuracyShort>
       <accuracyMedium>0.7</accuracyMedium>
       <accuracyLong>0.6</accuracyLong>
-      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
-      <targetable>true</targetable>
-      <range>24.9</range>
-      <targetParams>
-        <canTargetSelf>true</canTargetSelf>
-      </targetParams>
+      <ai_IsWeapon>false</ai_IsWeapon>
     </verbProperties>
   </AbilityDef>
 
@@ -1312,6 +1319,7 @@
     <label>The Ripper</label>
     <description>A heavy Scythe, this weapon embodies Sabert's physical prowess and discipline. It is a formidable tool in combat, capable of delivering immense damage with each swing.</description>
     <possessionCount>1</possessionCount>
+    <uiIconScale>0.8</uiIconScale>
     <graphicData>
       <texPath>Weapons/SabertWeapon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1438,6 +1446,7 @@
     <descriptionHyperlinks>
       <AbilityDef>BearPunch</AbilityDef>
     </descriptionHyperlinks>
+    <uiIconScale>0.8</uiIconScale>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Weapons/IzumiWeapon</texPath>
