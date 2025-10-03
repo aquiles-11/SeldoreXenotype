@@ -656,18 +656,9 @@
       </targetParams>
     </verbProperties>
     <comps>
-      <!-- <li Class="SeldoreXeno.CompProperties_AbilityAngleBlast">
-        <range>2.9</range>
-        <lineWidthEnd>10</lineWidthEnd>
-        <damageDef>Stab</damageDef>
-        <effect>ExcaliburSwordCleave_Effect</effect>
-        <screenShake>0</screenShake>
-        <damageAmount>32</damageAmount>
-        <armorPen>0.6</armorPen>
-        <addedAngle>60</addedAngle>
-        <effectTickAwayFromCast>1</effectTickAwayFromCast>
-        <explosionSpeed>1.0</explosionSpeed>
-      </li> -->
+      <li Class="SeldoreXeno.CompProperties_AbilityGiveSpecificInspiration">
+        <inspirationDef>Inspired_ChefRecommendation</inspirationDef>
+      </li>
     </comps>
   </AbilityDef>
 

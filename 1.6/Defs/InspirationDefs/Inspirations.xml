@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+  <InspirationDef>
+    <defName>Inspired_ChefRecommendation</defName>
+    <label>chef's recommendation</label>
+    <baseDurationDays>3</baseDurationDays>
+    <beginLetter>[PAWN_pronoun] will turn all meal recipe product into Lavish Meal for the next 3 days.</beginLetter>
+    <beginLetterDef>PositiveEvent</beginLetterDef>
+    <endMessage>{0} is no longer inspired (chef's recommendation).</endMessage>
+    <baseInspectLine>Inspired: Chef's recommendation</baseInspectLine>
+    <requiredNonDisabledWorkTypes>
+      <li>Cooking</li>
+    </requiredNonDisabledWorkTypes>
+  </InspirationDef>
+
+</Defs>
