@@ -630,7 +630,7 @@
 
   <AbilityDef>
     <defName>ChefRecommendation</defName>
-    <label>Chef Coat Chef Recommendation</label>
+    <label>Chef's Recommendation</label>
     <description>Make the next meal you cook an excellent one!</description>
     <descriptionHyperlinks>
       <ThingDef>Bara_Apparel_ChefCoat</ThingDef>
@@ -639,7 +639,7 @@
     <warmupMoteSocialSymbol>UI/Abilities/Reassure</warmupMoteSocialSymbol>
     <jobDef>CastAbilityOnThingMelee</jobDef>
     <stunTargetWhileCasting>True</stunTargetWhileCasting>
-    <cooldownTicksRange>300000</cooldownTicksRange>
+    <cooldownTicksRange>180000</cooldownTicksRange>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
     <aiCanUse>true</aiCanUse>
@@ -652,7 +652,7 @@
       <drawAimPie>false</drawAimPie>
       <requireLineOfSight>true</requireLineOfSight>
       <range>-1</range>
-      <warmupTime>3.0</warmupTime>
+      <warmupTime>0.5</warmupTime>
       <targetParams>
         <canTargetSelf>false</canTargetSelf>
         <canTargetPawns>true</canTargetPawns>
