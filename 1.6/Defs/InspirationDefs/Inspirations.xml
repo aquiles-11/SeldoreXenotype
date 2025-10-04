@@ -5,14 +5,29 @@
   <InspirationDef>
     <defName>Inspired_ChefRecommendation</defName>
     <label>chef's recommendation</label>
+    <baseCommonality>0</baseCommonality>
     <baseDurationDays>3</baseDurationDays>
-    <beginLetter>[PAWN_pronoun] will turn all meal recipe product into Lavish Meal for the next 3 days.</beginLetter>
+    <beginLetter>[PAWN_pronoun] will turn the next non-lavish meal recipe product one time into Lavish Meal for the next 3 days.</beginLetter>
     <beginLetterDef>PositiveEvent</beginLetterDef>
     <endMessage>{0} is no longer inspired (chef's recommendation).</endMessage>
     <baseInspectLine>Inspired: Chef's recommendation</baseInspectLine>
     <requiredNonDisabledWorkTypes>
       <li>Cooking</li>
     </requiredNonDisabledWorkTypes>
+    <modExtensions>
+      <li Class="SeldoreXeno.CookingInspiration_Extension">
+        <cookingRecipesList>
+          <li>CookMealSimple</li>
+          <li>CookMealSimpleBulk</li>
+          <li>CookMealFine</li>
+          <li>CookMealFine_Veg</li>
+          <li>CookMealFine_Meat</li>
+          <li>CookMealFineBulk</li>
+          <li>CookMealFineBulk_Veg</li>
+          <li>CookMealFineBulk_Meat</li>
+        </cookingRecipesList>
+      </li>
+    </modExtensions>
   </InspirationDef>
 
 </Defs>

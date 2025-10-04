@@ -13,7 +13,6 @@ namespace SeldoreXeno
             {
                 if (Props.inspirationDef != null)
                 {
-                    base.Apply(target, dest);
                     pawn.mindState.inspirationHandler.TryStartInspiration(Props.inspirationDef, "LetterPsychicInspiration".Translate(pawn.Named("PAWN"), parent.pawn.Named("CASTER")));
                 }
             }

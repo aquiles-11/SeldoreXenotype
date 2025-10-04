@@ -606,11 +606,6 @@
     <thingCategories>
       <li>ApparelNoble</li>
     </thingCategories>
-    <comps>
-      <li Class="CompProperties_EquippableAbility">
-        <abilityDef>ChefRecommendation</abilityDef>
-      </li>
-    </comps>
     <apparel>
       <useWornGraphicMask>true</useWornGraphicMask>
       <bodyPartGroups>
@@ -626,6 +621,9 @@
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
       <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
       <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+      <abilities>
+        <li>ChefRecommendation</li>
+      </abilities>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
@@ -638,21 +636,30 @@
       <ThingDef>Bara_Apparel_ChefCoat</ThingDef>
     </descriptionHyperlinks>
     <iconPath>Armor/Flet/FletApparel</iconPath>
-    <cooldownTicksRange>3000</cooldownTicksRange>
+    <warmupMoteSocialSymbol>UI/Abilities/Reassure</warmupMoteSocialSymbol>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <stunTargetWhileCasting>True</stunTargetWhileCasting>
+    <cooldownTicksRange>300000</cooldownTicksRange>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
     <aiCanUse>true</aiCanUse>
-    <ai_IsOffensive>true</ai_IsOffensive>
+    <ai_IsOffensive>false</ai_IsOffensive>
     <targetRequired>true</targetRequired>
-    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <hostile>false</hostile>
     <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <drawAimPie>true</drawAimPie>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
       <requireLineOfSight>true</requireLineOfSight>
-      <range>2.9</range>
-      <warmupTime>0.5</warmupTime>
+      <range>-1</range>
+      <warmupTime>3.0</warmupTime>
       <targetParams>
-        <canTargetLocations>false</canTargetLocations>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
       </targetParams>
     </verbProperties>
     <comps>
@@ -878,7 +885,6 @@
     <iconPath>Weapons/HolySpear</iconPath>
     <cooldownTicksRange>1800</cooldownTicksRange>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
     <aiCanUse>true</aiCanUse>
     <ai_IsOffensive>true</ai_IsOffensive>
     <targetRequired>true</targetRequired>

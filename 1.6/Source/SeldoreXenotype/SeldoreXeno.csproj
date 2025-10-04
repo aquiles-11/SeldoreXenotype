@@ -20,7 +20,7 @@
 	<Optimize>true</Optimize>
 	<OutputPath>..\..\Assemblies\</OutputPath>
 	<DefineConstants>DEBUG;TRACE</DefineConstants>
-	<DebugType>pdbonly</DebugType>
+	<DebugType>portable</DebugType>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
