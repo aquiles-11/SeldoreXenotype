@@ -636,7 +636,7 @@
       <ThingDef>Bara_Apparel_ChefCoat</ThingDef>
     </descriptionHyperlinks>
     <iconPath>Armor/Flet/FletApparel</iconPath>
-    <warmupMoteSocialSymbol>UI/Abilities/Reassure</warmupMoteSocialSymbol>
+    <warmupMoteSocialSymbol>Armor/Flet/FletApparel</warmupMoteSocialSymbol>
     <jobDef>CastAbilityOnThingMelee</jobDef>
     <stunTargetWhileCasting>True</stunTargetWhileCasting>
     <cooldownTicksRange>180000</cooldownTicksRange>
