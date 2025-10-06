@@ -637,25 +637,26 @@
     </descriptionHyperlinks>
     <iconPath>Armor/Flet/FletApparel</iconPath>
     <warmupMoteSocialSymbol>Armor/Flet/FletApparel</warmupMoteSocialSymbol>
-    <jobDef>CastAbilityOnThingMelee</jobDef>
-    <stunTargetWhileCasting>True</stunTargetWhileCasting>
-    <cooldownTicksRange>180000</cooldownTicksRange>
+    <jobDef>CastAbilityOnThing</jobDef>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+    <cooldownTicksRange>3600</cooldownTicksRange> <!-- 60 seconds cooldown -->
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
     <aiCanUse>true</aiCanUse>
     <ai_IsOffensive>false</ai_IsOffensive>
-    <targetRequired>true</targetRequired>
+    <targetRequired>false</targetRequired>
+    <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <hostile>false</hostile>
     <verbProperties>
-      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <verbClass>Verb_CastAbility</verbClass>
       <drawAimPie>false</drawAimPie>
-      <requireLineOfSight>true</requireLineOfSight>
+      <requireLineOfSight>false</requireLineOfSight>
       <range>-1</range>
       <warmupTime>0.5</warmupTime>
       <targetParams>
-        <canTargetSelf>false</canTargetSelf>
-        <canTargetPawns>true</canTargetPawns>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>false</canTargetPawns>
         <canTargetBuildings>false</canTargetBuildings>
         <canTargetAnimals>false</canTargetAnimals>
         <canTargetHumans>true</canTargetHumans>

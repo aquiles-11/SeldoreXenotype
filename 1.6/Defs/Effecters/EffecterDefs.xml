@@ -65,7 +65,12 @@
                 <spawnLocType>OnTarget</spawnLocType>
                 <scale>4.5</scale>
                 <angle>0</angle>
+                <positionRadius>0.1</positionRadius>
+                <speed>7.5</speed>
+                <angle>0</angle>
                 <rotation>0</rotation>
+                <positionLerpFactor>0.95</positionLerpFactor>
+                <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
             </li>
         </children>
     </EffecterDef>
