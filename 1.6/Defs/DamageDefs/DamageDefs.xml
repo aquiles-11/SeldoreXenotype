@@ -16,6 +16,12 @@
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 	</DamageDef>
 
+	<DamageDef ParentName="BluntBase">
+		<defName>BluntWithEffect</defName>
+		<label>blunt</label>
+		<damageEffecter>BearPunchDamage_Effect</damageEffecter>
+	</DamageDef>
+
 	<StatCategoryDef>
 		<defName>FleshbeastDamage</defName>
 		<label>Fleshbeast</label>

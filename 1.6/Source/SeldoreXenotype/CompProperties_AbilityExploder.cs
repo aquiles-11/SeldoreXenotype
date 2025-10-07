@@ -6,6 +6,8 @@ namespace SeldoreXeno
     {
         public bool explosionOnCaster = false;
 
+        public bool damageCaster = true;
+
         public CompProperties_AbilityExploder()
         {
             compClass = typeof(CompAbilityEffect_Exploder);
