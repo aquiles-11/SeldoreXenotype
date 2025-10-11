@@ -122,4 +122,32 @@
         </graphicData>
     </ThingDef>
 
+    <ThingDef ParentName="MoteBase">
+        <defName>Mote_BlazeThrust</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <mote>
+            <fadeInTime>0.1</fadeInTime>
+            <solidTime>0.3</solidTime>
+            <fadeOutTime>0.1</fadeOutTime>
+            <collide>true</collide>
+        </mote>
+        <graphicData>
+            <texPath>Things/Mote/FlameThrust</texPath>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="MoteBase">
+        <defName>Mote_FreezingSweep</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <mote>
+            <fadeInTime>0.1</fadeInTime>
+            <solidTime>0.3</solidTime>
+            <fadeOutTime>0.1</fadeOutTime>
+            <collide>true</collide>
+        </mote>
+        <graphicData>
+            <texPath>Things/Mote/HolySpearSweep</texPath>
+        </graphicData>
+    </ThingDef>
+
 </Defs>

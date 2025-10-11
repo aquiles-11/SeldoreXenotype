@@ -22,6 +22,19 @@
 		<damageEffecter>BearPunchDamage_Effect</damageEffecter>
 	</DamageDef>
 
+	<DamageDef ParentName="BluntBase">
+		<defName>BluntWithSlowdown</defName>
+		<label>blunt</label>
+		<additionalHediffs>
+			<li>
+				<hediff>HypothermicSlowdown</hediff>
+				<severityPerDamageDealt>0.0025</severityPerDamageDealt>
+				<victimSeverityScaling>ArmorRating_Heat</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
 	<StatCategoryDef>
 		<defName>FleshbeastDamage</defName>
 		<label>Fleshbeast</label>

@@ -847,13 +847,6 @@
       <EquipDelay>1.2</EquipDelay>
     </statBases>
     <tickerType>Normal</tickerType>
-<!--		<comps>
-			<li Class="VEF.Apparels.CompProperties_ApparelHediffs">
-				<hediffDefnames>
-					<li>HorkeuAbility</li>
-				</hediffDefnames>
-			</li>
-		</comps>-->
     <thingCategories>
       <li>ApparelNoble</li>
     </thingCategories>
@@ -872,20 +865,24 @@
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
       <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
       <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+      <abilities>
+        <li>FreezingSweep</li>
+      </abilities>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
-<!--  <AbilityDef>
-    <defName>HorkeuAbilityDef</defName>
-    <label>holy knight's column strike</label>
-    <description>Perform a powerful sweep from holy knight commander spear, hitting multiple enemies in an arc or line.</description>
+  <AbilityDef>
+    <defName>FreezingSweep</defName>
+    <label>gauntlet-greaves' freezing sweep</label>
+    <description>Perform a melee attack from the gauntlet-greaves, hitting multiple enemies in an arc or line and briefly slowing them down.</description>
     <descriptionHyperlinks>
-      <ThingDef>Weapon_HolyKnightSpear</ThingDef>
+      <ThingDef>Bara_Apparel_Gauntlet-Greaves</ThingDef>
     </descriptionHyperlinks>
-    <iconPath>Weapons/HolySpear</iconPath>
+    <iconPath>Armor/HorkeuKamui/HorkeuKamuiApparel</iconPath>
     <cooldownTicksRange>1800</cooldownTicksRange>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
     <aiCanUse>true</aiCanUse>
     <ai_IsOffensive>true</ai_IsOffensive>
     <targetRequired>true</targetRequired>
@@ -895,7 +892,7 @@
       <drawAimPie>true</drawAimPie>
       <requireLineOfSight>true</requireLineOfSight>
       <range>2.9</range>
-      <warmupTime>1</warmupTime>
+      <warmupTime>1.0</warmupTime>
       <targetParams>
         <canTargetLocations>true</canTargetLocations>
       </targetParams>
@@ -904,17 +901,17 @@
       <li Class="SeldoreXeno.CompProperties_AbilityAngleBlast">
         <range>2.9</range>
         <lineWidthEnd>10</lineWidthEnd>
-        <damageDef>Stab</damageDef>
-        <effect>HolySpearSweep_Effect</effect>
+        <damageDef>BluntWithSlowdown</damageDef>
+        <effect>FreezingSweep_Effect</effect>
         <screenShake>0</screenShake>
-        <damageAmount>32</damageAmount>
+        <damageAmount>30</damageAmount>
         <armorPen>0.6</armorPen>
         <addedAngle>60</addedAngle>
         <effectTickAwayFromCast>1</effectTickAwayFromCast>
         <explosionSpeed>1.0</explosionSpeed>
       </li>
     </comps>
-  </AbilityDef>-->
+  </AbilityDef>
 
   <!-- Schmiel Armor -->
 

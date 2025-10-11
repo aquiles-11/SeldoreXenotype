@@ -22,7 +22,10 @@ namespace SeldoreXeno
             float num = Mathf.Atan2((float)(-(float)(target.Cell.z - position.z)), (float)(cell.x - position.x)) * Props.angleMultiplier;
             FloatRange value = new FloatRange(num - Props.addedAngle, num + Props.addedAngle);
 
-            parent.AddEffecterToMaintain(Props.effect.Spawn(position, cell, parent.pawn.Map, 1f), position, cell, Props.effectTickAwayFromCast, Pawn.MapHeld);
+            if (Props.effect != null)
+            {
+                parent.AddEffecterToMaintain(Props.effect.Spawn(position, cell, parent.pawn.Map, 1f), position, cell, Props.effectTickAwayFromCast, Pawn.MapHeld);
+            }
             GenExplosion.DoExplosion(position, mapHeld, Props.range, Props.damageDef, Pawn, Props.damageAmount, -1f, null, null, null, null, Props.filth, 1f, 1, null, null, 255, false, null, 0f, 1, Props.makeFlame, false, null, null, new FloatRange?(value), false, Props.explosionSpeed, 0f, false, null, Props.screenShake);
             base.Apply(target, dest);
         }

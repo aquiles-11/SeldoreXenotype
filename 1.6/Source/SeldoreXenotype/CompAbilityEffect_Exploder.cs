@@ -60,6 +60,11 @@ namespace SeldoreXeno
                 list.Add(this.parent.pawn);
             }
 
+            if (Props.effect != null)
+            {
+                parent.AddEffecterToMaintain(Props.effect.Spawn(pawn.Position, target.Cell, parent.pawn.Map, 1f), pawn.Position, target.Cell, Props.effectTickAwayFromCast, Pawn.MapHeld);
+            }
+
             GenExplosion.DoExplosion(position, mapHeld, explosionRadius, damageDef, pawn, damAmount, armorPenetration, soundExplode, weapon, null, null, postExplosionSpawnThingDef, postExplosionSpawnChance, postExplosionSpawnThingCount, postExplosionGasType, null, 255, applyDamageToExplosionCellsNeighbors, preExplosionSpawnThingDef, preExplosionSpawnChance, preExplosionSpawnThingCount, explosionChanceToStartFire, explosionDamageFalloff, null, list, null, doExplosionVFX, expolosionPropagationSpeed, 0f, doSoundEffects: true, postExplosionSpawnThingDefWater, screenShakeFactor, null, null, postExplosionSpawnSingleThingDef, preExplosionSpawnSingleThingDef);
         }
 

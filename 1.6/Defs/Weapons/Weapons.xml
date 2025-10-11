@@ -377,7 +377,7 @@
   <AbilityDef>
     <defName>HolySpearSlash</defName>
     <label>holy knight's column strike</label>
-    <description>Perform a powerful sweep from holy knight commander spear, hitting multiple enemies in an arc or line.</description>
+    <description>Perform a powerful sweep from the holy knight commander spear, hitting multiple enemies in an arc or line.</description>
     <descriptionHyperlinks>
       <ThingDef>Bara_Weapon_HolyKnightSpear</ThingDef>
     </descriptionHyperlinks>
@@ -992,8 +992,8 @@
 
   <AbilityDef>
     <defName>BlazeThrust</defName>
-    <label>blaze thrust ability</label>
-    <description>Perform a powerful sweep from holy knight commander spear, hitting multiple enemies in an arc or line.</description>
+    <label>blaze thrust</label>
+    <description>Perform a powerful melee thrust from the fenrir lance, hitting a single target.</description>
     <descriptionHyperlinks>
       <ThingDef>Bara_Weapon_FenrirLance</ThingDef>
     </descriptionHyperlinks>
@@ -1019,12 +1019,14 @@
       <li Class="SeldoreXeno.CompProperties_AbilityExploder">
         <explosionOnCaster>false</explosionOnCaster>
         <damageDef>Stab</damageDef>
-        <damageAmount>85</damageAmount>
+        <damageAmount>75</damageAmount>
         <armorPenetration>0.5</armorPenetration>
         <explosionRadius>0.1</explosionRadius>
         <screenShakeFactor>0</screenShakeFactor>
-        <soundExplode>PsychicInsanityLanceCast</soundExplode>
+        <soundExplode>FireSpew_Resolve</soundExplode>
         <doExplosionVFX>false</doExplosionVFX>
+        <effect>BlazeThrust_Effect</effect>
+        <effectTickAwayFromCast>1</effectTickAwayFromCast>
       </li>
     </comps>
   </AbilityDef>
@@ -1438,9 +1440,9 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Bara_Weapon_FountainClaw</defName>
     <label>fountain claw</label>
-    <description>A formidable weapon, this gauntlet is a testament to Izumi's physical prowess. It is a formidable tool in combat, capable of delivering immense damage with each strike..</description>
+    <description>A formidable weapon, this gauntlet is a testament to Izumi's physical prowess. It is a formidable tool in combat, capable of delivering immense damage with each strike.</description>
     <descriptionHyperlinks>
-      <AbilityDef>BearPunch</AbilityDef>
+      <AbilityDef>FreezingSweep</AbilityDef>
     </descriptionHyperlinks>
     <uiIconScale>0.8</uiIconScale>
     <possessionCount>1</possessionCount>
@@ -1513,7 +1515,7 @@
   <AbilityDef>
     <defName>BearPunch</defName>
     <label>Bear Punch</label>
-    <description>PLACEHOLDER.</description>
+    <description>Emits a powerful shockwave from the fountain claw, erects spikes from the earth and causes damage to multiple surrounding enemies in AoE.</description>
     <descriptionHyperlinks>
       <ThingDef>Bara_Weapon_FountainClaw</ThingDef>
     </descriptionHyperlinks>

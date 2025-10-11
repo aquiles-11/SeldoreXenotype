@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using Verse;
 
 namespace SeldoreXeno
 {
@@ -7,6 +8,10 @@ namespace SeldoreXeno
         public bool explosionOnCaster = false;
 
         public bool damageCaster = true;
+
+        public EffecterDef effect;
+
+        public int effectTickAwayFromCast = 1;
 
         public CompProperties_AbilityExploder()
         {
