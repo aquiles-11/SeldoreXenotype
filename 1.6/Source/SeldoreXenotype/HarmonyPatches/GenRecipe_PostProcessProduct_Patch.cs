@@ -1,5 +1,4 @@
 ﻿using HarmonyLib;
-using RimWorld;
 using Verse;
 
 namespace SeldoreXeno.HarmonyPatches
@@ -14,7 +13,7 @@ namespace SeldoreXeno.HarmonyPatches
                 return;
             }
 
-            if (!worker.InspirationDef.GetModExtension<CookingInspiration_Extension>().cookingRecipesList.Contains(recipeDef))
+            if (!worker.InspirationDef.HasModExtension<CookingInspiration_Extension>() && !worker.InspirationDef.GetModExtension<CookingInspiration_Extension>().cookingRecipesList.Contains(recipeDef))
             {
                 return;
             }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <SeldoreXenotype.ApparelBodyMismatch>Cannot wear {1_label}: required body type didn't match.</SeldoreXenotype.ApparelBodyMismatch>
+    <SeldoreXenotype.ForceTargetApparelBodyMismatch>required body type didn't match.</SeldoreXenotype.ForceTargetApparelBodyMismatch>
+
+</LanguageData>
