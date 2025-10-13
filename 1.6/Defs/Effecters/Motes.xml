@@ -146,7 +146,7 @@
             <collide>true</collide>
         </mote>
         <graphicData>
-            <texPath>Things/Mote/HolySpearSweep</texPath>
+            <texPath>Things/Mote/FreezingSweep</texPath>
         </graphicData>
     </ThingDef>
 

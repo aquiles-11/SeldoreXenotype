@@ -973,7 +973,7 @@
       <verbClass>Verb_CastAbility</verbClass>
       <drawAimPie>true</drawAimPie>
       <requireLineOfSight>true</requireLineOfSight>
-      <range>2.9</range>
+      <range>1.9</range>
       <warmupTime>1.0</warmupTime>
       <targetParams>
         <canTargetLocations>true</canTargetLocations>
@@ -981,8 +981,8 @@
     </verbProperties>
     <comps>
       <li Class="SeldoreXeno.CompProperties_AbilityAngleBlast">
-        <range>2.9</range>
-        <lineWidthEnd>10</lineWidthEnd>
+        <range>1.9</range>
+        <lineWidthEnd>5</lineWidthEnd>
         <damageDef>BluntWithSlowdown</damageDef>
         <effect>FreezingSweep_Effect</effect>
         <screenShake>0</screenShake>
