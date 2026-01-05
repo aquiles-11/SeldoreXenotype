@@ -1553,4 +1553,420 @@
     </comps>
   </AbilityDef>
 
+<!-- Baran's Dragon Tooth Necklace -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Bara_Weapon_DragonToothNecklace</defName>
+    <label>Baran's Dragon Tooth Necklace</label>
+    <description>"A simple but powerful catalyst consisting of a leather cord strung with teeth and a glowing blue crystal charm. When held by a priest, it focuses spiritual energy into tangible bolts of dragon fire."</description>
+    <descriptionHyperlinks>
+      <AbilityDef>FreezingSweep</AbilityDef>
+    </descriptionHyperlinks>
+    <uiIconScale>0.8</uiIconScale>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/BaranWeapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>BaranWeapon</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Projectile_BaranProjectile</defaultProjectile>
+        <warmupTime>1.8</warmupTime>
+        <range>28</range>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+    <statBases>
+      <MarketValue>900</MarketValue>
+      <WorkToMake>15000</WorkToMake>
+      <MeditationFocusStrength>0.05</MeditationFocusStrength>
+      <Mass>0.5</Mass>
+      <EquipDelay>1.5</EquipDelay>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>60</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>charm</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+    <costList>
+      <Leather_Plain>20</Leather_Plain>
+      <Jade>10</Jade>
+      <Gold>5</Gold>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Styleable" />
+      <li Class="CompProperties_Biocodable" />
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+            <li Class="CompProperties_EquippableAbility">
+        <abilityDef>HeavenRain</abilityDef>
+      </li>
+    </comps>
+    <recipeMaker>
+       <researchPrerequisite>BaranResearch</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+<ThingDef ParentName="BaseBullet">
+    <defName>Projectile_BaranProjectile</defName>
+    <label>dragon fire bolt</label>
+    <graphicData>
+      <texPath>Projectiles/LightArrowProjectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+    <projectile Inherit="false">
+      <damageDef>Burn</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <speed>45</speed>
+    </projectile>
+  </ThingDef>
+
+<AbilityDef>
+    <defName>GoldenDragonAwakening</defName>
+    <label>golden dragon awakening</label>
+    <description>Shoot a magic projectile using Baran's weapon.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Bara_Weapon_DragonToothNecklace</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Weapons/BaranWeapon</iconPath>
+    <cooldownTicksRange>3000</cooldownTicksRange>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>true</targetRequired>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_AbilityShoot</verbClass>
+      <defaultProjectile>Projectile_BaranProjectileAbility</defaultProjectile>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>30.9</range>
+      <soundCast>Heatspikes_Shot</soundCast>
+      <soundCastTail>Heatspikes_Tail</soundCastTail>
+      <muzzleFlashScale>9</muzzleFlashScale>
+      <warmupTime>0.5</warmupTime>
+      <accuracyTouch>1</accuracyTouch>
+      <accuracyShort>1</accuracyShort>
+      <accuracyMedium>1</accuracyMedium>
+      <accuracyLong>1</accuracyLong>
+      <ai_IsWeapon>false</ai_IsWeapon>
+    </verbProperties>
+  </AbilityDef>
+
+<ThingDef ParentName="BaseBullet">
+    <defName>Projectile_BaranProjectileAbility</defName>
+    <label>magic dragon fire bolt</label>
+    <graphicData>
+      <texPath>Projectiles/LightArrowProjectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+    <projectile Inherit="false">
+      <damageDef>Burn</damageDef>
+      <damageAmountBase>35</damageAmountBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+<!-- Billford's Sweeping Broadsword -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Bara_Weapon_SweepingBroadsword</defName>
+    <label>Billford's Sweeping Broadsword</label>
+    <description>"A massive, two-handed broadsword favored by Billford. It lacks the elegance of ceremonial blades, relying instead on weight and momentum to cleave through enemies. While heavy to swing, it allows the wielder to hold the line against multiple foes at once."</description>
+    <descriptionHyperlinks>
+      <AbilityDef>Aerothrust</AbilityDef>
+    </descriptionHyperlinks>
+    <uiIconScale>0.8</uiIconScale>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/BillfordWeapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_EquippableAbility">
+        <abilityDef>SwordCleave</abilityDef>
+      </li>
+    </comps>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>ExcaliburSword</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>5.5</Mass>
+      <EquipDelay>1.0</EquipDelay>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <costList>
+      <Steel>120</Steel>
+      <Plasteel>60</Plasteel>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <armorPenetration>0.1</armorPenetration>
+        <cooldownTime>2.8</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+        <armorPenetration>0.4</armorPenetration>
+        <cooldownTime>2.8</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>14</power>
+        <armorPenetration>0.3</armorPenetration>
+        <cooldownTime>2.8</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>BillfordResearch</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+<AbilityDef>
+    <defName>Aerothrust</defName>
+    <label>Aerothrust</label>
+    <description>Shoot a projectile from the sky dealing damage.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Bara_Weapon_SweepingBroadsword</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Weapons/BillfordWeapon</iconPath>
+    <cooldownTicksRange>3000</cooldownTicksRange>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>true</targetRequired>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>4.9</range>
+      <warmupTime>0.5</warmupTime>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="SeldoreXeno.CompProperties_AbilityExploder">
+        <explosionOnCaster>false</explosionOnCaster>
+        <damageDef>Blunt</damageDef>
+        <damageAmount>40</damageAmount>
+        <explosionRadius>0.1</explosionRadius>
+        <screenShakeFactor>0</screenShakeFactor>
+        <soundExplode>FireSpew_Resolve</soundExplode>
+        <doExplosionVFX>false</doExplosionVFX>
+        <effect>BlazeThrust_Effect</effect>
+        <effectTickAwayFromCast>1</effectTickAwayFromCast>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!-- Duran's Duran II: Kinetic Hammer -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Bara_Weapon_KineticHammer</defName>
+    <label>Duran's Duran II: Kinetic Hammer</label>
+    <description>"A colossal siege hammer named 'Duran II'. It houses a dynamic generator within its head to deliver crushing blows. While unwieldy, a well-timed slam can destabilize nearby enemies and shatter defensive formations."</description>
+    <descriptionHyperlinks>
+      <AbilityDef>EarthBreaker</AbilityDef>
+    </descriptionHyperlinks>
+    <uiIconScale>0.8</uiIconScale>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/DuranWeapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_EquippableAbility">
+        <abilityDef>EarthBreaker</abilityDef>
+      </li>
+    </comps>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>Bara_Weapon_KineticHammer</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>3800</MarketValue>
+      <WorkToMake>70000</WorkToMake>
+      <Mass>18</Mass>
+      <EquipDelay>1.0</EquipDelay>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <costList>
+      <Uranium>50</Uranium>
+      <Plasteel>150</Plasteel>
+      <ComponentIndustrial>12</ComponentIndustrial>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <armorPenetration>0.6</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>engine crush</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>26</power>
+        <armorPenetration>0.6</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>hydraulic slam</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>32</power>
+        <armorPenetration>0.6</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>DuranResearch</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+<AbilityDef>
+    <defName>EarthBreaker</defName>
+    <label>Earth's Breaker</label>
+    <description>Slam the hammer to the ground for area damage.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Bara_Weapon_KineticHammer</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Weapons/DuranWeapon</iconPath>
+    <cooldownTicksRange>3000</cooldownTicksRange>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <statBases>
+      <Ability_EffectRadius>2.5</Ability_EffectRadius>
+    </statBases>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>true</targetRequired>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>4.9</range>
+      <warmupTime>2</warmupTime>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="SeldoreXeno.CompProperties_AbilityExploder">
+        <explosionOnCaster>false</explosionOnCaster>
+        <damageDef>Blunt</damageDef>
+        <damageAmount>30</damageAmount>
+        <explosionRadius>2.5</explosionRadius>
+        <screenShakeFactor>0</screenShakeFactor>
+        <soundExplode>Pawn_Bear_Angry</soundExplode>
+        <doExplosionVFX>true</doExplosionVFX>
+        <damageCaster>false</damageCaster>
+      </li>
+    </comps>
+  </AbilityDef>
+
 </Defs>

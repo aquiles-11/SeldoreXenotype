@@ -15,4 +15,17 @@
     </stages>
   </ThoughtDef>
 
+<ThoughtDef>
+    <defName>BillfordThought</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>captain's back</label>
+        <description>You feel inspired due to fighting besides the captain.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
 </Defs>

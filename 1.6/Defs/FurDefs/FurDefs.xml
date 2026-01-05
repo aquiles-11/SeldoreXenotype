@@ -122,4 +122,60 @@
     </bodyTypeGraphicPaths>
   </FurDef>
 
+<FurDef>
+    <defName>BaranBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Muscular>Humanlike/Bodies/Baran/BaranBody</Muscular>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+<FurDef>
+    <defName>BarretBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/Barret/BarretBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+<FurDef>
+    <defName>BatoBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Muscular>Humanlike/Bodies/Bato/BatoBody</Muscular>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+<FurDef>
+    <defName>BillfordBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/Billford/BillfordBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>  
+
+<FurDef>
+    <defName>DuranBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/Duran/DuranBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>  
+
+<FurDef>
+    <defName>ForteBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/Forte/ForteBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>  
+
+<FurDef>
+    <defName>GenpeiBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Muscular>Humanlike/Bodies/Genpei/GenpeiBody</Muscular>
+    </bodyTypeGraphicPaths>
+  </FurDef>  
+
 </Defs>

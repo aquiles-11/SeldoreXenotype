@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>  
+<?xml version="1.0" encoding="UTF-8"?>
 
 <Defs>
 
@@ -29,7 +29,7 @@
             <li>Gene_GabuHead</li>
         </genes>
     </XenotypeDef>
-    
+
     <XenotypeDef>
         <defName>NocheXenotype</defName>
         <label>Noche Xenotype</label>
@@ -209,6 +209,104 @@
         <genes>
             <li>Gene_IzumiBody</li>
             <li>Gene_IzumiHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>BaranXenotype</defName>
+        <label>Baran Xenotype</label>
+        <description>Baran's Xenotype</description>
+        <iconPath>Humanlike/Heads/Baran/BaranHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_BaranBody</li>
+            <li>Gene_BaranHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>BarretXenotype</defName>
+        <label>Barret Xenotype</label>
+        <description>Barret's Xenotype</description>
+        <iconPath>Humanlike/Heads/Barret/BarretHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_BarretBody</li>
+            <li>Gene_BarretHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>BatoXenotype</defName>
+        <label>Bato Xenotype</label>
+        <description>Bato's Xenotype</description>
+        <iconPath>Humanlike/Heads/Bato/BatoHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_BatoBody</li>
+            <li>Gene_BatoHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>BillfordXenotype</defName>
+        <label>Billford Xenotype</label>
+        <description>Billford's Xenotype</description>
+        <iconPath>Humanlike/Heads/Billford/BillfordHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_BillfordBody</li>
+            <li>Gene_BillfordHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>DuranXenotype</defName>
+        <label>Duran Xenotype</label>
+        <description>Duran's Xenotype</description>
+        <iconPath>Humanlike/Heads/Duran/DuranHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_DuranBody</li>
+            <li>Gene_DuranHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>ForteXenotype</defName>
+        <label>Forte Xenotype</label>
+        <description>Forte's Xenotype</description>
+        <iconPath>Humanlike/Heads/Forte/ForteHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_ForteBody</li>
+            <li>Gene_ForteHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>GenpeiXenotype</defName>
+        <label>Genpei Xenotype</label>
+        <description>Genpei's Xenotype</description>
+        <iconPath>Humanlike/Heads/Genpei/GenpeiHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_GenpeiBody</li>
+            <li>Gene_GenpeiHead</li>
         </genes>
     </XenotypeDef>
 

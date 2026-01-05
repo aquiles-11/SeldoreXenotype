@@ -1207,4 +1207,606 @@
     </modExtensions>
   </ThingDef>
 
+<!-- Baran Armor -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Bara_Apparel_BaranHighPriestRobes</defName>
+    <label>Baran's High Priest Robes</label>
+    <description>"The ceremonial vestments of the Orc High Priest Baran. While the fabric is light and breathable, the left shoulder is dominated by a dragon skull carved from solid jade, serving as a symbol of authority and spiritual power. It is an imposing sight, blending the savagery of the wild with the dignity of the priesthood."</description>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>BaranResearch</researchPrerequisite>
+      <displayPriority>245</displayPriority>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Armor/Baran/BaranArmor_Muscular_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>80</Cloth>
+      <Jade>20</Jade>
+      <Gold>10</Gold>
+    </costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>22000</WorkToMake>
+      <MarketValue>1100</MarketValue>
+      <Mass>3</Mass>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>1</ArmorRating_Heat>
+      <Insulation_Cold>15</Insulation_Cold>
+      <Insulation_Heat>40</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelNoble</li>
+    </thingCategories>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Neck</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/Baran/BaranArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <modExtensions>
+      <li Class="SeldoreXeno.ApparelBodySpecific_Extension">
+        <allowedBodyTypeDefs>
+          <li>Muscular</li>
+        </allowedBodyTypeDefs>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+<!--  Barret Armor -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Bara_Apparel_AvalancheGear</defName>
+    <label>Barret's Avalanche Gear</label>
+    <description>"The iconic combat vest and cargo pants worn by the leader of Avalanche. Reinforced with plasteel plating and heavy leather straps, it is built to withstand explosions and gunfire. It embodies the wearer's unshakeable resolve to save the planet."</description>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>BarretResearch</researchPrerequisite>
+      <displayPriority>245</displayPriority>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Armor/Barret/BarretArmor_Hulk_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <Synthread>80</Synthread>
+      <Plasteel>50</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToMake>55000</WorkToMake>
+      <MarketValue>2800</MarketValue>
+      <Mass>9</Mass>
+      <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.65</ArmorRating_Heat>
+      <Insulation_Cold>10</Insulation_Cold>
+      <Insulation_Heat>30</Insulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelNoble</li>
+    </thingCategories>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Neck</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/Barret/BarretArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <modExtensions>
+      <li Class="SeldoreXeno.ApparelBodySpecific_Extension">
+        <allowedBodyTypeDefs>
+          <li>Hulk</li>
+        </allowedBodyTypeDefs>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+<!--  Bato Armor -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Bara_Apparel_LaborHarness</defName>
+    <label>Bato's Labor Harness</label>
+    <description>"The heavy leather work harness worn by Bato. Reinforced with steel buckles and thick padding, it is designed for heavy labor and construction. It supports the wearer's back during strenuous lifting, allowing them to haul massive loads and build fortifications with ease."</description>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>BatoResearch</researchPrerequisite>
+      <displayPriority>245</displayPriority>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Armor/Bato/BatoArmor_Hulk_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <Leather_Plain>80</Leather_Plain>
+      <Cloth>40</Cloth>
+      <Steel>20</Steel>
+    </costList>
+    <equippedStatOffsets>
+      <MiningSpeed>0.30</MiningSpeed>
+      <ConstructionSpeed>0.30</ConstructionSpeed>
+      <CarryingCapacity>50</CarryingCapacity>
+    </equippedStatOffsets>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>30000</WorkToMake>
+      <MarketValue>2000</MarketValue>
+      <Mass>5</Mass>
+      <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      <Insulation_Cold>10</Insulation_Cold>
+      <Insulation_Heat>20</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelNoble</li>
+    </thingCategories>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/Bato/BatoArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <modExtensions>
+      <li Class="SeldoreXeno.ApparelBodySpecific_Extension">
+        <allowedBodyTypeDefs>
+          <li>Muscular</li>
+        </allowedBodyTypeDefs>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+<!--  Billford Armor -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Bara_Apparel_CaptainsPlate</defName>
+    <label>Billford's Captain's Plate</label>
+    <description>"The rugged, heavy plate armor worn by the mercenary captain Billford. Reinforced with a layer of ultra-dense hyperweave, it prioritizes raw physical defense over mobility. The sight of this armor on the battlefield reassures allies, reminding them that the Captain has their back."</description>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>BillfordResearch</researchPrerequisite>
+      <displayPriority>245</displayPriority>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Armor/Billford/BillfordArmor_Hulk_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <Hyperweave>50</Hyperweave>
+      <Steel>100</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>380</MaxHitPoints>
+      <WorkToMake>50000</WorkToMake>
+      <MarketValue>2400</MarketValue>
+      <Mass>12</Mass>
+      <ArmorRating_Sharp>1.18</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <Insulation_Cold>15</Insulation_Cold>
+      <Insulation_Heat>25</Insulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelNoble</li>
+    </thingCategories>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Neck</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/Billford/BillfordArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <modExtensions>
+      <li Class="SeldoreXeno.ApparelBodySpecific_Extension">
+        <allowedBodyTypeDefs>
+          <li>Hulk</li>
+        </allowedBodyTypeDefs>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+<!--  Duran Armor -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Bara_Apparel_MercenaryRig</defName>
+    <label>Duran's Mercenary Rig</label>
+    <description>"The iconic battle armor of Colonel Duran. It is a masterpiece of industrial engineering. While designed for war, its immense hydraulic power allows it to crush the hardest rocks easily, making it a legendary tool for the mining industry."</description>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>DuranResearch</researchPrerequisite>
+      <displayPriority>245</displayPriority>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <descriptionHyperlinks>
+      <ThingDef>SeismicExcavation</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Armor/Duran/DuranArmor_Hulk_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <Plasteel>120</Plasteel>
+      <Steel>50</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToMake>60000</WorkToMake>
+      <MarketValue>3500</MarketValue>
+      <Mass>15</Mass>
+      <ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.85</ArmorRating_Heat>
+      <Insulation_Cold>30</Insulation_Cold>
+      <Insulation_Heat>30</Insulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelNoble</li>
+    </thingCategories>
+    <apparel>
+      <abilities>
+        <li>SeismicExcavation</li>
+      </abilities>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Neck</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/Duran/DuranArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <modExtensions>
+      <li Class="SeldoreXeno.ApparelBodySpecific_Extension">
+        <allowedBodyTypeDefs>
+          <li>Hulk</li>
+        </allowedBodyTypeDefs>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+<AbilityDef>
+    <defName>SeismicExcavation</defName>
+    <label>Seismic Excavation</label>
+    <description>Allows the wearer to chew through mountain roofs and deep drill deposits with the speed of a heavy machine!</description>
+    <descriptionHyperlinks>
+      <ThingDef>Bara_Apparel_MercenaryRig</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Armor/Duran/DuranArmor_Hulk_south</iconPath>
+    <warmupMoteSocialSymbol>Armor/Duran/DuranArmor_Hulk_south</warmupMoteSocialSymbol>
+    <jobDef>CastAbilityOnThing</jobDef>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+    <cooldownTicksRange>180000</cooldownTicksRange> <!-- 3 day cooldown -->
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>false</ai_IsOffensive>
+    <targetRequired>false</targetRequired>
+    <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <hostile>false</hostile>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <requireLineOfSight>false</requireLineOfSight>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+      <targetable>false</targetable>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>DuranBuff</hediffDef>
+        <durationSecondsOverride>1000</durationSecondsOverride>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!--  Forte Armor -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Bara_Apparel_ChampionLoincloth</defName>
+    <label>Forte's Champion Loincloth</label>
+    <description>"The ceremonial garb of Forte, the Gorilla Patriarch. While it appears to be simple cloth and jade, it represents his status as an invincible champion. Wearing it allows him to shrug off blades like a tank and leap across the battlefield to crush his foes."</description>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>ForteResearch</researchPrerequisite>
+      <displayPriority>245</displayPriority>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <descriptionHyperlinks>
+      <ThingDef>BestialDive</ThingDef>
+    </descriptionHyperlinks>
+    <equippedStatOffsets>
+      <MoveSpeed>0.80</MoveSpeed>
+    </equippedStatOffsets>
+    <graphicData>
+      <texPath>Armor/Forte/ForteArmor_Hulk_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <Gold>30</Gold>
+      <Leather_Plain>100</Leather_Plain>
+      <Jade>30</Jade>
+    </costList>
+    <statBases>
+      <MaxHitPoints>380</MaxHitPoints>
+      <WorkToMake>40000</WorkToMake>
+      <MarketValue>2500</MarketValue>
+      <Mass>3</Mass>
+      <ArmorRating_Sharp>1</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      <Insulation_Cold>20</Insulation_Cold>
+      <Insulation_Heat>20</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelNoble</li>
+    </thingCategories>
+    <apparel>
+      <abilities>
+        <li>BestialDive</li>
+      </abilities>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Neck</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/Forte/ForteArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <modExtensions>
+      <li Class="SeldoreXeno.ApparelBodySpecific_Extension">
+        <allowedBodyTypeDefs>
+          <li>Hulk</li>
+        </allowedBodyTypeDefs>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+<AbilityDef>
+    <defName>BestialDive</defName>
+    <label>Bestial Dive</label>
+    <description>Allows the wearer to leap into the air and land doing damage!</description>
+    <descriptionHyperlinks>
+      <ThingDef>Bara_Apparel_MercenaryRig</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Armor/Forte/ForteArmor_Hulk_south</iconPath>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+    <cooldownTicksRange>2800</cooldownTicksRange> <!-- 3 day cooldown -->
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>false</ai_IsOffensive>
+    <targetRequired>false</targetRequired>
+    <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <hostile>false</hostile>
+    <verbProperties>
+      <range>20</range>
+      <minRange>6</minRange>
+      <warmupEffecter>JumpMechWarmupEffect</warmupEffecter>
+      <requireLineOfSight>true</requireLineOfSight>
+      <flightEffecterDef>JumpMechFlightEffect</flightEffecterDef>
+      <flyWithCarriedThing>true</flyWithCarriedThing>
+      <soundLanding>JumpMechLand</soundLanding>
+      <soundCast Inherit="False" />
+    </verbProperties>
+    <jobDef>CastJump</jobDef>
+  </AbilityDef>
+
+<!--  Forte Armor -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Bara_Apparel_FisherWaders</defName>
+    <label>Genpei's Fisher Waders</label>
+    <description>"The rugged, waterproof waders of Genpei, the prodigy fisherman. Designed for long hours in freezing waters, they keep the wearer dry and warm. Optimized for the new fishing zones, they allow Genpei to sense the movement of fish in the water, turning a patient pastime into a rapid harvest."</description>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>GenpeiResearch</researchPrerequisite>
+      <displayPriority>245</displayPriority>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <equippedStatOffsets>
+      <MoveSpeed>0.40</MoveSpeed>
+      <FishingYield MayRequire="Ludeon.RimWorld.Odyssey">0.25</FishingYield>
+      <FishingSpeed MayRequire="Ludeon.RimWorld.Odyssey">0.50</FishingSpeed>
+    </equippedStatOffsets>
+    <graphicData>
+      <texPath>Armor/Genpei/GenpeiArmor_Hulk_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <Synthread>40</Synthread>
+      <Leather_Plain>100</Leather_Plain>
+    </costList>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToMake>30000</WorkToMake>
+      <MarketValue>2200</MarketValue>
+      <Mass>3</Mass>
+      <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <Insulation_Cold>40</Insulation_Cold>
+      <Insulation_Heat>20</Insulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelNoble</li>
+    </thingCategories>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Neck</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/Genpei/GenpeiArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <modExtensions>
+      <li Class="SeldoreXeno.ApparelBodySpecific_Extension">
+        <allowedBodyTypeDefs>
+          <li>Muscular</li>
+        </allowedBodyTypeDefs>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+
 </Defs>
