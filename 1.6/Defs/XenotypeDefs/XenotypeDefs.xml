@@ -310,4 +310,158 @@
         </genes>
     </XenotypeDef>
 
+    <XenotypeDef>
+        <defName>GorrokXenotype</defName>
+        <label>Gor'rok Xenotype</label>
+        <description>Gor'rok's Xenotype</description>
+        <iconPath>Humanlike/Heads/Gor'rok/Gor'rokHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_GorrokBody</li>
+            <li>Gene_GorrokHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>HombreTigreXenotype</defName>
+        <label>Hombre Tigre Xenotype</label>
+        <description>Hombre Tigre's Xenotype</description>
+        <iconPath>Humanlike/Heads/HombreTigre/HombreTigreHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_HombreTigreBody</li>
+            <li>Gene_HombreTigreHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>JoeButtatakiXenotype</defName>
+        <label>Joe Buttaraki Xenotype</label>
+        <description>Joe Buttaraki's Xenotype</description>
+        <iconPath>Humanlike/Heads/JoeButtataki/JoeButtatakiHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_JoeButtatakiBody</li>
+            <li>Gene_JoeButtatakiHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>KaiserXenotype</defName>
+        <label>Kaiser Xenotype</label>
+        <description>Kaiser's Xenotype</description>
+        <iconPath>Humanlike/Heads/Kaiser/KaiserHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_KaiserBody</li>
+            <li>Gene_KaiserHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>KhafkaXenotype</defName>
+        <label>Khafka Xenotype</label>
+        <description>Khafka's Xenotype</description>
+        <iconPath>Humanlike/Heads/Khafka/KhafkaHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_KhafkaBody</li>
+            <li>Gene_KhafkaHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>KuroganeXenotype</defName>
+        <label>Kurogane Xenotype</label>
+        <description>Kurogane's Xenotype</description>
+        <iconPath>Humanlike/Heads/Kurogane/KuroganeHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_KuroganeBody</li>
+            <li>Gene_KuroganeHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>MarkXenotype</defName>
+        <label>Mark Xenotype</label>
+        <description>Mark's Xenotype</description>
+        <iconPath>Humanlike/Heads/Mark/MarkHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_MarkBody</li>
+            <li>Gene_MarkHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>NerfenXenotype</defName>
+        <label>Nerfen Xenotype</label>
+        <description>Nerfen's Xenotype</description>
+        <iconPath>Humanlike/Heads/Nerfen/NerfenHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_NerfenBody</li>
+            <li>Gene_NerfenHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>RavenXenotype</defName>
+        <label>Raven Xenotype</label>
+        <description>Raven's Xenotype</description>
+        <iconPath>Humanlike/Heads/Raven/RavenHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_RavenBody</li>
+            <li>Gene_RavenHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>UkonvasaraXenotype</defName>
+        <label>Ukonvasara Xenotype</label>
+        <description>Ukonvasara's Xenotype</description>
+        <iconPath>Humanlike/Heads/Ukonvasara/UkonvasaraHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_UkonvasaraBody</li>
+            <li>Gene_UkonvasaraHead</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <defName>PrometheusXenotype</defName>
+        <label>Prometheus Xenotype</label>
+        <description>Prometheus's Xenotype</description>
+        <iconPath>Humanlike/Heads/Prometheus/PrometheusHead_south</iconPath>
+        <combatPowerFactor>1.5</combatPowerFactor>
+        <inheritable>false</inheritable>
+        <canGenerateAsCombatant>true</canGenerateAsCombatant>
+        <genes>
+            <li>Gene_PrometheusBody</li>
+            <li>Gene_PrometheusHead</li>
+        </genes>
+    </XenotypeDef>
+
 </Defs>

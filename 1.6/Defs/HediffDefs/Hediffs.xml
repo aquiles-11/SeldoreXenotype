@@ -250,6 +250,187 @@
         </stages>
     </HediffDef>
 
+<HediffDef>
+        <defName>HakumaBuff</defName>
+        <label>Survival Perception buff</label>
+        <description>Increases melee dodge chance by a 100%.</description>
+        <debugLabelExtra>other</debugLabelExtra>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>true</showRemainingTime>
+                <disappearsAfterTicks>60000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeleeDodgeChance>1</MeleeDodgeChance>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+<HediffDef>
+        <defName>JoeBuff</defName>
+        <label>Caffeine Breakthrough buff</label>
+        <description>Increases research speed by 50%.</description>
+        <debugLabelExtra>other</debugLabelExtra>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>true</showRemainingTime>
+                <disappearsAfterTicks>60000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ResearchSpeed>0.5</ResearchSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+<HediffDef>
+        <defName>KuroganeBuff</defName>
+        <label>InventorTrance buff</label>
+        <description>Increases work speed by 150%.</description>
+        <debugLabelExtra>other</debugLabelExtra>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>true</showRemainingTime>
+                <disappearsAfterTicks>60000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <GeneralLaborSpeed>1.5</GeneralLaborSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+<HediffDef>
+        <defName>KaiserBuff</defName>
+        <label>Sonic Dampener buff</label>
+        <description>Makes you immune to stun/staggering (wip).</description>
+        <debugLabelExtra>other</debugLabelExtra>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>true</showRemainingTime>
+                <disappearsAfterTicks>3000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+            <li Class="HediffCompProperties_ThoughtSetter">
+                <thought>KaiserThought</thought>
+            </li>
+        </comps>
+        <stages>
+        </stages>
+    </HediffDef>
+
+<HediffDef>
+        <defName>GiftoftheSnowyNightHediff</defName>
+        <label>gift of the snowy night</label>
+        <description>Noche's revitalizes people with his gift.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+            <li Class="HediffCompProperties_GiveHediffsInRange">
+                <range>10.9</range>
+                <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+                <targetingParameters>
+                    <canTargetBuildings>false</canTargetBuildings>
+                    <canTargetAnimals>false</canTargetAnimals>
+                    <canTargetMechs>false</canTargetMechs>
+                    <onlyTargetColonists>true</onlyTargetColonists>
+                </targetingParameters>
+                <hediff>GiftoftheSnowyNightBuff</hediff>
+            </li>
+        </comps>
+        <isBad>false</isBad>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>GiftoftheSnowyNightBuff</defName>
+        <label>gift of the snowy night buff</label>
+        <description>Noche's has revitalized this pawn, making them happier and faster.</description>
+        <debugLabelExtra>other</debugLabelExtra>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>False</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+            <li Class="HediffCompProperties_ThoughtSetter">
+                <thought>NocheThought</thought>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MoveSpeed>0.9</MoveSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+<HediffDef>
+        <defName>Noche2Hediff</defName>
+        <label>its just so hard</label>
+        <description>This person's sheer regal aura causes people to learn faster.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+            <li Class="HediffCompProperties_GiveHediffsInRange">
+                <range>10.9</range>
+                <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+                <targetingParameters>
+                    <canTargetBuildings>false</canTargetBuildings>
+                    <canTargetAnimals>false</canTargetAnimals>
+                    <canTargetMechs>false</canTargetMechs>
+                    <onlyTargetColonists>true</onlyTargetColonists>
+                </targetingParameters>
+                <hediff>Noche2Buff</hediff>
+            </li>
+        </comps>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>Noche2Buff</defName>
+        <label>noche 2 buff</label>
+        <description>Buff to melee and ranged attack.</description>
+        <debugLabelExtra>other</debugLabelExtra>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>False</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeleeDamageFactor>1.5</MeleeDamageFactor>
+                    <RangedWeapon_DamageMultiplier>1.5</RangedWeapon_DamageMultiplier>
+                </statOffsets>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
 
 <!--    <HediffDef>
         <defName>HorkeuAbility</defName>

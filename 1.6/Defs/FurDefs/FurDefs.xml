@@ -150,7 +150,7 @@
     <defName>BillfordBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/Billford/BillfordBody</Hulk>
+      <Hulk>Humanlike/Bodies/Bilford/BilfordBody</Hulk>
     </bodyTypeGraphicPaths>
   </FurDef>  
 
@@ -175,6 +175,94 @@
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
       <Muscular>Humanlike/Bodies/Genpei/GenpeiBody</Muscular>
+    </bodyTypeGraphicPaths>
+  </FurDef>  
+
+<FurDef>
+    <defName>GorrokBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/Gor'rok/Gor'rokBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>  
+
+<FurDef>
+    <defName>HombreTigreBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/HombreTigre/HombreTigreBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>  
+
+<FurDef>
+    <defName>JoeButtatakiBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Muscular>Humanlike/Bodies/JoeButtataki/JoeButtatakiBody</Muscular>
+    </bodyTypeGraphicPaths>
+  </FurDef>  
+
+<FurDef>
+    <defName>KaiserBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/Kaiser/KaiserBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>  
+
+<FurDef>
+    <defName>KhafkaBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Muscular>Humanlike/Bodies/Khafka/KhafkaBody</Muscular>
+    </bodyTypeGraphicPaths>
+  </FurDef>  
+
+<FurDef>
+    <defName>KuroganeBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/Kurogane/KuroganeBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>  
+
+<FurDef>
+    <defName>MarkBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/Mark/MarkBody</Hulk>
+    </bodyTypeGraphicPaths>
+  </FurDef>  
+
+<FurDef>
+    <defName>NerfenBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Muscular>Humanlike/Bodies/Nerfen/NerfenBody</Muscular>
+    </bodyTypeGraphicPaths>
+  </FurDef>  
+
+<FurDef>
+    <defName>RavenBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Muscular>Humanlike/Bodies/Raven/RavenBody</Muscular>
+    </bodyTypeGraphicPaths>
+  </FurDef>  
+
+<FurDef>
+    <defName>UkonvasaraBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Muscular>Humanlike/Bodies/Ukonvasara/UkonvasaraBody</Muscular>
+    </bodyTypeGraphicPaths>
+  </FurDef>  
+
+<FurDef>
+    <defName>PrometheusBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/Prometheus/PrometheusBody</Hulk>
     </bodyTypeGraphicPaths>
   </FurDef>  
 

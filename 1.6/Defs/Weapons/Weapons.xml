@@ -1500,7 +1500,7 @@
       </li>
     </comps>
     <recipeMaker>
-       <researchPrerequisite>SabertResearch</researchPrerequisite>
+       <researchPrerequisite>IzumiResearch</researchPrerequisite>
       <recipeUsers>
         <li>TableMachining</li>
         <li>FabricationBench</li>
@@ -1731,7 +1731,7 @@
     <uiIconScale>0.8</uiIconScale>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Weapons/BillfordWeapon</texPath>
+      <texPath>Weapons/BilfordWeapon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -1809,7 +1809,7 @@
     <descriptionHyperlinks>
       <ThingDef>Bara_Weapon_SweepingBroadsword</ThingDef>
     </descriptionHyperlinks>
-    <iconPath>Weapons/BillfordWeapon</iconPath>
+    <iconPath>Weapons/BilfordWeapon</iconPath>
     <cooldownTicksRange>3000</cooldownTicksRange>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
@@ -1961,6 +1961,1115 @@
         <damageDef>Blunt</damageDef>
         <damageAmount>30</damageAmount>
         <explosionRadius>2.5</explosionRadius>
+        <screenShakeFactor>0</screenShakeFactor>
+        <soundExplode>Pawn_Bear_Angry</soundExplode>
+        <doExplosionVFX>true</doExplosionVFX>
+        <damageCaster>false</damageCaster>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!-- Genpei's Saw-Spear -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Bara_Weapon_Saw-Spear</defName>
+    <label>Genpei's Saw-Spear</label>
+    <description>"A heavy industrial harpoon customized by Genpei. The tip features a motorized chainsaw mechanism powered by internal components. It functions as a deadly melee weapon, capable of unleashing the 'Fish King Random Attack'—a flurry of strikes so wild and fast it resembles a thrashing leviathan."</description>
+    <descriptionHyperlinks>
+      <AbilityDef>EarthBreaker</AbilityDef>
+    </descriptionHyperlinks>
+    <uiIconScale>0.8</uiIconScale>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/GenpeiWeapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_EquippableAbility">
+        <abilityDef>EarthBreaker</abilityDef>
+      </li>
+    </comps>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>Bara_Weapon_KineticHammer</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>2800</MarketValue>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>6</Mass>
+      <EquipDelay>2.0</EquipDelay>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <costList>
+      <Steel>120</Steel>
+      <Plasteel>20</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <armorPenetration>0.6</armorPenetration>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+      <li>
+        <label>engine crush</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>28</power>
+        <armorPenetration>0.6</armorPenetration>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+      <li>
+        <label>hydraulic slam</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>322</power>
+        <armorPenetration>0.6</armorPenetration>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>GenpeiResearch</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+<!-- Hakuma's Ocean Requin -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Bara_Weapon_OceanRequin</defName>
+    <label>Hakuma's Ocean Requin</label>
+    <description>"A heavy, ornate crossbow used by Hakuma. Crafted from darkened steel and dense uranium, it fires heavy bolts that resemble swimming sharks. The projectiles hunt their targets with predatory precision, tearing through armor like paper."</description>
+    <descriptionHyperlinks>
+      <AbilityDef>AuraEmpoweringDarkness</AbilityDef>
+    </descriptionHyperlinks>
+    <possessionCount>1</possessionCount>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <texPath>Weapons/HakumaWeapon2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>Bara_Weapon_OceanRequin</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Projectile_OceanRequinArrow</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <range>32</range>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>8</Mass>
+      <EquipDelay>2.5</EquipDelay>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>130</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.1</armorPenetration>
+      </li>
+      <li>
+        <label>bow limb</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.1</armorPenetration>
+      </li>
+    </tools>
+    <costList>
+      <Plasteel>100</Plasteel>
+      <Steel>60</Steel>
+      <Uranium>20</Uranium>
+    </costList>
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable">
+        <abilityDef>AuraEmpoweringDarkness</abilityDef>
+      </li>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Styleable" />
+      <li Class="CompProperties_Biocodable" />
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>Hakuma2Research</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Projectile_OceanRequinArrow</defName>
+    <label>Ocean Requin Arrow</label>
+    <graphicData>
+      <texPath>Projectiles/DarkArrowProjectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+    <projectile Inherit="false">
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <armorPenetrationBase>0.55</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+
+<AbilityDef>
+    <defName>SharkingBite</defName>
+    <label>Sharking Bite</label>
+    <description>The wielder overcharges the crossbow to fire a massive shark-shaped bolt.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Bara_Weapon_DragonToothNecklace</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Weapons/BaranWeapon</iconPath>
+    <cooldownTicksRange>3000</cooldownTicksRange>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>true</targetRequired>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_AbilityShoot</verbClass>
+      <defaultProjectile>Projectile_BaranProjectileAbility</defaultProjectile>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>35.9</range>
+      <soundCast>Heatspikes_Shot</soundCast>
+      <soundCastTail>Heatspikes_Tail</soundCastTail>
+      <muzzleFlashScale>9</muzzleFlashScale>
+      <warmupTime>0.5</warmupTime>
+      <accuracyTouch>1</accuracyTouch>
+      <accuracyShort>1</accuracyShort>
+      <accuracyMedium>1</accuracyMedium>
+      <accuracyLong>1</accuracyLong>
+      <ai_IsWeapon>false</ai_IsWeapon>
+    </verbProperties>
+  </AbilityDef>
+
+<ThingDef ParentName="BaseBullet">
+    <defName>Projectile_HakumaProjectileAbility</defName>
+    <label>magic dragon fire bolt</label>
+    <graphicData>
+      <texPath>Projectiles/LightArrowProjectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+    <projectile Inherit="false">
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>50</damageAmountBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+<!-- Guardian Aegis Shield -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Bara_Weapon_GuardianAegisShield</defName>
+    <label>Guardian Aegis Shield</label>
+    <description>"A massive 'Aegis' shield generator carried by Izumi. It is designed to withstand heavy artillery and protect squad members. While it can be used to bludgeon enemies, its true purpose is to deploy a defensive energy barrier during critical moments."</description>
+    <descriptionHyperlinks>
+      <AbilityDef>EarthBreaker</AbilityDef>
+    </descriptionHyperlinks>
+    <uiIconScale>0.8</uiIconScale>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/IzumiWeapon2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_EquippableAbility">
+        <abilityDef>EarthBreaker</abilityDef>
+      </li>
+    </comps>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>Bara_Weapon_KineticHammer</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>8</Mass>
+      <EquipDelay>1.0</EquipDelay>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>80</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <tools>
+      <li>
+        <label>shield bash</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>22</power>
+        <armorPenetration>0.6</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>rim slam</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+        <armorPenetration>0.6</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Izumi2Research</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+<!-- Kaiser's Impact Gauntlets -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Bara_Weapon_ImpactGauntlets</defName>
+    <label>Kaiser's Impact Gauntlets</label>
+    <description>"A pair of massive, engine-driven gauntlets. They are complex pieces of machinery, utilizing fuel injection and hydraulic pressure to deliver punches with the force of a train collision. The roar of their engines strikes fear into enemies before the fist even lands."</description>
+    <descriptionHyperlinks>
+      <AbilityDef>SeismicSlam</AbilityDef>
+    </descriptionHyperlinks>
+    <uiIconScale>0.8</uiIconScale>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/KaiserWeapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_EquippableAbility">
+        <abilityDef>SeismicSlam</abilityDef>
+      </li>
+    </comps>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>Bara_Weapon_KineticHammer</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+      <WorkToMake>65000</WorkToMake>
+      <Mass>8</Mass>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <costList>
+      <Steel>120</Steel>
+      <Plasteel>60</Plasteel>
+      <ComponentIndustrial>12</ComponentIndustrial>
+    </costList>
+    <tools>
+      <li>
+        <label>piston smash</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <armorPenetration>0.45</armorPenetration>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>hydraulic uppercut</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>24</power>
+        <armorPenetration>0.35</armorPenetration>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>steel knuckle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <armorPenetration>0.35</armorPenetration>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>KaiserResearch</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+<AbilityDef>
+    <defName>SeismicSlam</defName>
+    <label>Seismic Slam</label>
+    <description>Slam the gauntlets to an enemy dealing massive damage.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Bara_Weapon_ImpactGauntlets</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Weapons/KaiserWeapon</iconPath>
+    <cooldownTicksRange>4000</cooldownTicksRange>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>true</targetRequired>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>4.9</range>
+      <warmupTime>1</warmupTime>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="SeldoreXeno.CompProperties_AbilityExploder">
+        <explosionOnCaster>false</explosionOnCaster>
+        <damageDef>Blunt</damageDef>
+        <damageAmount>55</damageAmount>
+        <explosionRadius>0.1</explosionRadius>
+        <screenShakeFactor>0</screenShakeFactor>
+        <soundExplode>Pawn_Bear_Angry</soundExplode>
+        <doExplosionVFX>true</doExplosionVFX>
+        <damageCaster>false</damageCaster>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!-- Nerfen's Two-Wheeled Blade of Still Flame -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Bara_Weapon_TwoWheeledBladeofStillFlame</defName>
+    <label>Nerfen's Two-Wheeled Blade of Still Flame</label>
+    <description>"A peculiar sword with a circular guard, favored by Nerfen. Despite its ornamental appearance, it is a deadly tool of espionage. The blade seems to retain the heat of a forge, ready to ignite at the wielder's command."</description>
+    <descriptionHyperlinks>
+      <AbilityDef>TwoWheelAbility</AbilityDef>
+    </descriptionHyperlinks>
+    <uiIconScale>0.8</uiIconScale>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/NerfenWeapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_EquippableAbility">
+        <abilityDef>TwoWheelAbility</abilityDef>
+      </li>
+    </comps>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>Bara_Weapon_TwoWheeledBladeofStillFlame</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <WorkToMake>35000</WorkToMake>
+      <Mass>8</Mass>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <costList>
+      <Steel>100</Steel>
+      <Gold>20</Gold>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <armorPenetration>0.15</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>19</power>
+        <armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>23</power>
+        <armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>NerfenResearch</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+<AbilityDef>
+    <defName>TwoWheelAbility</defName>
+    <label>Two Wheel Flame Remnants</label>
+    <description>Slam the gauntlets to an enemy dealing massive damage.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Bara_Weapon_TwoWheeledBladeofStillFlame</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Weapons/NerfenWeapon</iconPath>
+    <cooldownTicksRange>4500</cooldownTicksRange>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>true</targetRequired>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>3.9</range>
+      <warmupTime>0.5</warmupTime>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="SeldoreXeno.CompProperties_AbilityExploder">
+        <explosionOnCaster>false</explosionOnCaster>
+        <damageDef>Stab</damageDef>
+        <damageAmount>30</damageAmount>
+        <explosionRadius>0.1</explosionRadius>
+        <screenShakeFactor>0</screenShakeFactor>
+        <soundExplode>Pawn_Bear_Angry</soundExplode>
+        <doExplosionVFX>true</doExplosionVFX>
+        <damageCaster>false</damageCaster>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!-- Noche's Sacred Tree Sword -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Bara_Weapon_SacredTreeSword</defName>
+    <label>Noche's Sacred Tree Sword</label>
+    <description>A ceremonial sword carved from the branch of a World Tree, adorned with green jade. Though it looks decorative, it channels powerful Wind magic capable of freezing enemies. The wielder uses it to empower their allies with the overwhelming spirit of the season.</description>
+    <descriptionHyperlinks>
+      <AbilityDef>HardWorkAbility</AbilityDef>
+    </descriptionHyperlinks>
+    <uiIconScale>0.8</uiIconScale>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/NocheWeapon2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_EquippableAbility">
+        <abilityDef>HardWorkAbility</abilityDef>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>Bara_Weapon_SacredTreeSword</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>2800</MarketValue>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>2.5</Mass>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <costList>
+      <Plasteel>60</Plasteel>
+      <Jade>40</Jade>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <tools>
+      <li>
+        <label>hilt</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>frost blade</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>26</power>
+        <armorPenetration>0.65</armorPenetration>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>holy sweep</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>32</power>
+        <armorPenetration>0.65</armorPenetration>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Noche2Research</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+<AbilityDef>
+    <defName>HardWorkAbility</defName>
+    <label>"It's such hard work..."</label>
+    <description>Slam the gauntlets to an enemy dealing massive damage.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Bara_Weapon_SacredTreeSword</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Weapons/NerfenWeapon</iconPath>
+    <cooldownTicksRange>6000</cooldownTicksRange>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>true</targetRequired>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>5.9</range>
+      <warmupTime>0.5</warmupTime>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="SeldoreXeno.CompProperties_AbilityExploder">
+        <explosionOnCaster>false</explosionOnCaster>
+        <damageDef>EMP</damageDef>
+        <damageAmount>20</damageAmount>
+        <explosionRadius>5</explosionRadius>
+        <screenShakeFactor>0</screenShakeFactor>
+        <soundExplode>Pawn_Bear_Angry</soundExplode>
+        <doExplosionVFX>true</doExplosionVFX>
+        <damageCaster>false</damageCaster>
+      </li>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>Noche2Hediff</hediffDef>
+        <durationSecondsOverride>15</durationSecondsOverride>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!-- Raven's Carnwennan Sword -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Bara_Weapon_CarnwennanSword</defName>
+    <label>Raven's Carnwennan Sword</label>
+    <description>The legendary Carnwennan, a shadow-sword wielded by the phantom thief Raven. Infused with uranium, it allows the wielder to vanish like smoke. Legend says it once hid a King from giants.</description>
+    <uiIconScale>0.8</uiIconScale>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/RavenWeapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <weaponTags>
+      <li>Bara_Weapon_SacredTreeSword</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>2.5</Mass>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <costList>
+      <Plasteel>30</Plasteel>
+      <Uranium>3</Uranium>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <tools>
+      <li>
+        <label>hilt</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <armorPenetration>0.15</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>24</power>
+        <armorPenetration>0.4</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>24</power>
+        <armorPenetration>0.4</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>RavenResearch</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+<!-- Divine Axe Ukonvasara -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Bara_Weapon_DivineAxe</defName>
+    <label>Ukonvasara Divine Axe</label>
+    <description>"A massive axe-hammer hybrid forged with Uranium for extreme density. While ancient in design, it houses industrial capacitors within the head. It allows the wielder to call down strikes of high-voltage lightning on distant foes."</description>
+    <uiIconScale>0.8</uiIconScale>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/UkonvasaraWeapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>Bara_Weapon_SacredTreeSword</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>3200</MarketValue>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>12</Mass>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <costList>
+      <Steel>120</Steel>
+      <Uranium>40</Uranium>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <tools>
+      <li>
+        <label>hilt</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <armorPenetration>0.7</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>thunder smash</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>30</power>
+        <armorPenetration>0.7</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>voltage crush</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>35</power>
+        <armorPenetration>0.7</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>UkonvasaraResearch</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+<!-- Prometheus's Creation Needle (SR) -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Bara_Weapon_CreationNeedle</defName>
+    <label>Prometheus's Creation Needle (SR)</label>
+    <description>A large, specialized sewing needle used by Prometheus. Though primarily a tool for crafting his beloved dolls, it is deadly in close quarters. Its true power lies in the "Flame of Life" it channels—allowing him to animate explosive dolls to protect his solitude.</description>
+    <descriptionHyperlinks>
+      <AbilityDef>DollBombSummon</AbilityDef>
+    </descriptionHyperlinks>
+    <uiIconScale>0.8</uiIconScale>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/PrometheusWeapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_EquippableAbility">
+        <abilityDef>DollBombSummon</abilityDef>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>Bara_Weapon_CreationNeedle</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>2100</MarketValue>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>1.2</Mass>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <Chemfuel>20</Chemfuel>
+    </costList>
+    <tools>
+      <li>
+        <label>hilt</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <armorPenetration>0.1</armorPenetration>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>needle pierce</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+        <armorPenetration>0.4</armorPenetration>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>quick stitch</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>14</power>
+        <armorPenetration>0.3</armorPenetration>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>PrometheusResearch</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+<AbilityDef>
+    <defName>DollBombSummon</defName>
+    <label>Doll Bomb Summon</label>
+    <description>Throw a doll that explodes!</description>
+    <descriptionHyperlinks>
+      <ThingDef>Bara_Weapon_CreationNeedle</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Weapons/Icon</iconPath>
+    <cooldownTicksRange>6000</cooldownTicksRange>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>true</targetRequired>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>20.9</range>
+      <warmupTime>1</warmupTime>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Proj_PrometheusPlushie</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+ <ThingDef ParentName="BaseGrenadeProjectile">
+  <defName>Proj_PrometheusPlushie</defName>
+    <label>Prometheus Plushie</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Projectiles/PrometheusPlushy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <explosionRadius>3.9</explosionRadius >
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <explosionDelay>100</explosionDelay>
+    </projectile>
+  </ThingDef>
+
+<!-- Khafka's Coercion Rope -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Bara_Weapon_CoercionRope</defName>
+    <label>Khafka's Coercion Rope</label>
+    <description>A heavy-duty climbing rope modified for combat, woven with green fibers and weighted with jade beads. Khafka handles it with expert precision, using it to scale mountains or subdue opponents. The weighted ends pack a surprising punch, but its true power lies in its ability to wrap around targets, locking them in a helpless bind.</description>
+    <descriptionHyperlinks>
+      <AbilityDef>PleasureBind</AbilityDef>
+    </descriptionHyperlinks>
+    <uiIconScale>0.8</uiIconScale>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapons/KhafkaWeapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_EquippableAbility">
+        <abilityDef>PleasureBind</abilityDef>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>Bara_Weapon_CoercionRope</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>1600</MarketValue>
+      <WorkToMake>35000</WorkToMake>
+      <Mass>2</Mass>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <costList>
+      <Leather_Plain>60</Leather_Plain>
+      <Steel>40</Steel>
+      <Jade>20</Jade>
+    </costList>
+    <tools>
+      <li>
+        <label>hilt</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <armorPenetration>0.15</armorPenetration>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>carabiner</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+        <armorPenetration>0.35</armorPenetration>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>whip snap</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>24</power>
+        <armorPenetration>0.35</armorPenetration>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>KhafkaResearch</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+<AbilityDef>
+    <defName>PleasureBind</defName>
+    <label>pleasure bind</label>
+    <description>Khafka lashes at a target and deals damage.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Bara_Weapon_CoercionRope</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Weapons/KhafkaWeapon</iconPath>
+    <cooldownTicksRange>6000</cooldownTicksRange>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>true</targetRequired>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>5.9</range>
+      <warmupTime>0.5</warmupTime>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="SeldoreXeno.CompProperties_AbilityExploder">
+        <explosionOnCaster>false</explosionOnCaster>
+        <damageDef>Blunt</damageDef>
+        <damageAmount>15</damageAmount>
+        <explosionRadius>0.1</explosionRadius>
         <screenShakeFactor>0</screenShakeFactor>
         <soundExplode>Pawn_Bear_Angry</soundExplode>
         <doExplosionVFX>true</doExplosionVFX>

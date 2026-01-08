@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>  
+<?xml version="1.0" encoding="UTF-8"?>
 
 
 <Defs>
 
-<!-- Research Tabs -->
+    <!-- Research Tabs -->
 
     <ResearchTabDef>
         <defName>CraveSagaResearch</defName>
@@ -38,9 +38,23 @@
         <label>Other Research</label>
         <generalTitle>Other Research</generalTitle>
         <generalDescription>All the stuff from other games can be found here</generalDescription>
-    </ResearchTabDef>    
+    </ResearchTabDef>
 
-<!--____Crave Saga Research____-->
+    <ResearchTabDef>
+        <defName>TokyoAfterschoolResearch</defName>
+        <label>Tokyo Afterschool Research</label>
+        <generalTitle>Other Research</generalTitle>
+        <generalDescription>All the stuff from Tokyo Afterschool can be found here</generalDescription>
+    </ResearchTabDef>
+
+<ResearchTabDef>
+        <defName>ArtandShowsResearch</defName>
+        <label>Art and Shows Research</label>
+        <generalTitle>Other Research</generalTitle>
+        <generalDescription>All the stuff from Art and Shows can be found here</generalDescription>
+    </ResearchTabDef>
+
+    <!--____Crave Saga Research____-->
 
     <!--__Epaulo Research__-->
 
@@ -90,6 +104,22 @@
         <researchViewY>2.00</researchViewY>
     </ResearchProjectDef>
 
+<!--__Noche 2 Research__-->
+
+    <ResearchProjectDef>
+        <defName>Noche2Research</defName>
+        <label>Noche Gear Tier 2</label>
+        <description>Armor and weapon wielded by Noche Tier 2.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>NocheResearch</li>
+        </prerequisites>
+        <researchViewX>4.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
     <!--__Seldore Research__-->
 
     <ResearchProjectDef>
@@ -122,7 +152,7 @@
         <researchViewY>2.00</researchViewY>
     </ResearchProjectDef>
 
-        <!--__Hakuma Research__-->
+    <!--__Hakuma Research__-->
 
     <ResearchProjectDef>
         <defName>HakumaResearch</defName>
@@ -135,6 +165,22 @@
             <li>Smithing</li>
         </prerequisites>
         <researchViewX>1.00</researchViewX>
+        <researchViewY>5.00</researchViewY>
+    </ResearchProjectDef>
+
+    <!--__Hakuma 2 Research__-->
+
+    <ResearchProjectDef>
+        <defName>Hakuma2Research</defName>
+        <label>Hakuma Gear Tier 2</label>
+        <description>Armor and weapon wielded by Hakuma.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>HakumaResearch</li>
+        </prerequisites>
+        <researchViewX>2.00</researchViewX>
         <researchViewY>5.00</researchViewY>
     </ResearchProjectDef>
 
@@ -186,7 +232,7 @@
         <researchViewY>4.00</researchViewY>
     </ResearchProjectDef>
 
-<!--__Genpei Research__-->
+    <!--__Genpei Research__-->
 
     <ResearchProjectDef>
         <defName>GenpeiResearch</defName>
@@ -202,7 +248,39 @@
         <researchViewY>4.00</researchViewY>
     </ResearchProjectDef>
 
-<!--____Gyee Research____-->
+<!--__Nerfen Research__-->
+
+    <ResearchProjectDef>
+        <defName>NerfenResearch</defName>
+        <label>Nerfen Gear</label>
+        <description>Armor and weapon wielded by Nerfen.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.50</researchViewX>
+        <researchViewY>4.00</researchViewY>
+    </ResearchProjectDef>
+
+<!--__Ukonvasara Research__-->
+
+    <ResearchProjectDef>
+        <defName>UkonvasaraResearch</defName>
+        <label>Ukonvasara Gear</label>
+        <description>Armor and weapon wielded by Ukonvasara.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>CraveSagaResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.50</researchViewX>
+        <researchViewY>4.00</researchViewY>
+    </ResearchProjectDef>
+
+    <!--____Gyee Research____-->
 
     <!--__Sig Research-->
 
@@ -236,7 +314,23 @@
         <researchViewY>4.00</researchViewY>
     </ResearchProjectDef>
 
-<!--__Duran Research__-->
+<!--__Izumi 2 Research__-->
+
+    <ResearchProjectDef>
+        <defName>Izumi2Research</defName>
+        <label>Izumi Gear Tier 2</label>
+        <description>Armor and weapon wielded by Izumi Tier 2.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>GyeeResearch</tab>
+        <prerequisites>
+            <li>IzumiResearch</li>
+        </prerequisites>
+        <researchViewX>2.50</researchViewX>
+        <researchViewY>4.00</researchViewY>
+    </ResearchProjectDef>
+
+    <!--__Duran Research__-->
 
     <ResearchProjectDef>
         <defName>DuranResearch</defName>
@@ -250,9 +344,9 @@
         </prerequisites>
         <researchViewX>1.50</researchViewX>
         <researchViewY>5.00</researchViewY>
-    </ResearchProjectDef>    
+    </ResearchProjectDef>
 
-<!--____Another Edios Research____-->
+    <!--____Another Edios Research____-->
 
     <!--__Kagura Research__-->
 
@@ -302,7 +396,7 @@
         <researchViewY>4.00</researchViewY>
     </ResearchProjectDef>
 
-<!--__Baran Research__-->
+    <!--__Baran Research__-->
 
     <ResearchProjectDef>
         <defName>BaranResearch</defName>
@@ -318,9 +412,9 @@
         <researchViewY>5.00</researchViewY>
     </ResearchProjectDef>
 
-<!--__Billford Research__-->
+    <!--__Billford Research__-->
 
-<ResearchProjectDef>
+    <ResearchProjectDef>
         <defName>BillfordResearch</defName>
         <label>Billford Gear</label>
         <description>Armor and weapon wielded by Billford.</description>
@@ -334,9 +428,9 @@
         <researchViewY>6.00</researchViewY>
     </ResearchProjectDef>
 
-<!--__Forte Research__-->
+    <!--__Forte Research__-->
 
-<ResearchProjectDef>
+    <ResearchProjectDef>
         <defName>ForteResearch</defName>
         <label>Forte Gear</label>
         <description>Armor and weapon wielded by Forte.</description>
@@ -350,7 +444,7 @@
         <researchViewY>7.00</researchViewY>
     </ResearchProjectDef>
 
-<!--____Housamo Research____-->
+    <!--____Housamo Research____-->
 
     <!--__Horkeu Kamui Research__-->
 
@@ -368,7 +462,7 @@
         <researchViewY>2.00</researchViewY>
     </ResearchProjectDef>
 
-<!--____Other Research____-->
+    <!--____Other Research____-->
 
     <!--__Barret Research__-->
 
@@ -386,9 +480,9 @@
         <researchViewY>2.00</researchViewY>
     </ResearchProjectDef>
 
-<!--__Bato Research__-->
+    <!--__Bato Research__-->
 
-<ResearchProjectDef>
+    <ResearchProjectDef>
         <defName>BatoResearch</defName>
         <label>Bato Gear</label>
         <description>Armor and weapon wielded by Bato.</description>
@@ -400,6 +494,154 @@
         </prerequisites>
         <researchViewX>1.50</researchViewX>
         <researchViewY>3.00</researchViewY>
-    </ResearchProjectDef>    
-    
+    </ResearchProjectDef>
+
+<!--__Kaiser Research__-->
+
+    <ResearchProjectDef>
+        <defName>KaiserResearch</defName>
+        <label>Kaiser Gear</label>
+        <description>Armor and weapon wielded by Kaiser.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>OtherResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.50</researchViewX>
+        <researchViewY>4.00</researchViewY>
+    </ResearchProjectDef>
+
+<!--Mark Research__-->
+
+    <ResearchProjectDef>
+        <defName>MarkResearch</defName>
+        <label>Mark Gear</label>
+        <description>Armor and weapon wielded by Mark.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>OtherResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.50</researchViewX>
+        <researchViewY>5.00</researchViewY>
+    </ResearchProjectDef>
+
+<!--Khafka Research__-->
+
+    <ResearchProjectDef>
+        <defName>KhafkaResearch</defName>
+        <label>Khafka Gear</label>
+        <description>Armor and weapon wielded by Khafka.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>OtherResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.50</researchViewX>
+        <researchViewY>6.00</researchViewY>
+    </ResearchProjectDef>
+
+<!--Gorrok Research__-->
+
+    <ResearchProjectDef>
+        <defName>GorrokResearch</defName>
+        <label>Gorrok Gear</label>
+        <description>Armor and weapon wielded by Gorrok.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>OtherResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.50</researchViewX>
+        <researchViewY>7.00</researchViewY>
+    </ResearchProjectDef>
+
+    <!--____Tokyo Afterschool Research____-->
+
+    <!--__Hombre Tigre Research__-->
+
+    <ResearchProjectDef>
+        <defName>HombreTigreResearch</defName>
+        <label>Hombre Tigre Gear</label>
+        <description>Armor and weapon wielded by Hombre Tigre.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>TokyoAfterschoolResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.50</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+<!--__Kurogane Research__-->
+
+    <ResearchProjectDef>
+        <defName>KuroganeResearch</defName>
+        <label>Kurogane Gear</label>
+        <description>Armor and weapon wielded by Kurogane.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>TokyoAfterschoolResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.50</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+<!--__Raven Research__-->
+
+    <ResearchProjectDef>
+        <defName>RavenResearch</defName>
+        <label>Raven Gear</label>
+        <description>Armor and weapon wielded by Raven.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>TokyoAfterschoolResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.50</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+<!--__Prometheus Research__-->
+
+    <ResearchProjectDef>
+        <defName>PrometheusResearch</defName>
+        <label>Prometheus Gear</label>
+        <description>Armor and weapon wielded by Prometheus.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>TokyoAfterschoolResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.50</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+ <!--____Art and Shows Research____-->
+
+    <!--__Joe Buttataki Research__-->
+
+    <ResearchProjectDef>
+        <defName>JoeButtatakiResearch</defName>
+        <label>Joe Buttataki Gear</label>
+        <description>Armor and weapon wielded by Joe Buttataki.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>ArtandShowsResearch</tab>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.50</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
 </Defs>

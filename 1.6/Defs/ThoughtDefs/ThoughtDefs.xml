@@ -28,4 +28,30 @@
     </stages>
   </ThoughtDef>
 
+<ThoughtDef>
+    <defName>KaiserThought</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>Sonic Dampener</label>
+        <description>You're in a good mood thanks to the music in your headphones.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+<ThoughtDef>
+    <defName>NocheThought</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>gift of the snowy night</label>
+        <description>You're in a good mood thanks to Noche's gift.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
 </Defs>

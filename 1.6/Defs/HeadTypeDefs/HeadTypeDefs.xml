@@ -262,7 +262,7 @@
 
 <HeadTypeDef ParentName="AverageBase">
         <defName>BillfordHead</defName>
-        <graphicPath>Humanlike/Heads/Billford/BillfordHead</graphicPath>
+        <graphicPath>Humanlike/Heads/Bilford/BilfordHead</graphicPath>
         <randomChosen>false</randomChosen>
         <gender>None</gender>
         <requiredGenes>
@@ -304,5 +304,125 @@
         <selectionWeight>1000</selectionWeight>
     </HeadTypeDef>
 
+<HeadTypeDef ParentName="AverageBase">
+        <defName>GorrokHead</defName>
+        <graphicPath>Humanlike/Heads/Gor'rok/Gor'rokHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_GorrokHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+<HeadTypeDef ParentName="AverageBase">
+        <defName>HombreTigreHead</defName>
+        <graphicPath>Humanlike/Heads/HombreTigre/HombreTigreHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_HombreTigreHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+<HeadTypeDef ParentName="AverageBase">
+        <defName>JoeButtatakiHead</defName>
+        <graphicPath>Humanlike/Heads/JoeButtataki/JoeButtatakiHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_JoeButtatakiHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+<HeadTypeDef ParentName="AverageBase">
+        <defName>KaiserHead</defName>
+        <graphicPath>Humanlike/Heads/Kaiser/KaiserHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_KaiserHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+<HeadTypeDef ParentName="AverageBase">
+        <defName>KhafkaHead</defName>
+        <graphicPath>Humanlike/Heads/Khafka/KhafkaHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_KhafkaHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+<HeadTypeDef ParentName="AverageBase">
+        <defName>KuroganeHead</defName>
+        <graphicPath>Humanlike/Heads/Kurogane/KuroganeHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_KuroganeHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+<HeadTypeDef ParentName="AverageBase">
+        <defName>MarkHead</defName>
+        <graphicPath>Humanlike/Heads/Mark/MarkHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_MarkHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+<HeadTypeDef ParentName="AverageBase">
+        <defName>NerfenHead</defName>
+        <graphicPath>Humanlike/Heads/Nerfen/NerfenHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_NerfenHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+<HeadTypeDef ParentName="AverageBase">
+        <defName>RavenHead</defName>
+        <graphicPath>Humanlike/Heads/Raven/RavenHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_RavenHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+<HeadTypeDef ParentName="AverageBase">
+        <defName>UkonvasaraHead</defName>
+        <graphicPath>Humanlike/Heads/Ukonvasara/UkonvasaraHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_UkonvasaraHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
+
+<HeadTypeDef ParentName="AverageBase">
+        <defName>PrometheusHead</defName>
+        <graphicPath>Humanlike/Heads/Prometheus/PrometheusHead</graphicPath>
+        <randomChosen>false</randomChosen>
+        <gender>None</gender>
+        <requiredGenes>
+            <li>Gene_PrometheusHead</li>
+        </requiredGenes>
+        <selectionWeight>1000</selectionWeight>
+    </HeadTypeDef>
 
 </Defs>

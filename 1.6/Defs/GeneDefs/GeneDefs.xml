@@ -31,7 +31,13 @@
 <GeneCategoryDef>
     <defName>Bara_Other</defName>
     <label>Other</label>
-    <displayPriorityInXenotype>606</displayPriorityInXenotype>
+    <displayPriorityInXenotype>607</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+<GeneCategoryDef>
+    <defName>TokyoAfterschool</defName>
+    <label>Tokyo Afterschool</label>
+    <displayPriorityInXenotype>608</displayPriorityInXenotype>
   </GeneCategoryDef>
 
   <!-- Seldore Body Gene -->
@@ -1196,7 +1202,7 @@
     <displayCategory>Bara_Other</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Bato/BatoBody_south</iconPath>
-    <bodyType>Muscular</bodyType>
+    <bodyType>Hulk</bodyType>
     <exclusionTags>
       <li>Fur</li>
     </exclusionTags>
@@ -1262,7 +1268,7 @@
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>AnotherEdios</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
-    <iconPath>Humanlike/Bodies/Billford/BillfordBody_south</iconPath>
+    <iconPath>Humanlike/Bodies/Bilford/BilfordBody_south</iconPath>
     <bodyType>Hulk</bodyType>
     <exclusionTags>
       <li>Fur</li>
@@ -1298,7 +1304,7 @@
     <defName>Gene_BillfordHead</defName>
     <label>Billford head</label>
     <description>Carriers of this gene will have a the face of Billford.</description>
-    <iconPath>Humanlike/Heads/Billford/BillfordHead_south</iconPath>
+    <iconPath>Humanlike/Heads/Bilford/BilfordHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
     <displayCategory>Gyee</displayCategory>
     <forcedHeadTypes>
@@ -1464,7 +1470,7 @@
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Genpei/GenpeiBody_south</iconPath>
-    <bodyType>Muscular</bodyType>
+    <bodyType>Hulk</bodyType>
     <exclusionTags>
       <li>Fur</li>
     </exclusionTags>
@@ -1504,6 +1510,739 @@
     <displayCategory>Gyee</displayCategory>
     <forcedHeadTypes>
       <li>GenpeiHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+  </GeneDef>  
+
+<!-- Gor'rok Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_GorrokBody</defName>
+    <label>Gor'rok body</label>
+    <description>Carriers of this gene will have the muscular body of Gor'rok.</description>
+    <biostatCpx>1</biostatCpx>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>CraveSaga</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/Gor'rok/Gor'rokBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>GorrokBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
+      </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Gor'rok Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_GorrokHead</defName>
+    <label>Gor'rok head</label>
+    <description>Carriers of this gene will have a the face of Gor'rok.</description>
+    <iconPath>Humanlike/Heads/Gor'rok/Gor'rokHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>Gyee</displayCategory>
+    <forcedHeadTypes>
+      <li>GorrokHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+  </GeneDef>  
+
+<!-- Hombre Tigre Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_HombreTigreBody</defName>
+    <label>Hombre Tigre body</label>
+    <description>Carriers of this gene will have the muscular body of Hombre Tigre.</description>
+    <biostatCpx>1</biostatCpx>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>TokyoAfterschool</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/HombreTigre/HombreTigreBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>HombreTigreBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
+         <forcedBodyType>Hulk</forcedBodyType>
+      </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Hombre Tigre Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_HombreTigreHead</defName>
+    <label>Hombre Tigre head</label>
+    <description>Carriers of this gene will have a the face of Hombre Tigre.</description>
+    <iconPath>Humanlike/Heads/HombreTigre/HombreTigreHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>Gyee</displayCategory>
+    <forcedHeadTypes>
+      <li>HombreTigreHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+  </GeneDef>  
+
+<!-- Joe Buttataki Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_JoeButtatakiBody</defName>
+    <label>Joe Buttataki body</label>
+    <description>Carriers of this gene will have the muscular body of Joe Buttataki.</description>
+    <biostatCpx>1</biostatCpx>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>CraveSaga</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/JoeButtataki/JoeButtatakiBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>JoeButtatakiBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
+         <forcedBodyType>Muscular</forcedBodyType>
+      </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Hombre Tigre Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_JoeButtatakiHead</defName>
+    <label>Joe Buttataki head</label>
+    <description>Carriers of this gene will have a the face of Joe Buttataki.</description>
+    <iconPath>Humanlike/Heads/JoeButtataki/JoeButtatakiHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>Gyee</displayCategory>
+    <forcedHeadTypes>
+      <li>JoeButtatakiHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+  </GeneDef>  
+
+<!-- Kaiser Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_KaiserBody</defName>
+    <label>Kaiser body</label>
+    <description>Carriers of this gene will have the muscular body of Kaiser.</description>
+    <biostatCpx>1</biostatCpx>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>Gyee</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/Kaiser/KaiserBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>KaiserBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
+         <forcedBodyType>Hulk</forcedBodyType>
+      </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Kaiser Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_KaiserHead</defName>
+    <label>Kaiser head</label>
+    <description>Carriers of this gene will have a the face of Kaiser.</description>
+    <iconPath>Humanlike/Heads/Kaiser/KaiserHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>Gyee</displayCategory>
+    <forcedHeadTypes>
+      <li>KaiserHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+  </GeneDef>  
+
+<!-- Khafka Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_KhafkaBody</defName>
+    <label>Khafka body</label>
+    <description>Carriers of this gene will have the muscular body of Khafka.</description>
+    <biostatCpx>1</biostatCpx>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>Gyee</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/Khafka/KhafkaBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>KhafkaBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
+         <forcedBodyType>Muscular</forcedBodyType>
+      </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Khafka Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_KhafkaHead</defName>
+    <label>Khafka head</label>
+    <description>Carriers of this gene will have a the face of Khafka.</description>
+    <iconPath>Humanlike/Heads/Khafka/KhafkaHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>Gyee</displayCategory>
+    <forcedHeadTypes>
+      <li>KhafkaHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+  </GeneDef>  
+
+<!-- Kurogane Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_KuroganeBody</defName>
+    <label>Kurogane body</label>
+    <description>Carriers of this gene will have the muscular body of Kurogane.</description>
+    <biostatCpx>1</biostatCpx>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>TokyoAfterschool</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/Kurogane/KuroganeBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>KuroganeBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
+      </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Kurogane Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_KuroganeHead</defName>
+    <label>Kurogane head</label>
+    <description>Carriers of this gene will have a the face of Kurogane.</description>
+    <iconPath>Humanlike/Heads/Kurogane/KuroganeHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>Gyee</displayCategory>
+    <forcedHeadTypes>
+      <li>KuroganeHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+  </GeneDef>  
+
+<!-- Mark Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_MarkBody</defName>
+    <label>Mark body</label>
+    <description>Carriers of this gene will have the muscular body of Mark.</description>
+    <biostatCpx>1</biostatCpx>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>TokyoAfterschool</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/Mark/MarkBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>MarkBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
+      </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Mark Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_MarkHead</defName>
+    <label>Mark head</label>
+    <description>Carriers of this gene will have a the face of Mark.</description>
+    <iconPath>Humanlike/Heads/Mark/MarkHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>Gyee</displayCategory>
+    <forcedHeadTypes>
+      <li>MarkHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+  </GeneDef>  
+
+<!-- Nerfen Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_NerfenBody</defName>
+    <label>Nerfen body</label>
+    <description>Carriers of this gene will have the muscular body of Nerfen.</description>
+    <biostatCpx>1</biostatCpx>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>CraveSaga</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/Nerfen/NerfenBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>NerfenBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
+         <forcedBodyType>Muscular</forcedBodyType>
+      </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Nerfen Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_NerfenHead</defName>
+    <label>Nerfen head</label>
+    <description>Carriers of this gene will have a the face of Nerfen.</description>
+    <iconPath>Humanlike/Heads/Nerfen/NerfenHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>Gyee</displayCategory>
+    <forcedHeadTypes>
+      <li>NerfenHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+  </GeneDef>  
+
+<!-- Raven Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_RavenBody</defName>
+    <label>Raven body</label>
+    <description>Carriers of this gene will have the muscular body of Raven.</description>
+    <biostatCpx>1</biostatCpx>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>TokyoAfterschool</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/Raven/RavenBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>RavenBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
+         <forcedBodyType>Muscular</forcedBodyType>
+      </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Raven Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_RavenHead</defName>
+    <label>Raven head</label>
+    <description>Carriers of this gene will have a the face of Raven.</description>
+    <iconPath>Humanlike/Heads/Raven/RavenHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>Gyee</displayCategory>
+    <forcedHeadTypes>
+      <li>RavenHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+  </GeneDef>  
+
+<!-- Ukonvasara Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_UkonvasaraBody</defName>
+    <label>Ukonvasara body</label>
+    <description>Carriers of this gene will have the muscular body of Ukonvasara.</description>
+    <biostatCpx>1</biostatCpx>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>CraveSaga</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/Ukonvasara/UkonvasaraBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>UkonvasaraBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
+         <forcedBodyType>Muscular</forcedBodyType>
+      </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Ukonvasara Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_UkonvasaraHead</defName>
+    <label>Ukonvasara head</label>
+    <description>Carriers of this gene will have a the face of Ukonvasara.</description>
+    <iconPath>Humanlike/Heads/Ukonvasara/UkonvasaraHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>Gyee</displayCategory>
+    <forcedHeadTypes>
+      <li>UkonvasaraHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <displayOrderInCategory>6662</displayOrderInCategory>
+  </GeneDef>  
+
+<!-- Prometheus Body Gene -->
+
+  <GeneDef>
+    <defName>Gene_PrometheusBody</defName>
+    <label>Prometheus body</label>
+    <description>Carriers of this gene will have the muscular body of Prometheus.</description>
+    <biostatCpx>1</biostatCpx>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>TokyoAfterschool</displayCategory>
+    <displayOrderInCategory>401</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/Prometheus/PrometheusBody_south</iconPath>
+    <bodyType>Hulk</bodyType>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+    <fur>PrometheusBody</fur>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <useSkinShader>false</useSkinShader>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
+      </li>
+      <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
+		 <disableFacialAnimations>true</disableFacialAnimations>
+		 </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Prometheus Head Gene -->
+
+  <GeneDef>
+    <defName>Gene_PrometheusHead</defName>
+    <label>Prometheus head</label>
+    <description>Carriers of this gene will have a the face of Prometheus.</description>
+    <iconPath>Humanlike/Heads/Prometheus/PrometheusHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <displayCategory>Gyee</displayCategory>
+    <forcedHeadTypes>
+      <li>PrometheusHead</li>
     </forcedHeadTypes>
     <beardTagFilter>
       <whitelist>true</whitelist>
