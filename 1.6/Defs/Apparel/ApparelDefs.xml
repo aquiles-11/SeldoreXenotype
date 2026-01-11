@@ -1211,7 +1211,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_BaranHighPriestRobes</defName>
-    <label>Baran's High Priest Robes</label>
+    <label>High Priest Robes</label>
     <description>"The ceremonial vestments of the Orc High Priest Baran. While the fabric is light and breathable, the left shoulder is dominated by a dragon skull carved from solid jade, serving as a symbol of authority and spiritual power. It is an imposing sight, blending the savagery of the wild with the dignity of the priesthood."</description>
     <recipeMaker>
       <skillRequirements>
@@ -1284,7 +1284,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_AvalancheGear</defName>
-    <label>Barret's Avalanche Gear</label>
+    <label>Avalanche Gear</label>
     <description>"The iconic combat vest and cargo pants worn by the leader of Avalanche. Reinforced with plasteel plating and heavy leather straps, it is built to withstand explosions and gunfire. It embodies the wearer's unshakeable resolve to save the planet."</description>
     <recipeMaker>
       <skillRequirements>
@@ -1357,7 +1357,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_LaborHarness</defName>
-    <label>Bato's Labor Harness</label>
+    <label>Labor Harness</label>
     <description>"The heavy leather work harness worn by Bato. Reinforced with steel buckles and thick padding, it is designed for heavy labor and construction. It supports the wearer's back during strenuous lifting, allowing them to haul massive loads and build fortifications with ease."</description>
     <recipeMaker>
       <skillRequirements>
@@ -1431,7 +1431,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_CaptainsPlate</defName>
-    <label>Billford's Captain's Plate</label>
+    <label>Captain's Plate</label>
     <description>"The rugged, heavy plate armor worn by the mercenary captain Billford. Reinforced with a layer of ultra-dense hyperweave, it prioritizes raw physical defense over mobility. The sight of this armor on the battlefield reassures allies, reminding them that the Captain has their back."</description>
     <recipeMaker>
       <skillRequirements>
@@ -1503,7 +1503,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_MercenaryRig</defName>
-    <label>Duran's Mercenary Rig</label>
+    <label>Mercenary Rig</label>
     <description>"The iconic battle armor of Colonel Duran. It is a masterpiece of industrial engineering. While designed for war, its immense hydraulic power allows it to crush the hardest rocks easily, making it a legendary tool for the mining industry."</description>
     <recipeMaker>
       <skillRequirements>
@@ -1622,7 +1622,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_ChampionLoincloth</defName>
-    <label>Forte's Champion Loincloth</label>
+    <label>Champion Loincloth</label>
     <description>"The ceremonial garb of Forte, the Gorilla Patriarch. While it appears to be simple cloth and jade, it represents his status as an invincible champion. Wearing it allows him to shrug off blades like a tank and leap across the battlefield to crush his foes."</description>
     <recipeMaker>
       <skillRequirements>
@@ -1785,7 +1785,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_FisherWaders</defName>
-    <label>Genpei's Fisher Waders</label>
+    <label>Fisher Waders</label>
     <description>"The rugged, waterproof waders of Genpei, the prodigy fisherman. Designed for long hours in freezing waters, they keep the wearer dry and warm. Optimized for the new fishing zones, they allow Genpei to sense the movement of fish in the water, turning a patient pastime into a rapid harvest."</description>
     <recipeMaker>
       <skillRequirements>
@@ -1862,7 +1862,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_EarthHarness</defName>
-    <label>Gor'rok's Earth Harness</label>
+    <label>Earth Harness</label>
     <description>"A rugged leather harness reinforced with a heavy iron pauldron and a ritualistic skull necklace. It was forged for Gor'rok, the orc who speaks to stones. The floating jade fragments around it hum with energy, allowing the wearer to shatter bedrock with a touch."</description>
     <recipeMaker>
       <skillRequirements>
@@ -1939,7 +1939,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_SurvivorTrunks</defName>
-    <label>Hakuma's Survivor Trunks</label>
+    <label>Survivor Trunks</label>
     <description>"A daring pair of swim trunks worn by Hakuma during his time as a castaway. Selected for its bold, risqué cut to impress his allies, it leaves little to the imagination but offers unparalleled freedom of movement in the water. It embodies the wild, uninhibited spirit of a survivor who conquered the roaring seas."</description>
     <recipeMaker>
       <skillRequirements>
@@ -2068,7 +2068,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_RubberSuit</defName>
-    <label>Hombre's Rubber Suit</label>
+    <label>Rubber Suit</label>
     <description>A specialized bodysuit made of high-density synthetic rubber, worn by Hombre Tigre. Crafted by treating leather with processed insect jelly to achieve a unique slime-like elasticity, it functions as both armor and weapon. The material absorbs kinetic energy and bounces it back, while the organic composition insulates against extreme temperatures. In the hands of the "Sacred Tiger," this suit turns the wearer into an unstoppable rubber bulwark of justice.</description>
     <recipeMaker>
       <skillRequirements>
@@ -2140,7 +2140,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_GuardianRig</defName>
-    <label>Izumi's Guardian Rig</label>
+    <label>Guardian Rig</label>
     <description>"The heavy prototype combat equipment worn by Izumi. It features integrated mechanical fists capable of directing flux energy. While bulky, it transforms the wearer into a walking fortress, allowing them to blast enemies with hydraulic pressure directly from their hands."</description>
     <recipeMaker>
       <skillRequirements>
@@ -2265,7 +2265,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_TrenchCoat</defName>
-    <label>Joe's Trench Coat</label>
+    <label>Trench Coat</label>
     <description>"The standard-issue trench coat of the DWMA's Internal Affairs division, worn by Joe Buttataki. It smells permanently of roasted beans and stale cigarettes. While it offers little protection in a fight, it is the perfect uniform for long nights spent analyzing data and uncovering the truth."</description>
     <recipeMaker>
       <skillRequirements>
@@ -2390,7 +2390,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_BrawlerFatigues</defName>
-    <label>Kaiser's Brawler Fatigues</label>
+    <label>Brawler Fatigues</label>
     <description>"A set of durable combat trousers and heavy steel-toed boots, paired with advanced industrial headphones. While it lacks heavy plating, the gear is reinforced with synthread for surprising durability. The headphones aren't just for music; they dampen the roar of his mechanical fists and stabilize his senses in the heat of battle."</description>
     <recipeMaker>
       <skillRequirements>
@@ -2516,7 +2516,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_SummitGear</defName>
-    <label>Khafka's Summit Gear</label>
+    <label>Summit Gear</label>
     <description>A masterwork climbing harness reinforced with plasteel plating and hyperweave mesh. It features prominent green jade buckles and reinforcements that match Khafka's signature style. While it offers elite protection, its main feature is the high-torque motorized winch, repurposed to snag fleeing enemies and drag them into close quarters.</description>
     <recipeMaker>
       <skillRequirements>
@@ -2592,7 +2592,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_WorkJumpsuit</defName>
-    <label>Kurogane's Work Jumpsuit</label>
+    <label>Work Jumpsuit</label>
     <description>"The heavy-duty jumpsuit worn by Kurogane, Guildmaster of the Kamata Crafters. Designed for the workshop, it offers superior protection against crushing machinery and impacts. It allows the wearer to work with the speed and precision of a master artisan."</description>
     <recipeMaker>
       <skillRequirements>
@@ -2715,7 +2715,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_CasualCargo</defName>
-    <label>Mark's Casual Cargo</label>
+    <label>Casual Cargo</label>
     <description>"The simple tank top and cargo pants Mark wears every day. They are comfortable, durable, and smell faintly of dog treats. Animals seem to trust anyone wearing them."</description>
     <recipeMaker>
       <skillRequirements>
@@ -2791,7 +2791,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_VeteranSpyGear</defName>
-    <label>Nerfen's Veteran Spy Gear</label>
+    <label>Veteran Spy Gear</label>
     <description>"The practical, well-worn gear of the veteran spy Nerfen. Designed for missions where one cannot afford to be identified, it offers reliable protection without hindering movement. It smells faintly of old campfires and secrets."</description>
     <recipeMaker>
       <skillRequirements>
@@ -2913,7 +2913,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_SnowyVestments</defName>
-    <label>Noche's Snowy Vestments</label>
+    <label>Snowy Vestments</label>
     <description>The festive yet holy vestments worn by Noche during the Snowy Night festival. Woven from enchanted threads that stay warm even in the absolute zero of Frostaria, these robes are subtly reinforced with plasteel weaving for protection. Once per week, Noche can activate the vestments to spread a rare, miraculous wave of holiday cheer—a precious gift reserved for the colony's darkest hours.</description>
     <recipeMaker>
       <skillRequirements>
@@ -3036,7 +3036,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_FireChiefCoat</defName>
-    <label>Raven's Fire-Chief Coat</label>
+    <label>Fire-Chief Coat</label>
     <description>The signature coat of Raven, the Fire Commissioner of Tokyo. Woven from Devilstrand, it withstands infernos, symbolizing his burning passion to protect lives—and perhaps steal a heart or two.</description>
     <recipeMaker>
       <skillRequirements>
@@ -3108,7 +3108,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_ThunderRaiment</defName>
-    <label>Ukonvasara's Thunder Raiment</label>
+    <label>Thunder Raiment</label>
     <description>A masterwork climbing harness reinforced with plasteel plating and hyperweave mesh. It features prominent green jade buckles and reinforcements that match Khafka's signature style. While it offers elite protection, its main feature is the high-torque motorized winch, repurposed to snag fleeing enemies and drag them into close quarters.</description>
     <recipeMaker>
       <skillRequirements>
@@ -3183,7 +3183,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Bara_Apparel_RecluseCoat</defName>
-    <label>Prometheus's Recluse Coat (SR)</label>
+    <label>Recluse Coat (SR)</label>
     <description>The heavy, hooded coat worn by Prometheus to hide his face from the public. Known as a "hermit" and a "toymaker" in Tokyo, he uses this coat to distance himself from others. While it offers standard protection, the threads are infused with the residual heat of the stolen heavenly flame, making the wearer nearly immune to extreme heat.</description>
     <recipeMaker>
       <skillRequirements>

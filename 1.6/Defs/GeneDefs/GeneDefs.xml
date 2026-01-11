@@ -1172,7 +1172,7 @@
     <description>Carriers of this gene will have a the face of Barret.</description>
     <iconPath>Humanlike/Heads/Barret/BarretHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>Bara_Other</displayCategory>
     <forcedHeadTypes>
       <li>BarretHead</li>
     </forcedHeadTypes>
@@ -1239,7 +1239,7 @@
     <description>Carriers of this gene will have a the face of Bato.</description>
     <iconPath>Humanlike/Heads/Bato/BatoHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>Bara_Other</displayCategory>
     <forcedHeadTypes>
       <li>BatoHead</li>
     </forcedHeadTypes>
@@ -1306,7 +1306,7 @@
     <description>Carriers of this gene will have a the face of Billford.</description>
     <iconPath>Humanlike/Heads/Bilford/BilfordHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>AnotherEdios</displayCategory>
     <forcedHeadTypes>
       <li>BillfordHead</li>
     </forcedHeadTypes>
@@ -1400,7 +1400,7 @@
     <description>Carriers of this gene will have the muscular body of Forte.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>AnotherEdios</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Forte/ForteBody_south</iconPath>
     <bodyType>Hulk</bodyType>
@@ -1440,7 +1440,7 @@
     <description>Carriers of this gene will have a the face of Forte.</description>
     <iconPath>Humanlike/Heads/Forte/ForteHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>AnotherEdios</displayCategory>
     <forcedHeadTypes>
       <li>ForteHead</li>
     </forcedHeadTypes>
@@ -1507,7 +1507,7 @@
     <description>Carriers of this gene will have a the face of Genpei.</description>
     <iconPath>Humanlike/Heads/Genpei/GenpeiHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>GenpeiHead</li>
     </forcedHeadTypes>
@@ -1534,7 +1534,7 @@
     <description>Carriers of this gene will have the muscular body of Gor'rok.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
-    <displayCategory>CraveSaga</displayCategory>
+    <displayCategory>Bara_Other</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Gor'rok/Gor'rokBody_south</iconPath>
     <bodyType>Hulk</bodyType>
@@ -1573,7 +1573,7 @@
     <description>Carriers of this gene will have a the face of Gor'rok.</description>
     <iconPath>Humanlike/Heads/Gor'rok/Gor'rokHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>Bara_Other</displayCategory>
     <forcedHeadTypes>
       <li>GorrokHead</li>
     </forcedHeadTypes>
@@ -1600,7 +1600,7 @@
     <description>Carriers of this gene will have the muscular body of Hombre Tigre.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
-    <displayCategory>TokyoAfterschool</displayCategory>
+    <displayCategory>Housamo</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/HombreTigre/HombreTigreBody_south</iconPath>
     <bodyType>Hulk</bodyType>
@@ -1640,7 +1640,7 @@
     <description>Carriers of this gene will have a the face of Hombre Tigre.</description>
     <iconPath>Humanlike/Heads/HombreTigre/HombreTigreHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>Housamo</displayCategory>
     <forcedHeadTypes>
       <li>HombreTigreHead</li>
     </forcedHeadTypes>
@@ -1667,7 +1667,7 @@
     <description>Carriers of this gene will have the muscular body of Joe Buttataki.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
-    <displayCategory>CraveSaga</displayCategory>
+    <displayCategory>Bara_Other</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/JoeButtataki/JoeButtatakiBody_south</iconPath>
     <bodyType>Hulk</bodyType>
@@ -1699,7 +1699,7 @@
     </modExtensions>
   </GeneDef>
 
-  <!-- Hombre Tigre Head Gene -->
+  <!-- joe Buttataki Head Gene -->
 
   <GeneDef>
     <defName>Gene_JoeButtatakiHead</defName>
@@ -1707,7 +1707,7 @@
     <description>Carriers of this gene will have a the face of Joe Buttataki.</description>
     <iconPath>Humanlike/Heads/JoeButtataki/JoeButtatakiHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>Bara_Other</displayCategory>
     <forcedHeadTypes>
       <li>JoeButtatakiHead</li>
     </forcedHeadTypes>
@@ -1734,7 +1734,7 @@
     <description>Carriers of this gene will have the muscular body of Kaiser.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>Bara_Other</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Kaiser/KaiserBody_south</iconPath>
     <bodyType>Hulk</bodyType>
@@ -1774,7 +1774,7 @@
     <description>Carriers of this gene will have a the face of Kaiser.</description>
     <iconPath>Humanlike/Heads/Kaiser/KaiserHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>Bara_Other</displayCategory>
     <forcedHeadTypes>
       <li>KaiserHead</li>
     </forcedHeadTypes>
@@ -1801,7 +1801,7 @@
     <description>Carriers of this gene will have the muscular body of Khafka.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>Bara_Other</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Khafka/KhafkaBody_south</iconPath>
     <bodyType>Hulk</bodyType>
@@ -1841,7 +1841,7 @@
     <description>Carriers of this gene will have a the face of Khafka.</description>
     <iconPath>Humanlike/Heads/Khafka/KhafkaHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>Bara_Other</displayCategory>
     <forcedHeadTypes>
       <li>KhafkaHead</li>
     </forcedHeadTypes>
@@ -1868,7 +1868,7 @@
     <description>Carriers of this gene will have the muscular body of Kurogane.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
-    <displayCategory>TokyoAfterschool</displayCategory>
+    <displayCategory>Housamo</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Kurogane/KuroganeBody_south</iconPath>
     <bodyType>Hulk</bodyType>
@@ -1907,7 +1907,7 @@
     <description>Carriers of this gene will have a the face of Kurogane.</description>
     <iconPath>Humanlike/Heads/Kurogane/KuroganeHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>Housamo</displayCategory>
     <forcedHeadTypes>
       <li>KuroganeHead</li>
     </forcedHeadTypes>
@@ -1934,7 +1934,7 @@
     <description>Carriers of this gene will have the muscular body of Mark.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
-    <displayCategory>TokyoAfterschool</displayCategory>
+    <displayCategory>Bara_Other</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Mark/MarkBody_south</iconPath>
     <bodyType>Hulk</bodyType>
@@ -1973,7 +1973,7 @@
     <description>Carriers of this gene will have a the face of Mark.</description>
     <iconPath>Humanlike/Heads/Mark/MarkHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>Bara_Other</displayCategory>
     <forcedHeadTypes>
       <li>MarkHead</li>
     </forcedHeadTypes>
@@ -2040,7 +2040,7 @@
     <description>Carriers of this gene will have a the face of Nerfen.</description>
     <iconPath>Humanlike/Heads/Nerfen/NerfenHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>NerfenHead</li>
     </forcedHeadTypes>
@@ -2067,7 +2067,7 @@
     <description>Carriers of this gene will have the muscular body of Raven.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
-    <displayCategory>TokyoAfterschool</displayCategory>
+    <displayCategory>Housamo</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Raven/RavenBody_south</iconPath>
     <bodyType>Hulk</bodyType>
@@ -2107,7 +2107,7 @@
     <description>Carriers of this gene will have a the face of Raven.</description>
     <iconPath>Humanlike/Heads/Raven/RavenHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>Housamo</displayCategory>
     <forcedHeadTypes>
       <li>RavenHead</li>
     </forcedHeadTypes>
@@ -2174,7 +2174,7 @@
     <description>Carriers of this gene will have a the face of Ukonvasara.</description>
     <iconPath>Humanlike/Heads/Ukonvasara/UkonvasaraHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>UkonvasaraHead</li>
     </forcedHeadTypes>
@@ -2201,7 +2201,7 @@
     <description>Carriers of this gene will have the muscular body of Prometheus.</description>
     <biostatCpx>1</biostatCpx>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
-    <displayCategory>TokyoAfterschool</displayCategory>
+    <displayCategory>Housamo</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Prometheus/PrometheusBody_south</iconPath>
     <bodyType>Hulk</bodyType>
@@ -2240,7 +2240,7 @@
     <description>Carriers of this gene will have a the face of Prometheus.</description>
     <iconPath>Humanlike/Heads/Prometheus/PrometheusHead_south</iconPath>
     <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
-    <displayCategory>Gyee</displayCategory>
+    <displayCategory>Housamo</displayCategory>
     <forcedHeadTypes>
       <li>PrometheusHead</li>
     </forcedHeadTypes>

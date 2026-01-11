@@ -1557,7 +1557,7 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Bara_Weapon_DragonToothNecklace</defName>
-    <label>Baran's Dragon Tooth Necklace</label>
+    <label>Dragon Tooth Necklace</label>
     <description>"A simple but powerful catalyst consisting of a leather cord strung with teeth and a glowing blue crystal charm. When held by a priest, it focuses spiritual energy into tangible bolts of dragon fire."</description>
     <descriptionHyperlinks>
       <AbilityDef>FreezingSweep</AbilityDef>
@@ -1723,7 +1723,7 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Bara_Weapon_SweepingBroadsword</defName>
-    <label>Billford's Sweeping Broadsword</label>
+    <label>Sweeping Broadsword</label>
     <description>"A massive, two-handed broadsword favored by Billford. It lacks the elegance of ceremonial blades, relying instead on weight and momentum to cleave through enemies. While heavy to swing, it allows the wielder to hold the line against multiple foes at once."</description>
     <descriptionHyperlinks>
       <AbilityDef>Aerothrust</AbilityDef>
@@ -1846,7 +1846,7 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Bara_Weapon_KineticHammer</defName>
-    <label>Duran's Duran II: Kinetic Hammer</label>
+    <label>Duran II: Kinetic Hammer</label>
     <description>"A colossal siege hammer named 'Duran II'. It houses a dynamic generator within its head to deliver crushing blows. While unwieldy, a well-timed slam can destabilize nearby enemies and shatter defensive formations."</description>
     <descriptionHyperlinks>
       <AbilityDef>EarthBreaker</AbilityDef>
@@ -1973,7 +1973,7 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Bara_Weapon_Saw-Spear</defName>
-    <label>Genpei's Saw-Spear</label>
+    <label>Saw-Spear</label>
     <description>"A heavy industrial harpoon customized by Genpei. The tip features a motorized chainsaw mechanism powered by internal components. It functions as a deadly melee weapon, capable of unleashing the 'Fish King Random Attack'—a flurry of strikes so wild and fast it resembles a thrashing leviathan."</description>
     <descriptionHyperlinks>
       <AbilityDef>EarthBreaker</AbilityDef>
@@ -2057,7 +2057,7 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Bara_Weapon_OceanRequin</defName>
-    <label>Hakuma's Ocean Requin</label>
+    <label>Ocean Requin</label>
     <description>"A heavy, ornate crossbow used by Hakuma. Crafted from darkened steel and dense uranium, it fires heavy bolts that resemble swimming sharks. The projectiles hunt their targets with predatory precision, tearing through armor like paper."</description>
     <descriptionHyperlinks>
       <AbilityDef>SharkingBite</AbilityDef>
@@ -2292,7 +2292,7 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Bara_Weapon_ImpactGauntlets</defName>
-    <label>Kaiser's Impact Gauntlets</label>
+    <label>Impact Gauntlets</label>
     <description>"A pair of massive, engine-driven gauntlets. They are complex pieces of machinery, utilizing fuel injection and hydraulic pressure to deliver punches with the force of a train collision. The roar of their engines strikes fear into enemies before the fist even lands."</description>
     <descriptionHyperlinks>
       <AbilityDef>SeismicSlam</AbilityDef>
@@ -2416,7 +2416,7 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Bara_Weapon_TwoWheeledBladeofStillFlame</defName>
-    <label>Nerfen's Two-Wheeled Blade of Still Flame</label>
+    <label>Two-Wheeled Blade of Still Flame</label>
     <description>"A peculiar sword with a circular guard, favored by Nerfen. Despite its ornamental appearance, it is a deadly tool of espionage. The blade seems to retain the heat of a forge, ready to ignite at the wielder's command."</description>
     <descriptionHyperlinks>
       <AbilityDef>TwoWheelAbility</AbilityDef>
@@ -2539,7 +2539,7 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Bara_Weapon_SacredTreeSword</defName>
-    <label>Noche's Sacred Tree Sword</label>
+    <label>Sacred Tree Sword</label>
     <description>A ceremonial sword carved from the branch of a World Tree, adorned with green jade. Though it looks decorative, it channels powerful Wind magic capable of freezing enemies. The wielder uses it to empower their allies with the overwhelming spirit of the season.</description>
     <descriptionHyperlinks>
       <AbilityDef>HardWorkAbility</AbilityDef>
@@ -2668,7 +2668,7 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Bara_Weapon_CarnwennanSword</defName>
-    <label>Raven's Carnwennan Sword</label>
+    <label>Carnwennan Sword</label>
     <description>The legendary Carnwennan, a shadow-sword wielded by the phantom thief Raven. Infused with uranium, it allows the wielder to vanish like smoke. Legend says it once hid a King from giants.</description>
     <uiIconScale>0.8</uiIconScale>
     <possessionCount>1</possessionCount>
@@ -2743,7 +2743,7 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Bara_Weapon_DivineAxe</defName>
-    <label>Ukonvasara Divine Axe</label>
+    <label>Divine Axe</label>
     <description>"A massive axe-hammer hybrid forged with Uranium for extreme density. While ancient in design, it houses industrial capacitors within the head. It allows the wielder to call down strikes of high-voltage lightning on distant foes."</description>
     <uiIconScale>0.8</uiIconScale>
     <possessionCount>1</possessionCount>
@@ -2819,7 +2819,7 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Bara_Weapon_CreationNeedle</defName>
-    <label>Prometheus's Creation Needle (SR)</label>
+    <label>Creation Needle (SR)</label>
     <description>A large, specialized sewing needle used by Prometheus. Though primarily a tool for crafting his beloved dolls, it is deadly in close quarters. Its true power lies in the "Flame of Life" it channels—allowing him to animate explosive dolls to protect his solitude.</description>
     <descriptionHyperlinks>
       <AbilityDef>DollBombSummon</AbilityDef>
@@ -2951,7 +2951,7 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Bara_Weapon_CoercionRope</defName>
-    <label>Khafka's Coercion Rope</label>
+    <label>Coercion Rope</label>
     <description>A heavy-duty climbing rope modified for combat, woven with green fibers and weighted with jade beads. Khafka handles it with expert precision, using it to scale mountains or subdue opponents. The weighted ends pack a surprising punch, but its true power lies in its ability to wrap around targets, locking them in a helpless bind.</description>
     <descriptionHyperlinks>
       <AbilityDef>PleasureBind</AbilityDef>
@@ -3074,7 +3074,7 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Bara_Weapon_GatlingGunArm</defName>
-    <label>Barret's Gatling Gun-Arm</label>
+    <label>Gatling Gun-Arm</label>
     <description>"A heavy multi-barreled machine gun grafted directly onto the user's arm. It provides overwhelming suppressive fire capable of tearing through Shinra mechs and monsters alike. 'There ain't no gettin' offa this train we're on!'"</description>
     <descriptionHyperlinks>
       <AbilityDef>MaximumFury</AbilityDef>
