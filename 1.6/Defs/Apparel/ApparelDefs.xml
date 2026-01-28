@@ -1714,11 +1714,15 @@
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
     <aiCanUse>true</aiCanUse>
     <ai_IsOffensive>false</ai_IsOffensive>
-    <targetRequired>false</targetRequired>
+    <targetRequired>true</targetRequired>
     <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <hostile>false</hostile>
     <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+      <label>jump</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
       <range>20</range>
       <minRange>6</minRange>
       <warmupEffecter>JumpMechWarmupEffect</warmupEffecter>
@@ -1727,8 +1731,26 @@
       <flyWithCarriedThing>true</flyWithCarriedThing>
       <soundLanding>JumpMechLand</soundLanding>
       <soundCast Inherit="False" />
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
     </verbProperties>
     <jobDef>CastJump</jobDef>
+    <modExtensions>
+      <li Class="SeldoreXeno.LandingImpactAbility_Extension">
+        <damageCaster>false</damageCaster>
+        <damageDef>Blunt</damageDef>
+        <damageAmount>35</damageAmount>
+        <secondaryDamageDef>Stun</secondaryDamageDef>
+        <secondaryDamageAmount>1</secondaryDamageAmount>
+        <armorPen>1</armorPen>
+        <screenShake>1</screenShake>
+        <radius>1.4</radius>
+        <explosionSound>Explosion_Stun</explosionSound>
+      </li>
+    </modExtensions>
   </AbilityDef>
 
 <ThingDef ParentName="HatMakeableBase">
@@ -2014,7 +2036,7 @@
     </modExtensions>
   </ThingDef>
 
-<AbilityDef>
+  <AbilityDef>
     <defName>SurvivorIntercept</defName>
     <label>Survivor's Intercept</label>
     <description>Hakuma enters a counter-stance. For 10 seconds, he gains 100% Dodge Chance and instantly tends 2 random wounds on himself.</description>
@@ -2109,6 +2131,9 @@
       <li>ApparelNoble</li>
     </thingCategories>
     <apparel>
+      <abilities>
+        <li>RubberRebound</li>
+      </abilities>
       <useWornGraphicMask>true</useWornGraphicMask>
       <bodyPartGroups>
         <li>Torso</li>
@@ -2135,6 +2160,53 @@
       </li>
     </modExtensions>
   </ThingDef>
+
+  <AbilityDef>
+    <defName>RubberRebound</defName>
+    <label>Rubber Rebound</label>
+    <description>The suit's rubber properties supercharge for 10 seconds. During this time, the wearer reflects 50% of incoming damage back at the attacker and gains immunity to stun/stagger effect.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Bara_Apparel_RubberSuit</ThingDef>
+    </descriptionHyperlinks>
+    <iconPath>Armor/HombreTigre/HombreTigreArmor_Hulk_south</iconPath>
+    <cooldownTicksRange>2700</cooldownTicksRange>
+    <hostile>false</hostile>
+    <groupAbility>true</groupAbility>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>false</targetRequired>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_Duration>10</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <requireLineOfSight>false</requireLineOfSight>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+      <targetable>false</targetable>
+      <warmupTime>0</warmupTime>
+      <targetParams>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>false</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>HombreRebound</hediffDef>
+        <durationSecondsOverride>10</durationSecondsOverride>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+      </li>
+    </comps>
+  </AbilityDef>
 
 <!--  Izumi Armor 2 -->
 
@@ -2189,7 +2261,7 @@
     </thingCategories>
     <apparel>
       <abilities>
-        <li>SurvivorIntercept</li>
+        <li>FluxImpactCannon</li>
       </abilities>
       <useWornGraphicMask>true</useWornGraphicMask>
       <bodyPartGroups>
@@ -2218,7 +2290,7 @@
     </modExtensions>
   </ThingDef>
 
-<AbilityDef>
+  <AbilityDef>
     <defName>FluxImpactCannon</defName>
     <label>Flux Impact Cannon</label>
     <description>Fires a pressurized blast of water flux.</description>
@@ -2252,6 +2324,9 @@
         <explosionOnCaster>false</explosionOnCaster>
         <damageDef>Blunt</damageDef>
         <damageAmount>30</damageAmount>
+        <allowSecondaryDamage>true</allowSecondaryDamage>
+        <secondaryDamageDef>Stun</secondaryDamageDef>
+        <secondaryDamageAmount>2</secondaryDamageAmount>
         <explosionRadius>1.9</explosionRadius>
         <screenShakeFactor>0</screenShakeFactor>
         <soundExplode>Pawn_Bear_Angry</soundExplode>
@@ -2579,6 +2654,13 @@
       <legsNakedUnlessCoveredBySomethingElse>true</legsNakedUnlessCoveredBySomethingElse>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <comps>
+      <li Class="VEF.Abilities.CompProperties_AbilitiesApparel">
+        <abilities>
+          <li>SummitSnare</li>
+        </abilities>
+      </li>
+    </comps>
     <modExtensions>
       <li Class="SeldoreXeno.ApparelBodySpecific_Extension">
         <allowedBodyTypeDefs>
@@ -2587,6 +2669,20 @@
       </li>
     </modExtensions>
   </ThingDef>
+
+  <VEF.Abilities.AbilityDef>
+    <defName>SummitSnare</defName>
+    <label>Summit Snare</label>
+    <description>The wearer launches a grappling hook at an enemy within 20 tiles and pulls the target adjacent to the wearer, exposing them to melee attacks.</description>
+    <abilityClass>SeldoreXeno.Ability_Grapple</abilityClass>
+    <iconPath>Armor/Khafka/KhafkaArmor_Muscular_south</iconPath>
+    <cooldownTime>1800</cooldownTime>
+    <targetMode>Pawn</targetMode>
+    <castTime>30</castTime>
+    <range>20.9</range>
+    <castSound>Heatspikes_Shot</castSound>
+    <showUndrafted>false</showUndrafted>
+  </VEF.Abilities.AbilityDef>
 
 <!--  Kurogane's Work Jumpsuit  -->
 

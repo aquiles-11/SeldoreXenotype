@@ -9,5 +9,9 @@ namespace SeldoreXeno
         public static InspirationDef Inspired_ChefRecommendation;
 
         public static ThingDef MealLavish;
+
+        public static HediffDef HombreRebound;
+
+        public static ThingDef SeldoreGrappleFlyer;
     }
 }

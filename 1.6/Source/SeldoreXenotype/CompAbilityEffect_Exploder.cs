@@ -31,6 +31,9 @@ namespace SeldoreXeno
             Map mapHeld = Pawn.MapHeld;
             float explosionRadius = Props.explosionRadius;
             DamageDef damageDef = Props.damageDef;
+            bool allowSecondaryDamage = Props.allowSecondaryDamage;
+            DamageDef secondaryDamageDef = Props.secondaryDamageDef;
+            int secondaryDamageAmount = Props.secondaryDamageAmount;
             Pawn pawn = Pawn;
             int damAmount = num;
             float armorPenetration = num2;
@@ -66,6 +69,11 @@ namespace SeldoreXeno
             }
 
             GenExplosion.DoExplosion(position, mapHeld, explosionRadius, damageDef, pawn, damAmount, armorPenetration, soundExplode, weapon, null, null, postExplosionSpawnThingDef, postExplosionSpawnChance, postExplosionSpawnThingCount, postExplosionGasType, null, 255, applyDamageToExplosionCellsNeighbors, preExplosionSpawnThingDef, preExplosionSpawnChance, preExplosionSpawnThingCount, explosionChanceToStartFire, explosionDamageFalloff, null, list, null, doExplosionVFX, expolosionPropagationSpeed, 0f, doSoundEffects: true, postExplosionSpawnThingDefWater, screenShakeFactor, null, null, postExplosionSpawnSingleThingDef, preExplosionSpawnSingleThingDef);
+
+            if (allowSecondaryDamage)
+            {
+                GenExplosion.DoExplosion(position, mapHeld, explosionRadius, secondaryDamageDef, pawn, secondaryDamageAmount, armorPenetration, null, null, null, null, null, 0f, 0, null, null, 255, false, null, 0f, 0, 0f, false, null, list, null, false, 0f, 0f, false);
+            }
         }
 
         public override void DrawEffectPreview(LocalTargetInfo target)

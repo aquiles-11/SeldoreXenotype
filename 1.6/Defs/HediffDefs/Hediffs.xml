@@ -333,6 +333,11 @@
             </li>
         </comps>
         <stages>
+            <li>
+                <statFactors>
+                    <StaggerDurationFactor>0</StaggerDurationFactor>
+                </statFactors>
+            </li>
         </stages>
     </HediffDef>
 
@@ -428,6 +433,36 @@
                     <RangedWeapon_DamageMultiplier>1.5</RangedWeapon_DamageMultiplier>
                 </statOffsets>
                 <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>HombreRebound</defName>
+        <label>hombre's rubber rebound</label>
+        <description>Reflects 50% of incoming projectile damage back at the attacker, gain immunity to stun/stagger effects.</description>
+        <debugLabelExtra>other</debugLabelExtra>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>true</showRemainingTime>
+                <disappearsAfterTicks>600</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_Effecter">
+                <stateEffecter>ReboundShield_Effect</stateEffecter>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+        <stages>
+            <li>
+                <statFactors>
+                    <StaggerDurationFactor>0</StaggerDurationFactor>
+                </statFactors>
+                <statOffsets>
+                    <MeleeDamageFactor>1.5</MeleeDamageFactor>
+                    <RangedWeapon_DamageMultiplier>1.5</RangedWeapon_DamageMultiplier>
+                </statOffsets>
+                <becomeVisible>true</becomeVisible>
             </li>
         </stages>
     </HediffDef>

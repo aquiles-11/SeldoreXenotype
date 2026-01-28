@@ -30,6 +30,23 @@
     </ThingDef>
 
     <ThingDef ParentName="MoteBase">
+        <defName>Mote_ReboundShield</defName>
+        <thingClass>MoteAttached</thingClass>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <mote>
+            <fadeInTime>0.25</fadeInTime>
+            <solidTime>9.5</solidTime>
+            <fadeOutTime>0.25</fadeOutTime>
+            <collide>false</collide>
+        </mote>
+        <graphicData>
+            <texPath>Other/ShieldBubble</texPath>
+            <shaderType>Transparent</shaderType>
+            <color>(125, 243, 225)</color>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="MoteBase">
         <defName>Mote_MagicCircleFollow</defName>
         <thingClass>MoteAttached</thingClass>
         <altitudeLayer>ItemImportant</altitudeLayer>

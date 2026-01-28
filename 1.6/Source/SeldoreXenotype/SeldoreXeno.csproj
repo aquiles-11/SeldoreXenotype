@@ -14,6 +14,20 @@
       <ExcludeAssets>runtime</ExcludeAssets>
       <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Krafs.Publicizer" Version="2.*">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+	  <Publicize Include="Assembly-CSharp:RimWorld.PawnFlyer.triggeringAbility">
+	    <Private>false</Private>
+	  </Publicize>
+	  <Publicize Include="Assembly-CSharp:Verse.Projectile.equipment">
+		  <Private>false</Private>
+	  </Publicize>
+    <Reference Include="VFECore">
+      <HintPath>references/VEF.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
