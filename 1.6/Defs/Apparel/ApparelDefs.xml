@@ -1670,6 +1670,14 @@
       <li>ApparelNoble</li>
     </thingCategories>
     <apparel>
+      <drawData>
+        <dataEast>
+          <layer>92.1</layer>
+        </dataEast>
+        <dataWest>
+          <layer>92.1</layer>
+        </dataWest>
+      </drawData>
       <abilities>
         <li>BestialDive</li>
       </abilities>
