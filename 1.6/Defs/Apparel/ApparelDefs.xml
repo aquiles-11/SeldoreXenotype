@@ -1671,12 +1671,9 @@
     </thingCategories>
     <apparel>
       <drawData>
-        <dataEast>
+        <dataNorth>
           <layer>92.1</layer>
-        </dataEast>
-        <dataWest>
-          <layer>92.1</layer>
-        </dataWest>
+        </dataNorth>
       </drawData>
       <abilities>
         <li>BestialDive</li>
