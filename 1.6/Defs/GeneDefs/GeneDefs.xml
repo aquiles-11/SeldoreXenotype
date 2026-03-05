@@ -40,14 +40,27 @@
     <displayPriorityInXenotype>608</displayPriorityInXenotype>
   </GeneCategoryDef>
 
+  <GeneDef Abstract="True" Name="Bara_GeneBase">
+    <randomChosen>false</randomChosen>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+  </GeneDef>
+
+  <GeneDef Abstract="True" Name="Bara_GeneHeadBase" ParentName="Bara_GeneBase">
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <hairColorOverride>(255, 255, 255, 255)</hairColorOverride>
+    <exclusionTags>
+      <li>BaraHead</li>
+    </exclusionTags>
+  </GeneDef>
+
   <!-- Seldore Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_SeldoreBody</defName>
     <label>Seldore body</label>
     <description>Carriers of this gene will have a muscular body of Seldore.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Seldore/SeldoreBody_south</iconPath>
@@ -81,11 +94,14 @@
 
   <!-- Seldore Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_SeldoreHead</defName>
     <label>Seldore head</label>
     <description>Carriers of this gene will have a the face of Seldore.</description>
     <iconPath>Humanlike/Heads/Seldore/SeldoreHead_south</iconPath>
+    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <hairColorOverride>(255, 255, 255, 255)</hairColorOverride>
+    <prerequisite>Gene_SeldoreBody</prerequisite>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>SeldoreHead</li>
@@ -107,12 +123,12 @@
 
   <!-- Gabu Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_GabuBody</defName>
     <label>Gabu body</label>
     <description>Carriers of this gene will have a furry bear body of Gabu.</description>
+    <geneClass>SeldoreXeno.Gene_Additional</geneClass>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Gabu/GabuBody_south</iconPath>
@@ -141,17 +157,22 @@
       <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
 		 <disableFacialAnimations>true</disableFacialAnimations>
 		 </li>
+     <li Class="SeldoreXeno.Gene_Additional_Extension">
+      <endogenes>
+        <li>Furskin</li>
+      </endogenes>
+     </li>
     </modExtensions>
   </GeneDef>
 
   <!-- Gabu Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_GabuHead</defName>
     <label>Gabu head</label>
     <description>Carriers of this gene will have a the face of Gabu.</description>
     <iconPath>Humanlike/Heads/Gabu/GabuHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_GabuBody</prerequisite>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>GabuHead</li>
@@ -173,12 +194,11 @@
 
   <!-- Noche Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_NocheBody</defName>
     <label>Noche body</label>
     <description>Carriers of this gene will have Noche's body.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Noche/NocheBody_south</iconPath>
@@ -212,12 +232,12 @@
 
   <!-- Noche Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_NocheHead</defName>
     <label>Noche head</label>
     <description>Carriers of this gene will have a the face of Noche.</description>
     <iconPath>Humanlike/Heads/Noche/NocheHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_NocheBody</prerequisite>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>NocheHead</li>
@@ -239,12 +259,11 @@
 
   <!-- Sig Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_SigBody</defName>
     <label>Sig body</label>
     <description>Carriers of this gene will have the muscular body of Sig.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Gyee</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Sig/SigBody_south</iconPath>
@@ -303,12 +322,12 @@
 
   <!-- Sig Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_SigHead</defName>
     <label>Sig head</label>
     <description>Carriers of this gene will have a the face of Sig.</description>
     <iconPath>Humanlike/Heads/Sig/SigHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_SigBody</prerequisite>
     <displayCategory>Gyee</displayCategory>
     <forcedHeadTypes>
       <li>SigHead</li>
@@ -330,12 +349,11 @@
 
   <!-- Gai Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_GaiBody</defName>
     <label>Gai body</label>
     <description>Carriers of this gene will have the muscular body of Gai.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Gai/GaiBody_south</iconPath>
@@ -369,12 +387,12 @@
 
   <!-- Gai Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_GaiHead</defName>
     <label>Gai head</label>
     <description>Carriers of this gene will have a the face of Gai.</description>
     <iconPath>Humanlike/Heads/Gai/GaiHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_GaiBody</prerequisite>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>GaiHead</li>
@@ -396,12 +414,11 @@
 
  <!-- Kagura Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_KaguraBody</defName>
     <label>Kagura body</label>
     <description>Carriers of this gene will have the muscular body Kagura.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>AnotherEdios</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Kagura/KaguraBody_south</iconPath>
@@ -435,12 +452,12 @@
 
   <!-- Kagura Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_KaguraHead</defName>
     <label>Kagura head</label>
     <description>Carriers of this gene will have a the face of Kagura.</description>
     <iconPath>Humanlike/Heads/Kagura/KaguraHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_KaguraBody</prerequisite>
     <displayCategory>AnotherEdios</displayCategory>
     <forcedHeadTypes>
       <li>KaguraHead</li>
@@ -462,12 +479,11 @@
 
  <!-- Epaulo Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_EpauloBody</defName>
     <label>Epaulo body</label>
     <description>Carriers of this gene will have the muscular body Epaulo.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Epaulo/EpauloBody_south</iconPath>
@@ -501,12 +517,12 @@
 
   <!-- Epaulo Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_EpauloHead</defName>
     <label>Epaulo head</label>
     <description>Carriers of this gene will have a the face of Epaulo.</description>
     <iconPath>Humanlike/Heads/Epaulo/EpauloHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_EpauloBody</prerequisite>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>EpauloHead</li>
@@ -528,12 +544,12 @@
 
   <!-- Corca Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_CorcaBody</defName>
     <label>Corca body</label>
     <description>Carriers of this gene will have the furry muscular body of Corca.</description>
+    <geneClass>SeldoreXeno.Gene_Additional</geneClass>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>AnotherEdios</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Corca/CorcaBody_south</iconPath>
@@ -562,17 +578,22 @@
       <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
 		 <disableFacialAnimations>true</disableFacialAnimations>
 		 </li>
+     <li Class="SeldoreXeno.Gene_Additional_Extension">
+      <endogenes>
+        <li>Furskin</li>
+      </endogenes>
+     </li>
     </modExtensions>
   </GeneDef>
 
   <!-- Corca Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_CorcaHead</defName>
     <label>Corca head</label>
     <description>Carriers of this gene will have a the face of Corca.</description>
     <iconPath>Humanlike/Heads/Corca/CorcaHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_CorcaBody</prerequisite>
     <displayCategory>AnotherEdios</displayCategory>
     <forcedHeadTypes>
       <li>CorcaHead</li>
@@ -594,12 +615,11 @@
 
   <!-- Flet Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_FletBody</defName>
     <label>Flet body</label>
     <description>Carriers of this gene will have the green muscular body of Flet.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>AnotherEdios</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Flet/FletBody_south</iconPath>
@@ -633,12 +653,12 @@
 
   <!-- Flet Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_FletHead</defName>
     <label>Flet head</label>
     <description>Carriers of this gene will have a the face of Flet.</description>
     <iconPath>Humanlike/Heads/Flet/FletHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_FletBody</prerequisite>
     <displayCategory>AnotherEdios</displayCategory>
     <forcedHeadTypes>
       <li>FletHead</li>
@@ -660,12 +680,12 @@
 
   <!-- Hakuma Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_HakumaBody</defName>
     <label>Hakuma body</label>
     <description>Carriers of this gene will have the furry muscular body of Hakuma.</description>
+    <geneClass>SeldoreXeno.Gene_Additional</geneClass>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Hakuma/HakumaBody_south</iconPath>
@@ -695,17 +715,22 @@
       <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
 		 <disableFacialAnimations>true</disableFacialAnimations>
 		 </li>
+     <li Class="SeldoreXeno.Gene_Additional_Extension">
+      <endogenes>
+        <li>Furskin</li>
+      </endogenes>
+     </li>
     </modExtensions>
   </GeneDef>
 
   <!-- Hakuma Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_HakumaHead</defName>
     <label>Hakuma head</label>
     <description>Carriers of this gene will have a the face of Hakuma.</description>
     <iconPath>Humanlike/Heads/Hakuma/HakumaHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_HakumaBody</prerequisite>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>HakumaHead</li>
@@ -727,12 +752,11 @@
 
   <!-- Sabert Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_SabertBody</defName>
     <label>Sabert body</label>
     <description>Carriers of this gene will have the muscular body of Sabert.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Sabert/SabertBody_south</iconPath>
@@ -766,12 +790,12 @@
 
   <!-- Sabert Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_SabertHead</defName>
     <label>Sabert head</label>
     <description>Carriers of this gene will have a the face of Sabert.</description>
     <iconPath>Humanlike/Heads/Sabert/SaberHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_SabertBody</prerequisite>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>SabertHead</li>
@@ -793,12 +817,12 @@
 
   <!-- Horkeu Kamui Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_HorkeuKamuiBody</defName>
     <label>HorkeuKamui body</label>
     <description>Carriers of this gene will have the furry muscular body of Horkeu Kamui.</description>
+    <geneClass>SeldoreXeno.Gene_Additional</geneClass>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Housamo</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/HorkeuKamui/HorkeuKamuiBody_south</iconPath>
@@ -827,17 +851,22 @@
       <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
 		 <disableFacialAnimations>true</disableFacialAnimations>
 		 </li>
+     <li Class="SeldoreXeno.Gene_Additional_Extension">
+      <endogenes>
+        <li>Furskin</li>
+      </endogenes>
+     </li>
     </modExtensions>
   </GeneDef>
 
   <!-- Horkeu Kamui Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_HorkeuKamuiHead</defName>
-    <label>HorkeuKamui head</label>
+    <label>Horkeu Kamui head</label>
     <description>Carriers of this gene will have a the face of Horkeu Kamui.</description>
     <iconPath>Humanlike/Heads/HorkeuKamui/HorkeuKamuiHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_HorkeuKamuiBody</prerequisite>
     <displayCategory>Housamo</displayCategory>
     <forcedHeadTypes>
       <li>HorkeuKamuiHead</li>
@@ -859,12 +888,11 @@
 
   <!-- Schmiel Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_SchmielBody</defName>
     <label>Schmiel body</label>
     <description>Carriers of this gene will have the body of Schmiel.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Schmiel/SchmielBody_south</iconPath>
@@ -899,12 +927,12 @@
 
   <!-- Schmiel Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_SchmielHead</defName>
     <label>Schmiel head</label>
     <description>Carriers of this gene will have a the face of Schmiel.</description>
     <iconPath>Humanlike/Heads/Schmiel/SchmielHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_SchmielBody</prerequisite>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>SchmielHead</li>
@@ -926,12 +954,11 @@
 
   <!-- Excalibur Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_ExcaliburBody</defName>
     <label>Excalibur body</label>
     <description>Carriers of this gene will have the muscular body of Excalibur.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Excalibur/ExcaliburBody_south</iconPath>
@@ -965,12 +992,12 @@
 
   <!-- Excalibur Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_ExcaliburHead</defName>
     <label>Excalibur head</label>
     <description>Carriers of this gene will have a the face of Excalibur.</description>
     <iconPath>Humanlike/Heads/Excalibur/ExcaliburHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_ExcaliburBody</prerequisite>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>ExcaliburHead</li>
@@ -992,7 +1019,7 @@
 
   <!-- Izumi Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_IzumiBody</defName>
     <label>Izumi body</label>
     <description>Carriers of this gene will have the muscular body of Izumi.</description>
@@ -1032,12 +1059,12 @@
 
   <!-- Izumi Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_IzumiHead</defName>
     <label>Izumi head</label>
     <description>Carriers of this gene will have a the face of Izumi.</description>
     <iconPath>Humanlike/Heads/Izumi/IzumiHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_IzumiBody</prerequisite>
     <displayCategory>Gyee</displayCategory>
     <forcedHeadTypes>
       <li>IzumiHead</li>
@@ -1059,12 +1086,11 @@
 
 <!-- Baran Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_BaranBody</defName>
     <label>Baran body</label>
     <description>Carriers of this gene will have the muscular body of Baran.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>AnotherEdios</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Baran/BaranBody_south</iconPath>
@@ -1099,12 +1125,12 @@
 
   <!-- Baran Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_BaranHead</defName>
     <label>Baran head</label>
     <description>Carriers of this gene will have a the face of Baran.</description>
     <iconPath>Humanlike/Heads/Baran/BaranHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_BaranBody</prerequisite>
     <displayCategory>AnotherEdios</displayCategory>
     <forcedHeadTypes>
       <li>BaranHead</li>
@@ -1126,12 +1152,11 @@
 
 <!-- Barret Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_BarretBody</defName>
     <label>Barret body</label>
     <description>Carriers of this gene will have the muscular body of Barret.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Bara_Other</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Barret/BarretBody_south</iconPath>
@@ -1166,12 +1191,12 @@
 
   <!-- Barret Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_BarretHead</defName>
     <label>Barret head</label>
     <description>Carriers of this gene will have a the face of Barret.</description>
     <iconPath>Humanlike/Heads/Barret/BarretHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_BarretBody</prerequisite>
     <displayCategory>Bara_Other</displayCategory>
     <forcedHeadTypes>
       <li>BarretHead</li>
@@ -1193,12 +1218,11 @@
 
 <!-- Bato Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_BatoBody</defName>
     <label>Bato body</label>
     <description>Carriers of this gene will have the muscular body of Bato.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Bara_Other</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Bato/BatoBody_south</iconPath>
@@ -1233,12 +1257,12 @@
 
   <!-- Bato Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_BatoHead</defName>
     <label>Bato head</label>
     <description>Carriers of this gene will have a the face of Bato.</description>
     <iconPath>Humanlike/Heads/Bato/BatoHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_BatoBody</prerequisite>
     <displayCategory>Bara_Other</displayCategory>
     <forcedHeadTypes>
       <li>BatoHead</li>
@@ -1260,12 +1284,12 @@
 
 <!-- Billford Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_BillfordBody</defName>
     <label>Billford body</label>
     <description>Carriers of this gene will have the muscular body of Billford.</description>
+    <geneClass>SeldoreXeno.Gene_Additional</geneClass>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>AnotherEdios</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Bilford/BilfordBody_south</iconPath>
@@ -1295,17 +1319,22 @@
       <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
 		 <disableFacialAnimations>true</disableFacialAnimations>
 		 </li>
+     <li Class="SeldoreXeno.Gene_Additional_Extension">
+      <endogenes>
+        <li>Furskin</li>
+      </endogenes>
+     </li>
     </modExtensions>
   </GeneDef>
 
   <!-- Billford Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_BillfordHead</defName>
     <label>Billford head</label>
     <description>Carriers of this gene will have a the face of Billford.</description>
     <iconPath>Humanlike/Heads/Bilford/BilfordHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_BillfordBody</prerequisite>
     <displayCategory>AnotherEdios</displayCategory>
     <forcedHeadTypes>
       <li>BillfordHead</li>
@@ -1327,12 +1356,11 @@
 
 <!-- Duran Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_DuranBody</defName>
     <label>Duran body</label>
     <description>Carriers of this gene will have the muscular body of Duran.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Gyee</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Duran/DuranBody_south</iconPath>
@@ -1367,12 +1395,12 @@
 
   <!-- Duran Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_DuranHead</defName>
     <label>Duran head</label>
     <description>Carriers of this gene will have a the face of Duran.</description>
     <iconPath>Humanlike/Heads/Duran/DuranHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_DuranBody</prerequisite>
     <displayCategory>Gyee</displayCategory>
     <forcedHeadTypes>
       <li>DuranHead</li>
@@ -1394,12 +1422,12 @@
 
 <!-- Forte Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_ForteBody</defName>
     <label>Forte body</label>
     <description>Carriers of this gene will have the muscular body of Forte.</description>
+    <geneClass>SeldoreXeno.Gene_Additional</geneClass>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>AnotherEdios</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Forte/ForteBody_south</iconPath>
@@ -1429,17 +1457,22 @@
       <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
 		 <disableFacialAnimations>true</disableFacialAnimations>
 		 </li>
+     <li Class="SeldoreXeno.Gene_Additional_Extension">
+      <endogenes>
+        <li>Furskin</li>
+      </endogenes>
+     </li>
     </modExtensions>
   </GeneDef>
 
   <!-- Forte Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_ForteHead</defName>
     <label>Forte head</label>
     <description>Carriers of this gene will have a the face of Forte.</description>
     <iconPath>Humanlike/Heads/Forte/ForteHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_ForteBody</prerequisite>
     <displayCategory>AnotherEdios</displayCategory>
     <forcedHeadTypes>
       <li>ForteHead</li>
@@ -1461,12 +1494,12 @@
 
 <!-- Genpei Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_GenpeiBody</defName>
     <label>Genpei body</label>
     <description>Carriers of this gene will have the muscular body of Genpei.</description>
+    <geneClass>SeldoreXeno.Gene_Additional</geneClass>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Genpei/GenpeiBody_south</iconPath>
@@ -1496,17 +1529,22 @@
       <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
 		 <disableFacialAnimations>true</disableFacialAnimations>
 		 </li>
+     <li Class="SeldoreXeno.Gene_Additional_Extension">
+      <endogenes>
+        <li>Furskin</li>
+      </endogenes>
+     </li>
     </modExtensions>
   </GeneDef>
 
   <!-- Genpei Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_GenpeiHead</defName>
     <label>Genpei head</label>
     <description>Carriers of this gene will have a the face of Genpei.</description>
     <iconPath>Humanlike/Heads/Genpei/GenpeiHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_GenpeiBody</prerequisite>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>GenpeiHead</li>
@@ -1528,12 +1566,11 @@
 
 <!-- Gor'rok Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_GorrokBody</defName>
     <label>Gor'rok body</label>
     <description>Carriers of this gene will have the muscular body of Gor'rok.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Bara_Other</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Gor'rok/Gor'rokBody_south</iconPath>
@@ -1567,12 +1604,12 @@
 
   <!-- Gor'rok Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_GorrokHead</defName>
     <label>Gor'rok head</label>
     <description>Carriers of this gene will have a the face of Gor'rok.</description>
     <iconPath>Humanlike/Heads/Gor'rok/Gor'rokHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_GorrokBody</prerequisite>
     <displayCategory>Bara_Other</displayCategory>
     <forcedHeadTypes>
       <li>GorrokHead</li>
@@ -1594,12 +1631,12 @@
 
 <!-- Hombre Tigre Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_HombreTigreBody</defName>
     <label>Hombre Tigre body</label>
     <description>Carriers of this gene will have the muscular body of Hombre Tigre.</description>
+    <geneClass>SeldoreXeno.Gene_Additional</geneClass>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Housamo</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/HombreTigre/HombreTigreBody_south</iconPath>
@@ -1629,17 +1666,22 @@
       <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
 		 <disableFacialAnimations>true</disableFacialAnimations>
 		 </li>
+     <li Class="SeldoreXeno.Gene_Additional_Extension">
+      <endogenes>
+        <li>Furskin</li>
+      </endogenes>
+     </li>
     </modExtensions>
   </GeneDef>
 
   <!-- Hombre Tigre Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_HombreTigreHead</defName>
     <label>Hombre Tigre head</label>
     <description>Carriers of this gene will have a the face of Hombre Tigre.</description>
     <iconPath>Humanlike/Heads/HombreTigre/HombreTigreHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_HombreTigreBody</prerequisite>
     <displayCategory>Housamo</displayCategory>
     <forcedHeadTypes>
       <li>HombreTigreHead</li>
@@ -1661,7 +1703,7 @@
 
 <!-- Joe Buttataki Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_JoeButtatakiBody</defName>
     <label>Joe Buttataki body</label>
     <description>Carriers of this gene will have the muscular body of Joe Buttataki.</description>
@@ -1701,12 +1743,12 @@
 
   <!-- joe Buttataki Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_JoeButtatakiHead</defName>
     <label>Joe Buttataki head</label>
     <description>Carriers of this gene will have a the face of Joe Buttataki.</description>
     <iconPath>Humanlike/Heads/JoeButtataki/JoeButtatakiHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_JoeButtatakiBody</prerequisite>
     <displayCategory>Bara_Other</displayCategory>
     <forcedHeadTypes>
       <li>JoeButtatakiHead</li>
@@ -1728,12 +1770,12 @@
 
 <!-- Kaiser Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_KaiserBody</defName>
     <label>Kaiser body</label>
     <description>Carriers of this gene will have the muscular body of Kaiser.</description>
+    <geneClass>SeldoreXeno.Gene_Additional</geneClass>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Bara_Other</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Kaiser/KaiserBody_south</iconPath>
@@ -1763,17 +1805,22 @@
       <li Class="BetterPrerequisites.GeneExtension" MayRequire="redmattis.betterprerequisites">
 		 <disableFacialAnimations>true</disableFacialAnimations>
 		 </li>
+     <li Class="SeldoreXeno.Gene_Additional_Extension">
+      <endogenes>
+        <li>Furskin</li>
+      </endogenes>
+     </li>
     </modExtensions>
   </GeneDef>
 
   <!-- Kaiser Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_KaiserHead</defName>
     <label>Kaiser head</label>
     <description>Carriers of this gene will have a the face of Kaiser.</description>
     <iconPath>Humanlike/Heads/Kaiser/KaiserHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_KaiserBody</prerequisite>
     <displayCategory>Bara_Other</displayCategory>
     <forcedHeadTypes>
       <li>KaiserHead</li>
@@ -1795,12 +1842,11 @@
 
 <!-- Khafka Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_KhafkaBody</defName>
     <label>Khafka body</label>
     <description>Carriers of this gene will have the muscular body of Khafka.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Bara_Other</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Khafka/KhafkaBody_south</iconPath>
@@ -1835,12 +1881,12 @@
 
   <!-- Khafka Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_KhafkaHead</defName>
     <label>Khafka head</label>
     <description>Carriers of this gene will have a the face of Khafka.</description>
     <iconPath>Humanlike/Heads/Khafka/KhafkaHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_KhafkaBody</prerequisite>
     <displayCategory>Bara_Other</displayCategory>
     <forcedHeadTypes>
       <li>KhafkaHead</li>
@@ -1862,12 +1908,11 @@
 
 <!-- Kurogane Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_KuroganeBody</defName>
     <label>Kurogane body</label>
     <description>Carriers of this gene will have the muscular body of Kurogane.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Housamo</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Kurogane/KuroganeBody_south</iconPath>
@@ -1901,12 +1946,12 @@
 
   <!-- Kurogane Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_KuroganeHead</defName>
     <label>Kurogane head</label>
     <description>Carriers of this gene will have a the face of Kurogane.</description>
     <iconPath>Humanlike/Heads/Kurogane/KuroganeHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_KuroganeBody</prerequisite>
     <displayCategory>Housamo</displayCategory>
     <forcedHeadTypes>
       <li>KuroganeHead</li>
@@ -1928,12 +1973,11 @@
 
 <!-- Mark Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_MarkBody</defName>
     <label>Mark body</label>
     <description>Carriers of this gene will have the muscular body of Mark.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Bara_Other</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Mark/MarkBody_south</iconPath>
@@ -1967,12 +2011,12 @@
 
   <!-- Mark Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_MarkHead</defName>
     <label>Mark head</label>
     <description>Carriers of this gene will have a the face of Mark.</description>
     <iconPath>Humanlike/Heads/Mark/MarkHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_MarkBody</prerequisite>
     <displayCategory>Bara_Other</displayCategory>
     <forcedHeadTypes>
       <li>MarkHead</li>
@@ -1994,12 +2038,11 @@
 
 <!-- Nerfen Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_NerfenBody</defName>
     <label>Nerfen body</label>
     <description>Carriers of this gene will have the muscular body of Nerfen.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Nerfen/NerfenBody_south</iconPath>
@@ -2034,12 +2077,12 @@
 
   <!-- Nerfen Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_NerfenHead</defName>
     <label>Nerfen head</label>
     <description>Carriers of this gene will have a the face of Nerfen.</description>
     <iconPath>Humanlike/Heads/Nerfen/NerfenHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_NerfenBody</prerequisite>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>NerfenHead</li>
@@ -2061,12 +2104,11 @@
 
 <!-- Raven Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_RavenBody</defName>
     <label>Raven body</label>
     <description>Carriers of this gene will have the muscular body of Raven.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Housamo</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Raven/RavenBody_south</iconPath>
@@ -2101,12 +2143,12 @@
 
   <!-- Raven Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_RavenHead</defName>
     <label>Raven head</label>
     <description>Carriers of this gene will have a the face of Raven.</description>
     <iconPath>Humanlike/Heads/Raven/RavenHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_RavenBody</prerequisite>
     <displayCategory>Housamo</displayCategory>
     <forcedHeadTypes>
       <li>RavenHead</li>
@@ -2128,12 +2170,11 @@
 
 <!-- Ukonvasara Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_UkonvasaraBody</defName>
     <label>Ukonvasara body</label>
     <description>Carriers of this gene will have the muscular body of Ukonvasara.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>CraveSaga</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Ukonvasara/UkonvasaraBody_south</iconPath>
@@ -2168,12 +2209,12 @@
 
   <!-- Ukonvasara Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_UkonvasaraHead</defName>
     <label>Ukonvasara head</label>
     <description>Carriers of this gene will have a the face of Ukonvasara.</description>
     <iconPath>Humanlike/Heads/Ukonvasara/UkonvasaraHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_UkonvasaraBody</prerequisite>
     <displayCategory>CraveSaga</displayCategory>
     <forcedHeadTypes>
       <li>UkonvasaraHead</li>
@@ -2195,12 +2236,11 @@
 
 <!-- Prometheus Body Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneBase">
     <defName>Gene_PrometheusBody</defName>
     <label>Prometheus body</label>
     <description>Carriers of this gene will have the muscular body of Prometheus.</description>
     <biostatCpx>1</biostatCpx>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <displayCategory>Housamo</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/Prometheus/PrometheusBody_south</iconPath>
@@ -2234,12 +2274,12 @@
 
   <!-- Prometheus Head Gene -->
 
-  <GeneDef>
+  <GeneDef ParentName="Bara_GeneHeadBase">
     <defName>Gene_PrometheusHead</defName>
     <label>Prometheus head</label>
     <description>Carriers of this gene will have a the face of Prometheus.</description>
     <iconPath>Humanlike/Heads/Prometheus/PrometheusHead_south</iconPath>
-    <skinColorOverride>(255, 255, 255, 255)</skinColorOverride>
+    <prerequisite>Gene_PrometheusBody</prerequisite>
     <displayCategory>Housamo</displayCategory>
     <forcedHeadTypes>
       <li>PrometheusHead</li>
