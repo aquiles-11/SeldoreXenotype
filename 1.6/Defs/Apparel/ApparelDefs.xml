@@ -1671,12 +1671,9 @@
     </thingCategories>
     <apparel>
       <drawData>
-        <dataEast>
+        <dataNorth>
           <layer>92.1</layer>
-        </dataEast>
-        <dataWest>
-          <layer>92.1</layer>
-        </dataWest>
+        </dataNorth>
       </drawData>
       <abilities>
         <li>BestialDive</li>
@@ -1912,7 +1909,7 @@
       <MiningYield>0.25</MiningYield>
     </equippedStatOffsets>
     <graphicData>
-      <texPath>Armor/Forte/ForteArmor_Hulk_south</texPath>
+      <texPath>Armor/Gorrok/GorrokArmor_Hulk_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -1946,7 +1943,7 @@
         <li>Arms</li>
         <li>Legs</li>
       </bodyPartGroups>
-      <wornGraphicPath>Armor/Forte/ForteArmor</wornGraphicPath>
+      <wornGraphicPath>Armor/Gorrok/GorrokArmor</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
