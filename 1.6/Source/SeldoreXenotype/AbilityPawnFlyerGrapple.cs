@@ -19,7 +19,7 @@ namespace SeldoreXeno
         {
             base.DrawAt(drawLoc, flip);
 
-            GenDraw.DrawLineBetween(DrawPos, DestinationPos, AltitudeLayer.PawnRope.AltitudeFor(), RopeLineMat);
+            GenDraw.DrawLineBetween(DrawPos, DestinationPos, AltitudeLayer.PawnRope.AltitudeFor(), RopeLineMat, 1.0f);
         }
 
         public override void DrawGUIOverlay()
