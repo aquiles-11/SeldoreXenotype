@@ -1292,7 +1292,7 @@
     <biostatCpx>1</biostatCpx>
     <displayCategory>AnotherEdios</displayCategory>
     <displayOrderInCategory>401</displayOrderInCategory>
-    <iconPath>Humanlike/Bodies/Bilford/BilfordBody_south</iconPath>
+    <iconPath>Humanlike/Bodies/Billford/BillfordBody_south</iconPath>
     <bodyType>Hulk</bodyType>
     <exclusionTags>
       <li>Fur</li>
@@ -1333,7 +1333,7 @@
     <defName>Gene_BillfordHead</defName>
     <label>Billford head</label>
     <description>Carriers of this gene will have a the face of Billford.</description>
-    <iconPath>Humanlike/Heads/Bilford/BilfordHead_south</iconPath>
+    <iconPath>Humanlike/Heads/Billford/BillfordHead_south</iconPath>
     <prerequisite>Gene_BillfordBody</prerequisite>
     <displayCategory>AnotherEdios</displayCategory>
     <forcedHeadTypes>

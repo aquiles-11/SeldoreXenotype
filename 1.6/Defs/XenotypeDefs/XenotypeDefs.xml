@@ -146,7 +146,7 @@
         <defName>SabertXenotype</defName>
         <label>Sabert Xenotype</label>
         <description>Sabert's Xenotype</description>
-        <iconPath>Humanlike/Heads/Saber/SaberHead_south</iconPath>
+        <iconPath>Humanlike/Heads/Sabert/SabertHead_south</iconPath>
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
