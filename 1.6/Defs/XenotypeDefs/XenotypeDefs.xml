@@ -256,9 +256,9 @@
 
     <XenotypeDef>
         <defName>BillfordXenotype</defName>
-        <label>Billford Xenotype</label>
-        <description>Billford's Xenotype</description>
-        <iconPath>Humanlike/Heads/Billford/BillfordHead_south</iconPath>
+        <label>Bilford Xenotype</label>
+        <description>Bilford's Xenotype</description>
+        <iconPath>Humanlike/Heads/Bilford/BilfordHead_south</iconPath>
         <combatPowerFactor>1.5</combatPowerFactor>
         <inheritable>false</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
