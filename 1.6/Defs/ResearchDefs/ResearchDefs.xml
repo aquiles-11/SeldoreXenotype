@@ -7,51 +7,37 @@
 
     <ResearchTabDef>
         <defName>CraveSagaResearch</defName>
-        <label>Crave Saga Research</label>
+        <label>Crave Saga</label>
         <generalTitle>Crave Saga Research</generalTitle>
         <generalDescription>All the stuff from Crave Saga can be found here</generalDescription>
     </ResearchTabDef>
 
     <ResearchTabDef>
         <defName>AnotherEdiosResearch</defName>
-        <label>Another Edios Research</label>
+        <label>Another Edios</label>
         <generalTitle>Another Edios Research</generalTitle>
         <generalDescription>All the stuff from Another Edios can be found here</generalDescription>
     </ResearchTabDef>
 
     <ResearchTabDef>
         <defName>GyeeResearch</defName>
-        <label>Gyee Research</label>
+        <label>Gyee</label>
         <generalTitle>Crave Saga Research</generalTitle>
         <generalDescription>All the stuff from Gyee can be found here</generalDescription>
     </ResearchTabDef>
 
     <ResearchTabDef>
         <defName>HousamoResearch</defName>
-        <label>Housamo Research</label>
+        <label>Housamo</label>
         <generalTitle>Housamo Research</generalTitle>
         <generalDescription>All the stuff from Housamo can be found here</generalDescription>
     </ResearchTabDef>
 
     <ResearchTabDef>
         <defName>OtherResearch</defName>
-        <label>Other Research</label>
+        <label>Other</label>
         <generalTitle>Other Research</generalTitle>
         <generalDescription>All the stuff from other games can be found here</generalDescription>
-    </ResearchTabDef>
-
-    <ResearchTabDef>
-        <defName>TokyoAfterschoolResearch</defName>
-        <label>Tokyo Afterschool Research</label>
-        <generalTitle>Other Research</generalTitle>
-        <generalDescription>All the stuff from Tokyo Afterschool can be found here</generalDescription>
-    </ResearchTabDef>
-
-    <ResearchTabDef>
-        <defName>ArtandShowsResearch</defName>
-        <label>Art and Shows Research</label>
-        <generalTitle>Other Research</generalTitle>
-        <generalDescription>All the stuff from Art and Shows can be found here</generalDescription>
     </ResearchTabDef>
 
     <!--____Crave Saga Research____-->
