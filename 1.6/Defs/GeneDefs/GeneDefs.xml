@@ -1330,7 +1330,7 @@
   <!-- Billford Head Gene -->
 
   <GeneDef ParentName="Bara_GeneHeadBase">
-    <defName>Gene_BillfordHead</defName>
+    <defName>Gene_BilfordHead</defName>
     <label>Bilford head</label>
     <description>Carriers of this gene will have a the face of Bilford.</description>
     <iconPath>Humanlike/Heads/Bilford/BilfordHead_south</iconPath>
